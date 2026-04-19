@@ -1,0 +1,16 @@
+Exacto! Has entendido perfectamente el flujo de trabajo. Aquí te lo resumo en los dos pasos clave:
+1.
+Modificas en Visual Studio Code (o tu editor web): Haces todos los cambios de diseño, estilos (CSS), contenido (HTML) y lógica (JavaScript/TypeScript) en tu proyecto web, es decir, en la carpeta src.
+2.
+Sincronizas y ejecutas: Una vez que estés listo para probar los cambios en tu dispositivo, tienes dos opciones principales desde la terminal, siempre en la carpeta raíz de tu proyecto (C:/Users/Paco Martorell/Documents/DietaApp):
+◦
+Opción A (Dos pasos):
+a.
+npx capacitor sync android (Esto copia tus archivos web actualizados al proyecto de Android).
+b.
+Luego, en Android Studio, haces clic en el botón "Run" (▶️) para instalar y lanzar la aplicación en tu teléfono.
+◦
+Opción B (Un solo paso, más rápido):
+a.
+npx capacitor run android (Este comando hace el sync y el run por ti, todo en uno).
+La Opción B es la más recomendada para el día a día, ya que automatiza todo el proceso y es más rápida que tener que pasar por la interfaz de Android Studio cada vez.

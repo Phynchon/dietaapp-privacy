@@ -1,0 +1,1659 @@
+{
+  "weeks": [
+    {
+      "id": "primera",
+      "label": "Primera semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Arroz caldoso con gambones y mero: dos puñados de arroz con 1 filete mediano de mero + 4 gambones",
+              "Ensalada de brotes de lechuga (50gr)",
+              "Pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, mero 135gr, gambones 40gr, caldo de pescado, cebolleta 30gr, tomate triturado 30gr, azafrán",
+            "recipe": "se cortan las patatas en láminas junto con la cebolla, el ajo y el pimiento verde y se introducen en el horno. Por otro lado se corta el conejo y se le añaden hojas de tomillo, se pone en la bandeja del horno junto a las patatas y se asa hasta que el conejo esté en su punto",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pinchos de hortalizas crudas: tomatitos + zanahoria",
+              "Conejo con aroma de tomillo y patatas panaderas: 6 trocitos de conejo + 1 patata mediana + media cebolla + medio pimiento verde + 1 diente de ajo",
+              "2 mandarinas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "conejo 175gr, patata 140gr, cebolla 50gr, pimiento verde 50gr, ajo 3gr, tomatitos 75gr, zanahoria 75gr",
+            "recipe": "se cortan las patatas en láminas junto con la cebolla, el ajo y el pimiento verde y se introducen en el horno. Por otro lado se corta el conejo y se le añaden hojas de tomillo, se pone en la bandeja del horno junto a las patatas y se asa hasta que el conejo esté en su punto",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Lentejas estofadas: 2 puñados de lentejas + 6 trocitos de carne magra de ternera + sofrito de puerro, tomate y pimiento con 1 cucharada de aceite",
+              "Ensalada de hoja de roble: lechuga de roble 75gr",
+              "1 naranja (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "lentejas 70gr, carne magra de ternera 110gr, puerro 55gr, tomate 55gr, pimientos 55gr",
+            "recipe": "se hace un sofrito con el puerro, tomate y el pimiento y se añade la carne en trozos, se añaden las lentejas y se cubre de agua o se puede usar un caldo de verduras para darle más sabor",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada de espárragos trigueros con tomates cherry y eneldo: 1 plato espárragos, 9 tomates cherry, eneldo",
+              "Cogollo de merluza a la plancha: 2 rodajas pequeñas de merluza al horno",
+              "2 ciruelas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "espárragos trigueros 160gr, tomate 90gr, eneldo, merluza 175gr",
+            "recipe": "se cuecen los espárragos unos minutos, se cortan los tomates cherry por la mitad y se pone todo en una fuente, se añade el eneldo y se aliña con un poco de aceite de oliva y vinagre",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Ensalada de endibias con naranja: 1 endibia + 1 naranja sanguina",
+              "Pajaritas a la marinera: 2 puñados de pasta + 5 gambas + 4 trocitos de perca + 1 sofrito de cebolla y tomate triturado con 1 cucharada de aceite",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta 60gr, gambas 65gr, perca 100gr, cebolla 25gr, tomate triturado 20gr, endibia 100gr, naranja 200gr",
+            "recipe": "se corta la naranja en rodajas finas y la endibia en tiras y se mezcla en una ensaladera. Se hace un sofrito con la cebolla y el tomate y se añade el pescado y las gambas, se mezcla con la pasta y se cubre con un caldo de pescado, se cuece todo junto hasta que la pasta esté hecha",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pencas de acelga rehogadas con huevo picado: Un plato pequeño de acelgas + 1 patata pequeña + 1 huevo duro y una clara",
+              "1 melocotón grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "Acelgas 100gr, patatas 110gr, ajo 3gr y huevo duro 90gr",
+            "recipe": "se cuecen las patatas con las pencas de acelga y se sirven con un huevo duro picado",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Lasaña de berenjena: 1 berenjena pequeña + 5 cucharadas de carne picada + medio tomate pequeño + media cebolla pequeña",
+              "Ensalada de escarola: un plato pequeño de escarola",
+              "Una raja grande de melón (300gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "berenjena 170gr, carne picada 155gr, tomate 60gr, cebolla 60gr, escarola 90gr",
+            "recipe": "se rehoga la cebolla y el tomate y se fríe la carne picada, se cortan láminas de berenjenas y se monta la lasaña intercalando la carne picada con las láminas de berenjena",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Bacalao a la brasa con parrillada de zanahoria y calabaza: 1 filete grande de bacalao + calabaza + 1 zanahoria",
+              "Una manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "bacalao 175gr, calabaza 180gr, zanahoria 180gr",
+            "recipe": "se corta la calabaza en rodajas y la zanahoria en tiras y se hacen a la parrilla junto con el bacalao. Se puede sustituir por un puré de zanahoria y calabaza y un bacalao a la plancha",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Paella mixta:2 puñados de arroz en crudo + 1 sofrito de cebolla pimiento tomate con 1 cucharada de aceite + 3 trocitos de pollo + 6 anillas grandes de calamar + 7 mejillones",
+              "Ensalada de lechuga romana (75gr)",
+              "2 kiwis grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, pimiento 30gr, tomate 30gr, cebolla 30gr, pollo 70gr, calamar 60gr, mejillón 50gr, azafrán, caldo de ave desgrasado",
+            "recipe": "Se hace un sofrito con el pimiento, la cebolla y el tomate y se añade el pollo y el calamar, se junta con el arroz y se pone doble de caldo de ave que de arroz, se le añade una ramita de azafrán y la paella estará lista en veinte minutos. Justo un momento antes de terminar se ponen encima los mejillones para que se abran.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sartenada de verduras: medio calabacín pequeño + 1 puerro + medio tomate",
+              "Huevos rotos con patatas: con 1 huevo y 1 clara + 1 patata pequeña.",
+              "2 mandarinas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, calabacín 50gr, puerro 50gr, tomate 100gr, patata 110gr",
+            "recipe": "se cortan las verduras en dados y se sofríen con una cucharada de aceite de oliva. Se hacen las patatas cocidas y se cortan en láminas se ponen en la base de un plato y sobre ellas se pone un huevo a la plancha",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Tagliatelle con verduras: medio plato mediano de tagliatelle cocidos, media zanahoria y medio pimiento",
+              "Emperador a la parrilla: 1 rodaja pequeña de emperador + ajo y perejil",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta cruda 60gr, zanahoria 60gr, pimiento verde 60gr, emperador 115gr, ajo 3gr, perejil picado",
+            "recipe": "se cortan las verduras en juliana y se rehogan, se cuece la pasta y cuando está al dente se escurre y se mezcla con las verduras Se pica el ajo y el perejil y se dora un poco, se hace el emperador a la parrilla y se añade por encima el ajo",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Carpaccio de tomate con orégano: un tomate mediano con orégano",
+              "Pechuga de pavo a la plancha con cebolla confitada: un filete grande de pechuga de pavo con media cebolla confitada",
+              "Una manzana grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "Pechuga de pavo 175gr, cebolla 75gr, tomate 160gr, orégano",
+            "recipe": "se corta el tomate en rodajas muy finas y se pone en una fuente, se aliñan y se añade orégano. Se corta en tiras la cebolla y se deja pochar y se acompaña de la pechuga de pollo a la plancha",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Ensalada de garbanzos con virutas de jamón: 2 puñados de garbanzos crudos + media zanahoria + medio tomate + virutas de jamón serrano + canónigos",
+              "Un melocotón grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "garbanzos 70gr, zanahoria 60gr, tomate 60gr, jamón 70gr, canónigos 60gr",
+            "recipe": "Se cuecen los garbanzos con un caldo de verduras para darles más sabor, se pueden usar garbanzos ya cocidos. Se trocean la zanahoria y el tomate en dados y se añaden a los garbanzos escurridos. Se pone todo en una ensaladera junto con los canónigos y las virutas de jamón",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Licuado de tomate y apio: un tomate + una ramita de apio",
+              "Filetes de gallo al vapor con calabacín a la plancha:1 filete grande de gallo + calabacín",
+              "1 naranja (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35g)"
+            ],
+            "ingredients": "gallo 175gr, calabacín 170gr, laurel, tomate 250gr, apio 30gr",
+            "recipe": "se licua el tomate y se sirve con un poco de pimienta y la rama de tomate, se puede usar un zumo de tomate o un licuado de hortalizas, si lo prefiere puede sustituirlo por una ensalada de tomate. El calabacín se hace a la plancha. Los filetes de gallo se hacen al vapor y se sirven junto con el calabacín.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "segunda",
+      "label": "Segunda semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Ensalada de arroz integral con tomatitos: tomatitos + 2 puñados de arroz integral",
+              "Canelones de calabacín y salmón: 1 filete pequeño de salmón + medio calabacín",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, salmón 125gr, tomatitos 160gr, calabacín 100gr",
+            "recipe": "se cortan los calabacines por la mitad a lo largo y se corta en láminas, el salmón se corta en dados. Se enrolla el calabacín alrededor del salmón y se hace al vapor. Se acompaña de un arroz integral con tomatitos",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sartenada de pollo con verduras: 2 filetes medianos de pollo + pimiento rojo + pimiento verde + media berenjena",
+              "1 melocotón (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pechuga de pollo 175gr, pimiento rojo 70gr, pimiento verde 70gr, berenjena 120gr",
+            "recipe": "se corta la pechuga de pollo en tiras y se sofríe con las verduras cortadas en juliana",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de espinacas: 2 puñados de espirales integrales + medio calabacín mediano + 2 lonchas y media de jamón cocido + espinaca cruda",
+              "1 pera grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta 60gr, calabacín 100gr, jamón cocido 85gr, espinacas 50gr",
+            "recipe": "se cuecen los espirales integrales y se reservan. Se hace a la plancha el calabacín y se mezcla en una ensaladera con la pasta cocida, la espinaca cruda y las tiras de jamón cocido",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Salteado de pavo con patata asada al romero: 1 pechuga grande + 1 patata mediana + media cebolla + medio pimiento verde + medio pimiento rojo",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pechuga de pavo 175gr, patata 140gr, cebolla 60gr, pimiento verde 60gr, pimiento rojo 60gr",
+            "recipe": "se saltean las tiras de pechuga de pavo con las verduras, se pone en un plato con una patata asada con romero de acompañamiento",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Fabes con almejas: 2 puñados de alubias + 14 almejas gordas + 1 sofrito con ajo y cebolla con 1 cucharada de aceite",
+              "Tomate aliñado: 1 tomate pequeño",
+              "1 raja de melón grande (300gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "alubias 70gr, almejas 145gr, cebolla 20gr, ajo 6gr, tomate 100gr",
+            "recipe": "Se ponen las alubias en remojo, en agua fría, la noche anterior. Se hace un sofrito con el ajo y la cebolla y se añaden las alubias y se cubren de agua, se añade una ramita de azafrán al caldo. Se lavan las almejas con agua con sal mientras se están cociendo las alubias y se ponen en una cacerola con un poco de agua, se saltean y cuando están abiertas se reservan y se añaden a las alubias cuando estén cocidas.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Calabaza a la plancha: un trozo de calabaza",
+              "Medallones de solomillo con cebolleta a la parrilla: 3 filetes pequeños de solomillo de cerdo + 1 cebolleta",
+              "2 mandarinas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "solomillo de cerdo 155gr, cebolleta 150gr, calabaza 150gr",
+            "recipe": "se corta la calabaza en tiras finas y se hacen a la plancha. El solomillo se corta en medallones y se hacen a la plancha y se acompañan de una cebolleta a la parrilla",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Lasaña de carne: 5 placas de lasaña + 5 cucharadas soperas de carne picada + medio tomate pequeño + medio calabacín pequeño + media berenjena pequeña",
+              "Ensalada de canónigos (50gr)",
+              "1 pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "placa de lasaña 60gr, carne picada de ternera 155gr, tomate 100gr, calabacín 60gr, berenjena 60gr",
+            "recipe": "se usan placas de lasaña precocidas, se rehogan las verduras cortadas en dados muy pequeños y se añade la carne picada, se pone una placa de lasaña y encima la carne y se cubre con otra placa. Se puede añadir un poco de salsa de tomate casera por encima y se introduce en el horno el tiempo que necesiten las placas para hacerse",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Champiñones a la parrilla: champiñones + perejil",
+              "Merluza a la gallega: una rodaja de merluza grande + 1 patata grande + cebolla + ajo",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "merluza 175gr, patata 170gr, cebolla 30gr, ajo 3gr, laurel, pimentón, champiñones 120gr, perejil",
+            "recipe": "se hacen los champiñones a la parrilla y se añade un poco de perejil por encima. Se rehoga la cebolla, se añade la patata, una hoja de laurel y se cubre de agua o de un caldo de pescado para que esté más sabroso, cuando la patata esté casi en su punto se añade la merluza y hasta que esté lista. Por otro lado se rehoga un poco ajo con pimentón y se añade al guiso",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Ensalada de arroz integral: 2 puñados de arroz + 1 tomate pequeño + media cebolla + 1 huevo y una clara + un pepino pequeño",
+              "Piña (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, tomate 125gr, cebolla 50gr, huevo 90gr, pepino 100gr",
+            "recipe": "se cuece el arroz integral y se cuela, se trocean las verduras y se mezclan con el arroz y con el huevo duro picado",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sopa de col rizada: col rizada + media cebolla",
+              "Lubina al horno con tomatitos: 1 filete de lubina + tomates cherry",
+              "Una manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "lubina 175gr, col rizada 120gr, cebolla 50gr, tomatitos 100gr",
+            "recipe": "se pica la cebolla y se rehoga, se añade la col cortada en tiras y se cuece todo junto. Se hace la lubina al horno y se añaden los tomatitos en la bandeja del horno para ponerlos como acompañamiento",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Licuado de hortalizas: un tomate + cebolleta + pimiento verde",
+              "Pollo en pepitoria: 2 muslos de pollo + 1 patata mediana + cebolla + ajo + una cucharada de huevo duro picado",
+              "1 naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "muslo de pollo 145gr, patata 170gr, tomate 150gr, cebolleta 20gr, pimiento 30gr, cebolla 20gr, ajo 3gr, azafrán, huevo duro picado 30gr",
+            "recipe": "se lavan los vegetales y se licuan. Se rehoga la cebolla y el ajo, se incorpora el pollo y se dora se añaden las patatas cortadas a dados y el agua con una ramita de azafrán, se deja cocer hasta que el pollo está tierno y se pica el huevo picado y se echa por encima",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Brochetas de verdura a la parrilla: berenjena + medio pimiento rojo + pimiento amarillo + medio calabacín",
+              "Lenguado al cava: filete de lenguado grande + cava",
+              "1 pera (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "calabacín 60gr, berenjena 60gr, pimiento rojo 60gr, pimiento amarillo 60gr, lenguado 175gr, cava",
+            "recipe": "se trocean las verduras en trozos y se van insertando en la brocheta alternando cada verdura y se hacen a la parrilla. El lenguado se hace a la plancha y se rocía con cava",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de garbanzos con bacalao:2 puñados de garbanzos en crudo + espinacas + 1 filete de bacalao pequeño",
+              "2 ciruelas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "garbanzos 70gr, espinacas 130gr, bacalao 130gr",
+            "recipe": "se cuecen los garbanzos con un caldo de verduras y se añaden tiras de bacalao desalado y hojas de espinaca cruda",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada vegetal: 1 tomate pequeño + 1 pepino pequeño + lechuga",
+              "Tortilla de calabacín: con 1 huevo y 1 clara + 1 calabacín pequeño",
+              "2 rodajas grandes de piña (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, calabacín 130gr, tomate 100gr, pepino 100gr, lechuga 50gr",
+            "recipe": "se rehoga el calabacín, se mezcla con el huevo batido y se hace la tortilla",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tercera",
+      "label": "Tercera semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Farfalle a la primavera con pechuga de pavo asada: 2 puñados de farfalle + medio pimiento verde + medio pimiento rojo + media cebolla + medio tomate pequeño + un filete de pechuga de pavo grande",
+              "1 naranja grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "farfalle 60gr, pimiento verde 50gr, pimiento rojo 50gr, cebolla 50gr, tomate 50gr, pechuga de pavo 175gr",
+            "recipe": "se hace la pechuga de pavo asada y se lamina, se cuece la pasta y se mezcla con las verduras cortadas en dados finos. La pechuga de pavo también se puede hacer a la plancha",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada de brotes de lechugas",
+              "Pescadilla al horno: un filete grande de pescadilla + 1 patata mediana",
+              "1 pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "brotes de lechugas 100gr, pescadilla 175gr, patata 170gr, cebolla 30gr",
+            "recipe": "se rehoga la cebolla con las patatas y se ponen en una fuente de horno, se ponen los filetes de pescadilla encima y se acaba de hornear hasta que el pescado esté listo",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Espirales integrales con tomates asados: 2 puñados de espirales integrales + 3 cucharadas soperas de tomate triturado + cebolleta",
+              "Hamburguesa de pavo con ensalada de pepino a la menta: 5 cucharadas soperas y media de carne picada de pavo +1 pepino",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "espirales integrales 60gr, tomate 50gr, cebolleta 20gr, carne picada de pavo 155gr, pepino 120gr, hojas de menta",
+            "recipe": "se cuece la pasta, se escurre y se reserva. Se asan los tomates y la cebolla y se mezcla con la pasta. Se hace la hamburguesa de pavo a la plancha y se acompaña de una ensalada de pepino con unas hojas de menta",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de brócoli: brócoli",
+              "Rape con gambas: 1 filete pequeño de rape + gambas + ajo",
+              "Pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "brócoli 210gr, rape 145gr, gambas 30gr, ajo 3gr",
+            "recipe": "se cuece el brócoli y se pasa por la batidora para hacer la crema. Se hace el rape a la plancha y se corta el ajo en láminas y se rehoga con las gambas que se añaden por encima del pescado",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Garbanzos a la vinagreta con tiras de pollo a la plancha: 2 puñados de garbanzos + tomate + pimiento + cebolleta + 2 filetes medianos de pollo",
+              "2 mandarinas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "garbanzos 70gr, tomate 60gr, pimiento 60gr, cebolleta 60gr, pechuga de pollo 175gr",
+            "recipe": "se cuecen los garbanzos con un caldo de verduras y se escurren, se cortan las verduras en dados pequeños y se mezclan con los garbanzos. Se hace la pechuga de pollo a la plancha se corta en tiras y se pone encima de la ensalada de garbanzos",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Salteado de verduras con huevo escalfado: media zanahoria + un trozo de calabaza + 1 puerro + 1 calabacín pequeño + 1 huevo y 1 clara",
+              "1 melocotón grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "zanahoria 60gr, calabaza 60gr, puerro 100gr, calabacín 100gr, huevo 90gr",
+            "recipe": "se cortan las verduras en tiras y se saltean con un poco de aceite de oliva, se hace un huevo escalfado y se sirve encima del salteado",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Zumo de hortalizas: tomate + cebolleta + pimiento",
+              "Mero al horno sobre cama de patatas: 1 filete grande de mero con 1 patata grande + media cebolla",
+              "Ciruelas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "tomate 120gr, cebolleta 30gr, pimiento 30gr, cebolla 50gr, mero 175gr, patata 170gr",
+            "recipe": "se pelan los tomates y se mezclan con la batidora con la cebolleta y el pimiento. Se cortan en láminas la patata y la cebolla y se ponen en la bandeja del horno, cuando estén a medias de hacerse se incorpora el mero",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Menestra de verduras con virutas de jamón: 3 cucharadas soperas rasas de guisantes + medio plato pequeño de judías verdes + zanahorias baby + 2 lonchas de jamón serrano + 2 dientes de ajo",
+              "1 naranja (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "guisantes 70gr, judías verdes 140gr, zanahorias 60gr, jamón serrano 70gr, ajo 6gr",
+            "recipe": "se cuecen las verduras y cuando estén en su punto se escurren y se reservan, se doran unas láminas de ajo con unas virutas de jamón y se añaden a la menestra",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Brochetas de salmón a la parrilla con arroz salvaje: 1 rodaja pequeña de salmón + champiñones + calabacín + 2 puñados de arroz salvaje",
+              "2 mandarinas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "salmón 115gr, calabacín 120gr, champiñones 120gr, arroz salvaje en crudo 60gr",
+            "recipe": "se cuece el arroz salvaje y se reserva para el acompañamiento, se corta el salmón en tacos y se introduce en una brocheta alternando con champiñones y rodajas de calabacín, se hace a la parrilla",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada verde: mezcla de lechugas + cebolleta",
+              "Tosta de queso fresco: una rebanada de pan integral de tres dedos y medio de ancho (35gr) + queso fresco desnatado + unas rodajas de tomate",
+              "1 pera grande (200gr)"
+            ],
+            "ingredients": "mezcla de lechugas 100gr, tomate 100gr, cebolleta 20gr, queso fresco desnatado 120gr",
+            "recipe": "se hace de primero la ensalada y de segundo la tosta con el tomate natural y el queso fresco. Se puede sustituir la tosta por una ensalada de queso con la ensalada verde y el tomate acompañándola de la rebanada de pan integral",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Chile con carne: 2 puñados de alubias + sofrito de tomate, cebolla, pimiento rojo y ajo + carne picada",
+              "Ensalada verde (75gr)",
+              "Melocotón (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "alubias 70gr, tomate 40gr, ajo 3gr, cebolla 40gr, pimiento rojo 40gr, carne picada 130gr",
+            "recipe": "se ponen a remojo las alubias la noche anterior, se hace un sofrito con las verduras y se añade la carne con un poco de orégano, comino y chile en polvo, se cuecen las alubias y se mezcla todo y se deja cocer todo junto hasta que las judías estén tiernas",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Calabacines rellenos: 1 calabacín mediano + medio puerro + media zanahoria + 2 lonchas y media de jamón cocido",
+              "Ensalada de 1 tomate pequeño con orégano",
+              "1 pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "calabacín 160gr, puerro 60gr, zanahoria 60gr, tomate 100gr, jamón cocido 85gr",
+            "recipe": "se cuecen los calabacines con piel y se parten por la mitad, se vacían y se pica la carne del calabacín con el puerro y la zanahoria, se rehogan todas las verduras juntas se añade el jamón en tiras y se rellenan los calabacines, se pueden gratinar unos minutos en el horno",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de arroz integral con pollo a la brasa: 2 puñados de arroz + 1 tomate + 1 cebolleta + 1 filete de pechuga de pollo + manzana + lechuga",
+              "2 mandarinas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, tomate 90gr, cebolleta 30gr, lechuga 60gr, pechuga de pollo 175gr, manzana 30gr",
+            "recipe": "se cuece el arroz integral y se cuela. Se pica el tomate, la manzana, la cebolleta y la lechuga y se mezcla con el arroz. El pollo se hace a la parrilla y se añade a la ensalada.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Setas en salsa: medio plato pequeño de setas + chalotas",
+              "Huevos al plato: 1 huevo y 1 clara + 1 tomate frito casero",
+              "Piña (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, setas 120gr, cebollitas 30gr, tomate frito casero 70gr",
+            "recipe": "se pican las setas en trozos muy pequeños y las chalotas. Se rehogan las chalotas hasta que estén doradas y se añaden setas, se pone un poco de jerez y se cuece todo junto unos minutos. Se pone en una cazuela para horno una base de tomate triturado y se pone el huevo crudo encima, se mete en el horno hasta que cuaje el huevo",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuarta",
+      "label": "Cuarta semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de coditos con verduras al vinagre balsámico: 2 puñados de coditos + medio tomate pequeño + medio calabacín pequeño + media berenjena pequeña",
+              "Hamburguesa de ternera a la plancha con rúcula: 5 cucharadas soperas de carne picada + rúcula",
+              "1 pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta integral 60gr, carne picada de ternera 155gr, tomate 100gr, calabacín 60gr, berenjena 60gr, rúcula 40gr",
+            "recipe": "se cuece la pasta y se escurre, se rehogan el calabacín y la berenjena y se mezclan con la pasta, se corta en dados el tomate natural y se añade, se aliña con vinagre balsámico",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Setas a la plancha: setas + perejil",
+              "Caldereta de pescado: una rodaja de pescado blanco + 1 patata grande + cebolla + ajo",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pescado blanco 175gr, patata 170gr, cebolla 30gr, ajo 3gr, laurel, pimentón, setas 120gr, perejil",
+            "recipe": "se hacen las setas a la plancha y se añade un poco de perejil por encima. Se rehoga la cebolla y el ajo con pimentón, se añade la patata, una hoja de laurel y se cubre de agua o de un caldo de pescado para que esté más sabroso, cuando la patata esté casi en su punto se añade el pescado blanco",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Arroz negro con calamares: 2 puñados de arroz + 17 anillas de calamar + 1 sofrito de cebolla y ajo con 1 cucharada de aceite + tinta de calamar",
+              "Cogollos de lechuga (85gr)",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, calamares 170gr, cebolla 40gr, ajo 3gr, tinta de calamar",
+            "recipe": "se hace un sofrito con la cebolla y el ajo y se rehogan los calamares y el arroz, se añade doble de agua que de arroz y tinta de calamar y se deja cocer durante veinte minutos",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada tibia de espinacas con vinagre balsámico: 1 plato de espinacas + 1 huevo y 1 clara + tomatitos + zanahoria cocida",
+              "1 raja de sandía (300gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, espinacas 100gr, tomatitos 120gr, zanahoria cocida 120gr",
+            "recipe": "se cuece el huevo y se pica, se añaden las hojas de espinaca crudas y se pasan por la plancha los tomatitos. Se mezcla todo y se aliña la ensalada con vinagre balsámico",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Pinchos de verduras a la plancha: tomatitos + cebolleta",
+              "Atún a la barbacoa con patatas asadas: 1 filete de atún + 1 patata grande + ajo y perejil",
+              "2 ciruelas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "atún 115gr, patata 170gr, ajo 3gr, perejil, cebolleta 50gr, tomatitos 100gr",
+            "recipe": "se corta la cebolleta en cuartos y se intercalan con los tomatitos en un pincho, se hacen a la parrilla. El atún se hace a la barbacoa o a la plancha y se pone con un poco de ajo picado y perejil, se sirve acompañado de una patata asada",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada tibia de corazones de alcachofas con jamón: 1 plato de corazones de alcachofas + 2 dientes de ajo + 2 lonchas de jamón serrano",
+              "1 pera grande (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "corazones de alcachofas 250gr, ajo 6gr, jamón serrano 70gr",
+            "recipe": "se parten en láminas los corazones de alcachofas y se hacen a la plancha, se corta el jamón en tiras y se rehoga el ajo laminado y se pone todo por encima de los corazones alcachofa",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Cazuela de judías blancas con pollo: 2 puñados de judías blancas + zanahoria + 2 muslos de pollo",
+              "Ensalada de pimientos asados: pimiento rojo asado + tomate",
+              "Melocotón (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "judías blancas 70gr, tomate 100gr, pimiento asado 60gr, zanahoria 100gr, muslo de pollo 175gr",
+            "recipe": "se cuecen las judías blancas en un caldo de verduras con la zanahoria y el pollo hasta que estén tiernas. Los pimientos rojos asados se cortan en tiras y se mezclan con tomates en rodajas para hacer la ensalada.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de calabaza: un trozo de calabaza + 1 cebolla",
+              "Huevo a la plancha con ensalada verde: huevo y 1 clara + mezcla de lechugas",
+              "Ensalada de cítricos: naranja (50gr) + kiwi (100gr) + pomelo (50gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "calabaza 175gr, cebolla 100gr, mezcla de lechugas 50gr, huevo 90gr",
+            "recipe": "se cuece la calabaza y la cebolla y se trituran con la batidora añadiendo el caldo necesario para que la textura sea de crema. El huevo se hace a la plancha y se acompaña de la ensalada",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Arroz integral con pimiento rojo asado: 1 tomate + pimiento asado + 2 puñados de arroz",
+              "Dorada a la sal: 1 filete grande de dorada",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "dorada 175gr, arroz integral 60gr, tomate 110gr, pimiento asado 110gr",
+            "recipe": "se cuece el arroz y se cuela, se rehogan unos pimientos asados cortados en tiras con unos dados de tomate natural y se mezclan con el arroz. La dorada se cubre de sal gorda y se hace al horno, se puede mezclar con la sal una clara de huevo antes de cubrir la dorada para que luego se quite mejor la capa de sal.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Carpaccio de berenjena a la parrilla: berenjena",
+              "Solomillo de cerdo a las finas hierbas con patata asada: 3 filetes de cerdo + 1 patata grande",
+              "2 ciruelas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "solomillo de cerdo 155gr, patata 170gr, berenjena 120gr",
+            "recipe": "se corta la berenjena en láminas muy finas y se hacen a la parrilla, se ponen las finas hierbas sobre el solomillo de cerdo y se hace al horno, acompañándolo de una patata cortada en láminas asada",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Tallarines a la marinera: medio plato mediano de tallarines cocidos + 11 mejillones grandes + 7 gambas + 1 sofrito de pimiento y cebolla",
+              "Ensalada de canónigos (50gr)",
+              "1 raja grande de sandía (300gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "tallarines 60gr, mejillones 90gr, gambas 85gr, pimiento 30gr, cebolla 30gr, tomate triturado 10gr, pimentón",
+            "recipe": "se hace un sofrito con el tomate, el pimiento y la cebolla, se añade caldo de pescado con un poco de pimentón y se cuecen los tallarines, cuando están casi cocidos se meten los mejillones y las gambas hasta que estén los mejillones abiertos y las gambas hechas",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ratatouille: medio tomate + media cebolla + medio pimiento + medio calabacín pequeño + berenjena",
+              "Pavo asado al limón: 1 muslo de pavo + zumo de limón",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pavo 175gr, zumo de limón 20cc, tomate 60gr, pimiento 60gr, cebolla 60gr, calabacín 60gr, berenjena 60gr",
+            "recipe": "se cortan en láminas las verduras y se van poniendo en una fuente de horno alternándolas, se introduce en el horno hasta que estén hechas. El pavo se hace asado con un chorrito de zumo de limón",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Ensalada de lentejas con pollo a la brasa:2 puñados de lentejas en crudo + 1 zanahoria pequeña + 4 trocitos de pollo + canónigos + 1 cebolleta pequeña + 8 tomates cherry",
+              "1 manzana asada (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "lentejas 70gr, zanahoria 90gr, pollo 130gr, tomates cherry 90gr, canónigos 80gr, cebolleta 50gr",
+            "recipe": "se cuecen las lentejas y se hace un sofrito de cebolla y ajo con una cucharadita de pimentón que se añade a la legumbre, se mezclan con las verduras cortadas en dados y los canónigos, se hace el pollo a la brasa o a la plancha y se añade al plato.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Wok de verduras: brócoli + judías verdes + calabacín",
+              "Bacalao al horno con tomate marinado: bacalao + tomate + tomillo + orégano",
+              "Mango (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "brócoli 90gr, calabacín 90gr, judías verdes 90gr, cebolleta 30gr, bacalao 175gr, tomate 100gr",
+            "recipe": "se cortan las verduras y se hacen al wok. El bacalao se hace al horno unos 15 minutos o se puede hacer a la plancha. El tomate se corta en rodajas finas y se le añaden las hierbas, se mete en el horno y se sirve con cebolleta cruda en rodajas muy finas",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "quinta",
+      "label": "Quinta semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Ensalada primavera: lechuga rizada + zanahoria rallada + remolacha rallada",
+              "Habitas tiernas con gambas: 1 plato de habitas + 10 gambas grandes+ 1 cebolleta",
+              "1 raja de sandía (300gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "habitas 240gr, cebolleta 50gr, gambas 120gr, lechuga 60gr, zanahoria rallada 60gr, remolacha rallada 60gr",
+            "recipe": "se hace un sofrito con la cebolleta y se añaden las habitas tiernas. Se cuecen con un caldo de verduras hasta que las habitas estén en su punto y se rehogan junto con las gambas",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pinchos de queso fresco y pavo: 12 tomates cherry + 7 tacos de queso fresco + 7 tacos de fiambre de pavo",
+              "Manzana asada (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "tomatitos 170gr, fiambre de pavo 70gr, queso fresco 70gr",
+            "recipe": "se cortan el fiambre y el queso en tacos y se hacen los pinchos intercalando los tomatitos, se pueden hacer a la plancha",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Ensalada de judías blancas: 2 puñados de judías blancas crudas + media zanahoria + cebolleta + espinacas crudas",
+              "Tosta de jamón serrano: 2 lonchas y media de jamón serrano + tomate triturado + una rebanada de pan integral de tres dedos y medio de ancho (35gr)",
+              "Un melocotón grande (200gr)"
+            ],
+            "ingredients": "judías blancas 70gr, zanahoria 60gr, espinacas crudas 60gr, cebolleta 60gr, jamón 70gr, tomate triturado 15gr",
+            "recipe": "se dejan las judías a remojo la noche anterior, se cuecen con un caldo de verduras, se escurren y se reservan en una ensaladera, se trocean los vegetales crudos y se añaden a la ensalada.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Escalibada de verduras: pimiento verde + media cebolla pequeña + pimiento rojo",
+              "Rodaballo al horno con láminas de patata asada:1 filete grande de rodaballo + 1 patata grande",
+              "2 mandarinas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35g)"
+            ],
+            "ingredients": "rodaballo 175gr, patata 170gr, pimiento verde 80gr, pimiento rojo 80gr, cebolla 70gr",
+            "recipe": "se cortan las verduras en tiras y se meten en el horno. Se mete el rodaballo al horno precalentado con una cucharadita de aceite y se deja hasta que esté en su punto. Las patatas y la cebolla de cortan en láminas y se hacen al horno se sirven de guarnición",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Brócoli rehogado con pimentón: 1 plato pequeño de brócoli + ajo",
+              "Pollo asado: 2 muslos de pollo + media cebolla",
+              "1 raja grande de melón (300gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pollo 175gr, brócoli 200gr, cebolla 100gr, ajo 3gr",
+            "recipe": "se hace el brócoli cocido, se rehoga unas láminas de ajo con pimentón y se añaden por encima. Para hacer el pollo se pone una base de cebolla en la base de la bandeja del horno y el pollo encima, se hornea hasta que esté tierno",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de calabacín: 1 calabacín + 1 patata mediana",
+              "Filetes de gallo al limón: 1 filete de gallo + zumo de limón",
+              "1 pera grande (200gr)",
+              "Una rebanada de pan de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "patata 160gr, calabacín 150gr, gallo 175gr, zumo de limón 20cc",
+            "recipe": "se cuecen las patatas y el calabacín y se pasan por la batidora o pasapurés. Se hace el gallo a la plancha y se añade el zumo de limón",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Ensalada de cuscús: 2 puñados de cuscús + lechuga picada + tomate picado + pepino picado",
+              "Pavo asado a la naranja: 1 muslo mediano de pavo + zumo de naranja natural",
+              "Piña (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "cuscús 60gr, lechuga 60gr, tomate 60gr, pepino 60gr, muslo de pavo 175gr, zumo de naranja 30cc",
+            "recipe": "se hace el cuscús y se reserva, se cortan el tomate y el pepino en dados muy pequeños y la lechuga se pica en trozos pequeños y se mezclan con el cuscús para hacer la ensalada. El pavo se rocía con el zumo de naranja y se asa",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Champiñones al jerez: champiñones + jerez + 1 cebolleta",
+              "Revuelto de ajetes: 1 huevo y 1 clara + ajetes",
+              "Manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, champiñones 120gr, cebolla 100gr, ajetes 100gr, jerez 20cc",
+            "recipe": "se rehoga la cebolleta y se añaden los champiñones, se echa un chorrito de jerez y se deja reducir todo junto. Para el revuelto se rehogan los ajetes y se añade el huevo batido para hacer el revuelto",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Ensalada de espirales integrales con pollo a la brasa:2 puñados de espirales integrales en crudo + 1 tomate pequeño + 1 pechuga de pollo mediana + 1 pepino pequeño",
+              "1 melocotón (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "espirales integrales 60gr, tomate 130gr, pollo 175gr, pepino 130gr",
+            "recipe": "se corta el tomate y el pepino en dados pequeños y se cuece la pasta. La pechuga de pollo se hace a la brasa o a la plancha y se corta en tiras. Se mezclan todos los ingredientes para tener lista la ensalada",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tortilla de champiñones con patatas paja: con 1 huevo y 1 clara + un plato de champiñones + 1 patata mediana.",
+              "Ensalada de canónigos (75gr)",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, champiñones 150gr, patata 170gr",
+            "recipe": "se rehogan los champiñones, se bate el huevo y se mezcla todo para hacer la tortilla. Se corta la patata en juliana y se hace al horno, se pone de acompañamiento de la tortilla",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de arroz salvaje con verduras:2 puñados de arroz salvaje + 1 calabacín pequeño + 1 zanahoria",
+              "Pescadilla a las finas hierbas: 1 filete de pescadilla",
+              "1 pera (200gr)",
+              "1 rebanada de pan de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, calabacín 130gr, zanahoria 130gr, pescadilla 175gr",
+            "recipe": "se cortan las verduras en dados pequeños. Se cuece el arroz se escurre y se reserva, se rehogan las verduras y se añaden al arroz. Se hace la pescadilla al horno y se le añaden finas hierbas",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Lomo asado a la vizcaína: 1 tomate pequeño + un pimiento choricero + cebolla + ajo + 1 filete de lomo de cerdo",
+              "Ensalada de escarola (50gr)",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "tomate 60gr, pimiento choricero 40gr, cebolla 60gr, ajo 3gr, vino blanco 30cc, lomo de cerdo 155gr",
+            "recipe": "se rehogan las verduras y se añade un caldo vegetal y un chorrito de vino blanco, se deja reducir la salsa y se echa por encima del lomo asado en la bandeja del horno. Se hornea todo junto unos minutos",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Paella de conejo: 2 puñados de arroz en crudo + media cebolla + 5 trocitos de conejo + judías verdes + 1 cucharada de tomate triturado + alcachofas",
+              "Ensalada de brotes de lechuga: brotes de lechuga (50gr) + cebolleta (20gr)",
+              "Pera cocida (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, cebolla 60gr, conejo 175gr, tomate triturado 15gr, alcachofas 100gr, judías verdes 100gr",
+            "recipe": "se hace un sofrito con la cebolla y el tomate triturado, se rehoga el conejo y se añade el arroz. Se añaden las verduras y se cubre de agua (la cantidad de agua es el doble que la cantidad de arroz) en 20 minutos está lista la paella.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Consomé",
+              "Merluza en salsa verde: 1 rodaja de merluza + 1 cebolleta pequeña + 4 espárragos + 2 cucharadas de guisantes",
+              "2 mandarinas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "consomé desgrasado 200cc, merluza 175gr, espárrago 130gr, guisantes 50gr, cebolleta 50gr",
+            "recipe": "se rehoga la cebolleta se añaden los espárragos y los guisantes y se cubre de agua, cuando los trigueros están en su punto se añade la merluza y se cuece todo junto unos minutos",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sexta",
+      "label": "Sexta semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Cazuela de ternera con hongos: carne magra de ternera + 1 patata grande + champiñones + setas + cebolla + ajo",
+              "Ensalada de cogollos de lechuga (50gr)",
+              "Bolitas de melón y sandía (300gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "carne de ternera 155gr, patata 170gr, setas 100gr, champiñones 100gr, cebolla 30gr, ajo 3gr",
+            "recipe": "se rehoga el ajo con la cebolla y se añaden las setas y los champiñones cortados en dados y la carne de ternera, se cubre de agua y se añade la patata y se deja cocer todo junto hasta que la carne esté tierna",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Brochetas de sepia y tomatitos a la parrilla con guisantes rehogados: 1 filete grande de sepia + tomatitos + 3 cucharadas rasas de guisantes + ajo",
+              "1 pera grande (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "guisantes 70gr, cebolleta 30gr, sepia 175gr, tomate 200gr, ajo 3gr",
+            "recipe": "se corta la sepia en dados grandes y se meten los trozos en la brocheta alternando con los tomatitos, se hace a la parrilla y se acompaña de unos guisantes rehogados con ajo",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Ensalada oriental: 2 puñados de arroz integral en crudo + pimiento amarillo + pimiento rojo + pimiento verde + un filete de bonito + una cucharada de salsa de soja",
+              "Macedonia natural: naranja (50gr) + kiwi (50gr) + pera (50gr) + manzana (50gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, bonito 115gr, pimiento rojo 50gr, pimiento verde 50gr, pimiento amarillo 50gr, salsa de soja 10cc",
+            "recipe": "se cuece el arroz integral, se escurre y se reserva. Se cortan los pimientos y el bonito en dados pequeños y se mezclan con la salsa de soja y el arroz",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Coliflor a la vinagreta: un plato de coliflor + 1 tomate mediano + 1 cebolleta",
+              "Tortilla francesa con rúcula: 1 huevo y 1 clara + rúcula",
+              "1 pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "coliflor 200gr, tomate 60gr, cebolleta 60gr, huevo 90gr, rúcula 40gr",
+            "recipe": "se hace la coliflor al vapor y se sirve con el tomate y la cebolleta cortados en dados muy finos por encima.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Lentejas a la jardinera:2 puñados de lentejas en crudo + 1 zanahoria pequeña + pimiento verde + puerro + pimiento rojo",
+              "Hamburguesa de pollo a la parrilla con ensalada de canónigos: carne picada de pollo + canónigos",
+              "Ensalada de cítricos: naranja (100gr) + kiwi (100gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "lentejas 70gr, zanahoria 75gr, carne picada de pollo 120gr, pimiento verde 75gr, pimiento rojo 75gr, puerro 75gr, canónigos 50gr",
+            "recipe": "se cuecen las lentejas con las verduras en dados pequeños. Se hace la hamburguesa de pollo a la parrilla",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Parrillada de verduras: calabaza + calabacín + cebolleta",
+              "Lubina a la espalda: 1 filete de lubina + ajo",
+              "Mango (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "calabaza 125gr, calabacín 125gr, cebolleta 80gr, lubina 175gr, ajo 6gr",
+            "recipe": "se cortan las verduras en láminas y se hacen a la parrilla. La lubina se hace al horno, se doran unas láminas de ajo y se echan por encima.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Lasaña de verduras: 5 placas de lasaña+ berenjena + pimiento + tomate natural + calabacín",
+              "Emperador a la plancha: 1 rodaja pequeña de emperador + ajo y perejil",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "placas de lasaña 60gr, berenjena 60gr, pimiento verde 60gr, calabacín 60gr, tomate 60gr, cebolla 60gr, emperador 115gr, ajo 3gr, perejil picado",
+            "recipe": "se cortan las verduras en rodajas y se alternan con las placas de lasaña, se meten en el horno hasta que estén preparadas, se puede añadir tomate triturado por encima de las placas para que queden jugosas. Se macera el emperador con ajo y perejil y se hace a la plancha",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada de tomate con crema vinagre balsámico: un tomate mediano con orégano + cebolleta",
+              "Pechuga de pavo asada rellena de ciruelas: pechuga de pavo + ciruelas",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "Pechuga de pavo 175gr, ciruelas frescas sin hueso 200gr, cebolla 20gr, tomate 200gr",
+            "recipe": "se pone la pechuga en una bandeja de horno y se rellena con ciruelas frescas sin hueso, se añade un poco de caldo de ave por encima para que la pechuga esté jugosa y se hornea",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Fideuá: 2 puñados de pasta + 5 gambas + 4 trocitos de pescado blanco + cebolla + tomate triturado + pimiento verde",
+              "Un plato pequeño de ensalada de escarola",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta 60gr, gambas 65gr, pescado blanco 100gr, cebolla 25gr, pimiento verde 25gr, tomate triturado 25gr, escarola 50gr",
+            "recipe": "Se hace un sofrito con el pimiento, la cebolla y el tomate triturado se añade el pescado y las gambas peladas y un caldo de pescado o marisco y se cuece todo con la pasta. Se puede usar una ramita de azafrán para darle más sabor y color al plato",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada campera: lechuga + tomate + cebolla + 1 patata pequeña + 1 huevo y 1 clara + zanahoria rallada",
+              "1 manzana asada (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "lechuga 60gr, tomate 120gr, zanahoria rallada 50gr, cebolla 30gr, patatas 110gr y huevo 90gr",
+            "recipe": "se cuecen las patatas y el huevo y se pela, se cortan en dados de tamaño mediano y se mezclan con los otros vegetales picados para hacer la ensalada",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Arroz caldoso con lomos de bacalao: 2 puñados de arroz en crudo + lomo de bacalao + cebolla + ajo",
+              "Ensalada de brotes de lechuga (60gr)",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "bacalao 175gr, arroz 60gr, cebolla 30gr, ajo 3gr, caldo de pescado",
+            "recipe": "se hace un sofrito con la cebolla y el ajo y se rehoga el arroz, se añade caldo de pescado y una cucharada de pimentón se cuece todo junto con el bacalao unos veinte minutos.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Panaché de verduras al vapor: judías verdes + coliflor + brécol + zanahoria",
+              "Tosta de medallones de solomillo de cerdo con cebolla confitada: 3 medallones de solomillo + 1 rebanada de pan integral de tres dedos y medio de ancho (35gr)",
+              "2 ciruelas (200gr)"
+            ],
+            "ingredients": "solomillo de cerdo 155gr, coliflor 80gr, brécol 80gr, zanahoria 120gr, judías verdes 120gr",
+            "recipe": "se cortan la coliflor y el brécol en pequeños brotes y la zanahoria en tiras, se cocinan las verduras y la patata al vapor. Se hacen los medallones de solomillo de cerdo a la plancha, se rehoga la cebolla cortada en láminas y se ponen encima de la rebanada de pan tostada y del solomillo",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Ensalada de pollo a la brasa: pechuga de pollo + lechuga + brotes de soja + zanahoria rallada + remolacha rallada",
+              "Bolitas de melón (300gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pollo 175gr, lechuga 60gr, brotes de soja 60gr, zanahoria 60gr, remolacha 60gr",
+            "recipe": "se pica la lechuga y se mezcla con los brotes de soja y con la zanahoria y la remolacha rallada, se hace el pollo a la parrilla o a la plancha y se mezcla con los vegetales",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de calabaza: 1 trozo de calabaza + 1 patata mediana + cebolla",
+              "Filetes de lenguado a la plancha: 1 filete de lenguado",
+              "1 pera grande (200gr)",
+              "Una rebanada de pan de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "patata 160gr, calabaza 150gr, cebolla 50gr, lenguado 175gr",
+            "recipe": "se cuecen las patatas y las verduras y se pasan por la batidora o pasapurés. Se hace el lenguado a la plancha.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "séptima",
+      "label": "Séptima semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Ensalada mixta con vinagre balsámico: un plato de lechuga + tomate + cebolleta + medio pepino",
+              "Hamburguesa de ternera con berenjena a la plancha: carne picada + berenjena",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "berenjena 150gr, carne picada 155gr, tomate 120gr, cebolla 30gr, lechuga 75gr, pepino 90gr",
+            "recipe": "se cortan las verduras y se prepara la ensalada que se aliña con vinagre balsámico. La berenjena se corta en rodajas se hace a la plancha y se pone de acompañamiento de la hamburguesa",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de hortalizas: calabaza + media zanahoria + cebolla",
+              "Pescadilla al horno con tomate asado: 1 filete grande de pescadilla + 1 tomate",
+              "Una manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pescadilla 175gr, calabaza 180gr, zanahoria 140gr, cebolla 50gr, tomate 120gr",
+            "recipe": "se cortan las verduras y se cuecen para hacer la crema, luego se baten con la batidora o se pasan por el pasapurés. Se asa un tomate o se hace a la parrilla y se acompaña del pescado al horno o a la plancha.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Judías pintas estofadas: 2 puñados de judías pintas + puerro + tomate + pimiento",
+              "Medallones de solomillo de cerdo con ensalada de brotes de lechuga: 3 medallones de solomillo + brotes de lechuga",
+              "1 naranja (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "judías pintas 70gr, solomillo de cerdo 110gr, puerro 50gr, tomate 50gr, pimientos 50gr, brotes de lechuga 75gr",
+            "recipe": "se hace un sofrito con el puerro, tomate y el pimiento, se añaden las judías pintas y se cubren de agua o se puede usar un caldo de verduras para darle más sabor. El solomillo de cerdo se corta en medallones finos y se hace a la plancha acompañado de una ensalada de lechuga.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Trigueros a la plancha",
+              "Lubina al horno con tomate triturado: un filete de lubina + tomate triturado",
+              "1 pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "espárragos trigueros 160gr, tomate triturado 90gr, lubina 175gr",
+            "recipe": "se hacen los espárragos trigueros a la plancha o cocidos si se prefiere. La lubina se hace al horno y se acompaña de un poco de tomate triturado por encima, se puede sustituir el tomate triturado por una ensalada de tomate",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Guiso de garbanzos con verduras: 2 puñados de garbanzos crudos + media zanahoria + medio tomate + espinacas + punta de jamón serrano",
+              "2 mandarinas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "garbanzos 70gr, zanahoria 60gr, tomate 60gr, jamón 70gr, espinacas 60gr",
+            "recipe": "Se cuecen los garbanzos con las verduras y la punta de jamón para darles más sabor, se pueden usar garbanzos ya cocidos. El jamón se puede cocinar con los garbanzos o tomarlo aparte con el pan como tosta de jamón serrano",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada de tomate y cebolleta: un tomate + cebolleta",
+              "Filetes de lenguado a la plancha con champiñones:1 filete grande de lenguado + champiñones",
+              "Una pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35g)"
+            ],
+            "ingredients": "lenguado 175gr, champiñones 170gr, tomate 250gr, cebolleta 30gr",
+            "recipe": "se hace la ensalada de tomate y el lenguado a la plancha, acompañado de champiñones a la plancha.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Ensalada tibia de espirales integrales con pavo: canónigos + 2 puñados de pasta + pechuga de pavo + pimiento asado",
+              "Un melocotón (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta integral cruda 60gr, pavo 175gr, canónigos 60gr, pimiento asado 80gr,",
+            "recipe": "se cuece la pasta y se hace la pechuga a la plancha, se corta en dados y se mezcla todo con los pimientos asados y los canónigos para hacer la ensalada.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Acelgas con patatas: un plato de acelgas + patata pequeña + ajo",
+              "Tortilla francesa con tomatitos: 1 huevo y 1 clara+ tomatitos",
+              "2 ciruelas (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "Acelgas 120gr, patatas 110gr, ajo 3gr, tomatitos 80gr y huevo 90gr",
+            "recipe": "se cuecen las patatas con las acelgas y se rehogan con el ajo. Se hace una tortilla francesa o un huevo a la plancha y se acompañan de los tomatitos.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Ensalada de arroz integral con verduras:2 puñados de arroz en crudo + cebolla + pimiento + tomate + lechuga romana (75gr)",
+              "Chipirones a la plancha: un plato de chipirones + ajo + perejil",
+              "Una naranja (200gr) Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, pimiento 30gr, tomate 50gr, cebolla 30gr, lechuga 50gr, chipirones 145gr, ajo 4gr, perejil fresco",
+            "recipe": "Se cuece el arroz integral y se mezcla con las verduras cortadas en dados pequeños. Los chipirones se hacen a la plancha o a la parrilla y se les añade un poco de ajo machacado con perejil por encima para darles un sabor más intenso",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Verduras a la parrilla: medio calabacín pequeño + 1cebolleta + medio tomate",
+              "Huevos a la plancha con patata al vapor: con 1 huevo y 1 clara + 1 patata pequeña.",
+              "Una pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, calabacín 60gr, cebolleta 60gr, tomate 100gr, patata 110gr",
+            "recipe": "se cortan las verduras en rodajas y se hacen a la parrilla o a la plancha. Se hacen las patatas al vapor y se cortan en láminas y sobre ellas se pone un huevo a la plancha.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Sopa de arroz con gambas y pescado blanco: dos puñados de arroz con 1 filete pequeño de pescado blanco + 4 gambas",
+              "Ensalada de escarola (50gr)",
+              "Manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz 60gr, pescado blanco 135gr, gambas 40gr, caldo de pescado, cebolleta 30gr, tomate triturado 30gr, azafrán",
+            "recipe": "se hace un caldo de pescado con las espinas del pescado y las cabezas de las gambas y se reserva, se rehoga la cebolleta con el tomate triturado y el arroz y se añade el caldo. Se cuece con el pescado todo junto unos veinte minutos y se añaden las gambas",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de zanahoria: zanahoria + 1 patata mediana",
+              "Conejo con tomate: 5 trocitos de conejo + media cebolla + medio pimiento verde + 1 diente de ajo + tomate triturado",
+              "Naranja (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "conejo 175gr, patata 140gr, cebolla 50gr, pimiento verde 50gr, ajo 3gr, tomate triturado 50gr, zanahoria 170gr",
+            "recipe": "se cuecen las zanahorias con la patata y se pasan por la batidora para hacer una crema. El conejo se hace guisado primero se añaden las verduras para hacer un sofrito y se rehoga el conejo, se cubre de agua y se guisa todo junto hasta que el conejo esté tierno.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Macarrones integrales con bonito: 2 puñados de macarrones + tomate + medio pimiento + cebolla + 1 rodaja pequeña de bonito",
+              "Ensalada de brotes de lechuga 50gr",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta integral cruda 60gr, tomate 60gr, pimiento verde 60gr, cebolla 30gr, bonito 115gr",
+            "recipe": "se hace un sofrito con el tomate, el pimiento y la cebolla y se añade el bonito. Por otro lado se cuecen los macarrones y se mezclan con las verduras y el pescado.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Judías verdes rehogadas: un plato de judías verdes + ajo",
+              "Brochetas de pollo a la plancha con tomatitos: dos filetes pequeños de pechuga de pollo + tomatitos",
+              "Una manzana asada (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "Pechuga de pollo 175gr, tomatitos 60gr, judías verdes 175gr, ajo 3gr",
+            "recipe": "se cuecen las judías verdes y se rehogan con el ajo. La pechuga de pollo se corta en dados y se hace a la plancha o a la parrilla y se hacen las brochetas alternando un dado de pollo con un tomatito",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "octava",
+      "label": "Octava semana",
+      "breakfastOptions": [
+        "Desayuno ligero: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + una loncha de fiambre de pavo (40gr) + 3 rodajas de tomate natural (50gr)",
+        "Desayuno integral: 2 yogures desnatados + un puñado de cereales integrales no azucarados (40gr) + 1 kiwi",
+        "Desayuno clásico: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 1 cucharada de mermelada sin azúcar (15gr) + zumo de naranja natural (100cc)",
+        "Desayuno andaluz: 1 vaso de leche desnatada (200cc) + una rebanada de pan integral de cinco dedos de ancho (50gr) + 2 cucharadas de tomate triturado (30gr) + una cucharadita de aceite de oliva (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogur con cereales y ciruelas pasas: cereales integrales (35gr) + 1 yogur desnatado + 2 ciruelas pasas",
+        "Tosta de queso con tomate: queso fresco desnatado (45gr) + tomate en rodajas (30gr) + pan integral (45gr)",
+        "Tortitas de maíz con pavo: 3 tortitas de maíz + fiambre de pavo (45gr) + infusión"
+      ],
+      "snackOptions": [
+        "Yogur con nueces: 2 yogures desnatados + 2 nueces",
+        "Café con cereales: 1 café con leche desnatada (200cc) + cereales integrales (25gr)",
+        "Queso con membrillo: 1 porción de queso fresco desnatado (65gr) + membrillo sin azúcar (30gr) + infusión"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Espaguetis con albóndigas: 1 plato de espaguetis integrales + 5 cucharadas soperas de carne picada + tomate triturado + calabacín + pimiento verde + cebolla",
+              "Ensalada de canónigos (50gr)",
+              "1 manzana (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "espaguetis integrales crudos 60gr, carne picada de ternera 155gr, tomate triturado 120gr, calabacín 70gr, pimiento verde 70gr, cebolla 40gr",
+            "recipe": "se hacen las albóndigas al horno o al vapor para evitar el exceso de grasa, se cuece la pasta y por otro lado se hace una salsa de tomate con las verduras. Se sirve todo junto. Se pueden tomar los espaguetis con ajo de primero y de segundo las albóndigas si prefieres no mezclar sabores",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Repollo rehogado con pimentón: un plato de repollo + ajo + pimentón",
+              "Merluza al horno con patata panadera: una rodaja de merluza grande + 1 patata grande + cebolla",
+              "Naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "merluza 175gr, patata 170gr, cebolla 30gr, ajo 3gr, repollo 125gr",
+            "recipe": "se hace el repollo cocido y se rehoga con ajo y un poco de aceite, se le puede añadir una cucharada de pimentón para potenciar el sabor del plato. Para el segundo plato se cortan las patatas y la cebolla y se ponen en una bandeja de horno, cuando ya estén casi listas se incorpora la merluza a la bandeja unos minutos. Se puede hacer el pescado a la plancha",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Arroz integral con calabacín: calabacín + 2 puñados de arroz integral",
+              "Lomos de salmón a la plancha con tomatitos: 1 filete pequeño de salmón + tomatitos",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, salmón 125gr, tomatitos 160gr, calabacín 100gr",
+            "recipe": "se cortan los calabacines en dados y se rehogan, se añade el arroz y se incorpora el agua. El salmón se hace a la plancha o a la parrilla y se acompaña de una ensalada de tomates cherry",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tiras de pechuga de pollo a la plancha con verduras: 2 filetes medianos de pollo + pimiento rojo + pimiento verde + media berenjena + cebolla",
+              "Ensalada de berros (50gr)",
+              "1 melocotón (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pechuga de pollo 175gr, pimiento rojo 70gr, pimiento verde 70gr, berenjena 60gr, tomate 60gr",
+            "recipe": "se corta la pechuga de pollo en tiras y se sofríe con las verduras cortadas en juliana",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Olla de judías blancas con sepia: 2 puñados de judías blancas + sepia + ajo + puerro + pimiento verde + zanahoria + tomate triturado + vino blanco",
+              "Ensalada de tomate con orégano: 1 tomate pequeño (100gr)",
+              "1 pera (300gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "judías blancas 70gr, sepia 145gr, ajo 3gr, puerro 30gr, pimiento verde 30gr, zanahoria 20gr, tomate triturado 10gr, vino blanco 10cc",
+            "recipe": "Se ponen las alubias en remojo, en agua fría, la noche anterior. Se hace un sofrito con las verduras y se añaden las alubias y se cubren de agua, se añade una ramita de azafrán al caldo y un chorrito de vino blanco. Se incorpora la sepia en el guiso y se sigue cocinando hasta que las judías blancas estén en su punto.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crema de calabaza: un trozo de calabaza + cebolla",
+              "Mini hamburguesas con ensalada romana: carne picada de cerdo + lechuga romana",
+              "2 mandarinas (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "carne picada de cerdo 155gr, cebolla 120gr, calabaza 150gr, lechuga romana 60gr",
+            "recipe": "se corta la calabaza y la cebolla y se cuecen juntas, cuando estén cocidas se pasan por la batidora para hacer la crema. Se preparan unas mini hamburguesas con la carne picada de cerdo y se hacen a la plancha, se acompañan de la lechuga romana o cualquier otro tipo de lechuga.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Potaje de garbanzos:2 puñados de garbanzos en crudo + espinacas + 1 filete de bacalao pequeño",
+              "Ensalada de berros (50gr)",
+              "Una naranja (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "garbanzos 70gr, espinacas 130gr, bacalao 130gr, ajo, pimentón",
+            "recipe": "se cuecen los garbanzos con un caldo de verduras y se añaden tiras de bacalao desalado y hojas de espinaca cruda, se hace un sofrito con el ajo y el pimentón y se añade al guiso.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada mixta: 1 tomate pequeño + medio pepino + lechuga + zanahoria rallada",
+              "Revuelto de setas: con 1 huevo y 1 clara + plato de setas",
+              "Manzana asada (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "huevo 90gr, setas 130gr, tomate 100gr, pepino 60gr, lechuga 60gr, zanahoria rallada 60gr",
+            "recipe": "se cortan las verduras para hacer la ensalada. Las setas se rehogan y se mezclan con el huevo batido para hacer el revuelto",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Arroz a la cubana con salsa de tomate casero: 2 puñados de arroz + 1 tomate pequeño + media cebolla + 1 huevo y 1 clara",
+              "Ensalada de pepino con menta",
+              "Piña (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "arroz integral 60gr, tomate 125gr, cebolla 50gr, huevo 90gr, pepino 100gr, menta",
+            "recipe": "se cuece el arroz integral y se cuela, se hace el tomate triturado y se sofríe con la cebolla, se hace el huevo a la plancha y se acompaña del arroz y de la salsa de tomate casera. El pepino se hace en rodajas muy finas y se acompaña de unas hojas de menta",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ensalada de espinacas frescas: un plato de espinacas frescas + ajo",
+              "Dorada al horno con tomatitos asados: 1 filete de dorada + tomates cherry",
+              "Una pera (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "dorada 175gr, espinacas 110gr, ajo 6gr, tomatitos 130gr",
+            "recipe": "se pica el ajo y se fríe y se añade en la ensalada de espinacas crudas. El pescado se hace al horno y se acompaña de tomatitos asados Receta: se pica la cebolla y se rehoga, se añade la col cortada en tiras y se cuece todo junto. Se hace la lubina al horno y se añaden los tomatitos en la bandeja del horno para ponerlos como acompañamiento",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Patatas guisadas: tomate + cebolleta + pimiento verde + 1 patata mediana + ajo",
+              "Pollo asado a la naranja con brotes de lechuga: 1 muslo de pollo mediano + zumo de naranja + brotes de lechuga 50gr",
+              "2 kiwis (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "muslo de pollo 165gr, patata 170gr, tomate triturado 30gr, cebolleta 20gr, pimiento verde 30gr, pimiento rojo 30gr, ajo 3gr, azafrán, pimentón, zumo de naranja 30cc",
+            "recipe": "se rehogan todas las verduras y se añade una cucharada de pimentón. Se pelan las patatas, se trocean y se añaden a la olla junto con las verduras, se cubren de agua, se añade una ramita de azafrán y se cuecen hasta que estén tiernas. El pollo se hace al horno y se riega con el zumo de naranja para que esté más jugoso.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Menestra de verduras: alcachofa + judías verdes + zanahoria + coliflor",
+              "Filetes de gallo a la plancha: filete de gallo",
+              "Melocotón (200gr)",
+              "1 rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "alcachofa 60gr, judías verdes 60gr, zanahoria 60gr, coliflor 60gr, gallo 175gr",
+            "recipe": "se trocean las verduras en trozos y se hacen al vapor o cocidas. El gallo se hace a la plancha o también se puede hacer al vapor o al horno.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Farfalle primavera: 2 puñados de pasta integral + calabacín + 2 lonchas y media de jamón cocido + pimiento rojo + pimiento verde + canónigos",
+              "1 manzana (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pasta integral cruda 60gr, calabacín 100gr, jamón cocido 85gr, pimiento rojo 60gr, pimiento verde 60gr, canónigos 50gr",
+            "recipe": "se cuece la pasta integral y se reserva. Se rehogan el calabacín con el pimiento y se mezclan con la pasta cocida, los canónigos y las tiras de jamón cocido",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Guiso de pavo con patatas: 1 trozo de pavo + 1 patata mediana + media cebolla + medio pimiento verde + tomate triturado",
+              "2 kiwis (200gr)",
+              "Una rebanada de pan integral de tres dedos y medio de ancho (35gr)"
+            ],
+            "ingredients": "pavo 175gr, patata 140gr, cebolla 60gr, pimiento verde 60gr, tomate triturado 60gr",
+            "recipe": "se rehogan las verduras y se mezclan con el pavo, se cubre de agua y se cuece todo junto, se le puede añadir un chorrito de vino al guiso para darle más sabor, cuando esté a mitad de cocción se añaden las patatas y se termina de guisar todo junto.",
+            "notes": [
+              "Aceite de oliva: 4 cucharadas soperas al día"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

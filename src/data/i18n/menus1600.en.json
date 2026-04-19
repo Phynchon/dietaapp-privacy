@@ -1,0 +1,1646 @@
+{
+  "weeks": [
+    {
+      "id": "first",
+      "label": "First week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk + a slice of four-finger wide whole wheat bread + a slice of turkey cold cuts + a tablespoon of crushed tomato",
+        "Comprehensive breakfast: 2 skimmed yogurts + a handful of unsweetened whole grain cereals",
+        "Classic breakfast: 1 glass of skimmed milk + a slice of four-finger wide whole wheat bread + 1 tablespoon of sugar-free jam",
+        "Andalusian breakfast: 1 glass of skimmed milk + a slice of four-finger wide whole wheat bread + 1 tablespoon of crushed tomato + a teaspoon of olive oil"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of fresh skimmed cheese + sliced tomato",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk + whole grains",
+        "Cheese with quince: 1 portion of fresh skimmed cheese + unsweetened quince"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Tagliatelle with vegetables: half a small plate of cooked tagliatelle, half a carrot and half a pepper",
+              "Grilled Emperor: 1 small slice of Emperor + garlic and parsley",
+              "2 kiwis",
+              "A slice of whole wheat bread three fingers wide"
+            ],
+            "ingredients": "raw pasta 40 g, carrot 50 g, green pepper 50 g, emperor 100 g, garlic 3 g, chopped parsley",
+            "recipe": "cut the vegetables into julienne strips and sauté them, cook the pasta and when it is al dente, drain it and mix it with the vegetables. Chop the garlic and parsley and brown it a little, grill the emperor and add the garlic on top",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomato carpaccio with oregano: a medium tomato with oregano",
+              "Grilled turkey breast with confit onion: a medium fillet of turkey breast with half a confit onion",
+              "A large apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Turkey breast 140 g, onion 50 g, tomato 150 g, oregano",
+            "recipe": "Cut the tomato into very thin slices and put it on a platter, season it and add oregano. Cut the onion into strips and let it sauté and accompany it with the grilled chicken breast",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Soupy rice with shrimp and grouper: a handful of rice with 1 small fillet of grouper + 4 shrimp",
+              "Lettuce sprout salad (50 g)",
+              "Pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rice 40 g, grouper 100 g, shrimp 40 g, fish broth, spring onion 30 g, crushed tomato 30 g, saffron",
+            "recipe": "cut the potatoes into slices along with the onion, garlic and green pepper and place them in the oven. On the other hand, cut the rabbit and add thyme leaves, place it on the oven tray next to the potatoes and roast until the rabbit is cooked.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Raw vegetable skewers: tomatoes + carrots",
+              "Rabbit with thyme aroma and baked potatoes: 4 pieces of rabbit + 1 small potato + half an onion 50 g + half a green pepper + 1 clove of garlic - 2 tangerines (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rabbit 140 g, potato 100 g, onion 50 g, green pepper 50 g, garlic 3 g, tomatoes 75 g, carrot 75 g",
+            "recipe": "cut the potatoes into slices along with the onion, garlic and green pepper and place them in the oven. On the other hand, cut the rabbit and add thyme leaves, place it on the oven tray next to the potatoes and roast until the rabbit is cooked.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Chickpea salad with shavings of ham: 1 and a half handful of raw chickpeas + half a carrot + half a tomato + shavings of serrano ham + lamb's lettuce",
+              "A large peach (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "chickpeas 50 g, carrot 60 g, tomato 60 g, ham 60 g, lamb's lettuce 50 g",
+            "recipe": "The chickpeas are cooked with a vegetable broth to give them more flavor, you can use already cooked chickpeas. Cut the carrot and tomato into cubes and add them to the drained chickpeas. Put everything in a salad bowl along with the lamb's lettuce and shavings of ham",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomato and celery smoothie: one tomato + a sprig of celery",
+              "Steamed rooster fillets with grilled zucchini: 1 medium rooster fillet + zucchini",
+              "1 orange (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)",
+              "The zucchini is grilled. The rooster fillets are steamed and served together with the zucchini."
+            ],
+            "ingredients": "rooster 140 g, zucchini 160 g, bay leaf, tomato 250 g, celery 30 g",
+            "recipe": "liquefy the tomato and serve with a little pepper and the tomato branch, you can use tomato juice or a vegetable smoothie, if you prefer you can replace it with a tomato salad.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of oil per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Eggplant lasagna: half a large eggplant + 4 tablespoons of minced meat + half a small tomato + half a small onion",
+              "Escarole salad: a small plate of escarole",
+              "A large slice of melon (300 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "eggplant 150 g, minced meat 120 g, tomato 50 g, onion 50 g, endive 80 g",
+            "recipe": "sauté the onion and tomato and fry the minced meat, cut slices of eggplant and assemble the lasagna by alternating the minced meat with the slices of eggplant",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled cod with grilled carrot and pumpkin: 1 medium cod fillet + pumpkin + half a carrot",
+              "One apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "cod 140 g, pumpkin 150 g, carrot 150 g",
+            "recipe": "cut the pumpkin into slices and the carrot into strips and grill them together with the cod. It can be replaced with a carrot and pumpkin puree and a grilled cod",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Mixed paella: 1 handful of raw rice + 1 sautéed onion, pepper, tomato with 1 tablespoon of oil + 2 pieces of chicken + 4 large rings of squid + 7 mussels",
+              "Romaine lettuce salad (75 g)",
+              "2 large kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "rice 40 g, pepper 30 g, tomato 30 g, onion 30 g, chicken 55 g, squid 45 g, mussel 45 g, saffron, broth defatted poultry",
+            "recipe": "Make a sauté with the pepper, onion and tomato and add the chicken and squid, mix with the rice and add twice as much poultry broth as rice, add a sprig of saffron and the paella will be ready in twenty minutes. Just a moment before finishing, place the mussels on top so that they open.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable frying pan: half a small zucchini + 1 leek + half a tomato",
+              "Scrambled eggs with potatoes: with 1 egg + 1 small potato. 2 tangerines (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "egg 70 g, zucchini 50 g, leek 50 g, tomato 100 g, potato 85 g",
+            "recipe": "Cut the vegetables into cubes and sauté them with a tablespoon of olive oil. Cook the potatoes and cut them into slices, place them on the base of a plate and place a grilled egg on top of them.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Stewed lentils: 1 and a half handful of lentils + 4 pieces of lean beef + sautéed leek, tomato and pepper with 1 tablespoon of oil",
+              "Oak leaf salad: oak lettuce 75 g",
+              "1 orange (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "lentils 50 g, lean beef 85 g, leek 50 g, tomato 50 g, peppers 50 g",
+            "recipe": "Sauté with the leek, tomato and pepper and add the meat in pieces, add the lentils and cover with water or you can use a vegetable broth to give it more flavor.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Wild asparagus salad with cherry tomatoes and dill: 1 plate asparagus, 9 cherry tomatoes, dill",
+              "Grilled hake heart: a large slice of baked hake",
+              "2 plums (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "wild asparagus 150 g, tomato 90 g, dill, hake 140 g",
+            "recipe": "cook the asparagus for a few minutes, Cut the cherry tomatoes in half and put everything in a bowl, add the dill and dress with a little olive oil and vinegar",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Endive salad with orange: 1 endive +",
+              "1 blood orange",
+              "Marinera bowties: 1 handful of pasta + 4 shrimp + 3 pieces of perch + 1 sautéed onion and crushed tomato with 1 tablespoon of oil",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "paste 40 g, shrimp 55 g, perch 85 g, onion 25 g, crushed tomato 20 g, endive 100 g, orange 200 g",
+            "recipe": "cut the orange into thin slices and the endive into strips and mix in a salad bowl. Sauté with the onion and tomato and add the fish and prawns, mix with the pasta and cover with fish broth, cook everything together until the pasta is done.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Chard stalks sautéed with chopped egg: A small plate of chard + 1 small potato + 1 hard-boiled egg",
+              "1 large peach (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Chard 100 g, potatoes 90 g, garlic 3 g and hard-boiled egg 70 g",
+            "recipe": "cook the potatoes with the chard stalks and served with a chopped hard-boiled egg",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "label": "Second week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole-grain breakfast: 2 skimmed yogurts + a handful of whole grains unsweetened wales (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Warm spinach salad: 1 handful of whole wheat spirals + half a medium zucchini + 2 slices of cooked ham + raw spinach",
+              "1 large pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "pasta 40 g, zucchini 100 g, cooked ham 75 g, spinach 50 g",
+            "recipe": "The whole spirals are cooked and set aside. Grill the zucchini and mix it in a salad bowl with the cooked pasta, raw spinach and strips of cooked ham",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Turkey stir fry with rosemary roasted potato: 1 medium breast + 1 small potato + half onion + half green pepper + half red pepper",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Turkey breast 140 g, potato 100 g, onion 50 g, green pepper 50 g, red pepper 50 g",
+            "recipe": "Saute the strips of turkey breast with the vegetables, put it on a plate with a roast potato with rosemary on the side",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Brown rice salad: 1 handful of rice + 1 small tomato + half an onion + 1 egg + a small cucumber",
+              "Pineapple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, tomato 125 g, onion 50 g, egg 70 g, cucumber 100 g",
+            "recipe": "cook the brown rice and strain it, chop the vegetables and mix with the rice and the chopped hard-boiled egg",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Kale soup: kale + half an onion",
+              "Baked sea bass with tomatoes: 1 sea bass fillet + cherry tomatoes",
+              "One apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "sea bass 140 g, kale 100 g, onion 50 g, tomatoes 100 g",
+            "recipe": "Chop the onion and sauté it, add the cabbage cut into strips and cook everything together. Bake the sea bass and add the tomatoes to the oven tray to serve as an accompaniment.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Vegetable smoothie: a tomato + chives + green pepper",
+              "Chicken in pepitoria: 1 chicken thigh small + 1 small potato + onion + garlic + a tablespoon of chopped hard-boiled egg",
+              "1 orange (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chicken thigh 110 g, potato 130 g, tomato 150 g, spring onion 20 g, pepper 30 g, onion 20 g, garlic 3 g, saffron, chopped hard-boiled egg 30 g",
+            "recipe": "The vegetables are washed and blended. Sauté the onion and garlic, add the chicken and brown it, add the diced potatoes and the water with a sprig of saffron, let it cook until the chicken is tender and chop the chopped egg and pour it on top",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled vegetable skewers: eggplant + half a red pepper + yellow pepper + half a zucchini",
+              "Sole with cava: small sole fillet + cava",
+              "1 pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "zucchini 50 g, eggplant 50 g, red pepper 50 g, yellow pepper 50 g, sole 140 g, cava",
+            "recipe": "cut the vegetables into pieces and insert them onto the skewer alternating each vegetable and grilling. The sole is grilled and sprinkled with cava",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Warm chickpea salad with cod: 1 and a half handful of raw chickpeas + spinach + 1 cod fillet small",
+              "2 plums (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chickpeas 50 g, spinach 125 g, cod 100 g",
+            "recipe": "The chickpeas are cooked with a vegetable broth and strips of desalted cod and raw spinach leaves are added",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable salad: 1 small tomato + 1 small cucumber + lettuce Zucchini omelette: with 1 egg + 1 small zucchini",
+              "2 large slices of pineapple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "egg 70 g, zucchini 120 g, tomato 100 g, cucumber 100 g, lettuce 50 g",
+            "recipe": "sauté the zucchini, mix it with the beaten egg and make the omelet",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Brown rice salad with tomatoes: 1 medium tomato + 1 handful of brown rice",
+              "Zucchini and salmon cannelloni: 1 small salmon fillet + half a zucchini",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, salmon 110 g, tomatoes 150 g, zucchini 100 g",
+            "recipe": "Cut the zucchini in half lengthwise and cut it into slices, cut the salmon into cubes. The zucchini is rolled around the salmon and steamed. It is accompanied by brown rice with tomatoes",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Chicken pan with vegetables: 1 large chicken fillet + red pepper + green pepper + half an eggplant",
+              "1 peach (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chicken breast 140 g, red pepper 60 g, green pepper 60 g, eggplant 100 g",
+            "recipe": "Cut the chicken breast into strips and sauté it with the julienne-cut vegetables.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Meat lasagna: 3 plates of lasagna + 4 tablespoons of minced meat + half a small tomato + half a small zucchini + half a small eggplant",
+              "Lettuce salad (50 g)",
+              "1 large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "lasagna plate 40 g, minced beef 120 g, tomato 100 g, zucchini 50 g, eggplant 50 g",
+            "recipe": "pre-cooked lasagna plates are used, the vegetables cut into very small cubes are sautéed and the minced meat is added, a lasagna plate is placed and the meat on top and covered with another plate. You can add a little homemade tomato sauce on top and put it in the oven for as long as the plates need to cook",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled mushrooms: mushrooms + parsley",
+              "Galician-style hake: a slice of medium hake + 1 small potato + onion + garlic",
+              "Orange (200g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "hake 140 g, potato 130 g, onion 30 g, garlic 3 g, bay leaf, paprika, mushrooms 100 g, parsley",
+            "recipe": "grill the mushrooms and add a little parsley on top. Sauté the onion, add the potato, a bay leaf and cover it with water or fish broth to make it tastier. When the potato is almost done, add the hake and until it is ready. On the other hand, sauté a little garlic with paprika and add it to the stew",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Fabes with clams: 1 and a half handful of beans + 11 fat clams + 1 sauce with garlic and onion with 1 tablespoon oil",
+              "Dressed tomato: 1 small tomato",
+              "1 large slice of melon (300 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "Beans 50 g, clams 110 g, onion 20 g, garlic 6 g, tomato 100 g",
+            "recipe": "Soak the beans in cold water, night before Sauté the garlic and onion and add the beans and cover them with water. Add a sprig of saffron to the broth. Wash the clams with salted water while the beans are cooking and put them in a saucepan with a little water, sauté them and when they are open, set aside and add them to the beans when they are cooked.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled pumpkin: a piece of pumpkin",
+              "Sirloin medallions with grilled chives: 2 medium pork tenderloin fillets + 1 chives",
+              "2 tangerines (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "pork tenderloin 120 g, chives 130 g, pumpkin 100 g",
+            "recipe": "cut the pumpkin into thin strips and grill them. The sirloin is cut into medallions and grilled and accompanied by grilled onion.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "third",
+      "label": "Third week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Grilled salmon skewers with wild rice: 1 small slice of salmon + mushrooms + zucchini + 1 handful of wild rice",
+              "2 tangerines (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "salmon 100 g, zucchini 100 g, mushrooms 100 g, raw wild rice 40 g",
+            "recipe": "the wild rice is cooked and reserved for the accompaniment, the salmon is cut into cubes and placed on a skewer alternating with mushrooms and slices of zucchini, done a la grill",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Green salad: mix of lettuce + chives",
+              "Fresh cheese toast: a slice of three-finger wide whole wheat bread (30 g) + skimmed fresh cheese + a few slices of tomato",
+              "1 large pear (200 g)"
+            ],
+            "ingredients": "mix of lettuce 100 g, tomato 100 g, spring onion 20 g, skimmed fresh cheese 85 g",
+            "recipe": "make the salad first and then make the toast with the natural tomato and fresh cheese second. You can replace the toast with a cheese salad with the green salad and tomato, accompanying it with the slice of whole wheat bread",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Spring farfalle with roasted turkey breast: 1 handful of farfalle + half a green pepper + half a red pepper + half an onion + half a small tomato + a small turkey breast fillet",
+              "1 orange large (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "farfalle 40 g, green pepper 50 g, red pepper 50 g, onion 50 g, tomato 50 g, turkey breast 140 g",
+            "recipe": "the roasted turkey breast is made and laminated, the pasta is cooked and mixed with the vegetables cut into fine cubes. Turkey breast can also be grilled",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Lettuce sprout salad",
+              "Baked whiting: a medium whiting fillet + 1 small potato",
+              "1 large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "lettuce sprouts 100 g, whiting 140 g, potato 130 g, onion 30 g",
+            "recipe": "Sauté the onion with the potatoes and put them in a baking dish, put the whiting fillets on top and finish baking until the fish is ready",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Chile with meat: 1 and a half handful of beans + sautéed tomato, onion, red pepper and garlic + minced meat",
+              "Green salad (75 g)",
+              "Peach (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "beans 50 g, tomato 30 g, garlic 3 g, onion 30 g, red pepper 30 g, minced meat 110 g",
+            "recipe": "Soak the beans the night before, sauté the vegetables and add the meat with a little oregano, cumin and chili powder, cook the beans and mix everything and let everything cook together until the beans are tender",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Stuffed zucchini: 1 medium zucchini + half a leek + half a carrot + 2 slices of cooked ham",
+              "Salad of 1 small tomato with oregano",
+              "1 large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "zucchini 160 g, leek 50 g, carrot 50 g, tomato 100 g, cooked ham 75 g",
+            "recipe": "cook the zucchini with skin and cut them in half, empty them and chop the zucchini meat with the leek and the carrot, sauté all the vegetables together, add the ham in strips and stuff the zucchini, you can gratin them for a few minutes in the oven",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Warm salad of brown rice with grilled chicken: 1 handful of rice + 1 tomato + 1 onion + 1 chicken breast fillet + apple + lettuce",
+              "2 tangerines (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, tomato 80 g, onion 30 g, lettuce 50 g, chicken breast 140 g, apple 30 g",
+            "recipe": "cook the brown rice and strain it. Chop the tomato, apple, chives and lettuce and mix with the rice. The chicken is grilled and added to the salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Mushrooms in sauce: half a small plate of mushrooms + shallots Eggs on the plate: 1 egg + 1 homemade fried tomato",
+              "Pineapple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "egg 70 g, mushrooms 100 g, onions 30 g, homemade fried tomato 70 g",
+            "recipe": "chop the mushrooms into very small pieces and the shallots. Sauté the shallots until golden and add mushrooms, add a little sherry and cook everything together for a few minutes. Place a crushed tomato base in a casserole dish and place the raw egg on top. Place it in the oven until the egg sets",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Vegetable juice: tomato + chives + pepper",
+              "Baked grouper on a bed of potatoes: 1 small grouper fillet with 1 small potato + half an onion",
+              "Plums (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "tomato 100 g, chives 30 g, pepper 30 g, onion 50 g, grouper 140 g, potato 130 g",
+            "recipe": "Peel the tomatoes and mix with the blender with the chives and pepper. Cut the potato and onion into slices and place them on the oven tray. When they are halfway done, add the grouper.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable stew with shavings of ham: 2 level tablespoons of peas + half a small plate of green beans + baby carrots + 1 and a half slices of serrano ham + 2 cloves of garlic",
+              "1 orange (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "peas 50 g, green beans 100 g, carrots 50 g, serrano ham 55 g, garlic 6 g",
+            "recipe": "Cook the vegetables and when they are ready, drain and set aside, brown some slices of garlic with some shavings of ham and add them to the stew.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Whole grain spirals with roasted tomatoes: 1 handful of whole grain spirals + 3 tablespoons of crushed tomato + chives",
+              "Turkey burger with mint cucumber salad: 4 tablespoons of ground turkey + 1 cucumber",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "whole-grain spirals 40 g, tomato 50 g, spring onion 20 g, minced turkey 120 g, cucumber 100 g, mint leaves",
+            "recipe": "The pasta is cooked, drained and set aside. The tomatoes and onion are roasted and mixed with the pasta. The turkey burger is grilled and accompanied by a cucumber salad with some mint leaves.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Broccoli soup: broccoli",
+              "Monkfish with prawns: 1 small monkfish fillet + prawns + garlic- Large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "broccoli 200 g, monkfish 120 g, prawns 20 g, garlic 3 g",
+            "recipe": "the broccoli is cooked and passed through the blender to make the cream. Grill the monkfish and cut the garlic into slices and sauté it with the prawns that are added on top of the fish",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Chickpeas in vinaigrette with grilled chicken strips: 1 and a half handful of chickpeas + tomato + pepper + chives + 1 large chicken fillet",
+              "2 tangerines (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "chickpeas 50 g, tomato 50 g, pepper 50 g, chives 50 g, chicken breast 140 g",
+            "recipe": "cook the chickpeas with a vegetable broth and drain, cut the vegetables into small cubes and mix with the chickpeas. Make the grilled chicken breast, cut it into strips and put it on top of the chickpea salad",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable stir-fry with poached egg: half a carrot + a piece of pumpkin + 1 leek + 1 small zucchini + egg",
+              "1 large peach (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "carrot 50 g, pumpkin 50 g, leek 90 g, zucchini 90 g, egg 70 g",
+            "recipe": "cut the vegetables into strips and sauté them with a little olive oil, make a poached egg and serve it on top of the stir-fry",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fourth",
+      "label": "Fourth week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of whole wheat bread, four fingers wide (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Grilled vegetable skewers: tomatoes + chives",
+              "Barbecue tuna with roast potatoes: 1 tuna fillet + 1 small potato + garlic and parsley",
+              "2 plums (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "tuna 105 g, potato 130 g, garlic 3 g, parsley, chives 50 g, tomatoes 100 g",
+            "recipe": "cut the onion into quarters and alternate them with the tomatoes on a skewer, grill them. The tuna is barbecued or grilled and topped with a little chopped garlic and parsley, served with a roast potato.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Warm salad of artichoke hearts with ham: 1 plate of artichoke hearts + 2 cloves of garlic + 1 and a half slices of serrano ham",
+              "1 large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "artichoke hearts 225 g, garlic 6 g, serrano ham 55 g",
+            "recipe": "cut them into slice the artichoke hearts and grill them, cut the ham into strips and sauté the sliced garlic and put everything on top of the artichoke hearts",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Black rice with squid: 1 handful of rice + 14 rings of squid + 1 sautéed onion and garlic with 1 tablespoon of oil + squid ink",
+              "Lettuce hearts (75 g)",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rice 40 g, squid 140 g, onion 40 g, garlic 3 g, squid ink",
+            "recipe": "make a sauce with the onion and garlic and sauté the squid and rice, add twice as much water as rice and squid ink and let it cook for twenty minutes",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Warm spinach salad with balsamic vinegar: 1 plate of spinach + 1 egg + tomatoes + cooked carrot",
+              "1 slice of watermelon (300 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "egg 70 g, spinach 100 g, tomatoes 100 g, cooked carrot 100 g",
+            "recipe": "cook the egg and chop it, add the raw spinach leaves and grill the tomatoes. Mix everything and dress the salad with balsamic vinegar",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon per day."
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Lentil salad with grilled chicken: 1 and a half handful of raw lentils + 1 small carrot + 4 pieces of chicken + lamb's lettuce + 1 small onion + 6 cherry tomatoes",
+              "1 roasted apple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "lentils 50 g, carrot 60 g, chicken 100 g, cherry tomatoes 70 g, lamb's lettuce 75 g, spring onion 50 g",
+            "recipe": "cook the lentils and sauté the onion and garlic with a teaspoon of paprika that is added to the legume, mix with the diced vegetables and the lamb's lettuce, grill or grill the chicken and add to the plate.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable wok: broccoli + green beans + zucchini",
+              "Baked cod with marinated tomato: cod + tomato + thyme + oregano",
+              "Mango (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "broccoli 70 g, zucchini 70 g, green beans 70 g, spring onion 30 g, cod 140 g, tomato 100 g",
+            "recipe": "cut the vegetables and cook them in the wok. The cod is baked in the oven for about 15 minutes or can be grilled. The tomato is cut into thin slices and the herbs are added, put in the oven and served with very thinly sliced raw chives",
+            "notes": [
+              "Olive oil: 3 tablespoons soups and a tablespoon of coffee a day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Warm elbow salad with vegetables in balsamic vinegar: 1 handful of elbows + half a small tomato + half a small zucchini + half a small eggplant",
+              "Grilled beef burger with arugula: 4 tablespoons of minced meat + arugula",
+              "1 large pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "whole wheat pasta 40 g, minced beef 120 g, tomato 100 g, zucchini 50 g, eggplant 50 g, arugula 40g",
+            "recipe": "cook the pasta and drain it, sauté the zucchini and the eggplant and mix with the pasta, the natural tomato is diced and added, seasoned with balsamic vinegar",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled mushrooms: mushrooms + parsley",
+              "Fish stew: a slice of white fish + 1 small potato + onion + garlic",
+              "Orange (200g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "white fish 140 g, potato 130 g, onion 30 g, garlic 3 g, bay leaf, paprika, mushrooms 100 g, parsley",
+            "recipe": "Grill the mushrooms and add a little parsley on top. Sauté the onion and garlic with paprika, add the potato, a bay leaf and cover with water or fish broth to make it tastier. When the potato is almost cooked, add the white fish.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "White bean casserole with chicken: 1 and a half handful of white beans + carrot + 1 chicken thigh",
+              "Roasted pepper salad: roasted red pepper + Peach tomato (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "white beans 50 g, tomato 100 g, roasted pepper 50 g, carrot 100 g, chicken thigh 140 g",
+            "recipe": "cook the white beans in a vegetable broth with the carrot and chicken until they are tender. Roasted red peppers are cut into strips and mixed with sliced ​​tomatoes to make the salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pumpkin cream: a piece of pumpkin + 1 onion",
+              "Grilled egg with green salad: egg + lettuce mix Citrus salad: orange (50 g) + kiwi (100 g) + grapefruit (50 g) A slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "pumpkin 160 g, onion 100 g, lettuce mix 50 g, egg 70 g",
+            "recipe": "cook the pumpkin and onion and blend them with the blender, adding the necessary broth so that the texture is cream. The egg is grilled and served with the salad",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Brown rice with roasted red pepper: 1 tomato + roasted pepper + 1 handful of rice",
+              "Salted sea bream: 1 small fillet of sea bream",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "sea ​​bream 140 g, brown rice 40 g, tomato 100 g, roasted pepper 100 g",
+            "recipe": "cook the rice and strain it, sauté some roasted peppers cut into strips with some diced natural tomatoes and mix them with the rice. The sea bream is covered with coarse salt and baked in the oven. You can mix an egg white with the salt before covering the sea bream so that the layer of salt can be removed better later.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled eggplant carpaccio: eggplant",
+              "Pork tenderloin with fine herbs with roast potato: 2 pork fillets + 1 small potato",
+              "2 plums (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "pork tenderloin 120 g, potato 130 g, eggplant 100 g",
+            "recipe": "cut the eggplant into very thin slices and grill them, put the fine herbs on the pork tenderloin and cook baked, accompanied by a roasted potato cut into slices",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Seafood noodles: half a small plate of cooked noodles + 8 large mussels + 5 prawns + 1 sautéed pepper and onion",
+              "Lettuce salad (50 g)",
+              "1 large slice of watermelon (300 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "noodles 40 g, mussels 70 g, shrimp 70 g, pepper 30 g, onion 30 g, crushed tomato 10 g, paprika",
+            "recipe": "make a sauce with the tomato, pepper and onion, add fish broth with a little paprika and cook the noodles, when they are almost cooked, add the mussels and prawns until the mussels are open and the prawns are done",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ratatouille: half tomato + half onion + half pepper + half small zucchini + eggplant",
+              "Roasted turkey with lemon: 1 turkey thigh + orange lemon juice (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "turkey 140 g, lemon juice 20cc, tomato 60 g, pepper 60 g, onion 60 g, zucchini 60 g, eggplant 60 g",
+            "recipe": "Cut the vegetables into slices and place them in a baking dish alternating them. Place them in the oven until they are done. The turkey is roasted with a splash of lemon juice",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fifth",
+      "label": "Fifth week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Whole grain spiral salad with grilled chicken: 1 handful of raw whole grain spirals + 1 small tomato + 1 small chicken breast + 1 small cucumber",
+              "1 peach (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "whole wheat spirals 40 g, tomato 100 g, chicken 140 g, cucumber 100 g",
+            "recipe": "Cut the tomato and cucumber into small cubes and cook the pasta. The chicken breast is grilled or grilled and cut into strips. Mix all the ingredients to have the salad ready",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Mushroom omelette with straw potatoes: with 1 egg + a plate of mushrooms + 1 small potato.",
+              "Lettuce salad (50 g)",
+              "Orange (200g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "egg 70 g, mushrooms 110 g, potato 130 g",
+            "recipe": "Saute the mushrooms, beat the egg and mix everything to make the omelet. The potato is cut into julienne strips and baked in the oven, served as an accompaniment to the omelet",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Spring salad: curly lettuce + grated carrot + grated beet",
+              "Tender broad beans with shrimp: 1 plate of broad beans + 9 shrimp + 1 onion 1 slice of watermelon (300 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "broad beans 200 g, spring onion 50 g, shrimp 90 g, lettuce 50 g, grated carrot 50 g, grated beet 50 g",
+            "recipe": "sauté with the spring onion and add the tender broad beans. They are cooked with a vegetable broth until the beans are ready and sautéed together with the prawns",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Fresh cheese and turkey skewers: 10 cherry tomatoes + 5 fresh cheese tacos + 5 turkey cold cuts tacos",
+              "Baked apple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "Tomatoes 150 g, turkey cold cuts 50 g, fresh cheese 50 g",
+            "recipe": "cut the cold cuts and cheese into tacos and make the skewers by interspersing the tomatoes, they can be grilled",
+            "notes": [
+              "Olive oil: 3 tablespoons soups and a tablespoon of coffee a day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Warm wild rice salad with vegetables: 1 and a half handful of wild rice + 1 small zucchini + 1 carrot",
+              "Wild fish herbs: 1 whiting fillet",
+              "1 pear (200 g)",
+              "1 slice of bread three fingers wide (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, zucchini 100 g, carrot 100 g, whiting 140 g",
+            "recipe": "cut the vegetables into small cubes. The rice is cooked, drained and set aside, the vegetables are sautéed and added to the rice. The whiting is baked in the oven and fine herbs are added",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Biscoan-style roast loin: 1 small tomato + a chorizo pepper + onion + garlic + 1 pork loin fillet",
+              "Escarole salad (50 g)",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "tomato 50 g, chorizo pepper 30 g, onion 50 g, garlic 3 g, white wine 30cc, pork loin 120 g",
+            "recipe": "Saute the vegetables and add a vegetable broth and a splash of white wine, let the sauce reduce and pour it over the roasted loin on the oven tray. Bake everything together for a few minutes",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Broccoli sautéed with paprika: 1 small plate of broccoli + garlic Roasted chicken: 1 medium chicken thigh + half onion",
+              "1 large slice of melon (300 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "chicken 140 g, broccoli 160 g, onion 75 g, garlic 3 g",
+            "recipe": "make the cooked broccoli, sauté some slices of garlic with paprika and added on top. To make the chicken, place an onion base on the base of the oven tray and the chicken on top, bake until tender",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Zucchini cream: 1 zucchini + 1 small potato",
+              "Lemon rooster fillets: 1 rooster fillet + lemon juice",
+              "1 large pear (200 g)",
+              "A slice of bread three fingers wide (30 g)"
+            ],
+            "ingredients": "potato 120 g, zucchini 100 g, rooster 140 g, lemon juice 20cc",
+            "recipe": "Cook the potatoes and zucchini and pass them through a blender or food mill. Grill the rooster and add the lemon juice",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "White bean salad: 1 and a half handful of raw white beans + half a carrot + chives + raw spinach",
+              "Serrano ham toast: 1 thick slice of Serrano ham + crushed tomato + a slice of three-finger wide whole wheat bread (30 g)",
+              "A large peach (200 g)"
+            ],
+            "ingredients": "white beans 50 g, carrot 50 g, raw spinach 50 g, spring onion 50 g, ham 65 g, crushed tomato 15 g",
+            "recipe": "leave the beans to soak the night before, They are cooked with a vegetable broth, drained and set aside in a salad bowl, the raw vegetables are chopped and added to the salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Escalibada of vegetables: green pepper + half a small onion + red pepper",
+              "Baked turbot with slices of roast potato: 1 small turbot fillet + 1 small potato",
+              "2 tangerines (200 g)",
+              "A slice of bread three fingers wide (30 g)"
+            ],
+            "ingredients": "turbo 140 g, potato 130 g, green pepper 75 g, red pepper 75 g, onion 50 g",
+            "recipe": "cut the vegetables into strips and put them in the oven. Put the turbot in the preheated oven with a teaspoon of oil and leave it until it is ready. The potatoes and onion are cut into slices and baked in the oven and served as a garnish",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Rabbit paella: 1 handful of raw rice + half an onion + 4 pieces of rabbit + green beans + 1 tablespoon of crushed tomato + artichokes",
+              "Lettuce sprout salad: lettuce sprouts (50 g) + chives (20 g)",
+              "Cooked pear (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "rice 40 g, onion 50 g, rabbit 140 g, crushed tomato 15 g, artichokes 80 g, green beans 80 g",
+            "recipe": "make a sauce with the onion and crushed tomato, Sauté the rabbit and add the rice. Add the vegetables and cover with water (the amount of water is double the amount of rice) in 20 minutes the paella is ready.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Consommé",
+              "Hake in green sauce: 1 slice of hake + 1 small onion + 4 asparagus + 2 tablespoons of peas",
+              "2 tangerines (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "defatted broth 200cc, hake 140 g, asparagus 100 g, peas 50 g, onion 50 g",
+            "recipe": "sauté the spring onion, add the asparagus and peas and cover with water, when the green beans are ready, add the hake and cook everything together for a few minutes",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Couscous salad: a handful of couscous + chopped lettuce + chopped tomato + chopped cucumber",
+              "Orange roast turkey: 1 medium turkey thigh + fresh orange juice",
+              "Pineapple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "couscous 40 g, lettuce 50 g, tomato 50 g, cucumber 50 g, turkey thigh 140 g, orange juice 30 cc",
+            "recipe": "make the couscous and Reserve, cut the tomato and cucumber into very small cubes and chop the lettuce into small pieces and mix with the couscous to make the salad. The turkey is sprinkled with orange juice and roasted",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sherry mushrooms: mushrooms + sherry + 1 spring onion Scrambled garlic garlic: 1 egg + garlic garlic",
+              "Apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "egg 70 g, mushrooms 100 g, onion 100 g, garlic garlic 100 g, sherry 20cc",
+            "recipe": "Sauté the onion and add the mushrooms, add a splash of sherry and let everything reduce together. For the scrambled eggs, sauté the garlic and add the beaten egg to make the scrambled egg.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sixth",
+      "label": "Sixth week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Beef casserole with mushrooms: lean beef + 1 small potato + mushrooms + mushrooms + onion + garlic",
+              "Head salad lettuce (50 g)",
+              "Melon and watermelon balls (300 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "beef 120 g, potato 130 g, mushrooms 100 g, mushrooms 100 g, onion 30 g, garlic 3 g",
+            "recipe": "Sauté the garlic with the onion and add the diced mushrooms and the beef, cover with water and add the potato and let everything cook together until the meat is tender",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled cuttlefish and tomato skewers with sautéed peas: 1 medium cuttlefish fillet + tomatoes + 2 level tablespoons of peas + garlic",
+              "1 large pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "peas 50 g, chives 30 g, cuttlefish 140 g, tomato 200 g, garlic 3 g",
+            "recipe": "Cut the cuttlefish into large cubes and place the pieces on the skewer alternating with the tomatoes, grill and accompany with some sautéed peas with garlic.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Oriental salad: a handful of brown rice + yellow pepper + red pepper + green pepper + a fillet of bonito + a tablespoon of soy sauce",
+              "Natural Macedonia: orange (50 g) + kiwi (50 g) + pear (50 g) + apple (50 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, bonito 105 g, red pepper 50 g, green pepper 50 g, yellow pepper 50 g, soy sauce 10cc",
+            "recipe": "Cook the brown rice, drain it and set aside. Cut the peppers and tuna into small cubes and mix with the soy sauce and rice",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Cauliflower with vinaigrette: a plate of cauliflower + 1 medium tomato + 1 spring onion",
+              "French omelet with arugula: 1 egg + arugula",
+              "1 pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "cauliflower 160 g, tomato 50 g, spring onion 50 g, egg 70 g, arugula 40 g",
+            "recipe": "Steam the cauliflower and serve with the tomato and onion cut into very fine cubes on top.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Vegetable lasagna: 3 plates of lasagna + eggplant + pepper + natural tomato + zucchini",
+              "Grilled emperor: 1 small slice of emperor + garlic and parsley",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "lasagna plates 40 g, eggplant 50 g, green pepper 50 g, zucchini 50 g, tomato 50 g, onion 50 g, emperor 100 g, garlic 3 g, chopped parsley",
+            "recipe": "Cut the vegetables into slices and alternate them with the lasagna plates. Put them in the oven until they are ready. You can add crushed tomato on top of the plates to make them juicy. The emperor is marinated with garlic and parsley and grilled",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomato salad with balsamic vinegar cream: a medium tomato with oregano + chives",
+              "Roasted turkey breast stuffed with plums: turkey breast + plums A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Turkey breast 140 g, fresh pitted plums 200 g, onion 20 g, tomato 150 g",
+            "recipe": "put the breast on a baking tray and fill it with fresh pitted plums, add a little poultry broth on top so that the breast is juicy and bake it",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Garden lentils: 1 and a half handful of raw lentils + 1 small carrot + green pepper + leek + red pepper",
+              "Grilled chicken burger with lamb's lettuce salad: minced chicken + lamb's lettuce",
+              "Citrus salad: orange (100 g) + kiwi (100 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "lentils 50 g, carrot 50 g, minced chicken 100 g, green pepper 50 g, red pepper 50 g, leek 50 g, lamb's lettuce 40 g",
+            "recipe": "cook the lentils with the vegetables in small cubes. The grilled chicken burger is made",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled vegetables: pumpkin + zucchini + chives Sea bass on the back: 1 sea bass fillet + garlic",
+              "Mango (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)",
+              "The sea bass is cooked in the oven, some slices of garlic are browned and poured on top."
+            ],
+            "ingredients": "pumpkin 110 g, zucchini 110 g, spring onion 50 g, sea bass 140 g, garlic 3 g",
+            "recipe": "cut the vegetables into slices and grill.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Fideuá: 1 handful of pasta + 4 shrimp + 3 pieces of white fish + onion + crushed tomato + green pepper",
+              "A small plate of endive salad",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "pasta 40 g, prawns 55 g, white fish 85 g, onion 25 g, green pepper 25 g, crushed tomato 25 g, endive 50 g",
+            "recipe": "Make a stir-fry with the pepper, onion and crushed tomato, add the fish and the peeled prawns and a fish or seafood broth and cook everything with the pasta. You can use a sprig of saffron to give more flavor and color to the dish",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Country salad: lettuce + tomato + onion + 1 small potato + 1 egg",
+              "1 roasted apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "lettuce 50 g, tomato 120 g, onion 30 g, potatoes 90 g and egg 70 g",
+            "recipe": "boil the potatoes and the egg and peel it, cut it into medium-sized cubes and mix it with the other chopped vegetables to make the salad",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Soupy rice with cod loins: 1 handful of raw rice + cod loin + onion + garlic",
+              "Lettuce sprout salad (50 g)",
+              "Orange (200g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "cod 140 g, rice 40 g, onion 30 g, garlic 3 g, fish broth",
+            "recipe": "Sauté with the onion and garlic and sauté the rice, add fish broth and a spoonful of paprika, cook everything together with the cod for about twenty minutes.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Steamed vegetable panaché: green beans + cauliflower + broccoli + carrot",
+              "Pork tenderloin medallions toast with onion confit: 2 sirloin medallions + 1 slice of three-finger wide whole wheat bread (30 g)",
+              "2 plums (200 g)"
+            ],
+            "ingredients": "pork sirloin 120 g, cauliflower 60 g, broccoli 60 g, carrot 100 g, green beans 100 g",
+            "recipe": "cut the cauliflower and broccoli into small sprouts and the carrot into strips, the vegetables are steamed. Grill the pork tenderloin medallions, sauté the sliced onion and place them on top of the toasted slice of bread and the tenderloin",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Grilled chicken salad: chicken breast + lettuce + bean sprouts + grated carrot + grated beet",
+              "Melon balls (300 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Chicken 140 g, lettuce 50 g, bean sprouts 50 g, carrot 50 g, beet 50 g",
+            "recipe": "chop the lettuce and mix with the bean sprouts and with the grated carrot and beet, grill or grill the chicken and mix with the vegetables",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pumpkin cream: 1 piece of pumpkin + 1 small potato + onion Grilled sole fillets: 1 fillet sole",
+              "1 large pear (200 g)",
+              "A slice of bread three fingers wide (30 g)"
+            ],
+            "ingredients": "potato 120 g, pumpkin 120 g, onion 50 g, sole 140 g",
+            "recipe": "The potatoes and vegetables are cooked and passed through a blender or food mill. The sole is grilled.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "septima",
+      "label": "seventh week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Rice soup with prawns and white fish: a handful of rice with 1 small fillet of white fish + 4 prawns",
+              "Escarole salad (50 g)",
+              "Apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rice 40 g, white fish 100 g, shrimp 40 g, fish broth, chives 30 g, crushed tomato 30 g, saffron",
+            "recipe": "Make a fish broth with the bones of the fish and the heads of the prawns and set aside, sauté the spring onion with the crushed tomato and rice and add the broth. Cook everything together with the fish for about twenty minutes and add the prawns",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Carrot cream: carrot + 1 small potato",
+              "Rabbit with tomato: 5 pieces of rabbit + half an onion + half a green pepper + 1 clove of garlic + crushed tomato",
+              "Orange (200g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rabbit 140 g, potato 100 g, onion 50 g, green pepper 50 g, garlic 3 g, crushed tomato 50 g, carrot 150 g",
+            "recipe": "cook the carrots with the potato and put them in a blender to make a cream. The rabbit is stewed, first the vegetables are added to make a sauce and the rabbit is sautéed, covered with water and stewed together until the rabbit is tender.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Chickpea stew with vegetables: 1 and a half handful of raw chickpeas + half a carrot + half a tomato + spinach + serrano ham tip",
+              "2 tangerines (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "chickpeas 50 g, carrot 60 g, tomato 60 g, ham 60 g, spinach 50 g",
+            "recipe": "Cook the chickpeas with the vegetables and the ham tip to give them more flavor, you can use already cooked chickpeas. The ham can be cooked with the chickpeas or taken separately with the bread as Serrano ham toast.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomato and chive salad: one tomato + chives",
+              "Grilled sole fillets with mushrooms: 1 small fillet of sole + mushrooms",
+              "A pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30g)"
+            ],
+            "ingredients": "sole 140 g, mushrooms 150 g, tomato 250 g, spring onion 30 g",
+            "recipe": "The tomato salad and grilled sole are made, accompanied by grilled mushrooms.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of oil per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Whole-grain macaroni with bonito: 1 handful of macaroni + tomato + half a pepper + onion + 1 small slice of bonito",
+              "Lettuce sprout salad 50 g",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "raw whole wheat pasta 40 g, tomato 50 g, green pepper 50 g, onion 30 g, bonito 100 g",
+            "recipe": "Sauté with the tomato, pepper and onion and add the tuna. On the other hand, the macaroni is cooked and mixed with the vegetables and fish.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sautéed green beans: a plate of green beans + garlic",
+              "Grilled chicken skewers with tomatoes: a medium fillet of chicken breast + tomatoes",
+              "A roasted apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Chicken breast 140 g, tomatoes 50 g, green beans 170 g, garlic 3 g",
+            "recipe": "cook the green beans and sauté them with the garlic. The chicken breast is cut into cubes and grilled or grilled and the skewers are made alternating a cube of chicken with a tomato",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Brown rice salad with vegetables: 1 handful of raw rice + onion + pepper + tomato + romaine lettuce (75 g)",
+              "Grilled squid: a plate of squid + garlic + parsley",
+              "An orange (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "rice 40 g, pepper 30 g, tomato 50 g, onion 30 g, lettuce 50 g, squid 120 g, garlic 4 g, parsley fresh",
+            "recipe": "Cook the brown rice and mix it with the vegetables cut into small cubes. The squid are grilled or grilled and a little crushed garlic with parsley is added on top to give them a more intense flavor",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled vegetables: half a small zucchini + 1 onion + half a tomato",
+              "Grilled eggs with steamed potato: with 1 egg + 1 potato small.",
+              "A pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "egg 70 g, zucchini 50 g, chives 50 g, tomato 100 g, potato 85 g",
+            "recipe": "the vegetables are cut into slices and grilled or grilled. The potatoes are steamed and cut into slices and a grilled egg is placed on them.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Mixed salad with balsamic vinegar: a plate of lettuce + tomato + chives + half a cucumber",
+              "Beef burger with grilled eggplant: minced meat + eggplant",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "eggplant 120 g, minced meat 120 g, tomato 100 g, onion 30 g, lettuce 75 g, cucumber 75 g",
+            "recipe": "cut the vegetables and prepare the salad, which is dressed with balsamic vinegar. The eggplant is cut into slices, grilled and served as an accompaniment to the hamburger",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable cream: pumpkin + half a carrot + onion",
+              "Baked whiting with roasted tomato: 1 medium whiting fillet + 1 tomato",
+              "One apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "whiting 140 g, pumpkin 150 g, carrot 130 g, onion 50 g, tomato 100 g",
+            "recipe": "The vegetables are cut and cooked to make the cream, then beaten with a blender or passed through a food mill. A tomato is roasted or grilled and accompanied by baked or grilled fish.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Warm whole-grain spiral salad with turkey: lamb's lettuce + 1 handful of pasta + turkey breast + roasted pepper",
+              "A peach (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "raw whole-grain pasta 40 g, turkey 140 g, lamb's lettuce 60 g, roasted pepper 60 g,",
+            "recipe": "Cook the pasta and grill the breast, cut it into cubes and mix everything with the roasted peppers and lamb's lettuce to make the salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Chard with potatoes: a plate of chard + small potato + garlic French omelette with tomatoes: 1 egg + tomatoes",
+              "2 plums (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "Chard 100 g, potatoes 90 g, garlic 3 g, tomatoes 60 g and egg 70 g",
+            "recipe": "cook the potatoes with the chard and sauté with the garlic. Make a French omelette or a grilled egg and accompany it with tomatoes.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Stewed pinto beans: 1 and a half handful of pinto beans + leek + tomato + pepper",
+              "Pork tenderloin medallions with lettuce sprout salad: 2 sirloin medallions + lettuce sprouts",
+              "1 orange (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "pinto beans 50 g, pork tenderloin 85 g, leek 50 g, tomato 50 g, peppers 50 g, lettuce sprouts 50 g",
+            "recipe": "Sauté with the leek, tomato and pepper, add the pinto beans and cover with water or you can use a vegetable broth to give it more flavor. The pork tenderloin is cut into thin medallions and grilled accompanied by a lettuce salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled wild fish",
+              "Baked sea bass with crushed tomato: a sea bass fillet + crushed tomato",
+              "1 pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "wild asparagus 150 g, crushed tomato 90 g, sea bass 140 g",
+            "recipe": "Wild asparagus is grilled or cooked if preferred. The sea bass is baked and accompanied by a little crushed tomato on top, you can replace the crushed tomato with a tomato salad",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "octave",
+      "label": "Eighth week",
+      "breakfastOptions": [
+        "Light breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger-wide whole wheat bread (40 g) + a slice of turkey cold cuts (30 g) + a tablespoon of crushed tomato (10 g)",
+        "Whole grain breakfast: 2 low-fat yogurts + a handful of unsweetened whole grain cereals (30 g)",
+        "Classic breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of sugar-free jam (15 g)",
+        "Andalusian breakfast: 1 glass of skimmed milk (200cc) + a slice of four-finger wide whole wheat bread (40 g) + 1 tablespoon of crushed tomato (10 g) + a teaspoon of olive oil (5cc)"
+      ],
+      "midmorningOptions": [
+        "Yogurt with prunes: 1 skimmed yogurt + 2 prunes",
+        "Fresh cheese carpaccio with natural tomato: 1 portion of skimmed fresh cheese (65 g) + sliced tomato (60 g)",
+        "Coffee with milk with piece of fruit: 1 coffee with skimmed milk (100cc) + 1 apple"
+      ],
+      "snackOptions": [
+        "Yogurt with nuts: 2 skimmed yogurts + 2 walnuts",
+        "Coffee with cereals: 1 coffee with skimmed milk (200cc) + whole grains (20 g)",
+        "Cheese with quince: 1 portion of fresh skimmed cheese (65 g) + unsweetened quince (30 g)"
+      ],
+      "days": [
+        {
+          "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Chickpea stew: 1 and a half handful of chickpeas raw + spinach + 1 small cod fillet",
+              "Watercress salad (50 g)",
+              "An orange (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chickpeas 50 g, spinach 125 g, cod 100 g, garlic, paprika",
+            "recipe": "cook the chickpeas with a vegetable broth and add strips of desalted cod and raw spinach leaves, make a sauce with the garlic and paprika and is added to the stew.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Mixed salad: 1 small tomato + half a cucumber + lettuce + grated carrot",
+              "Mushroom scramble: with 1 egg + mushroom dish",
+              "Baked apple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "egg 70 g, mushrooms 120 g, tomato 100 g, cucumber 50 g, lettuce 50 g, grated carrot 50 g",
+            "recipe": "cut the vegetables to make the salad. The mushrooms are sautéed and mixed with the beaten egg to make the scrambled egg",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Brown rice with zucchini: zucchini + 1 handful of brown rice",
+              "Grilled salmon loins with tomatoes: 1 small salmon fillet + tomatoes",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, salmon 110 g, tomatoes 150 g, zucchini 100 g",
+            "recipe": "Cut the zucchini into cubes and sauté, add the rice and add the water. The salmon is grilled or grilled and accompanied by a cherry tomato salad.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grilled chicken breast strips with vegetables: 1 medium chicken fillet + red pepper + green pepper + half an eggplant + onion",
+              "Watercress salad (50 g)",
+              "1 peach (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chicken breast 140 g, red pepper 60 g, green pepper 60 g, eggplant 60 g, tomato 60 g",
+            "recipe": "Cut the chicken breast into strips and sauté it with the julienne-cut vegetables.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Spaghetti with meatballs: 1 plate of whole-grain spaghetti + 4 tablespoons of minced meat + crushed tomato + zucchini + green pepper + onion",
+              "Lettuce salad (50 g)",
+              "1 apple (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "raw whole-grain spaghetti 40 g, minced beef 120 g, crushed tomato 120 g, zucchini 60 g, green pepper 60 g, onion 40 g",
+            "recipe": "The meatballs are baked or steamed to avoid excess fat, the pasta is cooked and on the other hand a tomato sauce is made with the vegetables. Everything is served together. You can have the spaghetti with garlic first and the meatballs second if you prefer not to mix flavors.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sautéed cabbage with paprika: a plate of cabbage + garlic + paprika",
+              "Baked hake with baked potato: a slice of medium hake + 1 small potato + onion",
+              "Orange (200g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "hake 140 g, potato 130 g, onion 30 g, garlic 3 g, cabbage 100 g",
+            "recipe": "cook the cabbage and sauté it with garlic and a little oil, you can add a tablespoon of paprika to enhance the flavor of the dish. For the second dish, cut the potatoes and onion and place them on a baking tray. When they are almost ready, add the hake to the tray for a few minutes. You can make the fish grilled",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Cuban style rice with homemade tomato sauce: 1 handful of rice + 1 small tomato + half an onion + 1 egg",
+              "Cucumber salad with mint",
+              "Pineapple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "brown rice 40 g, tomato 125 g, onion 50 g, egg 70 g, cucumber 100 g, mint",
+            "recipe": "Cook the brown rice and strain it, make the crushed tomato and sauté it with the onion, make the grilled egg and accompany it with the rice and the homemade tomato sauce. The cucumber is made into very thin slices and accompanied by some mint leaves.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Fresh spinach salad: a plate of fresh spinach + garlic",
+              "Baked sea bream with roasted tomatoes: 1 fillet of sea bream + cherry tomatoes",
+              "A pear (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "golden 140 g, spinach 90 g, garlic 6 g, tomatoes 120 g",
+            "recipe": "chop the garlic and Fry and add to the raw spinach salad. The fish is baked and accompanied by roasted tomatoes",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Farfalle Primavera: 1 handful of whole wheat pasta + zucchini + 2 slices of cooked ham + red pepper + green pepper + lamb's lettuce",
+              "1 apple (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "raw whole wheat pasta 40 g, zucchini 80 g, cooked ham 75 g, red pepper 60 g, green pepper 60 g, lamb's lettuce 50 g",
+            "recipe": "cook the whole wheat pasta and set aside. Sauté the zucchini with the pepper and mix with the cooked pasta, the lamb's lettuce and the strips of cooked ham",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Turkey stew with potatoes: 1 piece of turkey + 1 small potato + half an onion + half a green pepper + crushed tomato",
+              "2 kiwis (200 g)",
+              "A slice of whole wheat bread three fingers wide (30 g)"
+            ],
+            "ingredients": "turkey 140 g, potato 100 g, onion 50 g, green pepper 50 g, crushed tomato 50 g",
+            "recipe": "Saute the vegetables and mix with the turkey, cover with water and cook everything together, you can add a splash of wine to the stew to give it more flavor, when it is halfway through cooking, add the potatoes and finish stewing everything together.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Pot of white beans with cuttlefish: 1 and a half handful of white beans + cuttlefish + garlic + leek + green pepper + carrot + crushed tomato + white wine",
+              "Tomato salad with oregano: 1 small tomato (100 g)",
+              "1 pear (300 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "white beans 50 g, cuttlefish 110 g, garlic 3 g, leek 30 g, green pepper 30 g, carrot 20 g, crushed tomato 10 g, white wine 10cc",
+            "recipe": "Soak the beans in cold water the night before. Stir-fry the vegetables and add the beans and cover them with water. Add a sprig of saffron to the broth and a splash of white wine. Add the cuttlefish to the stew and continue cooking until the white beans are cooked.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pumpkin cream: a piece of pumpkin + onion",
+              "Mini burgers with romaine salad: minced pork + romaine lettuce",
+              "2 tangerines (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "minced pork 120 g, onion 100 g, pumpkin 130 g, romaine lettuce 50 g",
+            "recipe": "cut the pumpkin and onion and cook them together, when they are cooked they are passed through the blender to make the cream. Prepare mini hamburgers with minced pork and grill them, accompanied by romaine lettuce or any other type of lettuce.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Stewed potatoes: tomato + chives + green pepper + 1 small potato + garlic",
+              "Roasted orange chicken with lettuce sprouts: 1 medium chicken thigh + orange juice + lettuce sprouts 50 g",
+              "2 kiwis (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "chicken thigh 130 g, potato 130 g, crushed tomato 30 g, chives 20 g, green pepper 30 g, red pepper 30 g, garlic 3 g, saffron, paprika, orange juice 30 cc",
+            "recipe": "Saute all the vegetables and add a tablespoon of paprika. Peel the potatoes, chop them and add them to the pot along with the vegetables, cover them with water, add a sprig of saffron and cook them until they are tender. The chicken is baked in the oven and sprinkled with orange juice to make it more juicy.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Vegetable stew: artichoke + green beans + carrot + cauliflower Grilled rooster fillets: rooster fillet",
+              "Peach (200 g)",
+              "1 slice of three-finger wide whole wheat bread (30 g)"
+            ],
+            "ingredients": "artichoke 50 g, green beans 50 g, carrot 50 g, cauliflower 50 g, rooster 140 g",
+            "recipe": "the vegetables are cut into pieces and steamed or cooked. The rooster is grilled or can also be steamed or baked.",
+            "notes": [
+              "Olive oil: 3 tablespoons and 1 tablespoon of coffee per day"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

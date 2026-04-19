@@ -1,0 +1,105 @@
+.food-burst {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  --origin-x: 50%;
+  --origin-y: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0) 16%),
+    radial-gradient(circle at 50% 50%, rgba(197, 245, 209, 0.58), rgba(197, 245, 209, 0) 36%);
+  isolation: isolate;
+}
+
+.food-burst::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 12%),
+    radial-gradient(circle at 24% 24%, rgba(255, 255, 255, 0.18), transparent 12%),
+    radial-gradient(circle at 78% 76%, rgba(255, 255, 255, 0.14), transparent 14%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.food-burst__lights,
+.food-burst__core {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.food-burst__lights {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0) 22%);
+  z-index: 2;
+}
+
+.food-burst__core {
+  top: var(--origin-y);
+  left: var(--origin-x);
+  width: 190px;
+  height: 190px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.18) 42%, rgba(255, 255, 255, 0) 74%);
+  z-index: 3;
+}
+
+.food-burst__items {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+
+@supports ((-webkit-mask-image: radial-gradient(circle, #000 0%, transparent 100%)) or (mask-image: radial-gradient(circle, #000 0%, transparent 100%))) {
+  .food-burst__items {
+    -webkit-mask-image: radial-gradient(circle at var(--origin-x) var(--origin-y), rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 74%, rgba(0, 0, 0, 0.92) 86%, rgba(0, 0, 0, 0.54) 94%, transparent 100%);
+    mask-image: radial-gradient(circle at var(--origin-x) var(--origin-y), rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 74%, rgba(0, 0, 0, 0.92) 86%, rgba(0, 0, 0, 0.54) 94%, transparent 100%);
+  }
+}
+
+.food-burst__item {
+  position: absolute;
+  left: var(--origin-x);
+  top: var(--origin-y);
+  width: var(--size);
+  height: var(--size);
+  transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rotation));
+  opacity: 0.94;
+}
+
+.food-token {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.food-token__icon {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  filter:
+    drop-shadow(0 14px 18px rgba(46, 86, 55, 0.22))
+    saturate(1.12)
+    contrast(1.04);
+}
+
+.food-token__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+@media (max-width: 540px) {
+  .food-burst {
+    --origin-y: 50%;
+  }
+}
