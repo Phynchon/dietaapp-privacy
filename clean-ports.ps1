@@ -1,52 +1,42 @@
-# Script para limpiar puertos y procesos de Node.js
+# Script para limpiar solo los puertos usados por Vite
 # Uso: .\clean-ports.ps1
 
-Write-Host "🧹 Limpiando procesos y puertos..." -ForegroundColor Cyan
+Write-Host "Limpiando puertos de Vite..." -ForegroundColor Cyan
 
-# Limpiar procesos de Node.js
-$nodeProcesses = Get-Process node -ErrorAction SilentlyContinue
-if ($nodeProcesses) {
-    Write-Host "Encontrados $($nodeProcesses.Count) procesos de Node.js" -ForegroundColor Yellow
-    $nodeProcesses | ForEach-Object {
-        Write-Host "  Deteniendo proceso Node.js (PID: $($_.Id))" -ForegroundColor Yellow
-        Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue
+function ClearPort {
+    param([int]$Port)
+
+    $lines = netstat -ano | findstr ":$Port"
+    if (-not $lines) {
+        Write-Host "Puerto $Port libre" -ForegroundColor Green
+        return
     }
-    Write-Host "✓ Procesos de Node.js detenidos" -ForegroundColor Green
-} else {
-    Write-Host "✓ No hay procesos de Node.js activos" -ForegroundColor Green
-}
 
-# Verificar puerto 5173 (Vite dev)
-$vitePort = netstat -ano | findstr ":5173"
-if ($vitePort) {
-    Write-Host "Puerto 5173 en uso, limpiando..." -ForegroundColor Yellow
-    $vitePort | ForEach-Object {
-        $pid = ($_ -split '\s+')[-1]
-        if ($pid -match '^\d+$') {
-            Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
-            Write-Host "  Proceso detenido (PID: $pid)" -ForegroundColor Yellow
+    Write-Host "Puerto $Port en uso, deteniendo proceso..." -ForegroundColor Yellow
+    $pids = New-Object System.Collections.Generic.HashSet[string]
+
+    foreach ($line in $lines) {
+        $procId = ($line -split "\s+")[-1]
+        if ($procId -match "^\d+$" -and $procId -ne "0") {
+            [void]$pids.Add($procId)
         }
     }
-    Write-Host "✓ Puerto 5173 liberado" -ForegroundColor Green
-} else {
-    Write-Host "✓ Puerto 5173 está libre" -ForegroundColor Green
-}
 
-# Verificar puerto 4173 (Vite preview)
-$previewPort = netstat -ano | findstr ":4173"
-if ($previewPort) {
-    Write-Host "Puerto 4173 en uso, limpiando..." -ForegroundColor Yellow
-    $previewPort | ForEach-Object {
-        $pid = ($_ -split '\s+')[-1]
-        if ($pid -match '^\d+$') {
-            Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue
-            Write-Host "  Proceso detenido (PID: $pid)" -ForegroundColor Yellow
+    foreach ($procId in $pids) {
+        try {
+            Stop-Process -Id ([int]$procId) -Force -ErrorAction Stop
+            Write-Host "PID $procId detenido" -ForegroundColor Yellow
+        }
+        catch {
+            Write-Host "No se pudo detener PID $procId" -ForegroundColor DarkYellow
         }
     }
-    Write-Host "✓ Puerto 4173 liberado" -ForegroundColor Green
-} else {
-    Write-Host "✓ Puerto 4173 está libre" -ForegroundColor Green
+
+    Write-Host "Puerto $Port liberado" -ForegroundColor Green
 }
 
-Write-Host ""
-Write-Host "✨ Limpieza completada. Ahora puedes ejecutar 'npm run dev'" -ForegroundColor Cyan
+ClearPort -Port 4173
+ClearPort -Port 4174
+ClearPort -Port 5173
+
+Write-Host "Limpieza completada. Ya puedes ejecutar npm run dev" -ForegroundColor Cyan

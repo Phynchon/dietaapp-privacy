@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run clean:ports && vite",
+    "dev:clean": "npm run clean:ports && vite",
+    "clean:ports": "powershell -ExecutionPolicy Bypass -File ./clean-ports.ps1",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",

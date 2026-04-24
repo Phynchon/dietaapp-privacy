@@ -514,6 +514,24 @@ summary{
   font-weight: 700;
 }
 
+.program-start-note {
+  margin: 6px 0 0;
+  text-align: center;
+  font-family: "Montserrat-Medium";
+  color: #2f3f22;
+  background: linear-gradient(140deg, rgba(239, 251, 231, 0.92), rgba(227, 245, 219, 0.9));
+  border: 1px solid rgba(64, 107, 41, 0.28);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.program-day-note {
+  margin: 8px 0 0;
+  text-align: center;
+  font-family: "Montserrat-Bold";
+  color: #2f3f22;
+}
+
 .notice-spotlight {
   margin-top: 18px;
   background: linear-gradient(140deg, rgba(255, 245, 214, 0.95), rgba(255, 236, 184, 0.95));
@@ -569,10 +587,12 @@ summary{
 .imc-modal {
   position: relative;
   width: min(420px, 100%);
+  max-height: calc(100vh - 32px);
   background: #fff;
   border-radius: 14px;
   padding: 16px;
   box-shadow: 0 18px 45px rgba(47, 43, 39, 0.28);
+  overflow-y: auto;
 }
 
 .imc-challenge-popup {
@@ -710,6 +730,14 @@ summary{
   background: #fff;
 }
 
+.imc-field textarea {
+  border: 1px solid rgba(47, 43, 39, 0.25);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-family: "Montserrat-Regular";
+  resize: vertical;
+}
+
 .imc-result {
   margin: 4px 0;
   text-align: center;
@@ -721,6 +749,88 @@ summary{
 
 .imc-go-diet {
   margin-top: 12px;
+}
+
+.imc-flow-block {
+  display: grid;
+  gap: 10px;
+}
+
+.imc-flow-block-commit {
+  min-height: min(84vh, 760px);
+  max-height: calc(100vh - 96px);
+  align-content: start;
+  overflow-y: auto;
+  padding-right: 4px;
+  color: #2f5d3a;
+}
+
+.imc-flow-block-commit h3,
+.imc-flow-block-commit .imc-flow-message,
+.imc-flow-block-commit .imc-field {
+  color: inherit;
+}
+
+.imc-flow-message {
+  margin: 0;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.imc-commit-text {
+  margin: 0;
+  color: inherit;
+  font-family: "Montserrat-Regular";
+  line-height: 1.45;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.imc-commit-text + .imc-commit-text {
+  margin-top: 14px;
+}
+
+.imc-flow-strong {
+  font-family: "Montserrat-Bold";
+}
+
+.morning-check-modal {
+  width: min(560px, 100%);
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+}
+
+.morning-check-grid {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.morning-check-fieldset {
+  border: 1px solid rgba(47, 43, 39, 0.2);
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.morning-check-fieldset legend {
+  font-family: "Montserrat-Medium";
+  padding: 0 6px;
+}
+
+.morning-check-fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Montserrat-Regular";
+}
+
+.morning-check-actions {
+  display: grid;
+  gap: 8px;
 }
 
 .app-pill {
@@ -931,6 +1041,14 @@ summary{
   border-left: 4px solid #2f2b27;
 }
 
+.notice-reminder {
+  border-left: 4px solid #af3d12;
+}
+
+.notice-message {
+  border-left: 4px solid #2a75ca;
+}
+
 .notice-action {
   border-left: 4px solid #2a75ca;
 }
@@ -992,6 +1110,23 @@ summary{
   margin: 0;
   color: #a32626;
   font-family: "Montserrat-Medium";
+}
+
+.notice-data-consent-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.notice-link-button {
+  border: 0;
+  background: transparent;
+  color: #2a75ca;
+  text-decoration: underline;
+  font-family: "Montserrat-Bold";
+  cursor: pointer;
+  padding: 0;
 }
 
 .consult-history {

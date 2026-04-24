@@ -8,6 +8,18 @@ import FoodBurstScene from "./components/FoodBurstScene";
 import { getUiText } from "./constants/uiText";
 import { submitConsultToBackend } from "./services/consultService";
 import {
+  syncDailyCheckinToBackend,
+  syncProgramStartToBackend,
+  syncUserProfileToBackend,
+} from "./services/trackingSyncService";
+import {
+  createProgramStartRecord,
+  getLatestDailyTracking,
+  getLatestProgramSnapshot,
+  getPendingMorningCheckin,
+  saveMorningCheckin,
+} from "./services/programTrackingService";
+import {
   initializePushNotifications,
   requestPushPermission,
 } from "./services/pushNotifications";
@@ -24,7 +36,27 @@ const NOTICES_ENABLED_KEY = "dieta.noticesEnabled";
 const NOTICES_DISMISSED_KEY = "dieta.dismissedNotices";
 const NOTICE_PREFERENCES_KEY = "dieta.noticePreferences";
 const CONSULT_HISTORY_KEY = "dieta.consultHistory";
+const PROGRAM_START_DATE_KEY = "dieta.programStartDate";
+const STATS_DATA_AUTH_KEY = "dieta.statsDataAuthorized";
+const STATS_PROFILE_KEY = "dieta.statsProfile";
 const DAY_MS = 24 * 60 * 60 * 1000;
+
+const DAILY_OPENING_MESSAGES_ES = [
+  "Pequenos pasos, grandes resultados.",
+  "Respira y mantente constante hoy.",
+  "Tu mejor progreso es no parar.",
+  "Prioriza agua y comidas reales.",
+  "Comer con calma tambien cuenta.",
+  "Hoy toca sumar, no perfeccion.",
+  "Dormir bien tambien es dieta.",
+  "Un dia bueno empieza en la compra.",
+  "Proteina y verduras primero.",
+  "Evita el picoteo por impulso.",
+  "Caminar hoy te acerca al objetivo.",
+  "La adherencia gana a la prisa.",
+  "Si fallas en una comida, retoma en la siguiente.",
+  "Constancia: el verdadero cambio.",
+];
 
 const DEFAULT_NOTICE_PREFERENCES = {
   info: true,
@@ -107,6 +139,9 @@ const I18N = {
       comingSoon: "Sección en preparación.",
       sectionUnavailable: "Sección no disponible",
       totalCaloriesLabel: "Total: {calories} kcal",
+      programStart: "Inicio del programa",
+      programDay: "Día del programa",
+      programStartsIn: "Empieza en {days} días",
     },
   },
   en: {
@@ -162,6 +197,9 @@ const I18N = {
       comingSoon: "Section in progress.",
       sectionUnavailable: "Section not available",
       totalCaloriesLabel: "Total: {calories} kcal",
+      programStart: "Program start",
+      programDay: "Program day",
+      programStartsIn: "Starts in {days} days",
     },
   },
   fr: {
@@ -218,6 +256,9 @@ const I18N = {
       comingSoon: "Section en préparation.",
       sectionUnavailable: "Section non disponible",
       totalCaloriesLabel: "Total : {calories} kcal",
+      programStart: "Début du programme",
+      programDay: "Jour du programme",
+      programStartsIn: "Commence dans {days} jours",
     },
   },
   de: {
@@ -274,6 +315,9 @@ const I18N = {
       comingSoon: "Bereich in Vorbereitung.",
       sectionUnavailable: "Bereich nicht verfügbar",
       totalCaloriesLabel: "Gesamt: {calories} kcal",
+      programStart: "Programmstart",
+      programDay: "Programmtag",
+      programStartsIn: "Startet in {days} Tagen",
     },
   },
 };
@@ -286,7 +330,7 @@ const NOTICE_COPY = {
     unreadLabel: "Avisos sin leer",
     notificationsOff:
       "Los avisos estan desactivados. Activalos para volver a recibir recordatorios.",
-    enableToggle: "Activar avisos in-app",
+    enableToggle: "Activar avisos y mensajes",
     markRead: "Marcar como leido",
     resetRead: "Restaurar avisos leidos",
     openCenter: "Abrir avisos",
@@ -327,6 +371,26 @@ const NOTICE_COPY = {
     typeInfo: "Informacion",
     typeAction: "Accion recomendada",
     typeFocus: "Seguimiento",
+    typeReminder: "Recordatorio",
+    typeMessage: "Mensaje",
+    reminderMissingTitle: "Pendiente de ayer",
+    reminderMissingBody:
+      "No registraste los hitos del dia anterior. Completa el seguimiento para mantener la continuidad.",
+    reminderReplyTitle: "Respuesta disponible",
+    reminderReplyBody: "Tienes una respuesta a uno de tus comentarios.",
+    messageTitle: "Mensaje para abrir el dia",
+    infoCaloriesTitle: "Calorias del dia anterior",
+    dailyMessages: DAILY_OPENING_MESSAGES_ES,
+    dataConsentLead:
+      "Si no has autorizado el envio de datos estadisticos, aqui puedes hacerlo.",
+    dataConsentLink: "Autorizar aqui",
+    dataConsentTitle: "Autorizacion de datos estadisticos",
+    dataConsentBody:
+      "Introduce alias, pais y edad para crear tu usuario estadistico anonimo.",
+    dataConsentSave: "Guardar autorizacion",
+    dataConsentDone: "Envio de datos estadisticos autorizado.",
+    dataConsentSaved: "Datos estadisticos guardados correctamente.",
+    dataConsentFailed: "No se pudo enviar. Intentalo de nuevo.",
     preferencesTitle: "Preferencias de avisos",
     preferencesIntro: "Elige que tipos de mensajes quieres mostrar en el centro.",
     prefInfo: "Mostrar mensajes informativos",
@@ -345,6 +409,8 @@ const NOTICE_COPY = {
     consultSentRemote: "Consulta enviada al backend.",
     consultQueuedRemote: "Sin backend configurado: consulta guardada en local.",
     consultRemoteError: "No se pudo enviar al backend. Queda guardada localmente.",
+    consultRoutingInfo:
+      "Las consultas se envian por POST a VITE_API_BASE_URL/consults cuando hay backend configurado. Si no, se guardan en local.",
     pushTitle: "Estado de notificaciones",
     pushEnable: "Activar permisos de notificacion",
     pushReady: "Notificaciones disponibles.",
@@ -738,6 +804,29 @@ function App() {
   const [consultDraft, setConsultDraft] = useState("");
   const [consultFeedback, setConsultFeedback] = useState("");
   const [isSubmittingConsult, setIsSubmittingConsult] = useState(false);
+  const [isDataConsentOpen, setIsDataConsentOpen] = useState(false);
+  const [isSubmittingDataConsent, setIsSubmittingDataConsent] = useState(false);
+  const [statsDataAuthorized, setStatsDataAuthorized] = useState(() => {
+    try {
+      return localStorage.getItem(STATS_DATA_AUTH_KEY) === "true";
+    } catch {
+      return false;
+    }
+  });
+  const [statsProfile, setStatsProfile] = useState(() => {
+    try {
+      const stored = localStorage.getItem(STATS_PROFILE_KEY);
+      if (!stored) return { alias: "", country: "", age: "" };
+      const parsed = JSON.parse(stored);
+      return {
+        alias: typeof parsed.alias === "string" ? parsed.alias : "",
+        country: typeof parsed.country === "string" ? parsed.country : "",
+        age: parsed.age == null ? "" : String(parsed.age),
+      };
+    } catch {
+      return { alias: "", country: "", age: "" };
+    }
+  });
   const [pushStatus, setPushStatus] = useState("prompt");
 
   const locale = I18N[selectedLanguage] ?? I18N.es;
@@ -886,10 +975,37 @@ function App() {
   const [dietNotice, setDietNotice] = useState("");
   const [selectedConsejoId, setSelectedConsejoId] = useState(1);
   const [isImcOpen, setIsImcOpen] = useState(false);
-  const [showImcChallengePrompt, setShowImcChallengePrompt] = useState(false);
+  const [imcInitialFlowStep, setImcInitialFlowStep] = useState("calc");
+  const [imcDirectCalories, setImcDirectCalories] = useState(null);
+  const [programStartIso, setProgramStartIso] = useState(() => {
+    try {
+      const savedStartDate = localStorage.getItem(PROGRAM_START_DATE_KEY);
+      if (!savedStartDate) return "";
+      const parsed = new Date(savedStartDate);
+      if (Number.isNaN(parsed.getTime())) return "";
+      return parsed.toISOString();
+    } catch {
+      return "";
+    }
+  });
   const [imcSex, setImcSex] = useState("female");
   const [imcWeight, setImcWeight] = useState("");
   const [imcHeight, setImcHeight] = useState("");
+  const [programTrackingSnapshot, setProgramTrackingSnapshot] = useState(() =>
+    getLatestProgramSnapshot(),
+  );
+  const [pendingMorningCheckin, setPendingMorningCheckin] = useState(() =>
+    getPendingMorningCheckin(),
+  );
+  const [morningMilestones, setMorningMilestones] = useState({
+    breakfast: false,
+    lunch: false,
+    meal: false,
+    snack: false,
+    dinner: false,
+  });
+  const [morningNotes, setMorningNotes] = useState("");
+  const [latestMorningSummary, setLatestMorningSummary] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [exploreInternalNumber, setExploreInternalNumber] = useState(
     () => automaticSelection?.internalNumber ?? 1,
@@ -909,6 +1025,36 @@ function App() {
 
   const selectedSelection =
     activeView === "dietas" ? exploreSelection : homeSelection;
+
+  const programStartLabel = useMemo(() => {
+    if (!programStartIso) return "";
+    const parsed = new Date(programStartIso);
+    if (Number.isNaN(parsed.getTime())) return "";
+    const formatted = parsed.toLocaleDateString(
+      selectedLanguage === "es" ? "es-ES" : selectedLanguage,
+    );
+    return `${locale.words.programStart}: ${formatted}`;
+  }, [locale.words.programStart, programStartIso, selectedLanguage]);
+
+  const programDayLabel = useMemo(() => {
+    if (!programStartIso) return "";
+
+    const startDate = new Date(programStartIso);
+    if (Number.isNaN(startDate.getTime())) return "";
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    startDate.setHours(0, 0, 0, 0);
+
+    const dayOffset = Math.floor((today.getTime() - startDate.getTime()) / DAY_MS);
+
+    if (dayOffset < 0) {
+      const remainingDays = Math.abs(dayOffset);
+      return locale.words.programStartsIn.replace("{days}", String(remainingDays));
+    }
+
+    return `${locale.words.programDay}: ${dayOffset + 1}`;
+  }, [locale.words.programDay, locale.words.programStartsIn, programStartIso]);
 
   const currentWeek = useMemo(
     () =>
@@ -1040,58 +1186,108 @@ function App() {
   const notices = useMemo(() => {
     const templates = noticeCopy.noticeTemplates;
     const safeLabel = selectedMenuLabel || getMenuLabel(homeSelection, selectedLanguage);
-    return [
-      {
-        id: "welcome",
+    const list = [];
+
+    if (pendingMorningCheckin) {
+      list.push({
+        id: `reminder-missing-${pendingMorningCheckin.trackingDateIso}`,
+        type: "reminder",
+        title: noticeCopy.reminderMissingTitle ?? "Recordatorio diario",
+        body:
+          noticeCopy.reminderMissingBody ??
+          "Ayer no registraste tus hitos. Completa el seguimiento para mantener tu progreso.",
+      });
+    }
+
+    const repliedConsult = consultHistory.find((entry) => Boolean(entry.replyText));
+    if (repliedConsult) {
+      list.push({
+        id: `reminder-reply-${repliedConsult.id}`,
+        type: "reminder",
+        title: noticeCopy.reminderReplyTitle ?? "Tienes una respuesta",
+        body:
+          noticeCopy.reminderReplyBody ??
+          "Hay una respuesta disponible a uno de tus comentarios en consulta rapida.",
+      });
+    }
+
+    const dailyMessages = Array.isArray(noticeCopy.dailyMessages) && noticeCopy.dailyMessages.length
+      ? noticeCopy.dailyMessages
+      : DAILY_OPENING_MESSAGES_ES;
+    const messageIndexBase = Math.max(0, (programTrackingSnapshot?.dayIndex ?? 1) - 1);
+    const openingMessage = dailyMessages[messageIndexBase % dailyMessages.length];
+    list.push({
+      id: `message-day-${messageIndexBase}`,
+      type: "message",
+      title: noticeCopy.messageTitle ?? "Mensaje del dia",
+      body: openingMessage,
+    });
+
+    list.push({
+      id: `info-menu-${selectedSelection?.weekIndex ?? 0}-${selectedSelection?.dayIndex ?? 0}`,
+      type: "info",
+      title: templates.todayTitle,
+      body: templates.todayBody.replace("{label}", safeLabel || ""),
+    });
+
+    list.push({
+      id: `info-diet-${selectedDietCalories}`,
+      type: "info",
+      title: templates.dietTitle,
+      body: templates.dietBody.replace("{calories}", String(selectedDietCalories)),
+    });
+
+    if (latestMorningSummary) {
+      list.push({
+        id: `info-calories-${latestMorningSummary.id}`,
         type: "info",
-        title: templates.welcomeTitle,
-        body: templates.welcomeBody,
-      },
-      {
-        id: `day-${selectedSelection?.weekIndex ?? 0}-${selectedSelection?.dayIndex ?? 0}`,
-        type: "action",
-        title: templates.todayTitle,
-        body: templates.todayBody.replace("{label}", safeLabel || ""),
-      },
-      {
-        id: `diet-${selectedDietCalories}`,
-        type: "focus",
-        title: templates.dietTitle,
-        body: templates.dietBody.replace("{calories}", String(selectedDietCalories)),
-      },
-      {
-        id: "tips-support",
-        type: "info",
-        title: templates.tipsTitle,
-        body: templates.tipsBody,
-      },
-    ];
+        title: noticeCopy.infoCaloriesTitle ?? "Resumen calorico",
+        body: `${uiText.morningCaloriesTotal}: ${latestMorningSummary.totalCalories} kcal. ${uiText.morningCaloriesSaved}: ${latestMorningSummary.caloriesSaved} kcal. ${uiText.morningCaloriesExtra}: ${latestMorningSummary.caloriesExtra} kcal.`,
+      });
+    }
+
+    list.push({
+      id: "info-support",
+      type: "info",
+      title: templates.tipsTitle,
+      body: templates.tipsBody,
+    });
+
+    return list;
   }, [
+    consultHistory,
     homeSelection,
+    latestMorningSummary,
     noticeCopy.noticeTemplates,
+    noticeCopy.dailyMessages,
+    noticeCopy.infoCaloriesTitle,
+    noticeCopy.messageTitle,
+    noticeCopy.reminderMissingBody,
+    noticeCopy.reminderMissingTitle,
+    noticeCopy.reminderReplyBody,
+    noticeCopy.reminderReplyTitle,
+    pendingMorningCheckin,
+    programTrackingSnapshot?.dayIndex,
     selectedDietCalories,
     selectedLanguage,
     selectedMenuLabel,
     selectedSelection?.dayIndex,
     selectedSelection?.weekIndex,
+    uiText.morningCaloriesExtra,
+    uiText.morningCaloriesSaved,
+    uiText.morningCaloriesTotal,
   ]);
-
-  const filteredNotices = useMemo(
-    () => notices.filter((notice) => noticePreferences[notice.type] ?? true),
-    [noticePreferences, notices],
-  );
 
   const unreadNotices = useMemo(
     () =>
       noticesEnabled
-        ? filteredNotices.filter(
+        ? notices.filter(
             (notice) => !dismissedNoticeIds.includes(notice.id),
           )
         : [],
-    [dismissedNoticeIds, filteredNotices, noticesEnabled],
+    [dismissedNoticeIds, notices, noticesEnabled],
   );
 
-  const firstUnreadNotice = unreadNotices[0] ?? null;
   const pushStatusLabel = useMemo(() => {
     if (pushStatus === "ready") return noticeCopy.pushReady;
     if (pushStatus === "denied") return noticeCopy.pushDenied;
@@ -1266,6 +1462,62 @@ function App() {
     }
   };
 
+  const handleOpenDataConsent = () => {
+    setIsDataConsentOpen(true);
+  };
+
+  const handleCloseDataConsent = () => {
+    setIsDataConsentOpen(false);
+  };
+
+  const handleChangeStatsProfileField = (field, value) => {
+    setStatsProfile((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+  };
+
+  const handleSubmitDataConsent = async () => {
+    const normalizedAge = Number(String(statsProfile.age).replace(",", "."));
+    const ageValue = Number.isFinite(normalizedAge) && normalizedAge > 0
+      ? Math.round(normalizedAge)
+      : null;
+    const nowIso = new Date().toISOString();
+    const userId =
+      typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+        ? crypto.randomUUID()
+        : `user_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+
+    const payload = {
+      id: userId,
+      alias: statsProfile.alias.trim() || null,
+      country: statsProfile.country.trim() || null,
+      age: ageValue,
+      gender: "unknown",
+      heightCm: null,
+      weightKg: null,
+      imc: null,
+      startDatetime: nowIso,
+      currentDatetime: nowIso,
+    };
+
+    setIsSubmittingDataConsent(true);
+    try {
+      await syncUserProfileToBackend(payload);
+      setStatsDataAuthorized(true);
+      setConsultFeedback(
+        noticeCopy.dataConsentSaved ?? "Datos estadisticos guardados correctamente.",
+      );
+      setIsDataConsentOpen(false);
+    } catch {
+      setConsultFeedback(
+        noticeCopy.dataConsentFailed ?? "No se pudo enviar. Intentalo de nuevo.",
+      );
+    } finally {
+      setIsSubmittingDataConsent(false);
+    }
+  };
+
   const handleClearConsultHistory = () => {
     setConsultHistory([]);
     setConsultFeedback("");
@@ -1293,7 +1545,15 @@ function App() {
   };
 
   const handleOpenImc = () => {
-    setShowImcChallengePrompt(false);
+    setImcInitialFlowStep("calc");
+    setImcDirectCalories(null);
+    setIsImcOpen(true);
+  };
+
+  const handleOpenCommitFromDiet = (calories) => {
+    const safeCalories = availableDiets.includes(calories) ? calories : 1600;
+    setImcInitialFlowStep("commit");
+    setImcDirectCalories(safeCalories);
     setIsImcOpen(true);
   };
 
@@ -1311,8 +1571,9 @@ function App() {
   };
 
   const handleCloseImc = useCallback(() => {
-    setShowImcChallengePrompt(false);
     setIsImcOpen(false);
+    setImcInitialFlowStep("calc");
+    setImcDirectCalories(null);
   }, []);
 
   const handleSelectDiet = (calories) => {
@@ -1335,6 +1596,105 @@ function App() {
     requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  };
+
+  const handleConfirmImcStart = useCallback(
+    ({ calories, offsetDays, profile }) => {
+      const rawOffset = Number(offsetDays);
+      const safeOffset = Number.isFinite(rawOffset)
+        ? Math.max(0, Math.min(7, rawOffset))
+        : 0;
+
+      const startDate = new Date();
+      startDate.setHours(0, 0, 0, 0);
+      startDate.setDate(startDate.getDate() + safeOffset);
+
+      const formattedStartDate = startDate.toLocaleDateString(
+        selectedLanguage === "es" ? "es-ES" : selectedLanguage,
+      );
+
+      try {
+        localStorage.setItem(PROGRAM_START_DATE_KEY, startDate.toISOString());
+      } catch {
+        // ignore storage errors
+      }
+
+      setProgramStartIso(startDate.toISOString());
+      if (profile) {
+        const trackingRecord = createProgramStartRecord({
+          profile: {
+            alias: profile.alias,
+            country: profile.country,
+            age: profile.age,
+            gender: profile.gender,
+            heightCm: profile.heightCm,
+            weightKg: profile.weightKg,
+            imc: profile.imc,
+          },
+          dietLevel: calories,
+          startDateIso: startDate.toISOString(),
+          startDateTimeIso: startDate.toISOString(),
+          plannedDays: 56,
+        });
+        setProgramTrackingSnapshot({
+          user: trackingRecord.user,
+          program: trackingRecord.program,
+          dayIndex: 0,
+          daysRemaining: 56,
+        });
+        void syncProgramStartToBackend({
+          user: trackingRecord.user,
+          program: trackingRecord.program,
+        }).catch(() => {
+          // Keep working in local mode if sync fails.
+        });
+        setPendingMorningCheckin(getPendingMorningCheckin());
+      }
+      handleSelectDiet(calories);
+      if (safeOffset > 0) {
+        setDietNotice(`${uiText.imcStartSaved} (${formattedStartDate})`);
+      }
+    },
+    [handleSelectDiet, selectedLanguage, uiText.imcStartSaved],
+  );
+
+  const handleMorningMilestoneChange = (mealKey, value) => {
+    setMorningMilestones((prev) => ({
+      ...prev,
+      [mealKey]: value,
+    }));
+  };
+
+  const handleSkipMorningCheckin = () => {
+    setPendingMorningCheckin(null);
+  };
+
+  const handleSaveMorningCheckin = () => {
+    if (!pendingMorningCheckin) return;
+
+    const record = saveMorningCheckin({
+      programId: pendingMorningCheckin.programId,
+      trackingDateIso: pendingMorningCheckin.trackingDateIso,
+      dayNumber: pendingMorningCheckin.dayNumber,
+      milestones: morningMilestones,
+      notes: morningNotes.trim(),
+      caloriesTarget: pendingMorningCheckin.caloriesTarget,
+    });
+    void syncDailyCheckinToBackend(record).catch(() => {
+      // Keep local tracking if backend is offline.
+    });
+
+    setLatestMorningSummary(record);
+    setMorningNotes("");
+    setMorningMilestones({
+      breakfast: false,
+      lunch: false,
+      meal: false,
+      snack: false,
+      dinner: false,
+    });
+    setPendingMorningCheckin(null);
+    setProgramTrackingSnapshot(getLatestProgramSnapshot());
   };
 
   const handleSelectLanguage = (language) => {
@@ -1397,6 +1757,22 @@ function App() {
   }, [consultHistory]);
 
   useEffect(() => {
+    try {
+      localStorage.setItem(STATS_DATA_AUTH_KEY, String(statsDataAuthorized));
+    } catch {
+      // ignore storage errors
+    }
+  }, [statsDataAuthorized]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STATS_PROFILE_KEY, JSON.stringify(statsProfile));
+    } catch {
+      // ignore storage errors
+    }
+  }, [statsProfile]);
+
+  useEffect(() => {
     let mounted = true;
     initializePushNotifications().then((result) => {
       if (!mounted) return;
@@ -1406,6 +1782,19 @@ function App() {
       mounted = false;
     };
   }, []);
+
+  useEffect(() => {
+    const snapshot = getLatestProgramSnapshot();
+    setProgramTrackingSnapshot(snapshot);
+
+    const pending = getPendingMorningCheckin();
+    setPendingMorningCheckin(pending);
+
+    if (snapshot?.program?.id) {
+      const latest = getLatestDailyTracking(snapshot.program.id);
+      setLatestMorningSummary(latest);
+    }
+  }, [programStartIso]);
 
   return (
     showPortada ? (
@@ -1544,6 +1933,19 @@ function App() {
             </button>
             <p className="opening-copy">{uiText.intro2}</p>
             <p className="opening-program-cta">{uiText.chooseProgram}</p>
+            {programStartLabel ? (
+              <p className="program-start-note">{programStartLabel}</p>
+            ) : null}
+            {programTrackingSnapshot?.program ? (
+              <p className="program-day-note">
+                56 dias: {Math.min(56, Math.max(0, programTrackingSnapshot.dayIndex))} / 56
+              </p>
+            ) : null}
+            {latestMorningSummary ? (
+              <p className="menu-note">
+                {uiText.morningCaloriesTotal}: {latestMorningSummary.totalCalories} kcal · {uiText.morningCaloriesSaved}: {latestMorningSummary.caloriesSaved} kcal
+              </p>
+            ) : null}
 
             <div className="imc-tables">
               <div className="imc-table-card">
@@ -1563,7 +1965,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(2000)}
+                          onClick={() => handleOpenCommitFromDiet(2000)}
                         >
                           2000
                         </button>
@@ -1575,7 +1977,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(1800)}
+                          onClick={() => handleOpenCommitFromDiet(1800)}
                         >
                           1800
                         </button>
@@ -1587,7 +1989,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(1600)}
+                          onClick={() => handleOpenCommitFromDiet(1600)}
                         >
                           1600
                         </button>
@@ -1599,7 +2001,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(1400)}
+                          onClick={() => handleOpenCommitFromDiet(1400)}
                         >
                           1400
                         </button>
@@ -1626,7 +2028,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(2000)}
+                          onClick={() => handleOpenCommitFromDiet(2000)}
                         >
                           2000
                         </button>
@@ -1638,7 +2040,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(2000)}
+                          onClick={() => handleOpenCommitFromDiet(2000)}
                         >
                           2000
                         </button>
@@ -1650,7 +2052,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(1800)}
+                          onClick={() => handleOpenCommitFromDiet(1800)}
                         >
                           1800
                         </button>
@@ -1662,7 +2064,7 @@ function App() {
                       <td>
                         <button
                           className="diet-link"
-                          onClick={() => handleSelectDiet(1600)}
+                          onClick={() => handleOpenCommitFromDiet(1600)}
                         >
                           1600
                         </button>
@@ -1672,32 +2074,6 @@ function App() {
                 </table>
               </div>
             </div>
-
-            <article className="notice-spotlight" aria-live="polite">
-              <header className="notice-spotlight-header">
-                <h3>{noticeCopy.title}</h3>
-                <span className="notice-counter-pill">
-                  {noticeCopy.unreadLabel}: {unreadNotices.length}
-                </span>
-              </header>
-
-              {noticesEnabled && noticePreferences.spotlight ? (
-                firstUnreadNotice ? (
-                  <>
-                    <p className="notice-spotlight-title">{firstUnreadNotice.title}</p>
-                    <p className="notice-spotlight-body">{firstUnreadNotice.body}</p>
-                  </>
-                ) : (
-                  <p className="notice-spotlight-body">{noticeCopy.allRead}</p>
-                )
-              ) : (
-                <p className="notice-spotlight-body">{noticeCopy.notificationsOff}</p>
-              )}
-
-              <button className="menu-nav-button" onClick={handleGoToLinks}>
-                {noticeCopy.openCenter}
-              </button>
-            </article>
           </div>
         </section>
       ) : activeView === "tips" ? (
@@ -1804,71 +2180,27 @@ function App() {
                   checked={noticesEnabled}
                   onChange={handleToggleNotices}
                 />
-                <span>{noticeCopy.enableToggle}</span>
+                <span>{noticeCopy.enableToggle ?? "Activar avisos y mensajes"}</span>
               </label>
 
               <p className="menu-note">
                 {noticeCopy.unreadLabel}: {unreadNotices.length}
               </p>
 
-              <div className="push-status-card">
-                <h3>{noticeCopy.pushTitle}</h3>
-                <p className="menu-note push-status-text">{pushStatusLabel}</p>
-                <button
-                  className="menu-nav-button menu-nav-button-slim"
-                  onClick={handleEnablePush}
-                  disabled={pushStatus === "ready"}
-                >
-                  {noticeCopy.pushEnable}
-                </button>
-              </div>
-
-              <div className="notice-preferences">
-                <h3>{noticeCopy.preferencesTitle}</h3>
-                <p className="menu-note notice-preferences-note">
-                  {noticeCopy.preferencesIntro}
-                </p>
-
-                <label className="notice-toggle" htmlFor="notice-pref-info">
-                  <input
-                    id="notice-pref-info"
-                    type="checkbox"
-                    checked={noticePreferences.info}
-                    onChange={() => handlePreferenceChange("info")}
-                  />
-                  <span>{noticeCopy.prefInfo}</span>
-                </label>
-
-                <label className="notice-toggle" htmlFor="notice-pref-action">
-                  <input
-                    id="notice-pref-action"
-                    type="checkbox"
-                    checked={noticePreferences.action}
-                    onChange={() => handlePreferenceChange("action")}
-                  />
-                  <span>{noticeCopy.prefAction}</span>
-                </label>
-
-                <label className="notice-toggle" htmlFor="notice-pref-focus">
-                  <input
-                    id="notice-pref-focus"
-                    type="checkbox"
-                    checked={noticePreferences.focus}
-                    onChange={() => handlePreferenceChange("focus")}
-                  />
-                  <span>{noticeCopy.prefFocus}</span>
-                </label>
-
-                <label className="notice-toggle" htmlFor="notice-pref-spotlight">
-                  <input
-                    id="notice-pref-spotlight"
-                    type="checkbox"
-                    checked={noticePreferences.spotlight}
-                    onChange={() => handlePreferenceChange("spotlight")}
-                  />
-                  <span>{noticeCopy.prefSpotlight}</span>
-                </label>
-              </div>
+              <p className="menu-note notice-data-consent-text">
+                {statsDataAuthorized
+                  ? (noticeCopy.dataConsentDone ?? "Envio de datos estadisticos autorizado.")
+                  : (noticeCopy.dataConsentLead ?? "Si no has autorizado el envio de datos estadisticos, aqui puedes hacerlo.")}
+                {!statsDataAuthorized ? (
+                  <button
+                    type="button"
+                    className="notice-link-button"
+                    onClick={handleOpenDataConsent}
+                  >
+                    {noticeCopy.dataConsentLink ?? "Autorizar ahora"}
+                  </button>
+                ) : null}
+              </p>
 
               <button className="menu-nav-button" onClick={handleRestoreNotices}>
                 {noticeCopy.resetRead}
@@ -1887,10 +2219,10 @@ function App() {
                     <div className="notice-item-header">
                       <h3>{notice.title}</h3>
                       <span className="notice-tag">
-                        {notice.type === "action"
-                          ? noticeCopy.typeAction
-                          : notice.type === "focus"
-                            ? noticeCopy.typeFocus
+                        {notice.type === "reminder"
+                          ? (noticeCopy.typeReminder ?? "Recordatorio")
+                          : notice.type === "message"
+                            ? (noticeCopy.typeMessage ?? "Mensaje")
                             : noticeCopy.typeInfo}
                       </span>
                     </div>
@@ -1935,6 +2267,9 @@ function App() {
             <div className="panel-header">
               <h2>{noticeCopy.consultTitle}</h2>
               <p className="menu-note">{noticeCopy.consultIntro}</p>
+              <p className="menu-note">
+                {noticeCopy.consultRoutingInfo ?? "Las consultas se envian por POST a VITE_API_BASE_URL/consults cuando hay backend configurado. Si no, se guardan en local."}
+              </p>
             </div>
 
             <div className="consult-form">
@@ -2036,6 +2371,9 @@ function App() {
                 </button>
               </div>
               {dietNotice ? <p className="menu-note">{dietNotice}</p> : null}
+              {programStartLabel ? (
+                <p className="program-start-note">{programStartLabel}</p>
+              ) : null}
             </div>
           </section>
 
@@ -2050,6 +2388,9 @@ function App() {
               <h2>
                 {locale.words.menuOfDay} · {formattedDate}
               </h2>
+              {programDayLabel ? (
+                <p className="program-day-note">{programDayLabel}</p>
+              ) : null}
               <p className="menu-note">
                 {getMenuLabel(exploreSelection, selectedLanguage)} · #
                 {exploreSelection?.internalNumber} · {selectedDietCalories} kcal
@@ -2127,10 +2468,132 @@ function App() {
         </button>
       )}
 
+      {pendingMorningCheckin ? (
+        <div className="imc-overlay" role="dialog" aria-modal="true" aria-label={uiText.morningCheckTitle}>
+          <section className="imc-modal morning-check-modal" onClick={(event) => event.stopPropagation()}>
+            <h3>{uiText.morningCheckTitle}</h3>
+            <p className="imc-flow-message">{uiText.morningCheckBody}</p>
+
+            <div className="morning-check-grid">
+              {[
+                ["breakfast", uiText.morningMealBreakfast],
+                ["lunch", uiText.morningMealLunch],
+                ["meal", uiText.morningMealMeal],
+                ["snack", uiText.morningMealSnack],
+                ["dinner", uiText.morningMealDinner],
+              ].map(([mealKey, label]) => (
+                <fieldset key={mealKey} className="morning-check-fieldset">
+                  <legend>{label}</legend>
+                  <label>
+                    <input
+                      type="radio"
+                      name={`milestone-${mealKey}`}
+                      checked={morningMilestones[mealKey] === true}
+                      onChange={() => handleMorningMilestoneChange(mealKey, true)}
+                    />
+                    {uiText.morningYes}
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name={`milestone-${mealKey}`}
+                      checked={morningMilestones[mealKey] === false}
+                      onChange={() => handleMorningMilestoneChange(mealKey, false)}
+                    />
+                    {uiText.morningNo}
+                  </label>
+                </fieldset>
+              ))}
+            </div>
+
+            <label className="imc-field" htmlFor="morning-notes">
+              {uiText.morningNotesLabel}
+              <textarea
+                id="morning-notes"
+                rows={3}
+                value={morningNotes}
+                onChange={(event) => setMorningNotes(event.target.value)}
+                placeholder={uiText.morningNotesPlaceholder}
+              />
+            </label>
+
+            <div className="morning-check-actions">
+              <button className="menu-nav-button" onClick={handleSaveMorningCheckin}>
+                {uiText.morningSave}
+              </button>
+              <button className="menu-nav-button" onClick={handleSkipMorningCheckin}>
+                {uiText.morningSkip}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {isDataConsentOpen ? (
+        <div className="imc-overlay" role="dialog" aria-modal="true" aria-label={noticeCopy.dataConsentTitle ?? "Autorizacion de datos"}>
+          <section className="imc-modal" onClick={(event) => event.stopPropagation()}>
+            <h3>{noticeCopy.dataConsentTitle ?? "Autorizacion de datos estadisticos"}</h3>
+            <p className="imc-flow-message">
+              {noticeCopy.dataConsentBody ?? "Introduce alias, pais y edad para enviar datos estadisticos anonimos."}
+            </p>
+
+            <label className="imc-field" htmlFor="stats-alias">
+              {uiText.imcCommitTrackingAliasLabel}
+              <input
+                id="stats-alias"
+                type="text"
+                value={statsProfile.alias}
+                onChange={(event) => handleChangeStatsProfileField("alias", event.target.value)}
+                placeholder={uiText.imcCommitTrackingAliasPlaceholder}
+              />
+            </label>
+
+            <label className="imc-field" htmlFor="stats-country">
+              {uiText.imcCommitTrackingCountryLabel}
+              <input
+                id="stats-country"
+                type="text"
+                value={statsProfile.country}
+                onChange={(event) => handleChangeStatsProfileField("country", event.target.value)}
+                placeholder={uiText.imcCommitTrackingCountryPlaceholder}
+              />
+            </label>
+
+            <label className="imc-field" htmlFor="stats-age">
+              {uiText.imcCommitTrackingAgeLabel}
+              <input
+                id="stats-age"
+                type="number"
+                inputMode="numeric"
+                min="1"
+                max="120"
+                value={statsProfile.age}
+                onChange={(event) => handleChangeStatsProfileField("age", event.target.value)}
+                placeholder={uiText.imcCommitTrackingAgePlaceholder}
+              />
+            </label>
+
+            <button
+              className="menu-nav-button"
+              onClick={handleSubmitDataConsent}
+              disabled={isSubmittingDataConsent}
+            >
+              {isSubmittingDataConsent
+                ? `${noticeCopy.dataConsentSave ?? "Guardar"}...`
+                : (noticeCopy.dataConsentSave ?? "Guardar")}
+            </button>
+            <button className="menu-nav-button" onClick={handleCloseDataConsent}>
+              {uiText.close}
+            </button>
+          </section>
+        </div>
+      ) : null}
+
       <ImcModal
         isOpen={isImcOpen}
+        initialFlowStep={imcInitialFlowStep}
+        directRecommendation={imcDirectCalories}
         uiText={uiText}
-        showChallengePrompt={showImcChallengePrompt}
         imcSex={imcSex}
         onSexChange={setImcSex}
         imcWeight={imcWeight}
@@ -2141,14 +2604,10 @@ function App() {
         imcCategory={imcCategory}
         imcRecommendation={imcRecommendation}
         onClose={handleCloseImc}
-        onGoRecommended={() => {
-          if (imcRecommendation == null) return;
-          if (!showImcChallengePrompt) {
-            setShowImcChallengePrompt(true);
-            return;
-          }
-          handleSelectDiet(imcRecommendation);
-          handleCloseImc();
+        onConfirmStart={handleConfirmImcStart}
+        onGoRecommended={(calories) => {
+          if (calories == null) return;
+          handleSelectDiet(calories);
         }}
       />
     </div>

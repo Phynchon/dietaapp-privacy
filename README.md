@@ -78,3 +78,9 @@ Para desregistrar manualmente el service worker:
 - El service worker **NO** se activa en modo desarrollo para evitar problemas de caché
 - El service worker se registra solo en producción usando `public/sw.js`
 - El servidor se configura para abrir automáticamente el navegador
+
+## Documentacion de Producto
+
+- Especificacion funcional v1: `docs/especificacion-funcional-v1.md`
+- Historias de usuario y criterios de aceptacion: `docs/historias-usuario-y-criterios.md`
+- Modelo de datos inicial (local y MySQL): `docs/modelo-datos-local-mysql-v1.md`
