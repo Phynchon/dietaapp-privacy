@@ -5,7 +5,7 @@ import { pingDb } from "./db.js";
 import { registerTrackingRoutes } from "./routes/trackingRoutes.js";
 
 const app = express();
-const port = Number(process.env.PORT || 4000);
+const port = Number(process.env.PORT || 3000);
 const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:4173,http://localhost,capacitor://localhost")
   .split(",")
   .map((value) => value.trim())
