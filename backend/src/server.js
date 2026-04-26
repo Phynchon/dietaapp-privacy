@@ -1,8 +1,13 @@
-import "dotenv/config";
+import dotenv from "dotenv";
 import cors from "cors";
 import express from "express";
 import { pingDb } from "./db.js";
+import { registerAdminRoutes } from "./routes/adminRoutes.js";
 import { registerTrackingRoutes } from "./routes/trackingRoutes.js";
+
+const envByMode = process.env.NODE_ENV === "production" ? ".env.production" : ".env.development";
+dotenv.config({ path: envByMode });
+dotenv.config({ path: ".env" });
 
 const app = express();
 const port = Number(process.env.PORT || 3000);
@@ -34,6 +39,7 @@ app.get("/health", async (_req, res) => {
 });
 
 registerTrackingRoutes(app);
+registerAdminRoutes(app);
 
 app.use((err, _req, res, _next) => {
   const message = err?.message || "Unexpected server error";

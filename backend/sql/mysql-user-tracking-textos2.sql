@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS u415738498_Textos2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE u415738498_Textos2;
+CREATE DATABASE IF NOT EXISTS u415738498_BaseApp CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE u415738498_BaseApp;
 
 CREATE TABLE IF NOT EXISTS users (
   id CHAR(36) NOT NULL,
@@ -10,6 +10,9 @@ CREATE TABLE IF NOT EXISTS users (
   height_cm DECIMAL(5,2) NULL,
   weight_kg DECIMAL(6,2) NULL,
   imc DECIMAL(5,2) NULL,
+  diet_calories SMALLINT UNSIGNED NULL,
+  notices_accepted TINYINT(1) NULL,
+  tracking_consent TINYINT(1) NULL,
   start_datetime DATETIME NOT NULL,
   current_datetime DATETIME NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -75,7 +78,7 @@ CREATE TABLE IF NOT EXISTS consult_messages (
 ) ENGINE=InnoDB;
 
 -- Optional: data copy from old DB if your Hostinger user has permissions
--- INSERT INTO u415738498_Textos2.users SELECT * FROM u415738498_Textos.users;
--- INSERT INTO u415738498_Textos2.program_cycles SELECT * FROM u415738498_Textos.program_cycles;
--- INSERT INTO u415738498_Textos2.daily_checkins SELECT * FROM u415738498_Textos.daily_checkins;
--- INSERT INTO u415738498_Textos2.consult_messages SELECT * FROM u415738498_Textos.consult_messages;
+-- INSERT INTO u415738498_BaseApp.users SELECT * FROM u415738498_Textos.users;
+-- INSERT INTO u415738498_BaseApp.program_cycles SELECT * FROM u415738498_Textos.program_cycles;
+-- INSERT INTO u415738498_BaseApp.daily_checkins SELECT * FROM u415738498_Textos.daily_checkins;
+-- INSERT INTO u415738498_BaseApp.consult_messages SELECT * FROM u415738498_Textos.consult_messages;

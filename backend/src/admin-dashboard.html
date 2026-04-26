@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DietaApp Admin</title>
+    <style>
+      :root {
+        --paper: #f6f2e8;
+        --ink: #2b2620;
+        --accent: #145a6d;
+        --accent-soft: #2f7a8f;
+        --card: rgba(255, 255, 255, 0.88);
+        --line: rgba(43, 38, 32, 0.12);
+        --good: #1e7a44;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 15% 15%, rgba(20, 90, 109, 0.2), transparent 42%),
+          radial-gradient(circle at 85% 10%, rgba(250, 178, 38, 0.22), transparent 36%),
+          linear-gradient(160deg, #f9f6ef 0%, #f3ecdc 55%, #ece3cf 100%);
+        min-height: 100vh;
+      }
+      .shell {
+        width: min(1100px, 100% - 28px);
+        margin: 30px auto 48px;
+        display: grid;
+        gap: 18px;
+      }
+      .hero {
+        background: linear-gradient(130deg, var(--accent) 0%, var(--accent-soft) 100%);
+        color: #f8fbfc;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 20px 40px rgba(20, 90, 109, 0.25);
+        animation: floatIn 520ms ease-out both;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(1.3rem, 2.6vw, 2rem);
+        letter-spacing: 0.3px;
+      }
+      .hero p { margin: 9px 0 0; opacity: 0.9; }
+      .status { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 0.92rem; }
+      .status-dot { width: 9px; height: 9px; border-radius: 999px; background: #d2ebf2; }
+      .status-dot.live { background: #77f0aa; box-shadow: 0 0 0 6px rgba(119, 240, 170, 0.18); }
+      .actions { margin-top: 14px; }
+      button {
+        appearance: none;
+        border: 0;
+        background: #f8fbfc;
+        color: #154153;
+        border-radius: 10px;
+        padding: 10px 14px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+        box-shadow: 0 12px 20px rgba(51, 45, 38, 0.08);
+        animation: floatIn 520ms ease-out both;
+      }
+      .card h2 { margin: 0; font-size: 0.84rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.74; }
+      .value { margin-top: 9px; font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 800; }
+      .two-col { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+        box-shadow: 0 12px 20px rgba(51, 45, 38, 0.08);
+      }
+      .panel h3 { margin: 0 0 10px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+      th { font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.75; }
+      .users-panel { overflow: auto; }
+      .pill {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 3px 8px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        background: rgba(20, 90, 109, 0.12);
+        color: #154153;
+      }
+      .ok { color: var(--good); font-weight: 700; }
+      .empty { opacity: 0.7; }
+      @keyframes floatIn {
+        from { transform: translateY(10px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <h1>DietaApp Admin - Estadisticas</h1>
+        <p>Panel privado para seguimiento de usuarios y consentimientos.</p>
+        <div class="status">
+          <span id="statusDot" class="status-dot"></span>
+          <span id="statusText">Cargando datos...</span>
+        </div>
+        <div class="actions">
+          <button id="reloadBtn" type="button">Actualizar</button>
+        </div>
+      </section>
+      <section class="cards" id="kpiCards"></section>
+      <section class="two-col">
+        <article class="panel">
+          <h3>Distribucion por sexo</h3>
+          <div id="genderBreakdown" class="empty">Sin datos.</div>
+        </article>
+        <article class="panel">
+          <h3>Dieta elegida/recomendada</h3>
+          <div id="dietBreakdown" class="empty">Sin datos.</div>
+        </article>
+      </section>
+      <section class="panel users-panel">
+        <h3>Ultimos usuarios registrados</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Alias</th>
+              <th>Pais</th>
+              <th>Edad</th>
+              <th>Sexo</th>
+              <th>Dieta</th>
+              <th>Avisos</th>
+              <th>Consent</th>
+            </tr>
+          </thead>
+          <tbody id="recentUsersBody">
+            <tr><td colspan="8" class="empty">Sin datos.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      const statusText = document.getElementById("statusText");
+      const statusDot = document.getElementById("statusDot");
+      const kpiCards = document.getElementById("kpiCards");
+      const genderBreakdown = document.getElementById("genderBreakdown");
+      const dietBreakdown = document.getElementById("dietBreakdown");
+      const recentUsersBody = document.getElementById("recentUsersBody");
+      const reloadBtn = document.getElementById("reloadBtn");
+
+      function formatDate(value) {
+        if (!value) return "-";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return "-";
+        return date.toLocaleString("es-ES", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+      }
+
+      function asCellValue(value) {
+        return value == null || value === "" ? "-" : String(value);
+      }
+
+      function renderList(container, items, valueLabel) {
+        if (!Array.isArray(items) || items.length === 0) {
+          container.innerHTML = '<p class="empty">Sin datos todavia.</p>';
+          return;
+        }
+
+        container.innerHTML =
+          "<table><tbody>" +
+          items
+            .map((item) =>
+              "<tr><td>" +
+                asCellValue(item.label) +
+                "</td><td><span class=\"pill\">" +
+                asCellValue(item[valueLabel]) +
+                "</span></td></tr>",
+            )
+            .join("") +
+          "</tbody></table>";
+      }
+
+      function renderCards(summary) {
+        const cards = [
+          { title: "Usuarios totales", value: summary.totalUsers ?? 0 },
+          { title: "Consentimiento activo", value: summary.consentedUsers ?? 0 },
+          { title: "Avisos aceptados", value: summary.noticesAcceptedUsers ?? 0 },
+          { title: "Edad media", value: summary.avgAge ?? "-" },
+          { title: "Peso medio", value: summary.avgWeightKg ?? "-" },
+          { title: "Altura media", value: summary.avgHeightCm ?? "-" },
+        ];
+
+        kpiCards.innerHTML = cards
+          .map((card) =>
+            "<article class=\"card\"><h2>" +
+              card.title +
+              "</h2><div class=\"value\">" +
+              asCellValue(card.value) +
+              "</div></article>",
+          )
+          .join("");
+      }
+
+      function renderRecentUsers(users) {
+        if (!Array.isArray(users) || users.length === 0) {
+          recentUsersBody.innerHTML = '<tr><td colspan="8" class="empty">Aun no hay usuarios.</td></tr>';
+          return;
+        }
+
+        recentUsersBody.innerHTML = users
+          .map(
+            (user) =>
+              "<tr>" +
+                "<td>" + formatDate(user.createdAt) + "</td>" +
+                "<td>" + asCellValue(user.alias) + "</td>" +
+                "<td>" + asCellValue(user.country) + "</td>" +
+                "<td>" + asCellValue(user.age) + "</td>" +
+                "<td>" + asCellValue(user.gender) + "</td>" +
+                "<td>" + asCellValue(user.dietCalories) + "</td>" +
+                "<td>" + (user.noticesAccepted ? '<span class="ok">Si</span>' : "No") + "</td>" +
+                "<td>" + (user.trackingConsent ? '<span class="ok">Si</span>' : "No") + "</td>" +
+              "</tr>",
+          )
+          .join("");
+      }
+
+      async function loadOverview() {
+        statusText.textContent = "Cargando datos...";
+        statusDot.classList.remove("live");
+
+        try {
+          const response = await fetch("/admin/api/overview", {
+            headers: { Accept: "application/json" },
+          });
+
+          if (!response.ok) {
+            throw new Error("HTTP " + response.status);
+          }
+
+          const payload = await response.json();
+          renderCards(payload.summary ?? {});
+          renderList(genderBreakdown, payload.breakdowns?.gender ?? [], "total");
+          renderList(dietBreakdown, payload.breakdowns?.diet ?? [], "total");
+          renderRecentUsers(payload.recentUsers ?? []);
+          statusText.textContent = "Actualizado: " + formatDate(payload.generatedAt);
+          statusDot.classList.add("live");
+        } catch (error) {
+          statusText.textContent = "Error al cargar: " + error.message;
+          statusDot.classList.remove("live");
+        }
+      }
+
+      reloadBtn.addEventListener("click", loadOverview);
+      loadOverview();
+    </script>
+  </body>
+</html>

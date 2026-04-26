@@ -1,0 +1,6 @@
+USE u415738498_BaseApp;
+
+ALTER TABLE users
+  ADD COLUMN IF NOT EXISTS diet_calories SMALLINT UNSIGNED NULL AFTER imc,
+  ADD COLUMN IF NOT EXISTS notices_accepted TINYINT(1) NULL AFTER diet_calories,
+  ADD COLUMN IF NOT EXISTS tracking_consent TINYINT(1) NULL AFTER notices_accepted;

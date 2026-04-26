@@ -1,7 +1,7 @@
 -- MySQL schema for DietaApp user tracking (Hostinger/local)
 -- Charset and collation
-CREATE DATABASE IF NOT EXISTS dietaapp CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE dietaapp;
+CREATE DATABASE IF NOT EXISTS u415738498_BaseApp CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE u415738498_BaseApp;
 
 CREATE TABLE IF NOT EXISTS users (
   id CHAR(36) NOT NULL,
@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS users (
   height_cm DECIMAL(5,2) NULL,
   weight_kg DECIMAL(6,2) NULL,
   imc DECIMAL(5,2) NULL,
+  diet_calories SMALLINT UNSIGNED NULL,
+  notices_accepted TINYINT(1) NULL,
+  tracking_consent TINYINT(1) NULL,
   start_datetime DATETIME NOT NULL,
   current_datetime DATETIME NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

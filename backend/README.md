@@ -11,12 +11,17 @@ npm install
 
 ## 2. Configure
 
-1. Copy `.env.example` to `.env`.
-2. Set MySQL credentials for local or Hostinger.
+The backend now uses explicit env files by mode:
+- Development (default): `.env.development`
+- Production: `.env.production`
 
-Quick presets available:
-- `.env.local.example` for local MySQL testing.
-- `.env.hostinger.example` for Hostinger deployment.
+Fallback:
+- `.env` is still loaded as fallback for missing vars.
+
+Recommended setup:
+1. Put local MySQL values in `.env.development`.
+2. Put remote/production values in `.env.production`.
+3. Keep `NODE_ENV=production` in deployment.
 
 Required variables:
 - `PORT`
@@ -27,12 +32,15 @@ Required variables:
 - `MYSQL_DATABASE`
 - `CORS_ORIGIN`
 
-For local backend testing with a remote Hostinger DB, replace `MYSQL_HOST` with the remote MySQL host provided by Hostinger.
+For local backend testing with a remote Hostinger DB, set those values in `.env.development`.
 
 ## 3. Create tables
 
 Run SQL file:
 - `sql/mysql-user-tracking-v2.sql`
+
+If the database already exists, run migration too:
+- `sql/mysql-user-tracking-baseapp-migration.sql`
 
 ## 4. Start backend
 
@@ -62,6 +70,23 @@ VITE_API_TIMEOUT_MS=8000
 - `POST /consults`
 - `GET /health`
 
+## 6.1 Admin web (private)
+
+Private stats dashboard route:
+- `GET /admin`
+
+Admin API route used by dashboard:
+- `GET /admin/api/overview`
+
+Both routes are protected with HTTP Basic Auth using:
+- `ADMIN_USER`
+- `ADMIN_PASSWORD`
+
+Example:
+1. Start backend.
+2. Open `http://localhost:4000/admin`.
+3. Enter admin credentials when browser asks.
+
 ## 7. Permanent deployment (recommended)
 
 To avoid temporary tunnels and allow mobile usage outside your local network, deploy the backend to a public host (Render or Railway).
@@ -77,11 +102,13 @@ To avoid temporary tunnels and allow mobile usage outside your local network, de
 4. Set environment variables in Render dashboard:
 	- `MYSQL_HOST=srv1999.hstgr.io`
 	- `MYSQL_PORT=3306`
-	- `MYSQL_USER=u415738498_Phynchon`
+	- `MYSQL_USER=u415738498_Martorell`
 	- `MYSQL_PASSWORD=...`
-	- `MYSQL_DATABASE=u415738498_Textos`
+	- `MYSQL_DATABASE=u415738498_BaseApp`
 	- `MYSQL_CONNECTION_LIMIT=10`
 	- `CORS_ORIGIN=http://localhost:4173,http://localhost,capacitor://localhost,https://your-frontend-domain.com`
+	- `ADMIN_USER=...`
+	- `ADMIN_PASSWORD=...`
 5. After deploy, open:
 	- `https://your-backend-domain.com/health`
 

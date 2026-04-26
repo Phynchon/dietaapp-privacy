@@ -1482,22 +1482,36 @@ function App() {
     const ageValue = Number.isFinite(normalizedAge) && normalizedAge > 0
       ? Math.round(normalizedAge)
       : null;
+    const normalizedWeight = Number(String(imcWeight).replace(",", "."));
+    const weightValue = Number.isFinite(normalizedWeight) && normalizedWeight > 0
+      ? normalizedWeight
+      : null;
+    const normalizedHeight = Number(String(imcHeight).replace(",", "."));
+    const heightValue = Number.isFinite(normalizedHeight) && normalizedHeight > 0
+      ? normalizedHeight
+      : null;
     const nowIso = new Date().toISOString();
+    const trackedUser = programTrackingSnapshot?.user;
+    const trackedProgram = programTrackingSnapshot?.program;
     const userId =
-      typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+      trackedUser?.id ||
+      (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
         ? crypto.randomUUID()
-        : `user_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+        : `user_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`);
 
     const payload = {
       id: userId,
       alias: statsProfile.alias.trim() || null,
       country: statsProfile.country.trim() || null,
       age: ageValue,
-      gender: "unknown",
-      heightCm: null,
-      weightKg: null,
-      imc: null,
-      startDatetime: nowIso,
+      gender: trackedUser?.gender || imcSex || "unknown",
+      heightCm: trackedUser?.heightCm ?? heightValue,
+      weightKg: trackedUser?.weightKg ?? weightValue,
+      imc: trackedUser?.imc ?? imcValue,
+      dietCalories: trackedProgram?.caloriesTarget ?? selectedDietCalories,
+      noticesAccepted: noticesEnabled,
+      trackingConsent: true,
+      startDatetime: trackedUser?.startDatetime || nowIso,
       currentDatetime: nowIso,
     };
 

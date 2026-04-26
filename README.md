@@ -11,6 +11,22 @@ Aplicación React + Vite con un shell PWA listo para un menú diario, lista de i
 - `npm run clean` - Limpia dist y caché de Vite
 - `npm run clean:cache` - Limpia solo la caché de Vite
 
+
+## Entornos (Dev y Produccion)
+
+Frontend (Vite):
+- Desarrollo: `.env.development` (usa `VITE_API_BASE_URL=http://localhost:4000`)
+- Produccion: `.env.production` (usa el backend publico)
+- `.env` queda solo para valores comunes (por ejemplo timeout)
+
+Backend (Express):
+- Desarrollo: `backend/.env.development`
+- Produccion: `backend/.env.production`
+- `backend/.env` se mantiene como fallback para variables no definidas
+
+Nota:
+- Si compilas Android (`npm run build` + sync de Capacitor), la URL de API queda embebida en el bundle segun el modo de build. Para produccion, revisa siempre `.env.production` antes de generar APK/AAB.
+
 ## Iniciar el Servidor
 
 ```bash

@@ -71,6 +71,9 @@ export function registerTrackingRoutes(app) {
         heightCm = null,
         weightKg = null,
         imc = null,
+        dietCalories = null,
+        noticesAccepted = null,
+        trackingConsent = null,
         startDatetime,
         currentDatetime,
       } = req.body || {};
@@ -79,34 +82,77 @@ export function registerTrackingRoutes(app) {
         return res.status(400).json({ error: "id, startDatetime and currentDatetime are required" });
       }
 
-      await db.query(
-        `INSERT INTO users (
-          id, alias, country, age, gender, height_cm, weight_kg, imc, start_datetime, current_datetime
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ON DUPLICATE KEY UPDATE
-          alias = VALUES(alias),
-          country = VALUES(country),
-          age = VALUES(age),
-          gender = VALUES(gender),
-          height_cm = VALUES(height_cm),
-          weight_kg = VALUES(weight_kg),
-          imc = VALUES(imc),
-          start_datetime = VALUES(start_datetime),
-          current_datetime = VALUES(current_datetime),
-          updated_at = CURRENT_TIMESTAMP`,
-        [
-          id,
-          alias,
-          country,
-          age,
-          gender,
-          heightCm,
-          weightKg,
-          imc,
-          toMysqlDateTime(startDatetime),
-          toMysqlDateTime(currentDatetime),
-        ],
-      );
+      try {
+        await db.query(
+          `INSERT INTO users (
+            id, alias, country, age, gender, height_cm, weight_kg, imc,
+            diet_calories, notices_accepted, tracking_consent,
+            start_datetime, current_datetime
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          ON DUPLICATE KEY UPDATE
+            alias = VALUES(alias),
+            country = VALUES(country),
+            age = VALUES(age),
+            gender = VALUES(gender),
+            height_cm = VALUES(height_cm),
+            weight_kg = VALUES(weight_kg),
+            imc = VALUES(imc),
+            diet_calories = VALUES(diet_calories),
+            notices_accepted = VALUES(notices_accepted),
+            tracking_consent = VALUES(tracking_consent),
+            start_datetime = VALUES(start_datetime),
+            current_datetime = VALUES(current_datetime),
+            updated_at = CURRENT_TIMESTAMP`,
+          [
+            id,
+            alias,
+            country,
+            age,
+            gender,
+            heightCm,
+            weightKg,
+            imc,
+            dietCalories,
+            noticesAccepted == null ? null : (noticesAccepted ? 1 : 0),
+            trackingConsent == null ? null : (trackingConsent ? 1 : 0),
+            toMysqlDateTime(startDatetime),
+            toMysqlDateTime(currentDatetime),
+          ],
+        );
+      } catch (error) {
+        if (error?.code !== "ER_BAD_FIELD_ERROR") {
+          throw error;
+        }
+
+        await db.query(
+          `INSERT INTO users (
+            id, alias, country, age, gender, height_cm, weight_kg, imc, start_datetime, current_datetime
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          ON DUPLICATE KEY UPDATE
+            alias = VALUES(alias),
+            country = VALUES(country),
+            age = VALUES(age),
+            gender = VALUES(gender),
+            height_cm = VALUES(height_cm),
+            weight_kg = VALUES(weight_kg),
+            imc = VALUES(imc),
+            start_datetime = VALUES(start_datetime),
+            current_datetime = VALUES(current_datetime),
+            updated_at = CURRENT_TIMESTAMP`,
+          [
+            id,
+            alias,
+            country,
+            age,
+            gender,
+            heightCm,
+            weightKg,
+            imc,
+            toMysqlDateTime(startDatetime),
+            toMysqlDateTime(currentDatetime),
+          ],
+        );
+      }
 
       return res.status(201).json({ ok: true, id });
     } catch (error) {
