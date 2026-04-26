@@ -47,6 +47,9 @@ app.use((err, _req, res, _next) => {
 });
 
 app.listen(port, () => {
+  const hasAdminAuth = Boolean(process.env.ADMIN_USER && process.env.ADMIN_PASSWORD);
   // eslint-disable-next-line no-console
   console.log(`DietaApp backend running on port ${port}`);
+  // eslint-disable-next-line no-console
+  console.log(`Admin auth configured: ${hasAdminAuth}`);
 });
