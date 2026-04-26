@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node backend/src/server.js",
+    "start:api": "node backend/src/server.js",
     "dev": "npm run clean:ports && vite",
     "dev:clean": "npm run clean:ports && vite",
     "clean:ports": "powershell -ExecutionPolicy Bypass -File ./clean-ports.ps1",
