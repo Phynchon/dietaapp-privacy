@@ -1,9 +1,9 @@
 {
-  "appId": "com.dietaapp",
+  "appId": "com.pmdietapp",
   "appName": "DietaApp",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "server": {
-    "androidScheme": "https"
+    "androidScheme": "http"
   }
 }
