@@ -13,6 +13,8 @@ CREATE TABLE IF NOT EXISTS users (
   diet_calories SMALLINT UNSIGNED NULL,
   notices_accepted TINYINT(1) NULL,
   tracking_consent TINYINT(1) NULL,
+  user_plan ENUM('free', 'premium') NOT NULL DEFAULT 'free',
+  plan_updated_at DATETIME NULL,
   start_datetime DATETIME NOT NULL,
   current_datetime DATETIME NOT NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -17,6 +17,40 @@ function toMysqlDate(value) {
   return parsed.toISOString().slice(0, 10);
 }
 
+function normalizeUserPlan(value) {
+  return value === "premium" ? "premium" : "free";
+}
+
+let userPlanColumnsReady = false;
+
+async function ensureUserPlanColumns(db) {
+  if (userPlanColumnsReady) return;
+
+  try {
+    await db.query(
+      `ALTER TABLE users
+       ADD COLUMN user_plan ENUM('free','premium') NOT NULL DEFAULT 'free'`,
+    );
+  } catch (error) {
+    if (error?.code !== "ER_DUP_FIELDNAME") {
+      return;
+    }
+  }
+
+  try {
+    await db.query(
+      `ALTER TABLE users
+       ADD COLUMN plan_updated_at DATETIME NULL`,
+    );
+  } catch (error) {
+    if (error?.code !== "ER_DUP_FIELDNAME") {
+      return;
+    }
+  }
+
+  userPlanColumnsReady = true;
+}
+
 export function registerTrackingRoutes(app) {
   app.post("/consults", async (req, res, next) => {
     try {
@@ -74,6 +108,7 @@ export function registerTrackingRoutes(app) {
         dietCalories = null,
         noticesAccepted = null,
         trackingConsent = null,
+        userPlan = "free",
         startDatetime,
         currentDatetime,
       } = req.body || {};
@@ -87,8 +122,9 @@ export function registerTrackingRoutes(app) {
           `INSERT INTO users (
             id, alias, country, age, gender, height_cm, weight_kg, imc,
             diet_calories, notices_accepted, tracking_consent,
+            user_plan, plan_updated_at,
             start_datetime, current_datetime
-          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
           ON DUPLICATE KEY UPDATE
             alias = VALUES(alias),
             country = VALUES(country),
@@ -100,6 +136,8 @@ export function registerTrackingRoutes(app) {
             diet_calories = VALUES(diet_calories),
             notices_accepted = VALUES(notices_accepted),
             tracking_consent = VALUES(tracking_consent),
+            user_plan = VALUES(user_plan),
+            plan_updated_at = VALUES(plan_updated_at),
             start_datetime = VALUES(start_datetime),
             current_datetime = VALUES(current_datetime),
             updated_at = CURRENT_TIMESTAMP`,
@@ -115,6 +153,8 @@ export function registerTrackingRoutes(app) {
             dietCalories,
             noticesAccepted == null ? null : (noticesAccepted ? 1 : 0),
             trackingConsent == null ? null : (trackingConsent ? 1 : 0),
+            normalizeUserPlan(userPlan),
+            toMysqlDateTime(new Date().toISOString()),
             toMysqlDateTime(startDatetime),
             toMysqlDateTime(currentDatetime),
           ],
@@ -205,6 +245,91 @@ export function registerTrackingRoutes(app) {
       );
 
       return res.status(201).json({ ok: true, id });
+    } catch (error) {
+      return next(error);
+    }
+  });
+
+  app.get("/users/:id/plan", async (req, res, next) => {
+    try {
+      const db = getDbPool();
+      const { id } = req.params;
+
+      await ensureUserPlanColumns(db);
+
+      let rows;
+      try {
+        [rows] = await db.query(
+          `SELECT id, user_plan, plan_updated_at
+           FROM users
+           WHERE id = ?
+           LIMIT 1`,
+          [id],
+        );
+      } catch (error) {
+        if (error?.code !== "ER_BAD_FIELD_ERROR") {
+          throw error;
+        }
+        [rows] = await db.query(
+          `SELECT id
+           FROM users
+           WHERE id = ?
+           LIMIT 1`,
+          [id],
+        );
+      }
+
+      const user = rows?.[0];
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      return res.json({
+        id: user.id,
+        plan: normalizeUserPlan(user.user_plan),
+        planUpdatedAt: user.plan_updated_at || null,
+      });
+    } catch (error) {
+      return next(error);
+    }
+  });
+
+  app.put("/users/:id/plan", async (req, res, next) => {
+    try {
+      const db = getDbPool();
+      const { id } = req.params;
+      const { plan } = req.body || {};
+
+      if (!plan) {
+        return res.status(400).json({ error: "plan is required" });
+      }
+
+      await ensureUserPlanColumns(db);
+
+      let result;
+      try {
+        [result] = await db.query(
+          `UPDATE users
+           SET user_plan = ?,
+               plan_updated_at = CURRENT_TIMESTAMP,
+               updated_at = CURRENT_TIMESTAMP
+           WHERE id = ?`,
+          [normalizeUserPlan(plan), id],
+        );
+      } catch (error) {
+        if (error?.code !== "ER_BAD_FIELD_ERROR") {
+          throw error;
+        }
+        return res.status(409).json({
+          error: "Schema does not support user_plan yet",
+        });
+      }
+
+      if (!result?.affectedRows) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      return res.json({ ok: true, id, plan: normalizeUserPlan(plan) });
     } catch (error) {
       return next(error);
     }

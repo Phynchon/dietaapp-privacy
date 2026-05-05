@@ -5,6 +5,31 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ADMIN_DASHBOARD_PATH = path.resolve(__dirname, "..", "admin-dashboard.html");
+const DEFAULT_DEV_ADMIN_USER = "admin";
+const DEFAULT_DEV_ADMIN_PASSWORD = "admin";
+
+function getAdminAuthConfig() {
+  const configuredUser = process.env.ADMIN_USER;
+  const configuredPassword = process.env.ADMIN_PASSWORD;
+
+  if (configuredUser && configuredPassword) {
+    return {
+      user: configuredUser,
+      password: configuredPassword,
+      isDefaultDevCredentials: false,
+    };
+  }
+
+  if (process.env.NODE_ENV !== "production") {
+    return {
+      user: DEFAULT_DEV_ADMIN_USER,
+      password: DEFAULT_DEV_ADMIN_PASSWORD,
+      isDefaultDevCredentials: true,
+    };
+  }
+
+  return null;
+}
 
 function decodeBasicAuthHeader(authHeader) {
   if (typeof authHeader !== "string" || !authHeader.startsWith("Basic ")) {
@@ -26,20 +51,19 @@ function decodeBasicAuthHeader(authHeader) {
 }
 
 function requireAdminAuth(req, res, next) {
-  const expectedUser = process.env.ADMIN_USER;
-  const expectedPassword = process.env.ADMIN_PASSWORD;
+  const authConfig = getAdminAuthConfig();
 
-  if (!expectedUser || !expectedPassword) {
+  if (!authConfig) {
     return res.status(503).json({
-      error: "Admin credentials are not configured. Set ADMIN_USER and ADMIN_PASSWORD.",
+      error: "Las credenciales de administrador no estan configuradas. Configure ADMIN_USER y ADMIN_PASSWORD.",
     });
   }
 
   const credentials = decodeBasicAuthHeader(req.headers.authorization);
   const isAuthorized =
     credentials &&
-    credentials.user === expectedUser &&
-    credentials.password === expectedPassword;
+    credentials.user === authConfig.user &&
+    credentials.password === authConfig.password;
 
   if (!isAuthorized) {
     res.setHeader("WWW-Authenticate", 'Basic realm="DietaApp Admin"');

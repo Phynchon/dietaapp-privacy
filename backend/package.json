@@ -5,7 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "migrate:user-plan": "node scripts/migrate-user-plan-columns.mjs",
+    "test:plan-endpoints": "node scripts/test-plan-endpoints.mjs",
+    "seed:loadtest": "node scripts/seed-loadtest-users.mjs",
+    "seed:stress": "node scripts/seed-loadtest-users.mjs --mode=stress",
+    "cleanup:loadtest": "node scripts/cleanup-loadtest-users.mjs",
+    "cleanup:loadtest:dry": "node scripts/cleanup-loadtest-users.mjs --dryRun=true"
   },
   "dependencies": {
     "cors": "^2.8.5",

@@ -11,7 +11,7 @@ dotenv.config({ path: ".env" });
 
 const app = express();
 const port = Number(process.env.PORT || 3000);
-const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:4173,http://localhost,capacitor://localhost")
+const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:4173,http://localhost,https://localhost,capacitor://localhost")
   .split(",")
   .map((value) => value.trim())
   .filter(Boolean);
@@ -47,9 +47,14 @@ app.use((err, _req, res, _next) => {
 });
 
 app.listen(port, () => {
-  const hasAdminAuth = Boolean(process.env.ADMIN_USER && process.env.ADMIN_PASSWORD);
+  const hasConfiguredAdminAuth = Boolean(process.env.ADMIN_USER && process.env.ADMIN_PASSWORD);
+  const usingDevDefaults = !hasConfiguredAdminAuth && process.env.NODE_ENV !== "production";
   // eslint-disable-next-line no-console
   console.log(`DietaApp backend running on port ${port}`);
   // eslint-disable-next-line no-console
-  console.log(`Admin auth configured: ${hasAdminAuth}`);
+  console.log(`Admin auth configured: ${hasConfiguredAdminAuth || usingDevDefaults}`);
+  if (usingDevDefaults) {
+    // eslint-disable-next-line no-console
+    console.log("Admin auth defaults (dev only): user=admin password=admin");
+  }
 });

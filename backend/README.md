@@ -42,6 +42,19 @@ Run SQL file:
 If the database already exists, run migration too:
 - `sql/mysql-user-tracking-baseapp-migration.sql`
 
+### 3.1 Plan columns migration (Week 2)
+
+To ensure `users.user_plan` and `users.plan_updated_at` exist in the active DB:
+
+```bash
+npm run migrate:user-plan
+```
+
+Expected output includes:
+- `userPlan` as `applied` or `already-exists`
+- `planUpdatedAt` as `applied` or `already-exists`
+- `columns` containing both `user_plan` and `plan_updated_at`
+
 ## 4. Start backend
 
 ```bash
@@ -50,6 +63,20 @@ npm run dev
 
 Health check:
 - `GET http://localhost:4000/health`
+
+### 4.1 Plan API smoke test
+
+With backend running, validate `POST /users` + `GET/PUT /users/:id/plan` end-to-end:
+
+```bash
+npm run test:plan-endpoints
+```
+
+Expected flow:
+- `postUserStatus: 201`
+- `getBeforeStatus: 200` with `plan: "free"`
+- `putStatus: 200` with `plan: "premium"`
+- `getAfterStatus: 200` with `plan: "premium"` and non-null `planUpdatedAt`
 
 ## 5. Connect frontend
 
@@ -82,6 +109,12 @@ Both routes are protected with HTTP Basic Auth using:
 - `ADMIN_USER`
 - `ADMIN_PASSWORD`
 
+Development fallback:
+- If `NODE_ENV` is not `production` and those vars are missing, backend uses temporary defaults:
+	- user: `admin`
+	- password: `admin`
+- In production, `ADMIN_USER` and `ADMIN_PASSWORD` are mandatory.
+
 Example:
 1. Start backend.
 2. Open `http://localhost:4000/admin`.
@@ -106,7 +139,7 @@ To avoid temporary tunnels and allow mobile usage outside your local network, de
 	- `MYSQL_PASSWORD=...`
 	- `MYSQL_DATABASE=u415738498_BaseApp`
 	- `MYSQL_CONNECTION_LIMIT=10`
-	- `CORS_ORIGIN=http://localhost:4173,http://localhost,capacitor://localhost,https://your-frontend-domain.com`
+	- `CORS_ORIGIN=http://localhost:4173,http://localhost,https://localhost,capacitor://localhost,https://your-frontend-domain.com`
 	- `ADMIN_USER=...`
 	- `ADMIN_PASSWORD=...`
 5. After deploy, open:

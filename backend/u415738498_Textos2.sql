@@ -98,6 +98,8 @@ CREATE TABLE `users` (
   `height_cm` decimal(5,2) DEFAULT NULL,
   `weight_kg` decimal(6,2) DEFAULT NULL,
   `imc` decimal(5,2) DEFAULT NULL,
+  `user_plan` enum('free','premium') NOT NULL DEFAULT 'free',
+  `plan_updated_at` datetime DEFAULT NULL,
   `start_datetime` datetime NOT NULL,
   `current_datetime` datetime NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
