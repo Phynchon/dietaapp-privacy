@@ -7,7 +7,7 @@
         "Petit-déjeuner léger : 1 verre de lait écrémé + une tranche de pain complet de quatre doigts + une tranche de charcuterie de dinde + une cuillère à soupe de tomates concassées",
         "Petit-déjeuner complet : 2 yaourts écrémés + une poignée de céréales complètes non sucrées",
         "Petit-déjeuner classique : 1 verre de lait écrémé + une tranche de pain complet de quatre doigts + 1 cuillère à soupe de confiture sans sucre",
-        "Petit déjeuner andalou : 1 verre de lait écrémé + une tranche de pain complet de quatre doigts de large + 1 cuillère à soupe de tomate concassée + une cuillère à café d'huile d'olive"
+        "Petit-dejeuner andalou : 1 verre de lait écrémé + une tranche de pain complet de quatre doigts de large + 1 cuillère à soupe de tomate concassée + une cuillère à café d'huile d'olive"
       ],
       "midmorningOptions": [
         "Yaourt aux pruneaux : 1 yaourt écrémé + 2 pruneaux",
@@ -24,24 +24,24 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Tagliatelles aux légumes : une demi-assiette de tagliatelles cuites, une demi-carotte et un demi-poivron",
-              "Empereur grillé : 1 petite tranche d'Empereur + ail et persil",
-              "2 kiwis",
-              "Une tranche de pain complet de trois doigts de large"
+              "Compote de lentilles : 1 poignée et demie de lentilles + 4 morceaux de bœuf maigre + poireaux sautés, tomates et poivrons avec 1 cuillère à soupe d'huile",
+              "Salade de feuilles de chêne : laitue de chêne 75 g",
+              "1 orange (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "pâtes crues 40 g, carotte 50 g, poivron vert 50 g, empereur 100 g, ail 3 g, persil haché",
-            "recipe": "couper les légumes en julienne et les faire revenir, cuire les pâtes et lorsqu'elles sont al dente, les égoutter et les mélanger avec les légumes. Hachez l'ail et le persil et faites-les revenir un peu, faites griller l'empereur et ajoutez l'ail dessus",
+            "ingredients": "lentilles 50 g, bœuf maigre 85 g, poireau 50 g, tomate 50 g, poivrons 50 g",
+            "recipe": "Faites revenir avec le poireau, la tomate et le poivron et ajoutez la viande en morceaux, ajoutez les lentilles et couvrez d'eau ou vous pouvez utiliser un bouillon de légumes pour lui donner plus de goût.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Carpaccio de tomates à l'origan : une tomate moyenne à l'origan",
-              "Poitrine de dinde grillée à l'oignon confit : un filet moyen de poitrine de dinde avec un demi oignon confit",
-              "Une grosse pomme (200 g)",
+              "Salade d'asperges sauvages aux tomates cerises et aneth : 1 assiette d'asperges, 9 tomates cerises, aneth",
+              "Cœur de merlu grillé : une grosse tranche de merlu au four",
+              "2 prunes (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "Poitrine de dinde 140 g, oignon 50 g, tomate 150 g, origan",
-            "recipe": "Coupez la tomate en tranches très fines et mettez-la dans une assiette, assaisonnez-la et ajoutez l'origan. Coupez l'oignon en lanières, faites-le revenir et accompagnez-le de la poitrine de poulet grillée",
+            "ingredients": "asperges sauvages 150 g, tomate 90 g, aneth, merlu 140 g",
+            "recipe": "faire cuire les asperges quelques minutes. Couper les tomates cerises en deux et mettre le tout dans un bol, ajouter l'aneth et assaisonner avec un peu d'huile d'olive et vinaigre",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -77,57 +77,31 @@
           "menuNumber": 3,
           "lunch": {
             "items": [
-              "Salade de pois chiches aux copeaux de jambon : 1 poignée et demie de pois chiches crus + une demi-carotte + une demi-tomate + copeaux de jambon serrano + mâche",
-              "Une grosse pêche (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Tagliatelles aux légumes : une demi-assiette de tagliatelles cuites, une demi-carotte et un demi-poivron",
+              "Empereur grillé : 1 petite tranche d'Empereur + ail et persil",
+              "2 kiwis",
+              "Une tranche de pain complet de trois doigts de large"
             ],
-            "ingredients": "pois chiches 50 g, carotte 60 g, tomate 60 g, jambon 60 g, mâche 50 g",
-            "recipe": "Les pois chiches sont cuits avec un bouillon de légumes pour leur donner plus de goût, vous pouvez utiliser des pois chiches déjà cuits. Coupez la carotte et la tomate en cubes et ajoutez-les aux pois chiches égouttés. Mettez le tout dans un saladier avec la mâche et les copeaux de jambon",
+            "ingredients": "pâtes crues 40 g, carotte 50 g, poivron vert 50 g, empereur 100 g, ail 3 g, persil haché",
+            "recipe": "couper les légumes en julienne et les faire revenir, cuire les pâtes et lorsqu'elles sont al dente, les égoutter et les mélanger avec les légumes. Hachez l'ail et le persil et faites-les revenir un peu, faites griller l'empereur puis ajoutez l'ail par-dessus",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Smoothie tomate et céleri : une tomate + un brin de céleri",
-              "Filets de coq cuits à la vapeur et courgettes grillées : 1 filet de coq moyen + courgettes",
-              "1 orange (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)",
-              "La courgette est grillée. Les filets de coq sont cuits à la vapeur et servis avec les courgettes."
-            ],
-            "ingredients": "coq 140 g, courgettes 160 g, laurier, tomate 250 g, céleri 30 g",
-            "recipe": "liquéfier la tomate et servir avec un peu de poivre et la branche de tomate, vous pouvez utiliser du jus de tomate ou un smoothie de légumes, si vous préférez vous pouvez le remplacer par une salade de tomates.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe d'huile par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Lasagne aux aubergines : une demi-grosse aubergine + 4 cuillères à soupe de viande hachée + une demi-petite tomate + un demi-petit oignon",
-              "Salade scarole : une petite assiette de scarole",
-              "Une grosse tranche de melon (300 g)",
+              "Carpaccio de tomates à l'origan : une tomate moyenne à l'origan",
+              "Poitrine de dinde grillée à l'oignon confit : un filet moyen de poitrine de dinde avec un demi oignon confit",
+              "Une grosse pomme (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "aubergine 150 g, viande hachée 120 g, tomate 50 g, oignon 50 g, endives 80 g",
-            "recipe": "faire revenir l'oignon et la tomate et faire revenir la viande hachée, couper des tranches d'aubergine et monter les lasagnes en alternant la viande hachée avec les tranches d'aubergine",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Morue grillée avec carottes et potiron grillés : 1 filet de cabillaud moyen + potiron + une demi-carotte",
-              "Une pomme (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "cabillaud 140 g, potiron 150 g, carotte 150 g",
-            "recipe": "couper le potiron en tranches et la carotte en lanières et les faire griller avec le cabillaud. On peut la remplacer par une purée de carottes et potiron et un cabillaud grillé",
+            "ingredients": "Poitrine de dinde 140 g, oignon 50 g, tomate 150 g, origan",
+            "recipe": "Coupez la tomate en tranches très fines et mettez-la dans une assiette, assaisonnez-la et ajoutez l'origan. Coupez l'oignon en lanières, faites-le revenir et accompagnez-le de la poitrine de dinde grillée",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
           }
         },
         {
-          "menuNumber": 5,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Paella mixte : 1 poignée de riz cru + 1 oignon sauté, poivron, tomate avec 1 cuillère à soupe d'huile + 2 morceaux de poulet + 4 grosses rondelles de calamars + 7 moules",
@@ -153,29 +127,55 @@
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 5,
           "lunch": {
             "items": [
-              "Compote de lentilles : 1 poignée et demie de lentilles + 4 morceaux de bœuf maigre + poireaux sautés, tomates et poivrons avec 1 cuillère à soupe d'huile",
-              "Salade de feuilles de chêne : laitue de chêne 75 g",
-              "1 orange (200 g)",
+              "Lasagne aux aubergines : une demi-grosse aubergine + 4 cuillères à soupe de viande hachée + une demi-petite tomate + un demi-petit oignon",
+              "Salade scarole : une petite assiette de scarole",
+              "Une grosse tranche de melon (300 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "lentilles 50 g, bœuf maigre 85 g, poireau 50 g, tomate 50 g, poivrons 50 g",
-            "recipe": "Faites revenir avec le poireau, la tomate et le poivron et ajoutez la viande en morceaux, ajoutez les lentilles et couvrez d'eau ou vous pouvez utiliser un bouillon de légumes pour lui donner plus de goût.",
+            "ingredients": "aubergine 150 g, viande hachée 120 g, tomate 50 g, oignon 50 g, endives 80 g",
+            "recipe": "faire revenir l'oignon et la tomate et faire revenir la viande hachée, couper des tranches d'aubergine et monter les lasagnes en alternant la viande hachée avec les tranches d'aubergine",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Salade d'asperges sauvages aux tomates cerises et aneth : 1 assiette d'asperges, 9 tomates cerises, aneth",
-              "Cœur de merlu grillé : une grosse tranche de merlu au four",
-              "2 prunes (200 g)",
+              "Morue grillée avec carottes et potiron grillés : 1 filet de cabillaud moyen + potiron + une demi-carotte",
+              "Une pomme (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "asperges sauvages 150 g, tomate 90 g, aneth, merlu 140 g",
-            "recipe": "faire cuire les asperges quelques minutes, Couper les tomates cerises en deux et mettre le tout dans un bol, ajouter l'aneth et assaisonner avec un peu d'olive huile et vinaigre",
+            "ingredients": "cabillaud 140 g, potiron 150 g, carotte 150 g",
+            "recipe": "couper le potiron en tranches et la carotte en lanières et les faire griller avec le cabillaud. On peut la remplacer par une purée de carottes et potiron et un cabillaud grillé",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Salade de pois chiches aux copeaux de jambon : 1 poignée et demie de pois chiches crus + une demi-carotte + une demi-tomate + copeaux de jambon serrano + mâche",
+              "Une grosse pêche (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pois chiches 50 g, carotte 60 g, tomate 60 g, jambon 60 g, mâche 50 g",
+            "recipe": "Les pois chiches sont cuits avec un bouillon de légumes pour leur donner plus de goût, vous pouvez utiliser des pois chiches déjà cuits. Coupez la carotte et la tomate en cubes et ajoutez-les aux pois chiches égouttés. Mettez le tout dans un saladier avec la mâche et les copeaux de jambon",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Smoothie tomate et céleri : une tomate + un brin de céleri",
+              "Filets de coq cuits à la vapeur et courgettes grillées : 1 filet de coq moyen + courgettes",
+              "1 orange (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)",
+              "La courgette est grillée. Les filets de coq sont cuits à la vapeur et servis avec les courgettes."
+            ],
+            "ingredients": "coq 140 g, courgettes 160 g, laurier, tomate 250 g, céleri 30 g",
+            "recipe": "liquéfier la tomate et servir avec un peu de poivre et la branche de tomate, vous pouvez utiliser du jus de tomate ou un smoothie de légumes, si vous préférez vous pouvez le remplacer par une salade de tomates.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe d'huile par jour"
             ]
           }
         },
@@ -185,7 +185,7 @@
             "items": [
               "Salade d'endives à l'orange : 1 endive +",
               "1 orange sanguine",
-              "Bandes marinera : 1 poignée de pâtes + 4 crevettes + 3 morceaux de perche + 1 oignon sauté et tomate écrasée avec 1 cuillère à soupe d'huile",
+              "Noeuds papillon facon marinere : 1 poignée de pâtes + 4 crevettes + 3 morceaux de perche + 1 oignon sauté et tomate écrasée avec 1 cuillère à soupe d'huile",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
             "ingredients": "pâte 40 g, crevettes 55 g, perche 85 g, oignon 25 g, tomate concassée 20 g, endive 100 g, orange 200 g",
@@ -212,7 +212,7 @@
       "label": "Deuxième semaine",
       "breakfastOptions": [
         "Petit-déjeuner léger : 1 verre de lait écrémé (200cc) + une tranche de pain complet de quatre doigts (40 g) + une tranche de charcuterie de dinde (30 g) + une cuillère à soupe de tomate concassée (10 g)",
-        "Petit-déjeuner complet : 2 yaourts écrémés + une poignée de grains entiers non sucrés pays de Galles (30 g)",
+        "Petit-déjeuner complet : 2 yaourts écrémés + une poignée de grains entiers non sucres (30 g)",
         "Petit-déjeuner classique : 1 verre de lait écrémé (200 cc) + une tranche de pain de blé entier à quatre doigts (40 g) + 1 cuillère à soupe de confiture sans sucre (15 g)",
         "Petit-déjeuner andalou : 1 verre de lait écrémé (200 cc) + une tranche de pain de blé entier à quatre doigts (40 g) + 1 cuillère à soupe de tomate concassée (10 g) + une cuillère à café d'huile d'olive (5cc)"
       ],
@@ -229,6 +229,33 @@
       "days": [
         {
           "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Smoothie végétal : une tomate + ciboulette + poivron vert",
+              "Poulet en pepitoria : 1 petite cuisse de poulet + 1 petite pomme de terre + oignon + ail + une cuillère à soupe d'œuf dur haché",
+              "1 orange (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "cuisse de poulet 110 g, pomme de terre 130 g, tomate 150 g, oignon nouveau 20 g, poivre 30 g, oignon 20 g, ail 3 g, safran, œuf dur haché 30 g",
+            "recipe": "Les légumes sont lavés et mixés. Faire revenir l'oignon et l'ail, ajouter le poulet et le faire dorer, ajouter les dés de pommes de terre et l'eau avec un brin de safran, laisser cuire jusqu'à ce que le poulet soit tendre et hacher l'œuf haché et le verser dessus",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Brochettes de légumes grillés : aubergine + un demi poivron rouge + poivron jaune + une demi courgette",
+              "Sole au cava : petit filet de sole + cava",
+              "1 poire (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "courgettes 50 g, aubergines 50 g, poivron rouge 50 g, poivron jaune 50 g, sole 140 g, cava",
+            "recipe": "couper les légumes en morceaux et les insérer sur la brochette en alternant chaque légume et griller. La sole est grillée et saupoudrée de cava",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
           "lunch": {
             "items": [
               "Salade tiède d'épinards : 1 poignée de spirales de blé entier + une demi-courgette moyenne + 2 tranches de jambon cuit + épinards crus",
@@ -253,53 +280,27 @@
           }
         },
         {
-          "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Salade de riz brun : 1 poignée de riz + 1 petite tomate + un demi oignon + 1 œuf + un petit concombre",
-              "Ananas (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "riz complet 40 g, tomate 125 g, oignon 50 g, œuf 70 g, concombre 100 g",
-            "recipe": "faire cuire le riz brun et l'égoutter, hacher les légumes et mélanger avec le riz et l'œuf dur haché",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Soupe de chou frisé : chou frisé + un demi oignon",
-              "Bar au four aux tomates : 1 filet de bar + tomates cerises",
-              "Une pomme (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "bar 140 g, chou frisé 100 g, oignon 50 g, tomates 100 g",
-            "recipe": "Hachez l'oignon et faites-le revenir, ajoutez le chou coupé en lanières et faites cuire le tout ensemble. Faites cuire le bar au four et ajoutez les tomates sur la plaque du four pour servir d'accompagnement.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
           "menuNumber": 3,
           "lunch": {
             "items": [
-              "Smoothie végétal : une tomate + ciboulette + poivron vert",
-              "Poulet en pepitoria : 1 petite cuisse de poulet + 1 petite pomme de terre + oignon + ail + une cuillère à soupe d'œuf dur haché",
-              "1 orange (200 g)",
+              "Lasagne à la viande : 3 assiettes de lasagnes + 4 cuillères à soupe de viande hachée + une demi petite tomate + une demi petite courgette + une demi petite aubergine",
+              "Salade de laitue (50 g)",
+              "1 grosse poire (200 g)",
               "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "cuisse de poulet 110 g, pomme de terre 130 g, tomate 150 g, oignon nouveau 20 g, poivre 30 g, oignon 20 g, ail 3 g, safran, œuf dur haché 30 g",
-            "recipe": "Les légumes sont lavés et mixés. Faire revenir l'oignon et l'ail, ajouter le poulet et le faire dorer, ajouter les dés de pommes de terre et l'eau avec un brin de safran, laisser cuire jusqu'à ce que le poulet soit tendre et hacher l'œuf haché et le verser dessus",
+            "ingredients": "assiette de lasagne 40 g, bœuf haché 120 g, tomate 100 g, courgettes 50 g, aubergines 50 g",
+            "recipe": "des assiettes à lasagnes précuites sont utilisées, les légumes coupés en très petits cubes sont sautés et la viande hachée est ajoutée, une assiette à lasagne est placée et la viande dessus et recouverte d'une autre assiette. Vous pouvez ajouter un peu de sauce tomate maison dessus et la mettre au four le temps que les assiettes aient besoin de cuire",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Brochettes de légumes grillés : aubergine + un demi poivron rouge + poivron jaune + une demi courgette",
-              "Sole au cava : petit filet de sole + cava",
-              "1 poire (200 g)",
+              "Champignons grillés : champignons + persil",
+              "Merlu à la galicienne : une tranche de merlu moyen + 1 petite pomme de terre + oignon + ail",
+              "Oranges (200g)",
               "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "courgettes 50 g, aubergines 50 g, poivron rouge 50 g, poivron jaune 50 g, sole 140 g, cava",
-            "recipe": "couper les légumes en morceaux et les insérer sur la brochette en alternant chaque légume et griller. La sole est grillée et saupoudrée de cava",
+            "ingredients": "merlu 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, laurier, paprika, champignons 100 g, persil",
+            "recipe": "faire griller les champignons et ajouter un peu de persil dessus. Faites revenir l'oignon, ajoutez la pomme de terre, une feuille de laurier et recouvrez-le d'eau ou de bouillon de poisson pour le rendre plus savoureux. Lorsque la pomme de terre est presque cuite, ajoutez le merlu et jusqu'à ce qu'il soit prêt. D'autre part, faites revenir un peu d'ail avec du paprika et ajoutez-le au ragoût",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -334,6 +335,32 @@
           "menuNumber": 5,
           "lunch": {
             "items": [
+              "Salade de riz brun : 1 poignée de riz + 1 petite tomate + un demi oignon + 1 œuf + un petit concombre",
+              "Ananas (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "riz complet 40 g, tomate 125 g, oignon 50 g, œuf 70 g, concombre 100 g",
+            "recipe": "faire cuire le riz brun et l'égoutter, hacher les légumes et mélanger avec le riz et l'œuf dur haché",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Soupe de chou frisé : chou frisé + un demi oignon",
+              "Bar au four aux tomates : 1 filet de bar + tomates cerises",
+              "Une pomme (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "bar 140 g, chou frisé 100 g, oignon 50 g, tomates 100 g",
+            "recipe": "Hachez l'oignon et faites-le revenir, ajoutez le chou coupé en lanières et faites cuire le tout ensemble. Faites cuire le bar au four et ajoutez les tomates sur la plaque du four pour servir d'accompagnement.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
               "Salade de riz brun aux tomates : 1 tomate moyenne + 1 poignée de riz complet",
               "Cannellonis de courgettes et saumon : 1 petit filet de saumon + une demi-courgette",
               "2 kiwis (200 g)",
@@ -351,33 +378,6 @@
             ],
             "ingredients": "poitrine de poulet 140 g, poivron rouge 60 g, poivron vert 60 g, aubergine 100 g",
             "recipe": "Coupez le blanc de poulet en lanières et faites-le revenir avec les légumes coupés en julienne.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 6,
-          "lunch": {
-            "items": [
-              "Lasagne à la viande : 3 assiettes de lasagnes + 4 cuillères à soupe de viande hachée + une demi petite tomate + une demi petite courgette + une demi petite aubergine",
-              "Salade de laitue (50 g)",
-              "1 grosse poire (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "assiette de lasagne 40 g, bœuf haché 120 g, tomate 100 g, courgettes 50 g, aubergines 50 g",
-            "recipe": "des assiettes à lasagnes précuites sont utilisées, les légumes coupés en très petits cubes sont sautés et la viande hachée est ajoutée, une assiette à lasagne est placée et la viande dessus et recouverte d'une autre assiette. Vous pouvez ajouter un peu de sauce tomate maison dessus et la mettre au four le temps que les assiettes aient besoin de cuire",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Champignons grillés : champignons + persil",
-              "Merlu à la galicienne : une tranche de merlu moyen + 1 petite pomme de terre + oignon + ail",
-              "Oranges (200g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "merlu 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, laurier, paprika, champignons 100 g, persil",
-            "recipe": "faire griller les champignons et ajouter un peu de persil dessus. Faites revenir l'oignon, ajoutez la pomme de terre, une feuille de laurier et recouvrez-le d'eau ou de bouillon de poisson pour le rendre plus savoureux. Lorsque la pomme de terre est presque cuite, ajoutez le merlu et jusqu'à ce qu'il soit prêt. D'autre part, faites revenir un peu d'ail avec du paprika et ajoutez-le au ragoût",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -436,22 +436,23 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Brochettes de saumon grillé au riz sauvage : 1 petite tranche de saumon + champignons + courgettes + 1 poignée de riz sauvage",
-              "2 mandarines (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Spirales de grains entiers aux tomates rôties : 1 poignée de spirales de grains entiers + 3 cuillères à soupe de tomate concassée + ciboulette",
+              "Burger de dinde et salade de concombre à la menthe : 4 cuillères à soupe de dinde hachée + 1 concombre",
+              "2 kiwis (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "saumon 100 g, courgettes 100 g, champignons 100 g, crus riz sauvage 40 g",
-            "recipe": "le riz sauvage est cuit et réservé pour l'accompagnement, le saumon est coupé en cubes et posé sur une brochette en alternant avec des champignons et des tranches de courgettes, cuit à la grill",
+            "ingredients": "spires de grains entiers 40 g, tomate 50 g, oignon nouveau 20 g, dinde hachée 120 g, concombre 100 g, feuilles de menthe",
+            "recipe": "Les pâtes sont cuites, égouttées et réservées. Les tomates et l'oignon sont rôtis et mélangés aux pâtes. Le burger de dinde est grille et servi avec une salade de concombre et quelques feuilles de menthe.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Salade verte : mélange de laitue + ciboulette",
-              "Toasts au fromage frais : une tranche de pain de blé entier large de trois doigts (30 g) + fromage frais écrémé + quelques tranches de tomate",
-              "1 grosse poire (200 g)"
+              "Soupe de brocoli : brocoli",
+              "Lotte aux crevettes : 1 petit filet de lotte + crevettes + ail - Grosse poire (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "mélange de laitue 100 g, tomate 100 g, oignon nouveau 20 g, fromage frais écrémé 85 g",
-            "recipe": "préparez d'abord la salade, puis faites ensuite les toasts avec la tomate naturelle et le fromage frais. Vous pouvez remplacer les toasts par une salade de fromage avec de la salade verte et de la tomate, en l'accompagnant de la tranche de pain complet",
+            "ingredients": "brocoli 200 g, lotte 120 g, crevettes 20 g, ail 3 g",
+            "recipe": "le brocoli est cuit et passé au mixeur pour faire la crème. Griller la lotte et couper l'ail en tranches et faire revenir avec les crevettes qui sont ajoutées sur le poisson",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -461,23 +462,22 @@
           "menuNumber": 2,
           "lunch": {
             "items": [
-              "Farfalle printanière avec poitrine de dinde rôtie : 1 poignée de farfalle + un demi poivron vert + un demi poivron rouge + un demi oignon + une demi petite tomate + un petit filet de poitrine de dinde",
-              "1 grosse orange (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+              "Pois chiches vinaigrette avec lanières de poulet grillées : 1 poignée et demie de pois chiches + tomate + poivre + ciboulette + 1 gros filet de poulet",
+              "2 mandarines (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "farfalle 40 g, poivron vert 50 g, poivron rouge 50 g, oignon 50 g, tomate 50 g, poitrine de dinde 140 g",
-            "recipe": "la poitrine de dinde rôtie est confectionnée et feuilletée, les pâtes sont cuites et mélangées aux légumes coupés en fins cubes. La poitrine de dinde peut aussi être grillée",
+            "ingredients": "pois chiches 50 g, tomate 50 g, poivron 50 g, ciboulette 50 g, blanc de poulet 140 g",
+            "recipe": "faire cuire les pois chiches avec un bouillon de légumes et les égoutter, couper les légumes en petits cubes et mélanger avec les pois chiches. Réaliser le blanc de poulet grillé, le couper en lamelles et le disposer sur la salade de pois chiches",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Salade de pousses de laitue",
-              "Merlan au four : un filet de merlan moyen + 1 petite pomme de terre",
-              "1 grosse poire (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+              "Sauté de légumes à l'œuf poché : une demi-carotte + un morceau de potiron + 1 poireau + 1 petite courgette + œuf",
+              "1 grosse pêche (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "pousses de laitue 100 g, merlan 140 g, pomme de terre 130 g, oignon 30 g",
-            "recipe": "Faire revenir l'oignon avec les pommes de terre et les mettre dans un plat allant au four, déposer dessus les filets de merlan et terminer la cuisson jusqu'à ce que le poisson soit prêt.",
+            "ingredients": "carotte 50 g, potiron 50 g, poireau 90 g, courgettes 90 g, œuf 70 g",
+            "recipe": "couper les légumes en lanières et les faire revenir avec un peu d'huile d'olive, faire un œuf poché et le servir sur le sauté",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -539,6 +539,31 @@
           "menuNumber": 5,
           "lunch": {
             "items": [
+              "Brochettes de saumon grillé au riz sauvage : 1 petite tranche de saumon + champignons + courgettes + 1 poignée de riz sauvage",
+              "2 mandarines (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "saumon 100 g, courgettes 100 g, champignons 100 g, crus riz sauvage 40 g",
+            "recipe": "le riz sauvage est cuit et réservé pour l'accompagnement, le saumon est coupé en cubes et posé sur une brochette en alternant avec des champignons et des tranches de courgettes, cuit à la grill",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Salade verte : mélange de laitue + ciboulette",
+              "Toasts au fromage frais : une tranche de pain de blé entier large de trois doigts (30 g) + fromage frais écrémé + quelques tranches de tomate",
+              "1 grosse poire (200 g)"
+            ],
+            "ingredients": "mélange de laitue 100 g, tomate 100 g, oignon nouveau 20 g, fromage frais écrémé 85 g",
+            "recipe": "préparez d'abord la salade, puis faites ensuite les toasts avec la tomate naturelle et le fromage frais. Vous pouvez remplacer les toasts par une salade de fromage avec de la salade verte et de la tomate, en l'accompagnant de la tranche de pain complet",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
               "Jus de légumes : tomate + ciboulette + poivre",
               "Mérou au four sur lit de pommes de terre : 1 petit filet de mérou avec 1 petite pomme de terre + un demi oignon",
               "Prunes (200 g)",
@@ -562,51 +587,26 @@
           }
         },
         {
-          "menuNumber": 6,
-          "lunch": {
-            "items": [
-              "Spirales de grains entiers aux tomates rôties : 1 poignée de spirales de grains entiers + 3 cuillères à soupe de tomate concassée + ciboulette",
-              "Burger de dinde et salade de concombre à la menthe : 4 cuillères à soupe de dinde hachée + 1 concombre",
-              "2 kiwis (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "spires de grains entiers 40 g, tomate 50 g, oignon nouveau 20 g, dinde hachée 120 g, concombre 100 g, feuilles de menthe",
-            "recipe": "Les pâtes sont cuites, égouttées et réservées. Les tomates et l'oignon sont rôtis et mélangés aux pâtes. Le burger de dinde est grillé et accompagné d'une salade de concombre accompagnée de quelques feuilles de menthe.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Soupe de brocoli : brocoli",
-              "Lotte aux crevettes : 1 petit filet de lotte + crevettes + ail - Grosse poire (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "brocoli 200 g, lotte 120 g, crevettes 20 g, ail 3 g",
-            "recipe": "le brocoli est cuit et passé au mixeur pour faire la crème. Griller la lotte et couper l'ail en tranches et faire revenir avec les crevettes qui sont ajoutées sur le poisson",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
           "menuNumber": 7,
           "lunch": {
             "items": [
-              "Pois chiches vinaigrette avec lanières de poulet grillées : 1 poignée et demie de pois chiches + tomate + poivre + ciboulette + 1 gros filet de poulet",
-              "2 mandarines (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Farfalle printanière avec poitrine de dinde rôtie : 1 poignée de farfalle + un demi poivron vert + un demi poivron rouge + un demi oignon + une demi petite tomate + un petit filet de poitrine de dinde",
+              "1 grosse orange (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "pois chiches 50 g, tomate 50 g, poivron 50 g, ciboulette 50 g, blanc de poulet 140 g",
-            "recipe": "faire cuire les pois chiches avec un bouillon de légumes et les égoutter, couper les légumes en petits cubes et mélanger avec les pois chiches. Réaliser le blanc de poulet grillé, le couper en lamelles et le disposer sur la salade de pois chiches",
+            "ingredients": "farfalle 40 g, poivron vert 50 g, poivron rouge 50 g, oignon 50 g, tomate 50 g, poitrine de dinde 140 g",
+            "recipe": "la poitrine de dinde est rotie puis emincee, les pâtes sont cuites et mélangées aux légumes coupés en fins cubes. La poitrine de dinde peut aussi être grillée",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Sauté de légumes à l'œuf poché : une demi-carotte + un morceau de potiron + 1 poireau + 1 petite courgette + œuf",
-              "1 grosse pêche (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Salade de pousses de laitue",
+              "Merlan au four : un filet de merlan moyen + 1 petite pomme de terre",
+              "1 grosse poire (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "carotte 50 g, potiron 50 g, poireau 90 g, courgettes 90 g, œuf 70 g",
-            "recipe": "couper les légumes en lanières et les faire revenir avec un peu d'huile d'olive, faire un œuf poché et le servir sur le sauté",
+            "ingredients": "pousses de laitue 100 g, merlan 140 g, pomme de terre 130 g, oignon 30 g",
+            "recipe": "Faire revenir l'oignon avec les pommes de terre et les mettre dans un plat allant au four, déposer dessus les filets de merlan et terminer la cuisson jusqu'à ce que le poisson soit prêt.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -664,6 +664,33 @@
           "menuNumber": 2,
           "lunch": {
             "items": [
+              "Salade tiède de coudes avec légumes au vinaigre balsamique : 1 poignée de coudes + une demi petite tomate + une demi petite courgette + une demi petite aubergine",
+              "Burger de bœuf grillé à la roquette : 4 cuillères à soupe de viande hachée + roquette",
+              "1 grosse poire (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "pâtes de blé entier 40 g, bœuf haché 120 g, tomate 100 g, courgettes 50 g, aubergines 50 g, roquette 40 g",
+            "recipe": "cuire les pâtes et les égoutter, faire revenir les courgettes et les aubergines et mélanger avec les pâtes, la tomate naturelle est coupée en dés et ajoutée, assaisonnee avec du vinaigre balsamique",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Champignons grillés : champignons + persil",
+              "Ragoût de poisson : une tranche de poisson blanc + 1 petite pomme de terre + oignon + ail",
+              "Oranges (200g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "poisson blanc 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, laurier, paprika, champignons 100 g, persil",
+            "recipe": "Griller les champignons et ajouter un peu de persil dessus. Faire revenir l'oignon et l'ail avec du paprika, ajouter la pomme de terre, une feuille de laurier et couvrir d'eau ou de bouillon de poisson pour le rendre plus savoureux. Lorsque la pomme de terre est presque cuite, ajoutez le poisson blanc.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
               "Riz noir aux calamars : 1 poignée de riz + 14 rondelles de calamars + 1 sauté oignon et ail avec 1 cuillère à soupe d'huile + encre de seiche",
               "Cœurs de laitue (75 g)",
               "2 kiwis (200 g)",
@@ -687,84 +714,7 @@
           }
         },
         {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Salade de lentilles au poulet grillé : 1 poignée et demie de lentilles crues + 1 petite carotte + 4 morceaux de poulet + mâche + 1 petit oignon + 6 tomates cerises",
-              "1 pomme rôtie (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "lentilles 50 g, carotte 60 g, poulet 100 g, tomates cerises 70 g, agneau laitue 75 g, oignon nouveau 50 g",
-            "recipe": "faire revenir les lentilles et faire revenir l'oignon et l'ail avec une cuillère à café de paprika que l'on ajoute à la légumineuse, mélanger avec les légumes coupés en dés et la mâche, griller ou griller le poulet et ajouter dans l'assiette.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Wok de légumes : brocoli + vert haricots + courgettes",
-              "Morue au four avec tomates marinées : cabillaud + tomate + thym + origan",
-              "Mangue (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "brocoli 70 g, courgettes 70 g, haricots verts 70 g, oignon nouveau 30 g, cabillaud 140 g, tomate 100 g",
-            "recipe": "coupez les légumes et faites-les cuire au wok. La morue est cuite au four pendant environ 15 minutes ou peut être grillée. La tomate est coupée en fines tranches et les herbes sont ajoutées, mises au four et servies avec de la ciboulette crue tranchée très finement",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe de soupe et une cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
           "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Salade tiède de coudes avec légumes au vinaigre balsamique : 1 poignée de coudes + une demi petite tomate + une demi petite courgette + une demi petite aubergine",
-              "Burger de bœuf grillé à la roquette : 4 cuillères à soupe de viande hachée + roquette",
-              "1 grosse poire (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "pâtes de blé entier 40 g, bœuf haché 120 g, tomate 100 g, courgettes 50 g, aubergines 50 g, roquette 40 g",
-            "recipe": "cuire les pâtes et les égoutter, faire revenir les courgettes et les aubergines et mélanger avec les pâtes, la tomate naturelle est coupée en dés et ajoutée, assaisonnée de balsamique vinaigre",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Champignons grillés : champignons + persil",
-              "Ragoût de poisson : une tranche de poisson blanc + 1 petite pomme de terre + oignon + ail",
-              "Oranges (200g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "poisson blanc 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, laurier, paprika, champignons 100 g, persil",
-            "recipe": "Griller les champignons et ajouter un peu de persil dessus. Faire revenir l'oignon et l'ail avec du paprika, ajouter la pomme de terre, une feuille de laurier et couvrir d'eau ou de bouillon de poisson pour le rendre plus savoureux. Lorsque la pomme de terre est presque cuite, ajoutez le poisson blanc.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
-          "lunch": {
-            "items": [
-              "Casserole de haricots blancs au poulet : 1 poignée et demie de haricots blancs + carotte + 1 cuisse de poulet",
-              "Salade de poivrons rôtis : poivron rouge rôti + tomate pêche (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "haricots blancs 50 g, tomate 100 g, poivron rôti 50 g, carotte 100 g, cuisse de poulet 140 g",
-            "recipe": "faire cuire les haricots blancs dans un bouillon de légumes avec la carotte et le poulet jusqu'à ce qu'ils soient tendres. Les poivrons rouges rôtis sont coupés en lanières et mélangés à des tranches de tomates pour faire la salade.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Crème de potiron : un morceau de potiron + 1 oignon",
-              "Oeuf grillé avec salade verte : mélange œuf + laitue Salade d'agrumes : orange (50 g) + kiwi (100 g) + pamplemousse (50 g) Une tranche de pain complet de trois doigts de large (30 g)"
-            ],
-            "ingredients": "potiron 160 g, oignon 100 g, mélange de laitue 50 g, œuf 70 g",
-            "recipe": "cuire le potiron et l'oignon et les mélanger au mixeur, en ajoutant le bouillon nécessaire pour que la texture soit crémeuse. L'œuf est grillé et servi avec la salade",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 6,
           "lunch": {
             "items": [
               "Riz brun au poivron rouge rôti : 1 tomate + poivron rôti + 1 poignée de riz",
@@ -791,7 +741,7 @@
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Nouilles aux fruits de mer : une demi-assiette de nouilles cuites + 8 grosses moules + 5 crevettes + 1 poivron et oignon sautés",
@@ -811,6 +761,56 @@
             ],
             "ingredients": "dinde 140 g, jus de citron 20cc, tomate 60 g, poivron 60 g, oignon 60 g, courgettes 60 g, aubergines 60 g",
             "recipe": "Coupez les légumes en tranches et disposez-les dans un plat allant au four en les alternant. Placez-les au four jusqu'à ce qu'ils soient cuits. La dinde est rôtie avec un peu de jus de citron",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Salade de lentilles au poulet grillé : 1 poignée et demie de lentilles crues + 1 petite carotte + 4 morceaux de poulet + mâche + 1 petit oignon + 6 tomates cerises",
+              "1 pomme rôtie (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "lentilles 50 g, carotte 60 g, poulet 100 g, tomates cerises 70 g, agneau laitue 75 g, oignon nouveau 50 g",
+            "recipe": "cuire les lentilles, puis faire revenir l'oignon et l'ail avec une cuillere a cafe de paprika. Melanger avec les legumes coupes en des et la mache, griller le poulet et l'ajouter dans l'assiette.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Wok de légumes : brocoli + vert haricots + courgettes",
+              "Morue au four avec tomates marinées : cabillaud + tomate + thym + origan",
+              "Mangue (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "brocoli 70 g, courgettes 70 g, haricots verts 70 g, oignon nouveau 30 g, cabillaud 140 g, tomate 100 g",
+            "recipe": "coupez les légumes et faites-les cuire au wok. La morue est cuite au four pendant environ 15 minutes ou peut être grillée. La tomate est coupée en fines tranches et les herbes sont ajoutées, mises au four et servies avec de la ciboulette crue tranchée très finement",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe de soupe et une cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Casserole de haricots blancs au poulet : 1 poignée et demie de haricots blancs + carotte + 1 cuisse de poulet",
+              "Salade de poivrons rôtis : poivron rouge rôti + tomate pêche (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "haricots blancs 50 g, tomate 100 g, poivron rôti 50 g, carotte 100 g, cuisse de poulet 140 g",
+            "recipe": "faire cuire les haricots blancs dans un bouillon de légumes avec la carotte et le poulet jusqu'à ce qu'ils soient tendres. Les poivrons rouges rôtis sont coupés en lanières et mélangés à des tranches de tomates pour faire la salade.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crème de potiron : un morceau de potiron + 1 oignon",
+              "Oeuf grillé avec salade verte : mélange œuf + laitue Salade d'agrumes : orange (50 g) + kiwi (100 g) + pamplemousse (50 g) Une tranche de pain complet de trois doigts de large (30 g)"
+            ],
+            "ingredients": "potiron 160 g, oignon 100 g, mélange de laitue 50 g, œuf 70 g",
+            "recipe": "cuire le potiron et l'oignon et les mélanger au mixeur, en ajoutant le bouillon nécessaire pour que la texture soit crémeuse. L'œuf est grillé et servi avec la salade",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -842,32 +842,6 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Salade spirale de grains entiers au poulet grillé : 1 poignée de spirales de grains entiers crus + 1 petite tomate + 1 petit blanc de poulet + 1 petit concombre",
-              "1 pêche (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "spirales de blé entier 40 g, tomate 100 g, poulet 140 g, concombre 100 g",
-            "recipe": "Coupez la tomate et le concombre en petits cubes et faites cuire les pâtes. La poitrine de poulet est grillée ou grillée et coupée en lanières. Mélangez tous les ingrédients pour avoir la salade prête",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Omelette aux champignons et pommes de terre paille : avec 1 œuf + une assiette de champignons + 1 petite pomme de terre.",
-              "Salade de laitue (50 g)",
-              "Oranges (200g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "oeuf 70 g, champignons 110 g, pomme de terre 130 g",
-            "recipe": "Sauter le champignons, battez l'œuf et mélangez le tout pour faire l'omelette. La pomme de terre est coupée en julienne et cuite au four, servie en accompagnement de l'omelette",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 2,
-          "lunch": {
-            "items": [
               "Salade printanière : frisée + carotte râpée + betterave râpée",
               "Fèves tendres aux crevettes : 1 assiette de fèves + 9 crevettes + 1 oignon 1 tranche de pastèque (300 g)",
               "1 tranche de pain de blé entier large à trois doigts (30 g)"
@@ -890,7 +864,85 @@
           }
         },
         {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Salade de haricots blancs : 1 poignée et demie de haricots blancs crus + une demi-carotte + ciboulette + épinards crus",
+              "Toasts au jambon Serrano : 1 tranche épaisse de jambon Serrano + tomate concassée + une tranche de pain complet de trois doigts de large (30 g)",
+              "Une grosse pêche (200 g)"
+            ],
+            "ingredients": "haricots blancs 50 g, carotte 50 g, épinards crus 50 g, oignon nouveau 50 g, jambon 65 g, tomate concassée 15 g",
+            "recipe": "laisser tremper les haricots la veille, ils sont cuits avec un bouillon de légumes, égouttés et réservés dans un saladier, les crudités sont hachées et ajoutées au salade.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Escalibada de légumes : poivron vert + un demi petit oignon + poivron rouge",
+              "Turbot au four avec tranches de pomme de terre rôtie : 1 petit filet de turbot + 1 petite pomme de terre",
+              "2 mandarines (200 g)",
+              "Une tranche de pain de trois doigts de large (30 g)"
+            ],
+            "ingredients": "turbo 140 g, pomme de terre 130 g, poivron vert 75 g, poivron rouge 75 g, oignon 50 g",
+            "recipe": "coupez les légumes en lanières et mettez-les au four. Mettez le turbot au four préchauffé avec une cuillère à café d'huile et laissez-le jusqu'à ce qu'il soit prêt. Les pommes de terre et l'oignon sont coupés en tranches et cuits au four et servis en garniture",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
           "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Salade spirale de grains entiers au poulet grillé : 1 poignée de spirales de grains entiers crus + 1 petite tomate + 1 petit blanc de poulet + 1 petit concombre",
+              "1 pêche (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "spirales de blé entier 40 g, tomate 100 g, poulet 140 g, concombre 100 g",
+            "recipe": "Coupez la tomate et le concombre en petits cubes et faites cuire les pâtes. La poitrine de dinde est grillee puis coupee et coupée en lanières. Mélangez tous les ingrédients pour avoir la salade prête",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Omelette aux champignons et pommes de terre paille : avec 1 œuf + une assiette de champignons + 1 petite pomme de terre.",
+              "Salade de laitue (50 g)",
+              "Oranges (200g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "oeuf 70 g, champignons 110 g, pomme de terre 130 g",
+            "recipe": "Sauter le champignons, battez l'œuf et mélangez le tout pour faire l'omelette. La pomme de terre est coupée en julienne et cuite au four, servie en accompagnement de l'omelette",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Salade de couscous : une poignée de couscous + laitue hachée + tomate hachée + concombre haché",
+              "Dinde rôtie à l'orange : 1 cuisse de dinde moyenne + orange fraîche jus",
+              "Ananas (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "couscous 40 g, laitue 50 g, tomate 50 g, concombre 50 g, cuisse de dinde 140 g, jus d'orange 30 cc",
+            "recipe": "faire le couscous et réserver, couper la tomate et le concombre en très petits cubes et hacher la laitue en petits morceaux et mélanger avec le couscous pour faire la salade. La dinde est arrosée de jus d'orange et rôtie",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Champignons xérès : champignons + xérès + 1 oignon nouveau Ail brouillé ail : 1 œuf + ail ail",
+              "Pomme (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "œuf 70 g, champignons 100 g, oignon 100 g, ail ail 100 g, xérès 20cc",
+            "recipe": "Faire revenir l'oignon et ajouter les champignons, ajouter un peu de xérès et laisser le tout réduire ensemble. Pour les œufs brouillés, faites revenir l'ail et ajoutez l'œuf battu pour faire l'œuf brouillé.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Salade tiède de riz sauvage aux légumes : 1 poignée et demie de riz sauvage + 1 petite courgette + 1 carotte",
@@ -911,58 +963,6 @@
             ],
             "ingredients": "tomate 50 g, chorizo 30 g, oignon 50 g, ail 3 g, vin blanc 30cc, longe de porc 120 g",
             "recipe": "Sauter les légumes et ajouter un bouillon de légumes et un peu de vin blanc, laisser réduire la sauce et la verser sur la longe rôtie sur la plaque du four. Cuire le tout au four quelques minutes",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Brocoli sauté au paprika : 1 petite assiette de brocoli + ail Poulet rôti : 1 cuisse de poulet moyenne + la moitié oignon",
-              "1 grosse tranche de melon (300 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "poulet 140 g, brocoli 160 g, oignon 75 g, ail 3 g",
-            "recipe": "faire le brocoli cuit, faire revenir quelques tranches d'ail avec du paprika et ajouter dessus. Pour faire le poulet, placez un fond d'oignon sur le fond de la plaque du four et le poulet dessus, enfournez jusqu'à ce qu'il soit tendre",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Crème de courgettes : 1 courgette + 1 petite pomme de terre",
-              "Filets de coq au citron : 1 filet de coq + jus de citron",
-              "1 grosse poire (200 g)",
-              "Une tranche de pain de trois doigts de large (30 g)"
-            ],
-            "ingredients": "pomme de terre 120 g, courgettes 100 g, coq 140 g, jus de citron 20cc",
-            "recipe": "Faites cuire les pommes de terre et les courgettes et passez-les au mixeur ou au moulin. Griller le coq et ajouter le jus de citron",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
-          "lunch": {
-            "items": [
-              "Salade de haricots blancs : 1 poignée et demie de haricots blancs crus + une demi-carotte + ciboulette + épinards crus",
-              "Toasts au jambon Serrano : 1 tranche épaisse de jambon Serrano + tomate concassée + une tranche de pain complet de trois doigts de large (30 g)",
-              "Une grosse pêche (200 g)"
-            ],
-            "ingredients": "haricots blancs 50 g, carotte 50 g, épinards crus 50 g, oignon nouveau 50 g, jambon 65 g, tomate concassée 15 g",
-            "recipe": "laisser tremper les haricots la veille, ils sont cuits avec un bouillon de légumes, égouttés et réservés dans un saladier, les crudités sont hachées et ajoutées au salade.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Escalibada de légumes : poivron vert + un demi petit oignon + poivron rouge",
-              "Turbot au four avec tranches de pomme de terre rôtie : 1 petit filet de turbot + 1 petite pomme de terre",
-              "2 mandarines (200 g)",
-              "Une tranche de pain de trois doigts de large (30 g)"
-            ],
-            "ingredients": "turbo 140 g, pomme de terre 130 g, poivron vert 75 g, poivron rouge 75 g, oignon 50 g",
-            "recipe": "coupez les légumes en lanières et mettez-les au four. Mettez le turbot au four préchauffé avec une cuillère à café d'huile et laissez-le jusqu'à ce qu'il soit prêt. Les pommes de terre et l'oignon sont coupés en tranches et cuits au four et servis en garniture",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -999,23 +999,23 @@
           "menuNumber": 7,
           "lunch": {
             "items": [
-              "Salade de couscous : une poignée de couscous + laitue hachée + tomate hachée + concombre haché",
-              "Dinde rôtie à l'orange : 1 cuisse de dinde moyenne + orange fraîche jus",
-              "Ananas (200 g)",
+              "Brocoli sauté au paprika : 1 petite assiette de brocoli + ail Poulet rôti : 1 cuisse de poulet moyenne + la moitié oignon",
+              "1 grosse tranche de melon (300 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "couscous 40 g, laitue 50 g, tomate 50 g, concombre 50 g, cuisse de dinde 140 g, jus d'orange 30 cc",
-            "recipe": "faire le couscous et réserver, couper la tomate et le concombre en très petits cubes et hacher la laitue en petits morceaux et mélanger avec le couscous pour faire la salade. La dinde est arrosée de jus d'orange et rôtie",
+            "ingredients": "poulet 140 g, brocoli 160 g, oignon 75 g, ail 3 g",
+            "recipe": "faire le brocoli cuit, faire revenir quelques tranches d'ail avec du paprika et ajouter dessus. Pour faire le poulet, placez un fond d'oignon sur le fond de la plaque du four et le poulet dessus, enfournez jusqu'à ce qu'il soit tendre",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Champignons xérès : champignons + xérès + 1 oignon nouveau Ail brouillé ail : 1 œuf + ail ail",
-              "Pomme (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Crème de courgettes : 1 courgette + 1 petite pomme de terre",
+              "Filets de coq au citron : 1 filet de coq + jus de citron",
+              "1 grosse poire (200 g)",
+              "Une tranche de pain de trois doigts de large (30 g)"
             ],
-            "ingredients": "œuf 70 g, champignons 100 g, oignon 100 g, ail ail 100 g, xérès 20cc",
-            "recipe": "Faire revenir l'oignon et ajouter les champignons, ajouter un peu de xérès et laisser le tout réduire ensemble. Pour les œufs brouillés, faites revenir l'ail et ajoutez l'œuf battu pour faire l'œuf brouillé.",
+            "ingredients": "pomme de terre 120 g, courgettes 100 g, coq 140 g, jus de citron 20cc",
+            "recipe": "Faites cuire les pommes de terre et les courgettes et passez-les au mixeur ou au moulin. Griller le coq et ajouter le jus de citron",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -1047,6 +1047,57 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
+              "Salade de poulet grillé : blanc de poulet + laitue + germes de soja + carotte râpée + râpée betterave",
+              "Boulettes de melon (300 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "Poulet 140 g, laitue 50 g, germes de soja 50 g, carotte 50 g, betterave 50 g",
+            "recipe": "hacher la laitue et melanger avec les germes de soja, la carotte et la betterave rapees. Griller le poulet puis le melanger avec les legumes",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Crème de potiron : 1 morceau de potiron + 1 petite pomme de terre + oignon Filets de sole grillés : 1 filet de sole",
+              "1 grosse poire (200 g)",
+              "Une tranche de pain de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pomme de terre 120 g, potiron 120 g, oignon 50 g, sole 140 g",
+            "recipe": "Les pommes de terre et les légumes sont cuits et passés dans un mixeur ou un moulin. La sole est grillée.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Fideuá : 1 poignée de pâtes + 4 crevettes + 3 morceaux de poisson blanc + oignon + tomate concassée + poivron vert",
+              "Une petite assiette de salade d'endives",
+              "2 kiwis (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pâtes 40 g, crevettes 55 g, poisson blanc 85 g, oignon 25 g, poivron vert 25 g, tomate concassée 25 g, endive 50 g",
+            "recipe": "Faire un sauté avec le poivron, l'oignon et la tomate concassée, ajouter le poisson et les crevettes décortiquées et un bouillon de poisson ou de fruits de mer et cuire le tout avec les pâtes. Vous pouvez utiliser un brin de safran pour donner plus de saveur et de couleur au plat",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Salade campagnarde : laitue + tomate + oignon + 1 petite pomme de terre + 1 œuf",
+              "1 pomme rôtie (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "laitue 50 g, tomate 120 g, oignon 30 g, pommes de terre 90 g et œuf 70 g",
+            "recipe": "faire bouillir les pommes de terre et l'œuf et les éplucher, les couper en cubes de taille moyenne et les mélanger avec les autres légumes hachés pour faire la salade",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
               "Casserole de bœuf aux champignons : bœuf maigre + 1 petite pomme de terre + champignons + champignons + oignon + ail",
               "Salade de tête (50 g)",
               "Boulettes de melon et pastèque (300 g)",
@@ -1070,33 +1121,7 @@
           }
         },
         {
-          "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Salade orientale : une poignée de riz complet + poivron jaune + poivron rouge + poivron vert + un filet de bonite + une cuillère à soupe de sauce soja",
-              "Macédoine naturelle : orange (50 g) + kiwi (50 g) + poire (50 g) + pomme (50 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "riz complet 40 g, bonite 105 g, poivron rouge 50 g, poivron vert 50 g, poivron jaune 50 g, sauce soja 10cc",
-            "recipe": "Faites cuire le riz brun, égouttez-le et réservez. Coupez les poivrons et le thon en petits cubes et mélangez-les avec la sauce soja et le riz",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Chou-fleur à la vinaigrette : une assiette de chou-fleur + 1 tomate moyenne + 1 oignon nouveau",
-              "Omelette française à la roquette : 1 œuf + roquette",
-              "1 poire (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "chou-fleur 160 g, tomate 50 g, oignon nouveau 50 g, œuf 70 g, roquette 40 g",
-            "recipe": "Vapez le chou-fleur et servez avec la tomate et l'oignon coupés en très fins cubes dessus.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Lasagne aux légumes : 3 assiettes de lasagne + aubergine + poivron + tomate naturelle + courgette",
@@ -1121,7 +1146,7 @@
           }
         },
         {
-          "menuNumber": 4,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Lentilles du jardin : 1 poignée et demie de lentilles crues + 1 petite carotte + poivron vert + poireau + poivron rouge",
@@ -1148,33 +1173,33 @@
           }
         },
         {
-          "menuNumber": 5,
+          "menuNumber": 6,
           "lunch": {
             "items": [
-              "Fideuá : 1 poignée de pâtes + 4 crevettes + 3 morceaux de poisson blanc + oignon + tomate concassée + poivron vert",
-              "Une petite assiette de salade d'endives",
-              "2 kiwis (200 g)",
+              "Salade orientale : une poignée de riz complet + poivron jaune + poivron rouge + poivron vert + un filet de bonite + une cuillère à soupe de sauce soja",
+              "Macédoine naturelle : orange (50 g) + kiwi (50 g) + poire (50 g) + pomme (50 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "pâtes 40 g, crevettes 55 g, poisson blanc 85 g, oignon 25 g, poivron vert 25 g, tomate concassée 25 g, endive 50 g",
-            "recipe": "Faire un sauté avec le poivron, l'oignon et la tomate concassée, ajouter le poisson et les crevettes décortiquées et un bouillon de poisson ou de fruits de mer et cuire le tout avec les pâtes. Vous pouvez utiliser un brin de safran pour donner plus de saveur et de couleur au plat",
+            "ingredients": "riz complet 40 g, bonite 105 g, poivron rouge 50 g, poivron vert 50 g, poivron jaune 50 g, sauce soja 10cc",
+            "recipe": "Faites cuire le riz brun, égouttez-le et réservez. Coupez les poivrons et le thon en petits cubes et mélangez-les avec la sauce soja et le riz",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Salade campagnarde : laitue + tomate + oignon + 1 petite pomme de terre + 1 œuf",
-              "1 pomme rôtie (200 g)",
+              "Chou-fleur à la vinaigrette : une assiette de chou-fleur + 1 tomate moyenne + 1 oignon nouveau",
+              "Omelette française à la roquette : 1 œuf + roquette",
+              "1 poire (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "laitue 50 g, tomate 120 g, oignon 30 g, pommes de terre 90 g et œuf 70 g",
-            "recipe": "faire bouillir les pommes de terre et l'œuf et les éplucher, les couper en cubes de taille moyenne et les mélanger avec les autres légumes hachés pour faire la salade",
+            "ingredients": "chou-fleur 160 g, tomate 50 g, oignon nouveau 50 g, œuf 70 g, roquette 40 g",
+            "recipe": "Vapez le chou-fleur et servez avec la tomate et l'oignon coupés en très fins cubes dessus.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 7,
           "lunch": {
             "items": [
               "Riz velouté aux longes de cabillaud : 1 poignée de riz cru + longe de cabillaud + oignon + ail",
@@ -1194,31 +1219,6 @@
             ],
             "ingredients": "surlonge de porc 120 g, chou-fleur 60 g, brocoli 60 g, carotte 100 g, haricots verts 100 g",
             "recipe": "couper le chou-fleur et le brocoli en petites pousses et la carotte en lanières, les légumes sont cuits à la vapeur. Griller les médaillons de filet de porc, faire revenir l'oignon émincé et les déposer sur la tranche de pain grillée et le filet",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 7,
-          "lunch": {
-            "items": [
-              "Salade de poulet grillé : blanc de poulet + laitue + germes de soja + carotte râpée + râpée betterave",
-              "Boulettes de melon (300 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "Poulet 140 g, laitue 50 g, germes de soja 50 g, carotte 50 g, betterave 50 g",
-            "recipe": "hacher la laitue et mélanger avec les germes de soja et avec la carotte et la betterave râpées, griller ou griller le poulet et mélanger avec les légumes",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Crème de potiron : 1 morceau de potiron + 1 petite pomme de terre + oignon Filets de sole grillés : 1 filet de sole",
-              "1 grosse poire (200 g)",
-              "Une tranche de pain de trois doigts de large (30 g)"
-            ],
-            "ingredients": "pomme de terre 120 g, potiron 120 g, oignon 50 g, sole 140 g",
-            "recipe": "Les pommes de terre et les légumes sont cuits et passés dans un mixeur ou un moulin. La sole est grillée.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -1250,24 +1250,22 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Soupe de riz aux crevettes et poisson blanc : une poignée de riz avec 1 petit filet de poisson blanc + 4 crevettes",
-              "Salade scarole (50 g)",
-              "Pomme (200 g)",
+              "Salade spirale de céréales complètes tiède avec dinde : mâche + 1 poignée de pâtes + poitrine de dinde + poivron rôti",
+              "Une pêche (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "riz 40 g, poisson blanc 100 g, crevettes 40 g, bouillon de poisson, ciboulette 30 g de tomate concassée 30 g de safran",
-            "recipe": "Préparez un bouillon de poisson avec les arêtes de poisson et les têtes de crevettes et réservez, faites revenir l'oignon nouveau avec la tomate concassée et le riz et ajoutez le bouillon. Cuire le tout avec le poisson pendant une vingtaine de minutes et ajouter les crevettes",
+            "ingredients": "pâtes complètes crues 40 g, dinde 140 g, mâche 60 g, poivron rôti 60 g,",
+            "recipe": "Cuire les pâtes et griller le magret, le couper en cubes et mélanger le tout avec les poivrons rôtis et la mâche pour faire la salade.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Crème de carotte : carotte + 1 petite pomme de terre",
-              "Lapin à la tomate : 5 morceaux de lapin + un demi oignon + un demi poivron vert + 1 gousse d'ail + tomate concassée",
-              "Oranges (200g)",
+              "Blettes aux pommes de terre : une assiette de blettes + petite pomme de terre + ail Omelette française aux tomates : 1 œuf + tomates",
+              "2 prunes (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "lapin 140 g, pomme de terre 100 g, oignon 50 g, poivron vert 50 g, ail 3 g, tomate concassée 50 g, carotte 150 g",
-            "recipe": "faire cuire les carottes avec la pomme de terre et les mettre dans un mixeur pour faire une crème. Le lapin est cuit, d'abord les légumes sont ajoutés pour faire une sauce et le lapin est sauté, recouvert d'eau et cuit ensemble jusqu'à ce que le lapin soit tendre.",
+            "ingredients": "Blettes 100 g, pommes de terre 90 g, ail 3 g, tomates 60 g et œuf 70 g",
+            "recipe": "faire cuire les pommes de terre avec les blettes et faire revenir avec l'ail. Préparez une omelette française ou un œuf grillé et accompagnez-le de tomates.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -1275,86 +1273,6 @@
         },
         {
           "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Ragoût de pois chiches aux légumes : 1 poignée et demie de pois chiches crus + une demi-carotte + une demi-tomate + épinards + pointe de jambon serrano",
-              "2 mandarines (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "pois chiches 50 g, carotte 60 g, tomate 60 g, jambon 60 g, épinards 50 g",
-            "recipe": "Faites cuire les pois chiches avec les légumes et la pointe de jambon pour leur donner plus de goût, vous pouvez utiliser des pois chiches déjà cuits. Le jambon peut être cuit avec les pois chiches ou pris séparément avec le pain sous forme de toasts au jambon Serrano.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Salade de tomates et ciboulette : une tomate + ciboulette",
-              "Filets de sole grillés aux champignons : 1 petit filet de sole + champignons",
-              "Une poire (200 g)",
-              "Une tranche de pain complet de trois doigts de large (30g)"
-            ],
-            "ingredients": "sole 140 g, champignons 150 g, tomate 250 g, oignon nouveau 30 g",
-            "recipe": "La salade de tomates et la sole grillée sont réalisées, accompagnées de champignons grillés.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe d'huile par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Macaronis complets à la bonite : 1 poignée de macaronis + tomate + un demi poivron + oignon + 1 petite tranche de bonite",
-              "Salade de pousses de laitue 50 g",
-              "2 kiwis (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "pâtes de blé entier crues 40 g, tomate 50 g, poivron vert 50 g, oignon 30 g, bonite 100 g",
-            "recipe": "Faire revenir avec la tomate, le poivron et l'oignon et ajouter le thon. En revanche, les macaronis sont cuits et mélangés aux légumes et au poisson.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Haricots verts sautés : une assiette de haricots verts + ail",
-              "Brochettes de poulet grillées aux tomates : un filet moyen de blanc de poulet + tomates",
-              "Une pomme rôtie (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "Poitrine de poulet 140 g, tomates 50 g, haricots verts 170 g, ail 3 g",
-            "recipe": "cuire le haricots verts et faites-les revenir avec l'ail. Le blanc de poulet est coupé en cubes et grillé ou grillé et les brochettes sont réalisées en alternant un cube de poulet avec une tomate",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Salade de riz brun aux légumes : 1 poignée de riz cru + oignon + poivron + tomate + laitue romaine (75 g)",
-              "Calmar grillé : une assiette de calamar + ail + persil",
-              "Une orange (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "riz 40 g, poivre 30 g, tomate 50 g, oignon 30 g, laitue 50 g, calamars 120 g, ail 4 g, persil frais",
-            "recipe": "Faites cuire le riz brun et mélangez-le avec les légumes coupés en petits cubes. Les calamars sont grillés ou grillés et un peu d'ail écrasé avec du persil est ajouté dessus pour leur donner une saveur plus intense",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Légumes grillés : une demi petite courgette + 1 oignon + une demi tomate",
-              "Œufs grillés avec pomme de terre vapeur : avec 1 œuf + 1 petite pomme de terre.",
-              "Une poire (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
-            ],
-            "ingredients": "œuf 70 g, courgettes 50 g, ciboulette 50 g, tomate 100 g, pomme de terre 85 g",
-            "recipe": "les légumes sont coupés en tranches et grillés ou grillés. Les pommes de terre sont cuites à la vapeur et coupées en tranches et un œuf grillé est déposé dessus.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
           "lunch": {
             "items": [
               "Salade composée au vinaigre balsamique : une assiette de laitue + tomate + ciboulette + un demi concombre",
@@ -1381,32 +1299,34 @@
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 3,
           "lunch": {
             "items": [
-              "Salade spirale de céréales complètes tiède avec dinde : mâche + 1 poignée de pâtes + poitrine de dinde + poivron rôti",
-              "Une pêche (200 g)",
+              "Soupe de riz aux crevettes et poisson blanc : une poignée de riz avec 1 petit filet de poisson blanc + 4 crevettes",
+              "Salade scarole (50 g)",
+              "Pomme (200 g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "pâtes complètes crues 40 g, dinde 140 g, mâche 60 g, poivron rôti 60 g,",
-            "recipe": "Cuire les pâtes et griller le magret, le couper en cubes et mélanger le tout avec les poivrons rôtis et la mâche pour faire la salade.",
+            "ingredients": "riz 40 g, poisson blanc 100 g, crevettes 40 g, bouillon de poisson, ciboulette 30 g de tomate concassée 30 g de safran",
+            "recipe": "Préparez un bouillon de poisson avec les arêtes de poisson et les têtes de crevettes et réservez, faites revenir l'oignon nouveau avec la tomate concassée et le riz et ajoutez le bouillon. Cuire le tout avec le poisson pendant une vingtaine de minutes et ajouter les crevettes",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Blettes aux pommes de terre : une assiette de blettes + petite pomme de terre + ail Omelette française aux tomates : 1 œuf + tomates",
-              "2 prunes (200 g)",
+              "Crème de carotte : carotte + 1 petite pomme de terre",
+              "Lapin à la tomate : 5 morceaux de lapin + un demi oignon + un demi poivron vert + 1 gousse d'ail + tomate concassée",
+              "Oranges (200g)",
               "Une tranche de pain de blé entier de trois doigts de large (30 g)"
             ],
-            "ingredients": "Blettes 100 g, pommes de terre 90 g, ail 3 g, tomates 60 g et œuf 70 g",
-            "recipe": "faire cuire les pommes de terre avec les blettes et faire revenir avec l'ail. Préparez une omelette française ou un œuf grillé et accompagnez-le de tomates.",
+            "ingredients": "lapin 140 g, pomme de terre 100 g, oignon 50 g, poivron vert 50 g, ail 3 g, tomate concassée 50 g, carotte 150 g",
+            "recipe": "faire cuire les carottes avec la pomme de terre et les mettre dans un mixeur pour faire une crème. Le lapin est cuit, d'abord les légumes sont ajoutés pour faire une sauce et le lapin est sauté, recouvert d'eau et cuit ensemble jusqu'à ce que le lapin soit tendre.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Compote de haricots pinto : 1 poignée et demie de haricots pinto + poireau + tomate + poivron",
@@ -1427,6 +1347,86 @@
             ],
             "ingredients": "asperges sauvages 150 g, tomates concassées 90 g, bar 140 g",
             "recipe": "Les asperges sauvages sont grillées ou cuites si vous préférez. Le bar est cuit au four et accompagné d'un peu de tomate concassée dessus, vous pouvez remplacer la tomate concassée par une salade de tomates",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Salade de riz brun aux légumes : 1 poignée de riz cru + oignon + poivron + tomate + laitue romaine (75 g)",
+              "Calmar grillé : une assiette de calamar + ail + persil",
+              "Une orange (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "riz 40 g, poivre 30 g, tomate 50 g, oignon 30 g, laitue 50 g, calamars 120 g, ail 4 g, persil frais",
+            "recipe": "Faites cuire le riz brun et mélangez-le avec les légumes coupés en petits cubes. Les calamars sont grillés ou grillés et un peu d'ail écrasé avec du persil est ajouté dessus pour leur donner une saveur plus intense",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Légumes grillés : une demi petite courgette + 1 oignon + une demi tomate",
+              "Œufs grillés avec pomme de terre vapeur : avec 1 œuf + 1 petite pomme de terre.",
+              "Une poire (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "œuf 70 g, courgettes 50 g, ciboulette 50 g, tomate 100 g, pomme de terre 85 g",
+            "recipe": "les légumes sont coupés en tranches et grillés ou grillés. Les pommes de terre sont cuites à la vapeur et coupées en tranches et un œuf grillé est déposé dessus.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Ragoût de pois chiches aux légumes : 1 poignée et demie de pois chiches crus + une demi-carotte + une demi-tomate + épinards + pointe de jambon serrano",
+              "2 mandarines (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pois chiches 50 g, carotte 60 g, tomate 60 g, jambon 60 g, épinards 50 g",
+            "recipe": "Faites cuire les pois chiches avec les légumes et la pointe de jambon pour leur donner plus de goût, vous pouvez utiliser des pois chiches déjà cuits. Le jambon peut être cuit avec les pois chiches ou pris séparément avec le pain sous forme de toasts au jambon Serrano.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Salade de tomates et ciboulette : une tomate + ciboulette",
+              "Filets de sole grillés aux champignons : 1 petit filet de sole + champignons",
+              "Une poire (200 g)",
+              "Une tranche de pain complet de trois doigts de large (30g)"
+            ],
+            "ingredients": "sole 140 g, champignons 150 g, tomate 250 g, oignon nouveau 30 g",
+            "recipe": "La salade de tomates et la sole grillée sont réalisées, accompagnées de champignons grillés.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe d'huile par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Macaronis complets à la bonite : 1 poignée de macaronis + tomate + un demi poivron + oignon + 1 petite tranche de bonite",
+              "Salade de pousses de laitue 50 g",
+              "2 kiwis (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pâtes de blé entier crues 40 g, tomate 50 g, poivron vert 50 g, oignon 30 g, bonite 100 g",
+            "recipe": "Faire revenir avec la tomate, le poivron et l'oignon et ajouter le thon. En revanche, les macaronis sont cuits et mélangés aux légumes et au poisson.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Haricots verts sautés : une assiette de haricots verts + ail",
+              "Brochettes de poulet grillées aux tomates : un filet moyen de blanc de poulet + tomates",
+              "Une pomme rôtie (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "Poitrine de poulet 140 g, tomates 50 g, haricots verts 170 g, ail 3 g",
+            "recipe": "cuire le haricots verts et faites-les revenir avec l'ail. Le blanc de poulet est coupé en cubes et grillé ou grillé et les brochettes sont réalisées en alternant un cube de poulet avec une tomate",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
@@ -1485,60 +1485,6 @@
           "menuNumber": 2,
           "lunch": {
             "items": [
-              "Riz brun aux courgettes : courgettes + 1 poignée de riz brun",
-              "Longes de saumon grillées aux tomates : 1 petit filet de saumon + tomates",
-              "2 kiwis (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "riz brun 40 g, saumon 110 g, tomates 150 g, courgettes 100 g",
-            "recipe": "Coupez les courgettes en cubes et faites-les revenir, ajoutez le riz et ajoutez l'eau. Le saumon est grillé ou grillé et accompagné d'une salade de tomates cerises.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Lanières de poitrine de poulet grillées avec légumes : 1 filet de poulet moyen + poivron rouge + poivron vert + une demi-aubergine + oignon",
-              "Salade de cresson (50 g)",
-              "1 pêche (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "poitrine de poulet 140 g, poivron rouge 60 g, poivron vert 60 g, aubergine 60 g, tomate 60 g",
-            "recipe": "Coupez le blanc de poulet en lanières et faites-le revenir avec les légumes coupés en julienne.",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Spaghetti aux boulettes de viande : 1 assiette de spaghettis complets + 4 cuillères à soupe de viande hachée + tomate concassée + courgettes + poivron vert + oignon",
-              "Salade de laitue (50 g)",
-              "1 pomme (200 g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "spaghetti complets crus 40 g, bœuf haché 120 g, tomate concassée 120 g, courgettes 60 g, poivron vert 60 g, oignon 40 g",
-            "recipe": "Les boulettes de viande sont cuites au four ou à la vapeur pour éviter les excès de gras, les pâtes sont cuites et d'autre part une sauce tomate est réalisée avec les légumes. Tout est servi ensemble. Vous pouvez avoir les spaghettis à l'ail en premier et les boulettes de viande en second si vous préférez ne pas mélanger les saveurs.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Chou sauté au paprika : une assiette de chou + ail + paprika",
-              "Merlu au four avec pomme de terre au four : une tranche de merlu moyen + 1 petite pomme de terre + oignon",
-              "Oranges (200g)",
-              "1 tranche de pain de blé entier large à trois doigts (30 g)"
-            ],
-            "ingredients": "merlu 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, chou 100 g",
-            "recipe": "cuire le chou et faites-le revenir avec de l'ail et un peu d'huile, vous pouvez ajouter une cuillère à soupe de paprika pour rehausser la saveur du plat. Pour le deuxième plat, coupez les pommes de terre et l'oignon et disposez-les sur une plaque allant au four. Lorsqu'ils sont presque prêts, ajoutez le merlu dans la plaque pendant quelques minutes. Vous pouvez faire griller le poisson",
-            "notes": [
-              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
               "Riz à la cubaine avec une sauce tomate maison : 1 poignée de riz + 1 petite tomate + un demi oignon + 1 œuf",
               "Salade de concombre à la menthe",
               "Ananas (200 g)",
@@ -1563,32 +1509,34 @@
           }
         },
         {
-          "menuNumber": 5,
+          "menuNumber": 3,
           "lunch": {
             "items": [
-              "Farfalle Primavera : 1 poignée de pâtes complètes + courgettes + 2 tranches de jambon cuit + poivron rouge + poivron vert + mâche",
-              "1 pomme (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Riz brun aux courgettes : courgettes + 1 poignée de riz brun",
+              "Longes de saumon grillées aux tomates : 1 petit filet de saumon + tomates",
+              "2 kiwis (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "pâtes de blé entier crues 40 g, courgettes 80 g, jambon cuit 75 g, poivron rouge 60 g, poivron vert 60 g, mâche 50 g",
-            "recipe": "faire cuire les pâtes de blé entier et réserver. Faire sauter les courgettes avec le poivre et mélanger avec les pâtes cuites, la mâche et les lanières de jambon cuit",
+            "ingredients": "riz brun 40 g, saumon 110 g, tomates 150 g, courgettes 100 g",
+            "recipe": "Coupez les courgettes en cubes et faites-les revenir, ajoutez le riz et ajoutez l'eau. Le saumon est grillé ou grillé et accompagné d'une salade de tomates cerises.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Ragoût de dinde avec pommes de terre : 1 morceau de dinde + 1 petite pomme de terre + un demi oignon + un demi poivron vert + tomate concassée",
-              "2 kiwis (200 g)",
-              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+              "Lanieres de poitrine de dinde grillee avec légumes : 1 filet de poulet moyen + poivron rouge + poivron vert + une demi-aubergine + oignon",
+              "Salade de cresson (50 g)",
+              "1 pêche (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
             ],
-            "ingredients": "dinde 140 g, pomme de terre 100 g, oignon 50 g, poivron vert 50 g, tomate concassée 50 g",
-            "recipe": "Sauter les légumes et mélanger avec la dinde, couvrir d'eau et cuire le tout ensemble, vous pouvez ajouter un peu de vin au ragoût pour lui donner plus de saveur, à mi-cuisson, ajouter les pommes de terre et finir de cuire le tout ensemble.",
+            "ingredients": "poitrine de poulet 140 g, poivron rouge 60 g, poivron vert 60 g, aubergine 60 g, tomate 60 g",
+            "recipe": "Coupez le blanc de poulet en lanières et faites-le revenir avec les légumes coupés en julienne.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Pot de haricots blancs à la seiche : 1 poignée et demie de haricots blancs + seiche + ail + poireau + poivron vert + carotte + tomate concassée + vin blanc",
@@ -1615,7 +1563,7 @@
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Compote de pommes de terre : tomate + ciboulette + poivron vert + 1 petite pomme de terre + ail",
@@ -1635,6 +1583,58 @@
             ],
             "ingredients": "artichaut 50 g, haricots verts 50 g, carotte 50 g, chou-fleur 50 g, coq 140 g",
             "recipe": "les légumes sont coupés en morceaux et cuits à la vapeur ou à la vapeur. Le coq est grillé ou peut également être cuit à la vapeur ou au four.",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Spaghetti aux boulettes de viande : 1 assiette de spaghettis complets + 4 cuillères à soupe de viande hachée + tomate concassée + courgettes + poivron vert + oignon",
+              "Salade de laitue (50 g)",
+              "1 pomme (200 g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "spaghetti complets crus 40 g, bœuf haché 120 g, tomate concassée 120 g, courgettes 60 g, poivron vert 60 g, oignon 40 g",
+            "recipe": "Les boulettes de viande sont cuites au four ou à la vapeur pour éviter les excès de gras, les pâtes sont cuites et d'autre part une sauce tomate est réalisée avec les légumes. Tout est servi ensemble. Vous pouvez avoir les spaghettis à l'ail en premier et les boulettes de viande en second si vous préférez ne pas mélanger les saveurs.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Chou sauté au paprika : une assiette de chou + ail + paprika",
+              "Merlu au four avec pomme de terre au four : une tranche de merlu moyen + 1 petite pomme de terre + oignon",
+              "Oranges (200g)",
+              "1 tranche de pain de blé entier large à trois doigts (30 g)"
+            ],
+            "ingredients": "merlu 140 g, pomme de terre 130 g, oignon 30 g, ail 3 g, chou 100 g",
+            "recipe": "cuire le chou et faites-le revenir avec de l'ail et un peu d'huile, vous pouvez ajouter une cuillère à soupe de paprika pour rehausser la saveur du plat. Pour le deuxième plat, coupez les pommes de terre et l'oignon et disposez-les sur une plaque allant au four. Lorsqu'ils sont presque prêts, ajoutez le merlu dans la plaque pendant quelques minutes. Vous pouvez faire griller le poisson",
+            "notes": [
+              "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Farfalle Primavera : 1 poignée de pâtes complètes + courgettes + 2 tranches de jambon cuit + poivron rouge + poivron vert + mâche",
+              "1 pomme (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "pâtes de blé entier crues 40 g, courgettes 80 g, jambon cuit 75 g, poivron rouge 60 g, poivron vert 60 g, mâche 50 g",
+            "recipe": "faire cuire les pâtes de blé entier et réserver. Faire sauter les courgettes avec le poivre et mélanger avec les pâtes cuites, la mâche et les lanières de jambon cuit",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Ragoût de dinde avec pommes de terre : 1 morceau de dinde + 1 petite pomme de terre + un demi oignon + un demi poivron vert + tomate concassée",
+              "2 kiwis (200 g)",
+              "Une tranche de pain de blé entier de trois doigts de large (30 g)"
+            ],
+            "ingredients": "dinde 140 g, pomme de terre 100 g, oignon 50 g, poivron vert 50 g, tomate concassée 50 g",
+            "recipe": "Sauter les légumes et mélanger avec la dinde, couvrir d'eau et cuire le tout ensemble, vous pouvez ajouter un peu de vin au ragoût pour lui donner plus de saveur, à mi-cuisson, ajouter les pommes de terre et finir de cuire le tout ensemble.",
             "notes": [
               "Huile d'olive : 3 cuillères à soupe et 1 cuillère à soupe de café par jour"
             ]

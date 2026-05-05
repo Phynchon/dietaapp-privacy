@@ -10,11 +10,17 @@ const MEAL_SPLIT = {
   dinner: 0.25,
 };
 
-function buildId(prefix) {
+function buildId() {
   if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
-    return `${prefix}_${crypto.randomUUID()}`;
+    return crypto.randomUUID();
   }
-  return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+
+  // Fallback UUID v4-like format to keep compatibility with MySQL CHAR(36).
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {
+    const random = Math.floor(Math.random() * 16);
+    const value = char === "x" ? random : ((random & 0x3) | 0x8);
+    return value.toString(16);
+  });
 }
 
 function asDateOnlyIso(dateInput) {
@@ -70,8 +76,8 @@ export function createProgramStartRecord({
   const nowIso = new Date().toISOString();
   const state = loadState();
 
-  const userId = buildId("user");
-  const programId = buildId("program");
+  const userId = buildId();
+  const programId = buildId();
   const normalizedStartDateIso = asDateOnlyIso(startDateIso);
 
   const user = {
@@ -211,7 +217,7 @@ export function saveMorningCheckin({
   const caloriesExtra = Math.max(0, totalCalories - safeTarget);
 
   const record = {
-    id: buildId("daily"),
+    id: buildId(),
     programId,
     dayNumber,
     trackingDateIso,

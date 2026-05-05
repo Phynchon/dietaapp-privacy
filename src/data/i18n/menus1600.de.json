@@ -7,12 +7,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch + eine Scheibe Vollkornbrot + eine Scheibe Putenaufschnitt + ein Esslöffel zerkleinerte Tomaten",
         "Umfassendes Frühstück: 2 Magerjoghurt + eine Handvoll ungesüßte Vollkorngetreide",
         "Klassisches Frühstück: 1 Glas Magermilch + eine Scheibe Vollkornbrot + 1 Esslöffel zuckerfreie Marmelade",
-        "Andalusisches Frühstück: 1 Glas Magermilch + eine Scheibe Vollkornbrot mit vier Fingerbreiten + 1 Esslöffel zerdrückte Tomate + ein Teelöffel Olivenöl"
+        "Andalusisches Frühstück: 1 Glas Magermilch + eine Scheibe Vollkornbrot mit vier Fingerbreiten + 1 Esslöffel zerdrückte Tomate + ein Teelöffel Olivenoel"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
-        "Frischkäse-Carpaccio mit natürlichen Tomaten: 1 Portion frische Magerkäse + Tomatenscheiben",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch + 1 Apfel"
+        "Frischkäse-Carpaccio mit natürlichen Tomaten: 1 Portion frischer Magerkaese + Tomatenscheiben",
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -24,26 +24,26 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Tagliatelle mit Gemüse: ein halber kleiner Teller gekochte Tagliatelle, eine halbe Karotte und eine halbe Paprika",
-              "Gegrillter Kaiser: 1 kleine Scheibe Kaiser + Knoblauch und Petersilie",
-              "2 Kiwis",
-              "Eine drei Finger breite Scheibe Vollkornbrot"
+              "Geschmorte Linsen: 1,5 Handvoll Linsen + 4 Stück mageres Rindfleisch + sautierter Lauch, Tomate und Paprika mit 1 Esslöffel Öl",
+              "Eichenblattsalat: Eichensalat 75 g",
+              "1 Orange (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "rohe Nudeln 40 g, Karotte 50 g, grüne Paprika 50 g, Kaiser 100 g, Knoblauch 3 g, gehackte Petersilie",
-            "recipe": "Das Gemüse in Julienne-Streifen schneiden und anbraten, die Nudeln kochen und wenn sie al dente sind, abgießen und mit dem Gemüse vermischen. Knoblauch und Petersilie hacken und etwas anbraten, den Kaiser grillen und den Knoblauch darüber geben",
+            "ingredients": "Linsen 50 g, mageres Rindfleisch 85 g, Lauch 50 g, Tomate 50 g, Paprika 50 g",
+            "recipe": "Mit Lauch, Tomate und Paprika anbraten und das Fleisch in Stücken hinzufügen, die Linsen hinzufügen und mit Wasser bedecken oder eine Gemüsebrühe verwenden, um dem Ganzen mehr Geschmack zu verleihen.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Tomaten-Carpaccio mit Oregano: eine mittelgroße Tomate mit Oregano",
-              "Gegrillte Putenbrust mit konfitierten Zwiebeln: ein mittelgroßes Putenbrustfilet mit einer halben konfitierten Zwiebel",
-              "Ein großer Apfel (200 g)",
+              "Wilder Spargelsalat mit Kirschtomaten und Dill: 1 Teller Spargel, 9 Kirschtomaten, Dill",
+              "Gegrilltes Seehechtherz: eine große Scheibe gebackener Seehecht",
+              "2 Pflaumen (200 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Putenbrust 140 g, Zwiebel 50 g, Tomate 150 g, Oregano",
-            "recipe": "Die Tomate in sehr dünne Scheiben schneiden und auf eine Platte legen, würzen und Oregano hinzufügen. Die Zwiebel in Streifen schneiden, anbraten und mit der gegrillten Hähnchenbrust servieren",
+            "ingredients": "Wilder Spargel 150 g, Tomate 90 g, Dill, Seehecht 140 g",
+            "recipe": "Den Spargel einige Minuten kochen, die Kirschtomaten halbieren und alles in eine Schüssel geben, den Dill dazugeben und mit etwas Olive würzen Öl und Essig",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -69,12 +69,91 @@
             "ingredients": "Kaninchen 140 g, Kartoffel 100 g, Zwiebel 50 g, grüne Paprika 50 g, Knoblauch 3 g, Tomaten 75 g, Karotte 75 g",
             "recipe": "Die Kartoffeln zusammen mit der Zwiebel, dem Knoblauch und der grünen Paprika in Scheiben schneiden und in den Ofen geben. Schneiden Sie hingegen das Kaninchen in Stücke, fügen Sie Thymianblätter hinzu, legen Sie es neben die Kartoffeln auf das Backblech und braten Sie es, bis das Kaninchen gar ist.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Tagliatelle mit Gemüse: ein halber kleiner Teller gekochte Tagliatelle, eine halbe Karotte und eine halbe Paprika",
+              "Gegrillter Kaiser: 1 kleine Scheibe Kaiser + Knoblauch und Petersilie",
+              "2 Kiwis",
+              "Eine drei Finger breite Scheibe Vollkornbrot"
+            ],
+            "ingredients": "rohe Nudeln 40 g, Karotte 50 g, grüne Paprika 50 g, Kaiser 100 g, Knoblauch 3 g, gehackte Petersilie",
+            "recipe": "Das Gemüse in Julienne-Streifen schneiden und anbraten, die Nudeln kochen und wenn sie al dente sind, abgießen und mit dem Gemüse vermischen. Knoblauch und Petersilie hacken und etwas anbraten, den Kaiser grillen und den Knoblauch darüber geben",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomaten-Carpaccio mit Oregano: eine mittelgroße Tomate mit Oregano",
+              "Gegrillte Putenbrust mit konfitierten Zwiebeln: ein mittelgroßes Putenbrustfilet mit einer halben konfitierten Zwiebel",
+              "Ein großer Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Putenbrust 140 g, Zwiebel 50 g, Tomate 150 g, Oregano",
+            "recipe": "Die Tomate in sehr dünne Scheiben schneiden und auf eine Platte legen, würzen und Oregano hinzufügen. Die Zwiebel in Streifen schneiden, anbraten und mit der gegrillten Hähnchenbrust servieren",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Gemischte Paella: 1 Handvoll roher Reis + 1 sautierte Zwiebel, Paprika, Tomate mit 1 Esslöffel Öl + 2 Hähnchenstücke + 4 große Tintenfischringe + 7 Muscheln",
+              "Römersalat (75 g)",
+              "2 große Kiwis (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Reis 40 g, Paprika 30 g, Tomate 30 g, Zwiebel 30 g, Huhn 55 g, Tintenfisch 45 g, Muschel 45 g, Safran, Brühe entfettetes Geflügel",
+            "recipe": "Mit Paprika, Zwiebeln und Tomaten anbraten, Huhn und Tintenfisch dazugeben und mit dem Reis vermischen und doppelt so viel Geflügelbrühe wie Reis hinzufügen, einen Zweig Safran hinzufügen und die Paella ist in zwanzig Minuten fertig. Kurz vor dem Ende die Muscheln darauflegen, so dass sie sich öffnen.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gemüsepfanne: eine halbe kleine Zucchini + 1 Lauch + eine halbe Tomate",
+              "Rührei mit Kartoffeln: mit 1 Ei + 1 kleinen Kartoffel. 2 Mandarinen (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Ei 70 g, Zucchini 50 g, Lauch 50 g, Tomate 100 g, Kartoffel 85 g",
+            "recipe": "Das Gemüse in Würfel schneiden und mit einem Esslöffel Olivenoel anbraten. Kochen Sie die Kartoffeln, schneiden Sie sie in Scheiben, legen Sie sie auf den Boden eines Tellers und legen Sie ein gegrilltes Ei darauf.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Auberginenlasagne: eine halbe große Aubergine + 4 Esslöffel Hackfleisch + eine halbe kleine Tomate + eine halbe kleine Zwiebel",
+              "Escarole-Salat: ein kleiner Teller Escarole",
+              "Eine große Melonenscheibe (300 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Aubergine 150 g, Hackfleisch 120 g, Tomate 50 g, Zwiebel 50 g, Endivie 80 g",
+            "recipe": "Zwiebel und Tomate anbraten und das Hackfleisch anbraten, Auberginenscheiben schneiden und die Lasagne zusammenstellen, indem man das Hackfleisch mit den Auberginenscheiben abwechselt",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gegrillter Kabeljau mit gegrillter Karotte und Kürbis: 1 mittelgroßes Kabeljaufilet + Kürbis + eine halbe Karotte",
+              "Ein Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Kabeljau 140 g, Kürbis 150 g, Karotte 150 g",
+            "recipe": "Den Kürbis in Scheiben und die Karotte in Streifen schneiden und zusammen mit dem Kabeljau grillen. Es kann durch ein Karotten-Kürbis-Püree und einen gegrillten Kabeljau ersetzt werden",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
           "lunch": {
             "items": [
               "Kichererbsensalat mit Schinkenraspeln: 1,5 Handvoll rohe Kichererbsen + eine halbe Karotte + eine halbe Tomate + Serrano-Schinkenraspeln + Feldsalat",
@@ -96,86 +175,7 @@
             "ingredients": "Huhn 140 g, Zucchini 160 g, Lorbeerblatt, Tomate 250 g, Sellerie 30 g",
             "recipe": "Die Tomate verflüssigen und mit etwas Pfeffer und dem Tomatenzweig servieren, Sie können Tomatensaft oder einen Gemüse-Smoothie verwenden, wenn Sie möchten, können Sie ihn durch einen Tomatensalat ersetzen.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Öl pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Auberginenlasagne: eine halbe große Aubergine + 4 Esslöffel Hackfleisch + eine halbe kleine Tomate + eine halbe kleine Zwiebel",
-              "Escarole-Salat: ein kleiner Teller Escarole",
-              "Eine große Melonenscheibe (300 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Aubergine 150 g, Hackfleisch 120 g, Tomate 50 g, Zwiebel 50 g, Endivie 80 g",
-            "recipe": "Zwiebel und Tomate anbraten und das Hackfleisch anbraten, Auberginenscheiben schneiden und die Lasagne zusammenstellen, indem man das Hackfleisch mit den Auberginenscheiben abwechselt",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gegrillter Kabeljau mit gegrillter Karotte und Kürbis: 1 mittelgroßes Kabeljaufilet + Kürbis + eine halbe Karotte",
-              "Ein Apfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Kabeljau 140 g, Kürbis 150 g, Karotte 150 g",
-            "recipe": "Den Kürbis in Scheiben und die Karotte in Streifen schneiden und zusammen mit dem Kabeljau grillen. Es kann durch ein Karotten-Kürbis-Püree und einen gegrillten Kabeljau ersetzt werden",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
-          "lunch": {
-            "items": [
-              "Gemischte Paella: 1 Handvoll roher Reis + 1 sautierte Zwiebel, Paprika, Tomate mit 1 Esslöffel Öl + 2 Hähnchenstücke + 4 große Tintenfischringe + 7 Muscheln",
-              "Römersalat (75 g)",
-              "2 große Kiwis (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Reis 40 g, Paprika 30 g, Tomate 30 g, Zwiebel 30 g, Huhn 55 g, Tintenfisch 45 g, Muschel 45 g, Safran, Brühe entfettetes Geflügel",
-            "recipe": "Mit Paprika, Zwiebeln und Tomaten anbraten, Huhn und Tintenfisch dazugeben und mit dem Reis vermischen und doppelt so viel Geflügelbrühe wie Reis hinzufügen, einen Zweig Safran hinzufügen und die Paella ist in zwanzig Minuten fertig. Kurz vor dem Ende die Muscheln darauflegen, so dass sie sich öffnen.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gemüsepfanne: eine halbe kleine Zucchini + 1 Lauch + eine halbe Tomate",
-              "Rührei mit Kartoffeln: mit 1 Ei + 1 kleinen Kartoffel. 2 Mandarinen (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Ei 70 g, Zucchini 50 g, Lauch 50 g, Tomate 100 g, Kartoffel 85 g",
-            "recipe": "Das Gemüse in Würfel schneiden und mit einem Esslöffel Olivenöl anbraten. Kochen Sie die Kartoffeln, schneiden Sie sie in Scheiben, legen Sie sie auf den Boden eines Tellers und legen Sie ein gegrilltes Ei darauf.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 6,
-          "lunch": {
-            "items": [
-              "Geschmorte Linsen: 1,5 Handvoll Linsen + 4 Stück mageres Rindfleisch + sautierter Lauch, Tomate und Paprika mit 1 Esslöffel Öl",
-              "Eichenblattsalat: Eichensalat 75 g",
-              "1 Orange (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Linsen 50 g, mageres Rindfleisch 85 g, Lauch 50 g, Tomate 50 g, Paprika 50 g",
-            "recipe": "Mit Lauch, Tomate und Paprika anbraten und das Fleisch in Stücken hinzufügen, die Linsen hinzufügen und mit Wasser bedecken oder eine Gemüsebrühe verwenden, um dem Ganzen mehr Geschmack zu verleihen.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Wilder Spargelsalat mit Kirschtomaten und Dill: 1 Teller Spargel, 9 Kirschtomaten, Dill",
-              "Gegrilltes Seehechtherz: eine große Scheibe gebackener Seehecht",
-              "2 Pflaumen (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Wilder Spargel 150 g, Tomate 90 g, Dill, Seehecht 140 g",
-            "recipe": "Den Spargel einige Minuten kochen, die Kirschtomaten halbieren und alles in eine Schüssel geben, den Dill dazugeben und mit etwas Olive würzen Öl und Essig",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Öl pro Tag"
             ]
           }
         },
@@ -185,10 +185,10 @@
             "items": [
               "Endiviensalat mit Orange: 1 Endivie +",
               "1 Blutorange",
-              "Marinera Bowties: 1 Handvoll Nudeln + 4 Garnelen + 3 Stück Barsch + 1 sautierte Zwiebel und zerdrückte Tomate mit 1 Esslöffel Öl",
+              "Farfalle nach Seemannsart: 1 Handvoll Nudeln + 4 Garnelen + 3 Stück Barsch + 1 sautierte Zwiebel und zerdrückte Tomate mit 1 Esslöffel Öl",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Paste 40 g, Garnele 55 g, Barsch 85 g, Zwiebel 25 g, zerdrückte Tomate 20 g, Endivie 100 g, Orange 200 g",
+            "ingredients": "Pasta 40 g, Garnele 55 g, Barsch 85 g, Zwiebel 25 g, zerdrückte Tomate 20 g, Endivie 100 g, Orange 200 g",
             "recipe": "Die Orange in dünne Scheiben und die Endivie in Streifen schneiden und in einer Salatschüssel vermischen. Mit der Zwiebel und der Tomate anbraten und den Fisch und die Garnelen dazugeben, mit den Nudeln vermischen und mit Fischbrühe aufgießen, alles zusammen kochen, bis die Nudeln gar sind.",
             "notes": []
           },
@@ -199,9 +199,9 @@
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
             "ingredients": "Mangold 100 g, Kartoffeln 90 g, Knoblauch 3 g und hartgekochtes Ei 70 g",
-            "recipe": "Kochen Sie die Kartoffeln mit den Mangoldstiele und serviert mit einem gehackten hartgekochten Ei",
+            "recipe": "Kochen Sie die Kartoffeln mit den Mangoldstielen und servieren Sie sie mit gehacktem hartgekochtem Ei",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -212,14 +212,14 @@
       "label": "Zweite Woche",
       "breakfastOptions": [
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
-        "Vollkornfrühstück: 2 Magerjoghurt + eine Handvoll Vollkornprodukte ungesüßte Wale (30 g)",
+        "Vollkornfrühstück: 2 Magerjoghurt + eine Handvoll ungesuesstes Vollkorngetreide (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -229,57 +229,6 @@
       "days": [
         {
           "menuNumber": 1,
-          "lunch": {
-            "items": [
-              "Warmer Spinatsalat: 1 Handvoll Vollkornspiralen + eine halbe mittelgroße Zucchini + 2 Scheiben gekochter Schinken + roher Spinat",
-              "1 große Birne (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Nudeln 40 g, Zucchini 100 g, gekochter Schinken 75 g, Spinat 50 g",
-            "recipe": "Die ganzen Spiralen werden gekocht und beiseite gestellt. Grillen Sie die Zucchini und mischen Sie sie in einer Salatschüssel mit den gekochten Nudeln, rohem Spinat und gekochten Schinkenstreifen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Putenpfanne mit Rosmarin gebratene Kartoffeln: 1 mittelgroße Brust + 1 kleine Kartoffel + eine halbe Zwiebel + eine halbe grüne Paprika + eine halbe rote Paprika",
-              "2 Kiwis (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Putenbrust 140 g, Kartoffel 100 g, Zwiebel 50 g, grüne Paprika 50 g, rote Paprika 50 g",
-            "recipe": "Die Putenbruststreifen mit dem Gemüse anbraten, auf einen Teller mit einer Bratkartoffel mit Rosmarin als Beilage legen",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Brauner Reissalat: 1 Handvoll Reis + 1 kleine Tomate + eine halbe Zwiebel + 1 Ei + eine kleine Gurke",
-              "Ananas (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "brauner Reis 40 g, Tomate 125 g, Zwiebel 50 g, Ei 70 g, Gurke 100 g",
-            "recipe": "Den braunen Reis kochen und abseihen, das Gemüse hacken und mit dem Reis und dem gehackten hartgekochten Ei vermischen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Grünkohlsuppe: Grünkohl + eine halbe Zwiebel",
-              "Gebackener Wolfsbarsch mit Tomaten: 1 Wolfsbarschfilet + Kirschtomaten",
-              "Ein Apfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Wolfsbarsch 140 g, Grünkohl 100 g, Zwiebel 50 g, Tomaten 100 g",
-            "recipe": "Die Zwiebel hacken und anbraten, den in Streifen geschnittenen Kohl hinzufügen und alles zusammen kochen. Backen Sie den Wolfsbarsch und geben Sie die Tomaten als Beilage auf das Backblech.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
           "lunch": {
             "items": [
               "Gemüse-Smoothie: eine Tomate + Schnittlauch + grüne Paprika",
@@ -299,9 +248,61 @@
               "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
             "ingredients": "Zucchini 50 g, Aubergine 50 g, rote Paprika 50 g, gelbe Paprika 50 g, Seezunge 140 g, Cava",
-            "recipe": "Das Gemüse in Stücke schneiden und abwechselnd Gemüse und Grillen auf den Spieß stecken. Die Seezunge wird gegrillt und mit Cava bestreut",
+            "recipe": "Das Gemuese in Stuecke schneiden und abwechselnd auf Spiesse stecken. Die Seezunge grillen und mit etwas Cava verfeinern",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Warmer Spinatsalat: 1 Handvoll Vollkornspiralen + eine halbe mittelgroße Zucchini + 2 Scheiben gekochter Schinken + roher Spinat",
+              "1 große Birne (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Nudeln 40 g, Zucchini 100 g, gekochter Schinken 75 g, Spinat 50 g",
+            "recipe": "Die ganzen Spiralen werden gekocht und beiseite gestellt. Grillen Sie die Zucchini und mischen Sie sie in einer Salatschüssel mit den gekochten Nudeln, rohem Spinat und gekochten Schinkenstreifen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Putenpfanne mit Rosmarin gebratene Kartoffeln: 1 mittelgroße Brust + 1 kleine Kartoffel + eine halbe Zwiebel + eine halbe grüne Paprika + eine halbe rote Paprika",
+              "2 Kiwis (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Putenbrust 140 g, Kartoffel 100 g, Zwiebel 50 g, grüne Paprika 50 g, rote Paprika 50 g",
+            "recipe": "Die Putenbruststreifen mit dem Gemüse anbraten, auf einen Teller mit einer Bratkartoffel mit Rosmarin als Beilage legen",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Fleischlasagne: 3 Teller Lasagne + 4 Esslöffel Hackfleisch + eine halbe kleine Tomate + eine halbe kleine Zucchini + eine halbe kleine Aubergine",
+              "Kopfsalat (50 g)",
+              "1 große Birne (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Lasagneplatte 40 g, Rinderhackfleisch 120 g, Tomate 100 g, Zucchini 50 g, Aubergine 50 g",
+            "recipe": "Es werden vorgekochte Lasagneplatten verwendet, das in sehr kleine Würfel geschnittene Gemüse wird angebraten und das Hackfleisch hinzugefügt, eine Lasagneplatte wird aufgelegt und das Fleisch daraufgelegt und mit einem weiteren Teller abgedeckt. Sie können etwas hausgemachte Tomatensauce darüber geben und es so lange in den Ofen stellen, wie die Teller garen müssen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gegrillte Pilze: Pilze + Petersilie",
+              "Seehecht nach galizischer Art: eine Scheibe mittelgroßer Seehecht + 1 kleine Kartoffel + Zwiebel + Knoblauch",
+              "Orange (200g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Seehecht 140 g, Kartoffel 130 g, Zwiebel 30 g, Knoblauch 3 g, Lorbeerblatt, Paprika, Pilze 100 g, Petersilie",
+            "recipe": "Die Pilze grillen und etwas Petersilie darüber geben. Braten Sie die Zwiebel an, fügen Sie die Kartoffel und ein Lorbeerblatt hinzu und bedecken Sie alles mit Wasser oder Fischbrühe, um es schmackhafter zu machen. Wenn die Kartoffel fast fertig ist, fügen Sie den Seehecht hinzu und kochen Sie, bis er fertig ist. Andererseits etwas Knoblauch mit Paprika anbraten und zum Eintopf geben",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -326,12 +327,38 @@
             "ingredients": "Ei 70 g, Zucchini 120 g, Tomate 100 g, Gurke 100 g, Salat 50 g",
             "recipe": "Die Zucchini anbraten, mit dem geschlagenen Ei vermischen und das Omelett zubereiten",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Brauner Reissalat: 1 Handvoll Reis + 1 kleine Tomate + eine halbe Zwiebel + 1 Ei + eine kleine Gurke",
+              "Ananas (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "brauner Reis 40 g, Tomate 125 g, Zwiebel 50 g, Ei 70 g, Gurke 100 g",
+            "recipe": "Den braunen Reis kochen und abseihen, das Gemüse hacken und mit dem Reis und dem gehackten hartgekochten Ei vermischen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grünkohlsuppe: Grünkohl + eine halbe Zwiebel",
+              "Gebackener Wolfsbarsch mit Tomaten: 1 Wolfsbarschfilet + Kirschtomaten",
+              "Ein Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Wolfsbarsch 140 g, Grünkohl 100 g, Zwiebel 50 g, Tomaten 100 g",
+            "recipe": "Die Zwiebel hacken und anbraten, den in Streifen geschnittenen Kohl hinzufügen und alles zusammen kochen. Backen Sie den Wolfsbarsch und geben Sie die Tomaten als Beilage auf das Backblech.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
           "lunch": {
             "items": [
               "Brauner Reissalat mit Tomaten: 1 mittelgroße Tomate + 1 Handvoll braune Reis",
@@ -352,34 +379,7 @@
             "ingredients": "Hähnchenbrust 140 g, rote Paprika 60 g, grüne Paprika 60 g, Aubergine 100 g",
             "recipe": "Die Hähnchenbrust in Streifen schneiden und mit dem in Julienne geschnittenen Gemüse anbraten.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 6,
-          "lunch": {
-            "items": [
-              "Fleischlasagne: 3 Teller Lasagne + 4 Esslöffel Hackfleisch + eine halbe kleine Tomate + eine halbe kleine Zucchini + eine halbe kleine Aubergine",
-              "Kopfsalat (50 g)",
-              "1 große Birne (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Lasagneplatte 40 g, Rinderhackfleisch 120 g, Tomate 100 g, Zucchini 50 g, Aubergine 50 g",
-            "recipe": "Es werden vorgekochte Lasagneplatten verwendet, das in sehr kleine Würfel geschnittene Gemüse wird angebraten und das Hackfleisch hinzugefügt, eine Lasagneplatte wird aufgelegt und das Fleisch daraufgelegt und mit einem weiteren Teller abgedeckt. Sie können etwas hausgemachte Tomatensauce darüber geben und es so lange in den Ofen stellen, wie die Teller garen müssen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gegrillte Pilze: Pilze + Petersilie",
-              "Seehecht nach galizischer Art: eine Scheibe mittelgroßer Seehecht + 1 kleine Kartoffel + Zwiebel + Knoblauch",
-              "Orange (200g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Seehecht 140 g, Kartoffel 130 g, Zwiebel 30 g, Knoblauch 3 g, Lorbeerblatt, Paprika, Pilze 100 g, Petersilie",
-            "recipe": "Die Pilze grillen und etwas Petersilie darüber geben. Braten Sie die Zwiebel an, fügen Sie die Kartoffel und ein Lorbeerblatt hinzu und bedecken Sie alles mit Wasser oder Fischbrühe, um es schmackhafter zu machen. Wenn die Kartoffel fast fertig ist, fügen Sie den Seehecht hinzu und kochen Sie, bis er fertig ist. Andererseits etwas Knoblauch mit Paprika anbraten und zum Eintopf geben",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -406,7 +406,7 @@
             "ingredients": "Schweinefilet 120 g, Schnittlauch 130 g, Kürbis 100 g",
             "recipe": "Den Kürbis in dünne Streifen schneiden und grillen. Das Lendenstück wird in Medaillons geschnitten und gegrillt, begleitet von gegrillten Zwiebeln.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -419,12 +419,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -436,24 +436,25 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Gegrillte Lachsspieße mit Wildreis: 1 kleine Scheibe Lachs + Pilze + Zucchini + 1 Handvoll Wildreis",
-              "2 Mandarinen (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Vollkornspiralen mit gerösteten Tomaten: 1 Handvoll Vollkornspiralen + 3 Esslöffel zerkleinerte Tomaten + Schnittlauch",
+              "Putenburger mit Minze-Gurken-Salat: 4 Esslöffel gemahlener Truthahn + 1 Gurke",
+              "2 Kiwis (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "Lachs 100 g, Zucchini 100 g, Pilze 100 g, roh Wildreis 40 g",
-            "recipe": "Der Wildreis wird gekocht und als Beilage reserviert, der Lachs wird in Tacos geschnitten und abwechselnd mit gegrillten Pilzen und Zucchinischeiben auf einen Spieß gelegt",
+            "ingredients": "Vollkornspiralen 40 g, Tomate 50 g, Frühlingszwiebel 20 g, gehackter Truthahn 120 g, Gurke 100 g, Minzblätter",
+            "recipe": "Die Nudeln werden gekocht, abgetropft und beiseite gestellt. Die Tomaten und Zwiebeln werden geröstet und mit den Nudeln vermischt. Der Putenburger wird gegrillt und von einem Gurkensalat mit einigen Minzblättern begleitet.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Grüner Salat: Mischung aus Salat + Schnittlauch",
-              "Frischkäsetoast: eine Scheibe drei Finger breites Vollkornbrot (30 g) + entrahmter Frischkäse + ein paar Tomatenscheiben",
-              "1 große Birne (200 g)"
+              "Brokkolisuppe: Brokkoli",
+              "Seeteufel mit Garnelen: 1 kleines Seeteufelfilet + Garnelen + Knoblauch – große Birne (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "Mischung aus Salat 100 g, Tomate 100 g, Frühlingszwiebel 20 g, entrahmter Frischkäse 85 g",
-            "recipe": "Zuerst den Salat zubereiten und dann den Toast mit der natürlichen Tomate und dem Frischkäse zubereiten. Sie können den Toast durch einen Käsesalat mit grünem Salat und Tomaten ersetzen, dazu eine Scheibe Vollkornbrot",
+            "ingredients": "Brokkoli 200 g, Seeteufel 120 g, Garnelen 20 g, Knoblauch 3 g",
+            "recipe": "Der Brokkoli wird gekocht und durch den Mixer gegeben, um die Creme herzustellen. Den Seeteufel grillen, den Knoblauch in Scheiben schneiden und mit den Garnelen anbraten, die auf den Fisch gelegt werden",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -461,25 +462,24 @@
           "menuNumber": 2,
           "lunch": {
             "items": [
-              "Frühlings-Farfalle mit gebratener Putenbrust: 1 Handvoll Farfalle + eine halbe grüne Paprika + eine halbe rote Paprika + eine halbe Zwiebel + eine halbe kleine Tomate + ein kleines Putenbrustfilet",
-              "1 große Orange (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+              "Kichererbsen in Vinaigrette mit gegrillten Hähnchenstreifen: 1,5 Handvoll Kichererbsen + Tomate + Paprika + Schnittlauch + 1 großes Hähnchenfilet",
+              "2 Mandarinen (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Farfalle 40 g, grüne Paprika 50 g, rote Paprika 50 g, Zwiebel 50 g, Tomate 50 g, Putenbrust 140 g",
-            "recipe": "Die gebratene Putenbrust wird zubereitet und laminiert, die Nudeln werden gekocht und mit dem in feine Würfel geschnittenen Gemüse vermischt. Putenbrust kann auch gegrillt werden",
+            "ingredients": "Kichererbsen 50 g, Tomate 50 g, Paprika 50 g, Schnittlauch 50 g, Hähnchenbrust 140 g",
+            "recipe": "Die Kichererbsen mit einer Gemüsebrühe kochen und abtropfen lassen, das Gemüse in kleine Würfel schneiden und mit den Kichererbsen vermischen. Bereiten Sie die gegrillte Hähnchenbrust zu, schneiden Sie sie in Streifen und legen Sie sie auf den Kichererbsensalat",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Kopfsalat-Sprossensalat",
-              "Gebackener Wittling: ein mittelgroßes Wittlingsfilet + 1 kleine Kartoffel",
-              "1 große Birne (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+              "Gemüsepfanne mit pochiertem Ei: eine halbe Karotte + ein Stück Kürbis + 1 Lauch + 1 kleine Zucchini + Ei",
+              "1 großer Pfirsich (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Salatsprossen 100 g, Wittling 140 g, Kartoffeln 130 g, Zwiebeln 30 g",
-            "recipe": "Die Zwiebeln mit den Kartoffeln anbraten und in eine Auflaufform geben, die Wittlingsfilets darauf legen und fertig backen, bis der Fisch fertig ist",
+            "ingredients": "Karotte 50 g, Kürbis 50 g, Lauch 90 g, Zucchini 90 g, Ei 70 g",
+            "recipe": "Das Gemüse in Streifen schneiden und mit etwas Olivenoel anbraten, ein pochiertes Ei zubereiten und es auf der Pfanne servieren",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -506,7 +506,7 @@
             "ingredients": "Zucchini 160 g, Lauch 50 g, Karotte 50 g, Tomate 100 g, gekochter Schinken 75 g",
             "recipe": "Die Zucchini mit Schale kochen und halbieren, entleeren und das Zucchinifleisch mit dem Lauch und der Karotte hacken, alles Gemüse zusammen anbraten, hinzufügen Schinken in Streifen schneiden und die Zucchini füllen, diese können Sie einige Minuten im Ofen überbacken",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -531,12 +531,37 @@
             "ingredients": "Ei 70 g, Champignons 100 g, Zwiebeln 30 g, hausgemachte gebratene Tomate 70 g",
             "recipe": "Die Champignons in sehr kleine Stücke schneiden und die Schalotten. Die Schalotten goldbraun anbraten und die Pilze dazugeben, etwas Sherry dazugeben und alles zusammen einige Minuten kochen lassen. Einen zerkleinerten Tomatenboden in eine Auflaufform geben und das rohe Ei darauf legen. In den Ofen stellen, bis das Ei fest wird.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Gegrillte Lachsspieße mit Wildreis: 1 kleine Scheibe Lachs + Pilze + Zucchini + 1 Handvoll Wildreis",
+              "2 Mandarinen (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Lachs 100 g, Zucchini 100 g, Pilze 100 g, roh Wildreis 40 g",
+            "recipe": "Der Wildreis wird gekocht und als Beilage reserviert, der Lachs wird in Tacos geschnitten und abwechselnd mit gegrillten Pilzen und Zucchinischeiben auf einen Spieß gelegt",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Grüner Salat: Mischung aus Salat + Schnittlauch",
+              "Frischkäsetoast: eine Scheibe drei Finger breites Vollkornbrot (30 g) + entrahmter Frischkäse + ein paar Tomatenscheiben",
+              "1 große Birne (200 g)"
+            ],
+            "ingredients": "Mischung aus Salat 100 g, Tomate 100 g, Frühlingszwiebel 20 g, entrahmter Frischkäse 85 g",
+            "recipe": "Zuerst den Salat zubereiten und dann den Toast mit der natürlichen Tomate und dem Frischkäse zubereiten. Sie können den Toast durch einen Käsesalat mit grünem Salat und Tomaten ersetzen, dazu eine Scheibe Vollkornbrot",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
           "lunch": {
             "items": [
               "Gemüsesaft: Tomate + Schnittlauch + Pfeffer",
@@ -557,33 +582,7 @@
             "ingredients": "Erbsen 50 g, grüne Bohnen 100 g, Karotten 50 g, Serrano-Schinken 55 g, Knoblauch 6 g",
             "recipe": "Kochen Sie das Gemüse und wenn es fertig ist, lassen Sie es abtropfen und beiseite stellen, bräunen Sie einige Knoblauchscheiben mit einigen Schinkenspänen an und geben Sie sie zum Eintopf.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 6,
-          "lunch": {
-            "items": [
-              "Vollkornspiralen mit gerösteten Tomaten: 1 Handvoll Vollkornspiralen + 3 Esslöffel zerkleinerte Tomaten + Schnittlauch",
-              "Putenburger mit Minze-Gurken-Salat: 4 Esslöffel gemahlener Truthahn + 1 Gurke",
-              "2 Kiwis (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Vollkornspiralen 40 g, Tomate 50 g, Frühlingszwiebel 20 g, gehackter Truthahn 120 g, Gurke 100 g, Minzblätter",
-            "recipe": "Die Nudeln werden gekocht, abgetropft und beiseite gestellt. Die Tomaten und Zwiebeln werden geröstet und mit den Nudeln vermischt. Der Putenburger wird gegrillt und von einem Gurkensalat mit einigen Minzblättern begleitet.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Brokkolisuppe: Brokkoli",
-              "Seeteufel mit Garnelen: 1 kleines Seeteufelfilet + Garnelen + Knoblauch – große Birne (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Brokkoli 200 g, Seeteufel 120 g, Garnelen 20 g, Knoblauch 3 g",
-            "recipe": "Der Brokkoli wird gekocht und durch den Mixer gegeben, um die Creme herzustellen. Den Seeteufel grillen, den Knoblauch in Scheiben schneiden und mit den Garnelen anbraten, die auf den Fisch gelegt werden",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -591,24 +590,25 @@
           "menuNumber": 7,
           "lunch": {
             "items": [
-              "Kichererbsen in Vinaigrette mit gegrillten Hähnchenstreifen: 1,5 Handvoll Kichererbsen + Tomate + Paprika + Schnittlauch + 1 großes Hähnchenfilet",
-              "2 Mandarinen (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Frühlings-Farfalle mit gebratener Putenbrust: 1 Handvoll Farfalle + eine halbe grüne Paprika + eine halbe rote Paprika + eine halbe Zwiebel + eine halbe kleine Tomate + ein kleines Putenbrustfilet",
+              "1 große Orange (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "Kichererbsen 50 g, Tomate 50 g, Paprika 50 g, Schnittlauch 50 g, Hähnchenbrust 140 g",
-            "recipe": "Die Kichererbsen mit einer Gemüsebrühe kochen und abtropfen lassen, das Gemüse in kleine Würfel schneiden und mit den Kichererbsen vermischen. Bereiten Sie die gegrillte Hähnchenbrust zu, schneiden Sie sie in Streifen und legen Sie sie auf den Kichererbsensalat",
+            "ingredients": "Farfalle 40 g, grüne Paprika 50 g, rote Paprika 50 g, Zwiebel 50 g, Tomate 50 g, Putenbrust 140 g",
+            "recipe": "Die gebratene Putenbrust wird zubereitet und laminiert, die Nudeln werden gekocht und mit dem in feine Würfel geschnittenen Gemüse vermischt. Putenbrust kann auch gegrillt werden",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Gemüsepfanne mit pochiertem Ei: eine halbe Karotte + ein Stück Kürbis + 1 Lauch + 1 kleine Zucchini + Ei",
-              "1 großer Pfirsich (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Kopfsalat-Sprossensalat",
+              "Gebackener Wittling: ein mittelgroßes Wittlingsfilet + 1 kleine Kartoffel",
+              "1 große Birne (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "Karotte 50 g, Kürbis 50 g, Lauch 90 g, Zucchini 90 g, Ei 70 g",
-            "recipe": "Das Gemüse in Streifen schneiden und mit etwas Olivenöl anbraten, ein pochiertes Ei zubereiten und es auf der Pfanne servieren",
+            "ingredients": "Salatsprossen 100 g, Wittling 140 g, Kartoffeln 130 g, Zwiebeln 30 g",
+            "recipe": "Die Zwiebeln mit den Kartoffeln anbraten und in eine Auflaufform geben, die Wittlingsfilets darauf legen und fertig backen, bis der Fisch fertig ist",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -621,12 +621,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot, vier Finger breit (40 g) + 1 Esslöffel zerdrückte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot, vier Finger breit (40 g) + 1 Esslöffel zerdrückte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -644,7 +644,7 @@
               "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
             "ingredients": "Thunfisch 105 g, Kartoffel 130 g, Knoblauch 3 g, Petersilie, Schnittlauch 50 g, Tomaten 100 g",
-            "recipe": "Zwiebel vierteln und abwechselnd mit den Tomaten auf einen Spieß stecken, grillen. Der Thunfisch wird gegrillt oder gegrillt und mit etwas gehacktem Knoblauch und Petersilie belegt und mit einer Bratkartoffel serviert.",
+            "recipe": "Zwiebel vierteln und abwechselnd mit den Tomaten auf einen Spieß stecken, grillen. Der Thunfisch wird gegrillt und mit etwas gehacktem Knoblauch und Petersilie belegt und mit einer Bratkartoffel serviert.",
             "notes": []
           },
           "dinner": {
@@ -656,64 +656,12 @@
             "ingredients": "Artischockenherzen 225 g, Knoblauch 6 g, Serrano-Schinken 55 g",
             "recipe": "die Artischockenherzen in Scheiben schneiden und grillen, schneiden Schinken in Streifen schneiden und den geschnittenen Knoblauch anbraten und alles auf die Artischockenherzen legen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Schwarzer Reis mit Tintenfisch: 1 Handvoll Reis + 14 Ringe Tintenfisch + 1 sautierter Zwiebel und Knoblauch mit 1 Esslöffel Öl + Tintenfischtinte",
-              "Salatherzen (75 g)",
-              "2 Kiwis (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Reis 40 g, Tintenfisch 140 g, Zwiebel 40 g, Knoblauch 3 g, Tintenfischtinte",
-            "recipe": "Aus der Zwiebel und dem Knoblauch eine Sauce zubereiten und Tintenfisch und Reis anbraten, doppelt so viel Wasser wie Reis und Tintenfischtinte hinzufügen und zwanzig Minuten kochen lassen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Warmer Spinatsalat mit Balsamico-Essig: 1 Teller Spinat + 1 Ei + Tomaten + gekochte Karotte",
-              "1 Scheibe Wassermelone (300 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Ei 70 g, Spinat 100 g, Tomaten 100 g, gekochte Karotten 100 g",
-            "recipe": "Das Ei kochen und hacken, die rohen Spinatblätter hinzufügen und die Tomaten grillen. Alles vermischen und den Salat mit Balsamico-Essig anrichten",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel pro Tag."
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Linsensalat mit gegrilltem Hähnchen: 1,5 Handvoll rohe Linsen + 1 kleine Karotte + 4 Hähnchenstücke + Feldsalat + 1 kleine Zwiebel + 6 Kirschtomaten",
-              "1 Bratapfel (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Linsen 50 g, Karotte 60 g, Hähnchen 100 g, Kirschtomaten 70 g, Lamm Salat 75 g, Frühlingszwiebel 50 g",
-            "recipe": "Die Linsen kochen und die Zwiebel und den Knoblauch mit einem Teelöffel Paprika, der zur Hülsenfrucht gegeben wird, anbraten, mit den Gemüsewürfeln und dem Feldsalat mischen, das Hähnchen grillen oder grillen und auf den Teller geben.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gemüse-Wok: Brokkoli + grüne Bohnen + Zucchini",
-              "Gebackener Kabeljau mit marinierter Tomate: Kabeljau + Tomate + Thymian + Oregano",
-              "Mango (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Brokkoli 70 g, Zucchini 70 g, grüne Bohnen 70 g, Frühlingszwiebel 30 g, Kabeljau 140 g, Tomate 100 g",
-            "recipe": "Das Gemüse schneiden und im Wok kochen. Der Kabeljau wird etwa 15 Minuten im Ofen gebacken oder kann gegrillt werden. Die Tomate wird in dünne Scheiben geschnitten und mit den Kräutern versetzt, in den Ofen geschoben und mit sehr dünn geschnittenem rohem Schnittlauch serviert",
-            "notes": [
-              "Olivenöl: 3 Esslöffel Suppen und ein Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
           "lunch": {
             "items": [
               "Warmer Ellenbogensalat mit Gemüse in Balsamico-Essig: 1 Handvoll Ellenbogen + eine halbe kleine Tomate + eine halbe kleine Zucchini + eine halbe kleine Aubergine",
@@ -735,36 +683,38 @@
             "ingredients": "Weißfisch 140 g, Kartoffel 130 g, Zwiebel 30 g, Knoblauch 3 g, Lorbeerblatt, Paprika, Pilze 100 g, Petersilie",
             "recipe": "Die Pilze grillen und mit etwas Petersilie bestreuen. Zwiebel und Knoblauch mit Paprika anbraten, die Kartoffel und ein Lorbeerblatt dazugeben und mit Wasser oder Fischbrühe aufgießen, um es schmackhafter zu machen. Wenn die Kartoffel fast gar ist, den Weißfisch hinzufügen.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 5,
+          "menuNumber": 3,
           "lunch": {
             "items": [
-              "Auflauf mit weißen Bohnen und Hühnchen: 1,5 Handvoll weiße Bohnen + Karotte + 1 Hähnchenschenkel",
-              "Gerösteter Paprikasalat: geröstete rote Paprika + Pfirsichtomate (200 g)",
+              "Schwarzer Reis mit Tintenfisch: 1 Handvoll Reis + 14 Ringe Tintenfisch + 1 sautierter Zwiebel und Knoblauch mit 1 Esslöffel Öl + Tintenfischtinte",
+              "Salatherzen (75 g)",
+              "2 Kiwis (200 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "weiße Bohnen 50 g, Tomate 100 g, geröstete Paprika 50 g, Karotte 100 g, Hähnchenschenkel 140 g",
-            "recipe": "Die weißen Bohnen in einer Gemüsebrühe mit der Karotte und dem Huhn kochen, bis sie weich sind. Geröstete rote Paprika werden in Streifen geschnitten und mit Tomatenscheiben vermischt, um den Salat zuzubereiten.",
+            "ingredients": "Reis 40 g, Tintenfisch 140 g, Zwiebel 40 g, Knoblauch 3 g, Tintenfischtinte",
+            "recipe": "Aus der Zwiebel und dem Knoblauch eine Sauce zubereiten und Tintenfisch und Reis anbraten, doppelt so viel Wasser wie Reis und Tintenfischtinte hinzufügen und zwanzig Minuten kochen lassen",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Kürbiscreme: ein Stück Kürbis + 1 Zwiebel",
-              "Gegrilltes Ei mit grünem Salat: Eier-Salat-Mix Zitrussalat: Orange (50 g) + Kiwi (100 g) + Grapefruit (50 g) Eine Scheibe dreifingerbreites Vollkornbrot (30 g)"
+              "Warmer Spinatsalat mit Balsamico-Essig: 1 Teller Spinat + 1 Ei + Tomaten + gekochte Karotte",
+              "1 Scheibe Wassermelone (300 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Kürbis 160 g, Zwiebel 100 g, Salatmischung 50 g, Ei 70 g",
-            "recipe": "Kürbis und Zwiebel kochen, mit dem Mixer pürieren und die nötige Brühe hinzufügen, bis eine cremige Konsistenz entsteht. Das Ei wird gegrillt und mit dem Salat serviert",
+            "ingredients": "Ei 70 g, Spinat 100 g, Tomaten 100 g, gekochte Karotten 100 g",
+            "recipe": "Das Ei kochen und hacken, die rohen Spinatblätter hinzufügen und die Tomaten grillen. Alles vermischen und den Salat mit Balsamico-Essig anrichten",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel pro Tag."
             ]
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Brauner Reis mit gerösteter roter Paprika: 1 Tomate + geröstete Paprika + 1 Handvoll Reis",
@@ -786,12 +736,12 @@
             "ingredients": "Schweinefilet 120 g, Kartoffel 130 g, Aubergine 100 g",
             "recipe": "Die Aubergine in sehr dünne Scheiben schneiden und grillen, die feinen Kräuter auf das Schweinefilet legen und gebacken kochen, dazu eine angeschnittene Bratkartoffel Scheiben",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Meeresfrüchtenudeln: ein halber kleiner Teller gekochte Nudeln + 8 große Muscheln + 5 Garnelen + 1 sautierte Paprika und Zwiebel",
@@ -812,7 +762,57 @@
             "ingredients": "Truthahn 140 g, Zitronensaft 20 ml, Tomate 60 g, Paprika 60 g, Zwiebel 60 g, Zucchini 60 g, Aubergine 60 g",
             "recipe": "Das Gemüse in Scheiben schneiden und abwechselnd in eine Auflaufform legen. Legen Sie sie in den Ofen, bis sie fertig sind. Der Truthahn wird mit einem Spritzer Zitronensaft gebraten",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Linsensalat mit gegrilltem Hähnchen: 1,5 Handvoll rohe Linsen + 1 kleine Karotte + 4 Hähnchenstücke + Feldsalat + 1 kleine Zwiebel + 6 Kirschtomaten",
+              "1 Bratapfel (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Linsen 50 g, Karotte 60 g, Hähnchen 100 g, Kirschtomaten 70 g, Lamm Salat 75 g, Frühlingszwiebel 50 g",
+            "recipe": "Die Linsen kochen und die Zwiebel und den Knoblauch mit einem Teelöffel Paprika, der zur Hülsenfrucht gegeben wird, anbraten, mit den Gemüsewürfeln und dem Feldsalat mischen, das Hähnchen grillen oder grillen und auf den Teller geben.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gemüse-Wok: Brokkoli + grüne Bohnen + Zucchini",
+              "Gebackener Kabeljau mit marinierter Tomate: Kabeljau + Tomate + Thymian + Oregano",
+              "Mango (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Brokkoli 70 g, Zucchini 70 g, grüne Bohnen 70 g, Frühlingszwiebel 30 g, Kabeljau 140 g, Tomate 100 g",
+            "recipe": "Das Gemüse schneiden und im Wok kochen. Der Kabeljau wird etwa 15 Minuten im Ofen gebacken oder kann gegrillt werden. Die Tomate wird in dünne Scheiben geschnitten und mit den Kräutern versetzt, in den Ofen geschoben und mit sehr dünn geschnittenem rohem Schnittlauch serviert",
+            "notes": [
+              "Olivenoel: 3 Esslöffel Suppen und ein Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Auflauf mit weißen Bohnen und Hühnchen: 1,5 Handvoll weiße Bohnen + Karotte + 1 Hähnchenschenkel",
+              "Gerösteter Paprikasalat: geröstete rote Paprika + Pfirsichtomate (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "weiße Bohnen 50 g, Tomate 100 g, geröstete Paprika 50 g, Karotte 100 g, Hähnchenschenkel 140 g",
+            "recipe": "Die weißen Bohnen in einer Gemüsebrühe mit der Karotte und dem Huhn kochen, bis sie weich sind. Geröstete rote Paprika werden in Streifen geschnitten und mit Tomatenscheiben vermischt, um den Salat zuzubereiten.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Kürbiscreme: ein Stück Kürbis + 1 Zwiebel",
+              "Gegrilltes Ei mit grünem Salat: Eier-Salat-Mix Zitrussalat: Orange (50 g) + Kiwi (100 g) + Grapefruit (50 g) Eine Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Kürbis 160 g, Zwiebel 100 g, Salatmischung 50 g, Ei 70 g",
+            "recipe": "Kürbis und Zwiebel kochen, mit dem Mixer pürieren und die nötige Brühe hinzufügen, bis eine cremige Konsistenz entsteht. Das Ei wird gegrillt und mit dem Salat serviert",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -825,12 +825,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -840,32 +840,6 @@
       "days": [
         {
           "menuNumber": 1,
-          "lunch": {
-            "items": [
-              "Vollkorn-Spiralsalat mit gegrilltem Hähnchen: 1 Handvoll rohe Vollkorn-Spiralen + 1 kleine Tomate + 1 kleine Hähnchenbrust + 1 kleine Gurke",
-              "1 Pfirsich (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Vollkornspiralen 40 g, Tomate 100 g, Huhn 140 g, Gurke 100 g",
-            "recipe": "Tomate und Gurke in kleine Würfel schneiden und die Nudeln kochen. Die Hähnchenbrust wird gegrillt oder gegrillt und in Streifen geschnitten. Alle Zutaten vermischen, um den Salat fertig zu haben",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Pilzomelett mit Strohkartoffeln: mit 1 Ei + einem Teller Champignons + 1 kleinen Kartoffel.",
-              "Kopfsalat (50 g)",
-              "Orange (200g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Ei 70 g, Pilze 110 g, Kartoffel 130 g",
-            "recipe": "Anbraten Champignons dazugeben, das Ei verquirlen und alles zu einem Omelett verrühren. Die Kartoffel wird in Julienne-Streifen geschnitten und im Ofen gebacken und als Beilage zum Omelett serviert",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 2,
           "lunch": {
             "items": [
               "Frühlingssalat: Salat + geriebene Karotte + geriebene Rüben",
@@ -885,12 +859,90 @@
             "ingredients": "Tomaten 150 g, Putenaufschnitt 50 g, Frischkäse 50 g",
             "recipe": "Aufschnitt und Käse in Tacos schneiden und durch Einstreuen der Tomaten Spieße daraus machen, diese können gegrillt werden",
             "notes": [
-              "Olivenöl: 3 Esslöffel Suppen und ein Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel Suppen und ein Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Weißer Bohnensalat: 1,5 Handvoll rohe weiße Bohnen + eine halbe Karotte + Schnittlauch + roher Spinat",
+              "Serrano-Schinken-Toast: 1 dicke Scheibe Serrano-Schinken + zerdrückte Tomate + eine Scheibe drei Finger breites Vollkornbrot (30 g)",
+              "Ein großer Pfirsich (200 g)"
+            ],
+            "ingredients": "weiße Bohnen 50 g, Karotte 50 g, roher Spinat 50 g, Frühlingszwiebel 50 g, Schinken 65 g, zerdrückte Tomate 15 g",
+            "recipe": "die Bohnen am Vorabend einweichen lassen, sie mit einer Gemüsebrühe kochen, abtropfen lassen und in einer Salatschüssel beiseite stellen, das rohe Gemüse wird gehackt und dazu gegeben Salat.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gemüsescalibada: grüne Paprika + eine halbe kleine Zwiebel + rote Paprika",
+              "Gebackener Steinbutt mit Bratkartoffelscheiben: 1 kleines Steinbuttfilet + 1 kleine Kartoffel",
+              "2 Mandarinen (200 g)",
+              "Eine drei Finger breite Scheibe Brot (30 g)"
+            ],
+            "ingredients": "Turbo 140 g, Kartoffel 130 g, grüne Paprika 75 g, rote Paprika 75 g, Zwiebel 50 g",
+            "recipe": "Das Gemüse in Streifen schneiden und in den Ofen geben. Geben Sie den Steinbutt mit einem Teelöffel Öl in den vorgeheizten Ofen und lassen Sie ihn dort stehen, bis er fertig ist. Die Kartoffeln und Zwiebeln werden in Scheiben geschnitten, im Ofen gebacken und als Beilage serviert",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 3,
+          "lunch": {
+            "items": [
+              "Vollkorn-Spiralsalat mit gegrilltem Hähnchen: 1 Handvoll rohe Vollkorn-Spiralen + 1 kleine Tomate + 1 kleine Hähnchenbrust + 1 kleine Gurke",
+              "1 Pfirsich (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Vollkornspiralen 40 g, Tomate 100 g, Huhn 140 g, Gurke 100 g",
+            "recipe": "Tomate und Gurke in kleine Würfel schneiden und die Nudeln kochen. Die Hähnchenbrust wird gegrillt und in Streifen geschnitten. Alle Zutaten vermischen, um den Salat fertig zu haben",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Pilzomelett mit Strohkartoffeln: mit 1 Ei + einem Teller Champignons + 1 kleinen Kartoffel.",
+              "Kopfsalat (50 g)",
+              "Orange (200g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Ei 70 g, Pilze 110 g, Kartoffel 130 g",
+            "recipe": "Anbraten Champignons dazugeben, das Ei verquirlen und alles zu einem Omelett verrühren. Die Kartoffel wird in Julienne-Streifen geschnitten und im Ofen gebacken und als Beilage zum Omelett serviert",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 4,
+          "lunch": {
+            "items": [
+              "Couscous-Salat: eine Handvoll Couscous + gehackter Salat + gehackte Tomate + gehackte Gurke",
+              "Orangen-Truthahn: 1 mittelgroße Putenkeule + frische Orange Saft",
+              "Ananas (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Couscous 40 g, Salat 50 g, Tomate 50 g, Gurke 50 g, Putenschenkel 140 g, Orangensaft 30 ml",
+            "recipe": "Couscous zubereiten und aufbewahren, Tomate und Gurke in sehr kleine Würfel schneiden und den Salat in kleine Stücke schneiden und mit dem Couscous zu dem Salat vermischen. Der Truthahn wird mit Orangensaft beträufelt und gebraten",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sherry-Pilze: Champignons + Sherry + 1 Frühlingszwiebel Rührknoblauch: 1 Ei + Knoblauch Knoblauch",
+              "Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Ei 70 g, Champignons 100 g, Zwiebel 100 g, Knoblauch Knoblauch 100 g, Sherry 20cc",
+            "recipe": "Die Zwiebel anbraten und die Pilze dazugeben, einen Spritzer Sherry dazugeben und alles zusammen einkochen lassen. Für das Rührei den Knoblauch anbraten und das verquirlte Ei hinzufügen, sodass das Rührei entsteht.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Warmer Wildreissalat mit Gemüse: 1,5 Handvoll Wildreis + 1 kleine Zucchini + 1 Karotte",
@@ -912,59 +964,7 @@
             "ingredients": "Tomate 50 g, Chorizo-Pfeffer 30 g, Zwiebel 50 g, Knoblauch 3 g, Weißwein 30 ml, Schweinelende 120 g",
             "recipe": "Das Gemüse anbraten und eine Gemüsebrühe und einen Schuss Weißwein hinzufügen, die Soße reduzieren lassen und über die gebratene Lende auf dem Backblech gießen. Alles zusammen ein paar Minuten backen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Mit Paprika sautierter Brokkoli: 1 kleiner Teller Brokkoli + Knoblauch Gebratenes Hähnchen: 1 mittelgroßer Hähnchenschenkel + die Hälfte Zwiebel",
-              "1 große Scheibe Melone (300 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Huhn 140 g, Brokkoli 160 g, Zwiebel 75 g, Knoblauch 3 g",
-            "recipe": "den gekochten Brokkoli zubereiten, einige Scheiben Knoblauch mit Paprika anbraten und darüber geben. Um das Hähnchen zuzubereiten, legen Sie eine Zwiebelbasis auf den Boden des Ofenblechs und das Hähnchen darauf und backen Sie es, bis es weich ist",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Zucchinicreme: 1 Zucchini + 1 kleine Kartoffel",
-              "Zitronen-Hahnfilets: 1 Hähnchenfilet + Zitronensaft",
-              "1 große Birne (200 g)",
-              "Eine drei Finger breite Scheibe Brot (30 g)"
-            ],
-            "ingredients": "Kartoffel 120 g, Zucchini 100 g, Hahn 140 g, Zitronensaft 20 ml",
-            "recipe": "Kochen Sie die Kartoffeln und Zucchini und geben Sie sie durch einen Mixer oder eine Lebensmittelmühle. Den Hahn grillen und den Zitronensaft hinzufügen",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
-          "lunch": {
-            "items": [
-              "Weißer Bohnensalat: 1,5 Handvoll rohe weiße Bohnen + eine halbe Karotte + Schnittlauch + roher Spinat",
-              "Serrano-Schinken-Toast: 1 dicke Scheibe Serrano-Schinken + zerdrückte Tomate + eine Scheibe drei Finger breites Vollkornbrot (30 g)",
-              "Ein großer Pfirsich (200 g)"
-            ],
-            "ingredients": "weiße Bohnen 50 g, Karotte 50 g, roher Spinat 50 g, Frühlingszwiebel 50 g, Schinken 65 g, zerdrückte Tomate 15 g",
-            "recipe": "die Bohnen am Vorabend einweichen lassen, sie mit einer Gemüsebrühe kochen, abtropfen lassen und in einer Salatschüssel beiseite stellen, das rohe Gemüse wird gehackt und dazu gegeben Salat.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gemüsescalibada: grüne Paprika + eine halbe kleine Zwiebel + rote Paprika",
-              "Gebackener Steinbutt mit Bratkartoffelscheiben: 1 kleines Steinbuttfilet + 1 kleine Kartoffel",
-              "2 Mandarinen (200 g)",
-              "Eine drei Finger breite Scheibe Brot (30 g)"
-            ],
-            "ingredients": "Turbo 140 g, Kartoffel 130 g, grüne Paprika 75 g, rote Paprika 75 g, Zwiebel 50 g",
-            "recipe": "Das Gemüse in Streifen schneiden und in den Ofen geben. Geben Sie den Steinbutt mit einem Teelöffel Öl in den vorgeheizten Ofen und lassen Sie ihn dort stehen, bis er fertig ist. Die Kartoffeln und Zwiebeln werden in Scheiben geschnitten, im Ofen gebacken und als Beilage serviert",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -991,7 +991,7 @@
             "ingredients": "entfettete Brühe 200 ml, Seehecht 140 g, Spargel 100 g, Erbsen 50 g, Zwiebel 50 g",
             "recipe": "Die Frühlingszwiebeln anbraten, den Spargel und die Erbsen dazugeben und mit Wasser bedecken, wenn die grünen Bohnen fertig sind, den Seehecht dazugeben und alles zusammen ein paar Minuten kochen lassen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
@@ -999,25 +999,25 @@
           "menuNumber": 7,
           "lunch": {
             "items": [
-              "Couscous-Salat: eine Handvoll Couscous + gehackter Salat + gehackte Tomate + gehackte Gurke",
-              "Orangen-Truthahn: 1 mittelgroße Putenkeule + frische Orange Saft",
-              "Ananas (200 g)",
+              "Mit Paprika sautierter Brokkoli: 1 kleiner Teller Brokkoli + Knoblauch Gebratenes Hähnchen: 1 mittelgroßer Hähnchenschenkel + die Hälfte Zwiebel",
+              "1 große Scheibe Melone (300 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Couscous 40 g, Salat 50 g, Tomate 50 g, Gurke 50 g, Putenschenkel 140 g, Orangensaft 30 ml",
-            "recipe": "Couscous zubereiten und aufbewahren, Tomate und Gurke in sehr kleine Würfel schneiden und den Salat in kleine Stücke schneiden und mit dem Couscous zu dem Salat vermischen. Der Truthahn wird mit Orangensaft beträufelt und gebraten",
+            "ingredients": "Huhn 140 g, Brokkoli 160 g, Zwiebel 75 g, Knoblauch 3 g",
+            "recipe": "den gekochten Brokkoli zubereiten, einige Scheiben Knoblauch mit Paprika anbraten und darüber geben. Um das Hähnchen zuzubereiten, legen Sie eine Zwiebelbasis auf den Boden des Ofenblechs und das Hähnchen darauf und backen Sie es, bis es weich ist",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Sherry-Pilze: Champignons + Sherry + 1 Frühlingszwiebel Rührknoblauch: 1 Ei + Knoblauch Knoblauch",
-              "Apfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Zucchinicreme: 1 Zucchini + 1 kleine Kartoffel",
+              "Zitronen-Hahnfilets: 1 Hähnchenfilet + Zitronensaft",
+              "1 große Birne (200 g)",
+              "Eine drei Finger breite Scheibe Brot (30 g)"
             ],
-            "ingredients": "Ei 70 g, Champignons 100 g, Zwiebel 100 g, Knoblauch Knoblauch 100 g, Sherry 20cc",
-            "recipe": "Die Zwiebel anbraten und die Pilze dazugeben, einen Spritzer Sherry dazugeben und alles zusammen einkochen lassen. Für das Rührei den Knoblauch anbraten und das verquirlte Ei hinzufügen, sodass das Rührei entsteht.",
+            "ingredients": "Kartoffel 120 g, Zucchini 100 g, Hahn 140 g, Zitronensaft 20 ml",
+            "recipe": "Kochen Sie die Kartoffeln und Zucchini und geben Sie sie durch einen Mixer oder eine Lebensmittelmühle. Den Hahn grillen und den Zitronensaft hinzufügen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -1030,12 +1030,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -1045,6 +1045,57 @@
       "days": [
         {
           "menuNumber": 1,
+          "lunch": {
+            "items": [
+              "Gegrillter Hähnchensalat: Hähnchenbrust + Salat + Sojasprossen + geriebene Karotte + geriebene Rüben",
+              "Melonenbällchen (300 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Huhn 140 g, Salat 50 g, Sojasprossen 50 g, Karotte 50 g, Rote Bete 50 g",
+            "recipe": "den Salat hacken und mit den Sojasprossen sowie mit der geriebenen Karotte und der roten Bete vermischen, das Hähnchen grillen oder grillen und mit dem Gemüse vermischen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Kürbiscreme: 1 Stück Kürbis + 1 kleine Kartoffel + Zwiebel Gegrillte Seezungenfilets: 1 Seezunge",
+              "1 große Birne (200 g)",
+              "Eine drei Finger breite Scheibe Brot (30 g)"
+            ],
+            "ingredients": "Kartoffel 120 g, Kürbis 120 g, Zwiebel 50 g, Seezunge 140 g",
+            "recipe": "Die Kartoffeln und das Gemüse werden gekocht und durch einen Mixer oder eine Lebensmittelmühle gegeben. Die Seezunge ist gegrillt.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 2,
+          "lunch": {
+            "items": [
+              "Fideuá: 1 Handvoll Nudeln + 4 Garnelen + 3 Stück Weißfisch + Zwiebel + zerdrückte Tomate + grüne Paprika",
+              "Ein kleiner Teller Endiviensalat",
+              "2 Kiwis (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Nudeln 40 g, Garnelen 55 g, Weißfisch 85 g, Zwiebel 25 g, grüne Paprika 25 g, zerdrückte Tomate 25 g, Endivie 50 g",
+            "recipe": "Machen Sie eine Pfanne mit Paprika, Zwiebeln und zerkleinerten Tomaten, fügen Sie den Fisch und die geschälten Garnelen sowie eine Fisch- oder Meeresfrüchtebrühe hinzu und kochen Sie alles mit den Nudeln. Sie können einen Safranzweig verwenden, um dem Gericht mehr Geschmack und Farbe zu verleihen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Landsalat: Salat + Tomate + Zwiebel + 1 kleine Kartoffel + 1 Ei",
+              "1 Bratapfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Salat 50 g, Tomate 120 g, Zwiebel 30 g, Kartoffeln 90 g und Ei 70 g",
+            "recipe": "Kochen Sie die Kartoffeln und das Ei, schälen Sie es, schneiden Sie es in mittelgroße Würfel und mischen Sie es mit dem anderen gehackten Gemüse, um den Salat zuzubereiten",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 3,
           "lunch": {
             "items": [
               "Rinderauflauf mit Pilzen: mageres Rindfleisch + 1 kleine Kartoffel + Pilze + Pilze + Zwiebel + Knoblauch",
@@ -1063,40 +1114,14 @@
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
             "ingredients": "Erbsen 50 g, Schnittlauch 30 g, Tintenfisch 140 g, Tomate 200 g, Knoblauch 3 g",
-            "recipe": "Den Tintenfisch in große Würfel schneiden und die Stücke abwechselnd mit den Tomaten auf den Spieß stecken, grillen und mit einigen sautierten Erbsen mit Knoblauch servieren.",
+            "recipe": "Den Tintenfisch in grosse Wuerfel schneiden und die Stuecke abwechselnd mit den Tomaten auf Spiesse stecken, grillen und mit sautierten Erbsen mit Knoblauch servieren.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Orientalischer Salat: eine Handvoll brauner Reis + gelbe Paprika + rote Paprika + grüne Paprika + ein Bonitofilet + ein Esslöffel Sojasauce",
-              "Natürliches Mazedonien: Orange (50 g) + Kiwi (50 g) + Birne (50 g) + Apfel (50 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "brauner Reis 40 g, Bonito 105 g, rote Paprika 50 g, grüne Paprika 50 g, gelbe Paprika 50 g, Sojasauce 10 ml",
-            "recipe": "Den braunen Reis kochen, abtropfen lassen und beiseite stellen. Paprika und Thunfisch in kleine Würfel schneiden und mit Sojasauce und Reis vermischen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Blumenkohl mit Vinaigrette: ein Teller Blumenkohl + 1 mittelgroße Tomate + 1 Frühlingszwiebel",
-              "Französisches Omelett mit Rucola: 1 Ei + Rucola",
-              "1 Birne (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Blumenkohl 160 g, Tomate 50 g, Frühlingszwiebel 50 g, Ei 70 g, Rucola 40 g",
-            "recipe": "Den Blumenkohl dünsten und mit der in sehr feine Würfel geschnittenen Tomate und Zwiebel servieren.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Gemüselasagne: 3 Teller Lasagne + Aubergine + Paprika + natürliche Tomate + Zucchini",
@@ -1116,12 +1141,12 @@
             "ingredients": "Putenbrust 140 g, frische entkernte Pflaumen 200 g, Zwiebel 20 g, Tomate 150 g",
             "recipe": "Legen Sie die Brust auf ein Backblech und füllen Sie sie mit frischen entkernten Pflaumen, geben Sie etwas Geflügelbrühe darüber, damit die Brust saftig ist, und backen Sie sie",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 4,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Gartenlinsen: 1,5 Handvoll rohe Linsen + 1 kleine Karotte + grüne Paprika + Lauch + rote Paprika",
@@ -1143,38 +1168,38 @@
             "ingredients": "Kürbis 110 g, Zucchini 110 g, Frühlingszwiebel 50 g, Wolfsbarsch 140 g, Knoblauch 3 g",
             "recipe": "Das Gemüse in Scheiben schneiden und grillen.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
-          "lunch": {
-            "items": [
-              "Fideuá: 1 Handvoll Nudeln + 4 Garnelen + 3 Stück Weißfisch + Zwiebel + zerdrückte Tomate + grüne Paprika",
-              "Ein kleiner Teller Endiviensalat",
-              "2 Kiwis (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Nudeln 40 g, Garnelen 55 g, Weißfisch 85 g, Zwiebel 25 g, grüne Paprika 25 g, zerdrückte Tomate 25 g, Endivie 50 g",
-            "recipe": "Machen Sie eine Pfanne mit Paprika, Zwiebeln und zerkleinerten Tomaten, fügen Sie den Fisch und die geschälten Garnelen sowie eine Fisch- oder Meeresfrüchtebrühe hinzu und kochen Sie alles mit den Nudeln. Sie können einen Safranzweig verwenden, um dem Gericht mehr Geschmack und Farbe zu verleihen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Landsalat: Salat + Tomate + Zwiebel + 1 kleine Kartoffel + 1 Ei",
-              "1 Bratapfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Salat 50 g, Tomate 120 g, Zwiebel 30 g, Kartoffeln 90 g und Ei 70 g",
-            "recipe": "Kochen Sie die Kartoffeln und das Ei, schälen Sie es, schneiden Sie es in mittelgroße Würfel und mischen Sie es mit dem anderen gehackten Gemüse, um den Salat zuzubereiten",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Orientalischer Salat: eine Handvoll brauner Reis + gelbe Paprika + rote Paprika + grüne Paprika + ein Bonitofilet + ein Esslöffel Sojasauce",
+              "Natürliches Mazedonien: Orange (50 g) + Kiwi (50 g) + Birne (50 g) + Apfel (50 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "brauner Reis 40 g, Bonito 105 g, rote Paprika 50 g, grüne Paprika 50 g, gelbe Paprika 50 g, Sojasauce 10 ml",
+            "recipe": "Den braunen Reis kochen, abtropfen lassen und beiseite stellen. Paprika und Thunfisch in kleine Würfel schneiden und mit Sojasauce und Reis vermischen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Blumenkohl mit Vinaigrette: ein Teller Blumenkohl + 1 mittelgroße Tomate + 1 Frühlingszwiebel",
+              "Französisches Omelett mit Rucola: 1 Ei + Rucola",
+              "1 Birne (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Blumenkohl 160 g, Tomate 50 g, Frühlingszwiebel 50 g, Ei 70 g, Rucola 40 g",
+            "recipe": "Den Blumenkohl dünsten und mit der in sehr feine Würfel geschnittenen Tomate und Zwiebel servieren.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
           "lunch": {
             "items": [
               "Suppenreis mit Kabeljau-Lende: 1 Handvoll roher Reis + Kabeljau-Lende + Zwiebel + Knoblauch",
@@ -1195,32 +1220,7 @@
             "ingredients": "Schweinefilet 120 g, Blumenkohl 60 g, Brokkoli 60 g, Karotte 100 g, grüne Bohnen 100 g",
             "recipe": "den Blumenkohl und den Brokkoli in kleine Sprossen und die Karotte in Streifen schneiden, das Gemüse wird gedünstet. Die Schweinefiletmedaillons grillen, die Zwiebelscheiben anbraten und auf die geröstete Brotscheibe und das Filet legen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 7,
-          "lunch": {
-            "items": [
-              "Gegrillter Hähnchensalat: Hähnchenbrust + Salat + Sojasprossen + geriebene Karotte + geriebene Rüben",
-              "Melonenbällchen (300 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Huhn 140 g, Salat 50 g, Sojasprossen 50 g, Karotte 50 g, Rote Bete 50 g",
-            "recipe": "den Salat hacken und mit den Sojasprossen sowie mit der geriebenen Karotte und der roten Bete vermischen, das Hähnchen grillen oder grillen und mit dem Gemüse vermischen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Kürbiscreme: 1 Stück Kürbis + 1 kleine Kartoffel + Zwiebel Gegrillte Seezungenfilets: 1 Seezunge",
-              "1 große Birne (200 g)",
-              "Eine drei Finger breite Scheibe Brot (30 g)"
-            ],
-            "ingredients": "Kartoffel 120 g, Kürbis 120 g, Zwiebel 50 g, Seezunge 140 g",
-            "recipe": "Die Kartoffeln und das Gemüse werden gekocht und durch einen Mixer oder eine Lebensmittelmühle gegeben. Die Seezunge ist gegrillt.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -1233,12 +1233,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -1250,111 +1250,29 @@
           "menuNumber": 1,
           "lunch": {
             "items": [
-              "Reissuppe mit Garnelen und Weißfisch: eine Handvoll Reis mit 1 kleinen Weißfischfilet + 4 Garnelen",
-              "Escarole-Salat (50 g)",
-              "Apfel (200 g)",
+              "Warmer Vollkorn-Spiralsalat mit Pute: Feldsalat + 1 Handvoll Nudeln + Putenbrust + geröstete Paprika",
+              "Ein Pfirsich (200 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Reis 40 g, Weißfisch 100 g, Garnelen 40 g, Fischbrühe, Schnittlauch 30 g, zerdrückte Tomate 30 g, Safran",
-            "recipe": "Aus den Fischgräten und den Garnelenköpfen eine Fischbrühe zubereiten und beiseite stellen, die Frühlingszwiebeln mit der zerdrückten Tomate und dem Reis anbraten und die Brühe hinzufügen. Kochen Sie alles zusammen mit dem Fisch etwa zwanzig Minuten lang und fügen Sie die Garnelen hinzu",
+            "ingredients": "rohe Vollkornnudeln 40 g, Truthahn 140 g, Feldsalat 60 g, geröstete Paprika 60 g,",
+            "recipe": "Kochen Sie die Nudeln und grillen Sie die Brust, schneiden Sie sie in Würfel und vermischen Sie alles mit den gerösteten Paprika und dem Feldsalat zu einem Salat.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Karottencreme: Karotte + 1 kleine Kartoffel",
-              "Kaninchen mit Tomate: 5 Stück Kaninchen + eine halbe Zwiebel + eine halbe grüne Paprika + 1 Knoblauchzehe + zerdrückte Tomate",
-              "Orange (200g)",
+              "Mangold mit Kartoffeln: ein Teller Mangold + kleine Kartoffel + Knoblauch Französisches Omelette mit Tomaten: 1 Ei + Tomaten",
+              "2 Pflaumen (200 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Kaninchen 140 g, Kartoffeln 100 g, Zwiebeln 50 g, grüne Paprika 50 g, Knoblauch 3 g, zerdrückte Tomaten 50 g, Karotten 150 g",
-            "recipe": "Die Karotten mit der Kartoffel kochen und in einen Mixer geben, um eine Creme zu erhalten. Das Kaninchen wird gedünstet, zuerst wird das Gemüse zu einer Sauce hinzugefügt und das Kaninchen wird angebraten, mit Wasser bedeckt und zusammen gedünstet, bis das Kaninchen weich ist.",
+            "ingredients": "Mangold 100 g, Kartoffeln 90 g, Knoblauch 3 g, Tomaten 60 g und Ei 70 g",
+            "recipe": "Die Kartoffeln mit dem Mangold kochen und mit dem Knoblauch anbraten. Machen Sie ein französisches Omelett oder ein gegrilltes Ei und begleiten Sie es mit Tomaten.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Kichererbseneintopf mit Gemüse: 1 ½ Handvoll rohe Kichererbsen + eine halbe Karotte + eine halbe Tomate + Spinat + Serrano-Schinkenspitze",
-              "2 Mandarinen (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Kichererbsen 50 g, Karotte 60 g, Tomate 60 g, Schinken 60 g, Spinat 50 g",
-            "recipe": "Kochen Sie die Kichererbsen mit dem Gemüse und der Schinkenspitze, um ihnen mehr Geschmack zu verleihen. Sie können bereits gekochte Kichererbsen verwenden. Der Schinken kann mit den Kichererbsen gekocht oder separat mit dem Brot als Serrano-Schinken-Toast gegessen werden.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Tomaten-Schnittlauch-Salat: eine Tomate + Schnittlauch",
-              "Gegrillte Seezungenfilets mit Pilzen: 1 kleines Seezungenfilet + Pilze",
-              "Eine Birne (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30g)"
-            ],
-            "ingredients": "Seezunge 140 g, Pilze 150 g, Tomate 250 g, Frühling Zwiebel 30 g",
-            "recipe": "Der Tomatensalat und die gegrillte Seezunge werden zubereitet, begleitet von gegrillten Pilzen.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Öl pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Vollkornmakkaroni mit Bonito: 1 Handvoll Makkaroni + Tomate + eine halbe Paprika + Zwiebel + 1 kleine Scheibe Bonito",
-              "Salat mit Sprossensalat 50 g",
-              "2 Kiwis (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "rohe Vollkornnudeln 40 g, Tomate 50 g, grüne Paprika 50 g, Zwiebel 30 g, Bonito 100 g",
-            "recipe": "Mit Tomaten, Paprika und Zwiebeln anbraten und den Thunfisch hinzufügen. Die Makkaroni hingegen werden gekocht und mit dem Gemüse und dem Fisch vermischt.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Sautierte grüne Bohnen: ein Teller grüne Bohnen + Knoblauch",
-              "Gegrillte Hähnchenspieße mit Tomaten: ein mittelgroßes Hähnchenbrustfilet + Tomaten",
-              "Ein gerösteter Apfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Hähnchenbrust 140 g, Tomaten 50 g, grüne Bohnen 170 g, Knoblauch 3 g",
-            "recipe": "kochen Grüne Bohnen dazugeben und mit dem Knoblauch anbraten. Die Hähnchenbrust wird in Würfel geschnitten und gegrillt oder gegrillt und die Spieße werden abwechselnd aus einem Hähnchenwürfel und einer Tomate zubereitet",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
-          "lunch": {
-            "items": [
-              "Brauner Reissalat mit Gemüse: 1 Handvoll roher Reis + Zwiebel + Paprika + Tomate + Römersalat (75 g)",
-              "Gegrillter Tintenfisch: ein Teller Tintenfisch + Knoblauch + Petersilie",
-              "Eine Orange (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Reis 40 g, Paprika 30 g, Tomate 50 g, Zwiebel 30 g, Salat 50 g, Tintenfisch 120 g, Knoblauch 4 g, Petersilie frisch",
-            "recipe": "Den braunen Reis kochen und mit dem in kleine Würfel geschnittenen Gemüse vermischen. Die Tintenfische werden gegrillt oder gegrillt und mit etwas zerdrücktem Knoblauch und Petersilie bestreut, um ihnen einen intensiveren Geschmack zu verleihen",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gegrilltes Gemüse: eine halbe kleine Zucchini + 1 Zwiebel + eine halbe Tomate",
-              "Gegrillte Eier mit Dampfkartoffel: mit 1 Ei + 1 Kartoffel klein.",
-              "Eine Birne (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Ei 70 g, Zucchini 50 g, Schnittlauch 50 g, Tomate 100 g, Kartoffel 85 g",
-            "recipe": "das Gemüse wird in Scheiben geschnitten und gegrillt bzw. gegrillt. Die Kartoffeln werden gedünstet, in Scheiben geschnitten und mit einem gegrillten Ei belegt.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 5,
           "lunch": {
             "items": [
               "Gemischter Salat mit Balsamico-Essig: ein Teller Salat + Tomate + Schnittlauch + eine halbe Gurke",
@@ -1376,37 +1294,39 @@
             "ingredients": "Wittling 140 g, Kürbis 150 g, Karotte 130 g, Zwiebel 50 g, Tomate 100 g",
             "recipe": "Das Gemüse wird geschnitten und gekocht, um die Sahne herzustellen, dann mit einem Mixer geschlagen oder durch eine Lebensmittelmühle gegeben. Eine Tomate wird geröstet oder gegrillt und von gebackenem oder gegrilltem Fisch begleitet.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 3,
           "lunch": {
             "items": [
-              "Warmer Vollkorn-Spiralsalat mit Pute: Feldsalat + 1 Handvoll Nudeln + Putenbrust + geröstete Paprika",
-              "Ein Pfirsich (200 g)",
+              "Reissuppe mit Garnelen und Weißfisch: eine Handvoll Reis mit 1 kleinen Weißfischfilet + 4 Garnelen",
+              "Escarole-Salat (50 g)",
+              "Apfel (200 g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "rohe Vollkornnudeln 40 g, Truthahn 140 g, Feldsalat 60 g, geröstete Paprika 60 g,",
-            "recipe": "Kochen Sie die Nudeln und grillen Sie die Brust, schneiden Sie sie in Würfel und vermischen Sie alles mit den gerösteten Paprika und dem Feldsalat zu einem Salat.",
+            "ingredients": "Reis 40 g, Weißfisch 100 g, Garnelen 40 g, Fischbrühe, Schnittlauch 30 g, zerdrückte Tomate 30 g, Safran",
+            "recipe": "Aus den Fischgräten und den Garnelenköpfen eine Fischbrühe zubereiten und beiseite stellen, die Frühlingszwiebeln mit der zerdrückten Tomate und dem Reis anbraten und die Brühe hinzufügen. Kochen Sie alles zusammen mit dem Fisch etwa zwanzig Minuten lang und fügen Sie die Garnelen hinzu",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Mangold mit Kartoffeln: ein Teller Mangold + kleine Kartoffel + Knoblauch Französisches Omelette mit Tomaten: 1 Ei + Tomaten",
-              "2 Pflaumen (200 g)",
+              "Karottencreme: Karotte + 1 kleine Kartoffel",
+              "Kaninchen mit Tomate: 5 Stück Kaninchen + eine halbe Zwiebel + eine halbe grüne Paprika + 1 Knoblauchzehe + zerdrückte Tomate",
+              "Orange (200g)",
               "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
             ],
-            "ingredients": "Mangold 100 g, Kartoffeln 90 g, Knoblauch 3 g, Tomaten 60 g und Ei 70 g",
-            "recipe": "Die Kartoffeln mit dem Mangold kochen und mit dem Knoblauch anbraten. Machen Sie ein französisches Omelett oder ein gegrilltes Ei und begleiten Sie es mit Tomaten.",
+            "ingredients": "Kaninchen 140 g, Kartoffeln 100 g, Zwiebeln 50 g, grüne Paprika 50 g, Knoblauch 3 g, zerdrückte Tomaten 50 g, Karotten 150 g",
+            "recipe": "Die Karotten mit der Kartoffel kochen und in einen Mixer geben, um eine Creme zu erhalten. Das Kaninchen wird gedünstet, zuerst wird das Gemüse zu einer Sauce hinzugefügt und das Kaninchen wird angebraten, mit Wasser bedeckt und zusammen gedünstet, bis das Kaninchen weich ist.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Gedünstete Pintobohnen: 1,5 Handvoll Pintobohnen + Lauch + Tomate + Paprika",
@@ -1428,7 +1348,87 @@
             "ingredients": "wilder Spargel 150 g, zerdrückte Tomate 90 g, Wolfsbarsch 140 g",
             "recipe": "Wilder Spargel wird auf Wunsch gegrillt oder gekocht. Der Wolfsbarsch wird gebacken und mit etwas zerkleinerter Tomate bestrichen. Sie können die zerdrückte Tomate durch einen Tomatensalat ersetzen",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 5,
+          "lunch": {
+            "items": [
+              "Brauner Reissalat mit Gemüse: 1 Handvoll roher Reis + Zwiebel + Paprika + Tomate + Römersalat (75 g)",
+              "Gegrillter Tintenfisch: ein Teller Tintenfisch + Knoblauch + Petersilie",
+              "Eine Orange (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Reis 40 g, Paprika 30 g, Tomate 50 g, Zwiebel 30 g, Salat 50 g, Tintenfisch 120 g, Knoblauch 4 g, Petersilie frisch",
+            "recipe": "Den braunen Reis kochen und mit dem in kleine Würfel geschnittenen Gemüse vermischen. Die Tintenfische werden gegrillt oder gegrillt und mit etwas zerdrücktem Knoblauch und Petersilie bestreut, um ihnen einen intensiveren Geschmack zu verleihen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Gegrilltes Gemüse: eine halbe kleine Zucchini + 1 Zwiebel + eine halbe Tomate",
+              "Gegrillte Eier mit Dampfkartoffel: mit 1 Ei + 1 Kartoffel klein.",
+              "Eine Birne (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Ei 70 g, Zucchini 50 g, Schnittlauch 50 g, Tomate 100 g, Kartoffel 85 g",
+            "recipe": "das Gemüse wird in Scheiben geschnitten und gegrillt bzw. gegrillt. Die Kartoffeln werden gedünstet, in Scheiben geschnitten und mit einem gegrillten Ei belegt.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Kichererbseneintopf mit Gemüse: 1 ½ Handvoll rohe Kichererbsen + eine halbe Karotte + eine halbe Tomate + Spinat + Serrano-Schinkenspitze",
+              "2 Mandarinen (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Kichererbsen 50 g, Karotte 60 g, Tomate 60 g, Schinken 60 g, Spinat 50 g",
+            "recipe": "Kochen Sie die Kichererbsen mit dem Gemüse und der Schinkenspitze, um ihnen mehr Geschmack zu verleihen. Sie können bereits gekochte Kichererbsen verwenden. Der Schinken kann mit den Kichererbsen gekocht oder separat mit dem Brot als Serrano-Schinken-Toast gegessen werden.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Tomaten-Schnittlauch-Salat: eine Tomate + Schnittlauch",
+              "Gegrillte Seezungenfilets mit Pilzen: 1 kleines Seezungenfilet + Pilze",
+              "Eine Birne (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30g)"
+            ],
+            "ingredients": "Seezunge 140 g, Pilze 150 g, Tomate 250 g, Frühling Zwiebel 30 g",
+            "recipe": "Der Tomatensalat und die gegrillte Seezunge werden zubereitet, begleitet von gegrillten Pilzen.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Öl pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Vollkornmakkaroni mit Bonito: 1 Handvoll Makkaroni + Tomate + eine halbe Paprika + Zwiebel + 1 kleine Scheibe Bonito",
+              "Salat mit Sprossensalat 50 g",
+              "2 Kiwis (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "rohe Vollkornnudeln 40 g, Tomate 50 g, grüne Paprika 50 g, Zwiebel 30 g, Bonito 100 g",
+            "recipe": "Mit Tomaten, Paprika und Zwiebeln anbraten und den Thunfisch hinzufügen. Die Makkaroni hingegen werden gekocht und mit dem Gemüse und dem Fisch vermischt.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sautierte grüne Bohnen: ein Teller grüne Bohnen + Knoblauch",
+              "Gegrillte Hähnchenspieße mit Tomaten: ein mittelgroßes Hähnchenbrustfilet + Tomaten",
+              "Ein gerösteter Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Hähnchenbrust 140 g, Tomaten 50 g, grüne Bohnen 170 g, Knoblauch 3 g",
+            "recipe": "kochen Grüne Bohnen dazugeben und mit dem Knoblauch anbraten. Die Hähnchenbrust wird in Würfel geschnitten und gegrillt oder gegrillt und die Spieße werden abwechselnd aus einem Hähnchenwürfel und einer Tomate zubereitet",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }
@@ -1441,12 +1441,12 @@
         "Leichtes Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + eine Scheibe Putenaufschnitt (30 g) + ein Esslöffel zerdrückte Tomate (10 g)",
         "Vollkornfrühstück: 2 fettarme Joghurts + eine Handvoll ungesüßte Vollkornmüsli (30 g)",
         "Klassisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zuckerfreie Marmelade (15 g)",
-        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenöl (5 ml)"
+        "Andalusisches Frühstück: 1 Glas Magermilch (200 ml) + eine Scheibe Vollkornbrot (40 g) + 1 Esslöffel zerkleinerte Tomate (10 g) + ein Teelöffel Olivenoel (5 ml)"
       ],
       "midmorningOptions": [
         "Joghurt mit Pflaumen: 1 Magerjoghurt + 2 Pflaumen",
         "Frischkäse-Carpaccio mit natürlicher Tomate: 1 Portion entrahmter Frischkäse (65 g) + Tomatenscheiben (60 g)",
-        "Kaffee mit Milch mit Fruchtstück: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
+        "Kaffee mit Milch und einem Stueck Obst: 1 Kaffee mit Magermilch (100 ml) + 1 Apfel"
       ],
       "snackOptions": [
         "Joghurt mit Nüssen: 2 Magerjoghurt + 2 Walnüsse",
@@ -1477,66 +1477,12 @@
             "ingredients": "Ei 70 g, Champignons 120 g, Tomate 100 g, Gurke 50 g, Salat 50 g, geriebene Karotte 50 g",
             "recipe": "Das Gemüse für den Salat schneiden. Die Pilze werden angebraten und mit dem geschlagenen Ei vermischt, um das Rührei zu erhalten",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
           "menuNumber": 2,
-          "lunch": {
-            "items": [
-              "Brauner Reis mit Zucchini: Zucchini + 1 Handvoll brauner Reis",
-              "Gegrillte Lachsfilets mit Tomaten: 1 kleines Lachsfilet + Tomaten",
-              "2 Kiwis (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "brauner Reis 40 g, Lachs 110 g, Tomaten 150 g, Zucchini 100 g",
-            "recipe": "Die Zucchini in Würfel schneiden und anbraten, den Reis hinzufügen und das Wasser hinzufügen. Der Lachs wird gegrillt oder gegrillt und von einem Kirschtomatensalat begleitet.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Gegrillte Hähnchenbruststreifen mit Gemüse: 1 mittelgroßes Hähnchenfilet + rote Paprika + grüne Paprika + eine halbe Aubergine + Zwiebel",
-              "Brunnenkressesalat (50 g)",
-              "1 Pfirsich (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Hähnchenbrust 140 g, rote Paprika 60 g, grüne Paprika 60 g, Aubergine 60 g, Tomate 60 g",
-            "recipe": "Die Hähnchenbrust in Streifen schneiden und mit dem in Julienne geschnittenen Gemüse anbraten.",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 3,
-          "lunch": {
-            "items": [
-              "Spaghetti mit Fleischbällchen: 1 Teller Vollkornspaghetti + 4 Esslöffel Hackfleisch + zerkleinerte Tomate + Zucchini + grüne Paprika + Zwiebel",
-              "Kopfsalat (50 g)",
-              "1 Apfel (200 g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "rohe Vollkornspaghetti 40 g, Hackfleisch 120 g, zerkleinerte Tomate 120 g, Zucchini 60 g, grüne Paprika 60 g, Zwiebel 40 g",
-            "recipe": "Die Fleischbällchen werden gebacken oder gedünstet, um überschüssiges Fett zu vermeiden, die Nudeln werden gekocht und zum anderen wird mit dem Gemüse eine Tomatensauce zubereitet. Alles wird zusammen serviert. Sie können zuerst die Spaghetti mit Knoblauch und dann die Fleischbällchen essen, wenn Sie keine Geschmacksvermischung wünschen.",
-            "notes": []
-          },
-          "dinner": {
-            "items": [
-              "Sautierter Kohl mit Paprika: ein Teller Kohl + Knoblauch + Paprika",
-              "Gebackener Seehecht mit Ofenkartoffel: eine Scheibe mittelgroßer Seehecht + 1 kleine Kartoffel + Zwiebel",
-              "Orange (200g)",
-              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
-            ],
-            "ingredients": "Seehecht 140 g, Kartoffel 130 g, Zwiebel 30 g, Knoblauch 3 g, Kohl 100 g",
-            "recipe": "kochen Kohl hinzufügen und mit Knoblauch und etwas Öl anbraten. Um den Geschmack des Gerichts zu verstärken, können Sie einen Esslöffel Paprika hinzufügen. Für den zweiten Gang Kartoffeln und Zwiebeln schneiden und auf ein Backblech legen. Wenn sie fast fertig sind, geben Sie den Seehecht für ein paar Minuten auf das Blech. Sie können den Fisch gegrillt zubereiten",
-            "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
-            ]
-          }
-        },
-        {
-          "menuNumber": 4,
           "lunch": {
             "items": [
               "Kubanischer Reis mit hausgemachter Tomatensauce: 1 Handvoll Reis + 1 kleine Tomate + eine halbe Zwiebel + 1 Ei",
@@ -1558,37 +1504,39 @@
             "ingredients": "golden 140 g, Spinat 90 g, Knoblauch 6 g, Tomaten 120 g",
             "recipe": "Den Knoblauch hacken und anbraten und zum rohen Spinatsalat geben. Der Fisch wird gebacken und von gerösteten Tomaten begleitet",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 5,
+          "menuNumber": 3,
           "lunch": {
             "items": [
-              "Farfalle Primavera: 1 Handvoll Vollkornnudeln + Zucchini + 2 Scheiben gekochter Schinken + rote Paprika + grüne Paprika + Feldsalat",
-              "1 Apfel (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Brauner Reis mit Zucchini: Zucchini + 1 Handvoll brauner Reis",
+              "Gegrillte Lachsfilets mit Tomaten: 1 kleines Lachsfilet + Tomaten",
+              "2 Kiwis (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "rohe Vollkornnudeln 40 g, Zucchini 80 g, gekochter Schinken 75 g, rote Paprika 60 g, grüne Paprika 60 g, Feldsalat 50 g",
-            "recipe": "Die Vollkornnudeln kochen und beiseite stellen. Die Zucchini mit der Paprika anbraten und mit den gekochten Nudeln, dem Feldsalat und den Kochschinkenstreifen vermischen",
+            "ingredients": "brauner Reis 40 g, Lachs 110 g, Tomaten 150 g, Zucchini 100 g",
+            "recipe": "Die Zucchini in Würfel schneiden und anbraten, den Reis hinzufügen und das Wasser hinzufügen. Der Lachs wird gegrillt und von einem Kirschtomatensalat begleitet.",
             "notes": []
           },
           "dinner": {
             "items": [
-              "Puteneintopf mit Kartoffeln: 1 Stück Truthahn + 1 kleine Kartoffel + eine halbe Zwiebel + eine halbe grüne Paprika + zerdrückte Tomate",
-              "2 Kiwis (200 g)",
-              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+              "Gegrillte Hähnchenbruststreifen mit Gemüse: 1 mittelgroßes Hähnchenfilet + rote Paprika + grüne Paprika + eine halbe Aubergine + Zwiebel",
+              "Brunnenkressesalat (50 g)",
+              "1 Pfirsich (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
             ],
-            "ingredients": "Truthahn 140 g, Kartoffel 100 g, Zwiebel 50 g, grüne Paprika 50 g, zerdrückte Tomate 50 g",
-            "recipe": "Das Gemüse anbraten und mit dem Truthahn vermischen, mit Wasser bedecken und alles zusammen kochen. Sie können dem Eintopf einen Schuss Wein hinzufügen, um ihm mehr Geschmack zu verleihen. Wenn der Eintopf halb fertig ist, fügen Sie die Kartoffeln hinzu und schmoren Sie alles zusammen fertig.",
+            "ingredients": "Hähnchenbrust 140 g, rote Paprika 60 g, grüne Paprika 60 g, Aubergine 60 g, Tomate 60 g",
+            "recipe": "Die Hähnchenbrust in Streifen schneiden und mit dem in Julienne geschnittenen Gemüse anbraten.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 6,
+          "menuNumber": 4,
           "lunch": {
             "items": [
               "Topf mit weißen Bohnen mit Tintenfisch: 1,5 Handvoll weiße Bohnen + Tintenfisch + Knoblauch + Lauch + grüne Paprika + Karotte + zerkleinerte Tomate + Weißwein",
@@ -1610,12 +1558,12 @@
             "ingredients": "gehacktes Schweinefleisch 120 g, Zwiebel 100 g, Kürbis 130 g, Römersalat 50 g",
             "recipe": "Schneiden Sie den Kürbis und die Zwiebel und kochen Sie sie zusammen. Wenn sie gar sind, werden sie durch den Mixer gegeben, um die Sahne herzustellen. Bereiten Sie Mini-Hamburger mit gehacktem Schweinefleisch zu und grillen Sie sie, begleitet von Römersalat oder einer anderen Salatsorte.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         },
         {
-          "menuNumber": 7,
+          "menuNumber": 5,
           "lunch": {
             "items": [
               "Gedünstete Kartoffeln: Tomate + Schnittlauch + grüne Paprika + 1 kleine Kartoffel + Knoblauch",
@@ -1636,7 +1584,59 @@
             "ingredients": "Artischocke 50 g, grüne Bohnen 50 g, Karotte 50 g, Blumenkohl 50 g, Hahn 140 g",
             "recipe": "Das Gemüse wird in Stücke geschnitten und gedünstet oder gekocht. Der Hahn wird gegrillt oder kann auch gedünstet oder gebacken werden.",
             "notes": [
-              "Olivenöl: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 6,
+          "lunch": {
+            "items": [
+              "Spaghetti mit Fleischbällchen: 1 Teller Vollkornspaghetti + 4 Esslöffel Hackfleisch + zerkleinerte Tomate + Zucchini + grüne Paprika + Zwiebel",
+              "Kopfsalat (50 g)",
+              "1 Apfel (200 g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "rohe Vollkornspaghetti 40 g, Hackfleisch 120 g, zerkleinerte Tomate 120 g, Zucchini 60 g, grüne Paprika 60 g, Zwiebel 40 g",
+            "recipe": "Die Fleischbällchen werden gebacken oder gedünstet, um überschüssiges Fett zu vermeiden, die Nudeln werden gekocht und zum anderen wird mit dem Gemüse eine Tomatensauce zubereitet. Alles wird zusammen serviert. Sie können zuerst die Spaghetti mit Knoblauch und dann die Fleischbällchen essen, wenn Sie keine Geschmacksvermischung wünschen.",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Sautierter Kohl mit Paprika: ein Teller Kohl + Knoblauch + Paprika",
+              "Gebackener Seehecht mit Ofenkartoffel: eine Scheibe mittelgroßer Seehecht + 1 kleine Kartoffel + Zwiebel",
+              "Orange (200g)",
+              "1 Scheibe dreifingerbreites Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Seehecht 140 g, Kartoffel 130 g, Zwiebel 30 g, Knoblauch 3 g, Kohl 100 g",
+            "recipe": "kochen Kohl hinzufügen und mit Knoblauch und etwas Öl anbraten. Um den Geschmack des Gerichts zu verstärken, können Sie einen Esslöffel Paprika hinzufügen. Für den zweiten Gang Kartoffeln und Zwiebeln schneiden und auf ein Backblech legen. Wenn sie fast fertig sind, geben Sie den Seehecht für ein paar Minuten auf das Blech. Sie können den Fisch gegrillt zubereiten",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
+            ]
+          }
+        },
+        {
+          "menuNumber": 7,
+          "lunch": {
+            "items": [
+              "Farfalle Primavera: 1 Handvoll Vollkornnudeln + Zucchini + 2 Scheiben gekochter Schinken + rote Paprika + grüne Paprika + Feldsalat",
+              "1 Apfel (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "rohe Vollkornnudeln 40 g, Zucchini 80 g, gekochter Schinken 75 g, rote Paprika 60 g, grüne Paprika 60 g, Feldsalat 50 g",
+            "recipe": "Die Vollkornnudeln kochen und beiseite stellen. Die Zucchini mit der Paprika anbraten und mit den gekochten Nudeln, dem Feldsalat und den Kochschinkenstreifen vermischen",
+            "notes": []
+          },
+          "dinner": {
+            "items": [
+              "Puteneintopf mit Kartoffeln: 1 Stück Truthahn + 1 kleine Kartoffel + eine halbe Zwiebel + eine halbe grüne Paprika + zerdrückte Tomate",
+              "2 Kiwis (200 g)",
+              "Eine drei Finger breite Scheibe Vollkornbrot (30 g)"
+            ],
+            "ingredients": "Truthahn 140 g, Kartoffel 100 g, Zwiebel 50 g, grüne Paprika 50 g, zerdrückte Tomate 50 g",
+            "recipe": "Das Gemüse anbraten und mit dem Truthahn vermischen, mit Wasser bedecken und alles zusammen kochen. Sie können dem Eintopf einen Schuss Wein hinzufügen, um ihm mehr Geschmack zu verleihen. Wenn der Eintopf halb fertig ist, fügen Sie die Kartoffeln hinzu und schmoren Sie alles zusammen fertig.",
+            "notes": [
+              "Olivenoel: 3 Esslöffel und 1 Esslöffel Kaffee pro Tag"
             ]
           }
         }

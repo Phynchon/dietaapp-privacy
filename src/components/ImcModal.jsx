@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 function getFocusableElements(container) {
   if (!container) return [];
@@ -19,6 +19,8 @@ function ImcModal({
   isOpen,
   initialFlowStep = "calc",
   directRecommendation = null,
+  isPremiumUser = false,
+  onRequestPremiumInfo,
   uiText,
   imcSex,
   onSexChange,
@@ -30,26 +32,18 @@ function ImcModal({
   imcCategory,
   imcRecommendation,
   onClose,
-  onGoRecommended,
   onConfirmStart,
 }) {
   const modalRef = useRef(null);
   const [flowStep, setFlowStep] = useState("calc");
-  const [startOffsetDays, setStartOffsetDays] = useState(2);
   const [trackingAlias, setTrackingAlias] = useState("");
   const [trackingCountry, setTrackingCountry] = useState("");
   const [trackingAge, setTrackingAge] = useState("");
-
-  const dayOffsets = useMemo(
-    () => Array.from({ length: 6 }, (_, index) => index + 2),
-    [],
-  );
 
   useEffect(() => {
     if (!isOpen) return undefined;
 
     setFlowStep(initialFlowStep);
-    setStartOffsetDays(2);
     setTrackingAlias("");
     setTrackingCountry("");
     setTrackingAge("");
@@ -98,7 +92,7 @@ function ImcModal({
 
   const activeRecommendation = directRecommendation ?? imcRecommendation;
 
-  const handleStartConfirmation = (offsetDays) => {
+  const handleStartConfirmation = () => {
     if (activeRecommendation == null) return;
     const normalizedHeight = Number(String(imcHeight).replace(",", "."));
     const normalizedWeight = Number(String(imcWeight).replace(",", "."));
@@ -110,7 +104,7 @@ function ImcModal({
 
     onConfirmStart?.({
       calories: activeRecommendation,
-      offsetDays,
+      offsetDays: 1,
       profile: hasOptionalData
         ? {
             alias,
@@ -124,13 +118,7 @@ function ImcModal({
         : null,
     });
 
-    if (Number(offsetDays) === 0) {
-      onGoRecommended?.(activeRecommendation);
-      onClose();
-      return;
-    }
-
-    setFlowStep("done");
+    onClose();
   };
 
   return (
@@ -224,44 +212,61 @@ function ImcModal({
             <p className="imc-flow-message">{uiText.imcChallengeBody}</p>
             <p className="imc-commit-text">{uiText.imcCommitBody}</p>
             <p className="imc-commit-text">{uiText.imcCommitExtended}</p>
-            <p className="imc-flow-message">{uiText.imcCommitTrackingLead}</p>
-            <label className="imc-field" htmlFor="imc-tracking-alias">
-              {uiText.imcCommitTrackingAliasLabel}
-              <input
-                id="imc-tracking-alias"
-                type="text"
-                value={trackingAlias}
-                onChange={(event) => setTrackingAlias(event.target.value)}
-                placeholder={uiText.imcCommitTrackingAliasPlaceholder}
-              />
-            </label>
-            <label className="imc-field" htmlFor="imc-tracking-country">
-              {uiText.imcCommitTrackingCountryLabel}
-              <input
-                id="imc-tracking-country"
-                type="text"
-                value={trackingCountry}
-                onChange={(event) => setTrackingCountry(event.target.value)}
-                placeholder={uiText.imcCommitTrackingCountryPlaceholder}
-              />
-            </label>
-            <label className="imc-field" htmlFor="imc-tracking-age">
-              {uiText.imcCommitTrackingAgeLabel}
-              <input
-                id="imc-tracking-age"
-                type="number"
-                inputMode="numeric"
-                min="1"
-                max="120"
-                value={trackingAge}
-                onChange={(event) => setTrackingAge(event.target.value)}
-                placeholder={uiText.imcCommitTrackingAgePlaceholder}
-              />
-            </label>
-            <p className="imc-flow-message imc-flow-strong">{uiText.imcCommitFollowUp}</p>
-            <button className="menu-nav-button" onClick={() => setFlowStep("start")}> 
-              {uiText.imcCommitYes}
-            </button>
+            {isPremiumUser ? (
+              <>
+                <p className="imc-flow-message">{uiText.imcCommitTrackingLead}</p>
+                <label className="imc-field" htmlFor="imc-tracking-alias">
+                  {uiText.imcCommitTrackingAliasLabel}
+                  <input
+                    id="imc-tracking-alias"
+                    type="text"
+                    value={trackingAlias}
+                    onChange={(event) => setTrackingAlias(event.target.value)}
+                    placeholder={uiText.imcCommitTrackingAliasPlaceholder}
+                  />
+                </label>
+                <label className="imc-field" htmlFor="imc-tracking-country">
+                  {uiText.imcCommitTrackingCountryLabel}
+                  <input
+                    id="imc-tracking-country"
+                    type="text"
+                    value={trackingCountry}
+                    onChange={(event) => setTrackingCountry(event.target.value)}
+                    placeholder={uiText.imcCommitTrackingCountryPlaceholder}
+                  />
+                </label>
+                <label className="imc-field" htmlFor="imc-tracking-age">
+                  {uiText.imcCommitTrackingAgeLabel}
+                  <input
+                    id="imc-tracking-age"
+                    type="number"
+                    inputMode="numeric"
+                    min="1"
+                    max="120"
+                    value={trackingAge}
+                    onChange={(event) => setTrackingAge(event.target.value)}
+                    placeholder={uiText.imcCommitTrackingAgePlaceholder}
+                  />
+                </label>
+                <p className="imc-flow-message imc-flow-strong">{uiText.imcCommitFollowUp}</p>
+                <button className="menu-nav-button" onClick={() => setFlowStep("start")}>
+                  {uiText.imcCommitYes}
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  className="imc-flow-message imc-premium-highlight imc-premium-highlight-trigger"
+                  onClick={onRequestPremiumInfo}
+                >
+                  <strong>{uiText.imcCommitPremiumPitch}</strong>
+                </button>
+                <button className="menu-nav-button" onClick={() => setFlowStep("start")}> 
+                  {uiText.imcCommitStayFree}
+                </button>
+              </>
+            )}
           </div>
         ) : null}
 
@@ -270,47 +275,13 @@ function ImcModal({
             <h3>{uiText.imcStartTitle}</h3>
             <button
               className="menu-nav-button"
-              onClick={() => handleStartConfirmation(0)}
-            >
-              {uiText.imcStartToday}
-            </button>
-            <label className="imc-field" htmlFor="imc-start-offset">
-              {uiText.imcStartOffsetLabel}
-              <select
-                id="imc-start-offset"
-                value={startOffsetDays}
-                onChange={(event) => setStartOffsetDays(Number(event.target.value))}
-              >
-                {dayOffsets.map((offsetDay) => (
-                  <option key={offsetDay} value={offsetDay}>
-                    {offsetDay === 2 ? uiText.imcStartOffsetOptionBase : `+${offsetDay} dias`}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <button
-              className="menu-nav-button"
-              onClick={() => handleStartConfirmation(startOffsetDays)}
+              onClick={handleStartConfirmation}
             >
               {uiText.imcStartConfirm}
             </button>
           </div>
         ) : null}
 
-        {flowStep === "done" ? (
-          <div className="imc-flow-block">
-            <p className="imc-flow-message">{uiText.imcStartSaved}</p>
-            <button
-              className="menu-nav-button"
-              onClick={() => {
-                onGoRecommended?.(activeRecommendation);
-                onClose();
-              }}
-            >
-              {uiText.close}
-            </button>
-          </div>
-        ) : null}
       </section>
     </div>
   );

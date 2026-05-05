@@ -1,5 +1,6 @@
 export function registerServiceWorker() {
   const isNativeApp = Boolean(window?.Capacitor?.isNativePlatform?.())
+  const disableServiceWorker = import.meta.env.VITE_DISABLE_SW === 'true'
 
   const cleanupServiceWorkers = () => {
     if (!('serviceWorker' in navigator)) {
@@ -18,7 +19,7 @@ export function registerServiceWorker() {
   }
 
   // No registrar service worker en desarrollo para evitar problemas de cache
-  if (import.meta.env.DEV || isNativeApp) {
+  if (import.meta.env.DEV || isNativeApp || disableServiceWorker) {
     // Desregistrar cualquier service worker existente para evitar contenido desactualizado
     cleanupServiceWorkers()
     return
