@@ -132,3 +132,13 @@ Persistencia v1:
 - Fecha de inicio queda guardada de forma consistente.
 - Seguimiento diario permite guardar sin avisos activados.
 - Cambio de dieta no elimina datos historicos.
+
+## 11. Ajustes UX Premium (actualizacion 2026-05-02)
+- Segunda pantalla de inicio (home):
+  - Se elimina la oferta premium temprana para evitar friccion en primer contacto.
+  - El acceso a informacion Premium se mantiene en los puntos de entrada definidos en el plan de lanzamiento.
+
+- Pantalla Premium DietaApp:
+  - Se separa visualmente el boton superior "Prueba Premium 7 dias gratis" del texto legal "Luego 4,99 EUR/mes...".
+  - El boton inferior "No, seguire con publicidad" se mantiene sin cambios funcionales.
+  - Objetivo: mejorar claridad de lectura y evitar que el texto legal se perciba como parte del CTA.

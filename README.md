@@ -10,6 +10,9 @@ Aplicación React + Vite con un shell PWA listo para un menú diario, lista de i
 - `npm run lint` - Ejecuta el linter
 - `npm run clean` - Limpia dist y caché de Vite
 - `npm run clean:cache` - Limpia solo la caché de Vite
+- `npm run mobile:ios:sync` - Genera build web y sincroniza proyecto iOS de Capacitor
+- `npm run mobile:ios:open` - Abre el proyecto iOS en Xcode (solo macOS)
+- `npm run mobile:ios` - Ejecuta sync + open para iOS
 
 
 ## Entornos (Dev y Produccion)
@@ -33,6 +36,12 @@ Nota:
 npm run dev
 ```
 
+Si quieres evitar cache agresiva durante pruebas y desactivar el service worker automaticamente:
+
+```bash
+npm run dev:nocache
+```
+
 El servidor se abrirá automáticamente en tu navegador en `http://localhost:4173`.
 Esta app usa `strictPort: true`, así que si el puerto 4173 está ocupado el arranque fallará hasta que lo liberes.
 
@@ -43,6 +52,22 @@ Para detener el servidor de desarrollo, presiona `Ctrl + C` en la terminal donde
 **Importante:** Siempre detén el servidor correctamente antes de cerrar la terminal para evitar que los puertos queden ocupados.
 
 ## Solución de Problemas
+
+### Modo automático sin caché
+
+Para no borrar cache manualmente cada vez, usa estos comandos:
+
+```bash
+# Desarrollo sin cache HTTP + sin service worker
+npm run dev:nocache
+
+# Preview sin cache HTTP + sin service worker (en 4173)
+npm run preview:nocache
+```
+
+Esto activa el modo `nocache`, que:
+- desactiva/desregistra el service worker,
+- aplica cabeceras `Cache-Control: no-store` en Vite.
 
 ### La página no carga o muestra contenido antiguo
 
@@ -95,8 +120,26 @@ Para desregistrar manualmente el service worker:
 - El service worker se registra solo en producción usando `public/sw.js`
 - El servidor se configura para abrir automáticamente el navegador
 
+## Version iOS (Capacitor)
+
+Estado actual del proyecto:
+- Plataforma iOS de Capacitor presente y sincronizada.
+- Assets web copiados en `ios/App/App/public`.
+
+Flujo recomendado (en macOS):
+1. Ejecutar `npm run mobile:ios:sync`.
+2. Ejecutar `npm run mobile:ios:open`.
+3. En Xcode, seleccionar un simulador o dispositivo real.
+4. Ejecutar Build/Run.
+
+Notas importantes:
+- Desde Windows puedes dejar el proyecto iOS preparado y sincronizado, pero la compilacion y firma final requieren Xcode en macOS.
+- Si cambias variables de entorno de frontend, repite `npm run mobile:ios:sync` antes de compilar en Xcode.
+
 ## Documentacion de Producto
 
 - Especificacion funcional v1: `docs/especificacion-funcional-v1.md`
 - Historias de usuario y criterios de aceptacion: `docs/historias-usuario-y-criterios.md`
 - Modelo de datos inicial (local y MySQL): `docs/modelo-datos-local-mysql-v1.md`
+- Guia iOS sin Mac local (build cloud + TestFlight): `docs/ios-testflight-sin-mac.md`
+- Plan rapido beta interna Android (semana actual): `docs/plan-beta-interna-android-semana.md`
