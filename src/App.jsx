@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Capacitor } from "@capacitor/core";
+import { App as CapacitorApp } from "@capacitor/app";
 import "./App.css";
 import menus1600 from "./data/menus1600.json";
 import { consejos } from "./data/consejos";
@@ -8,10 +10,13 @@ import FoodBurstScene from "./components/FoodBurstScene";
 import { getUiText } from "./constants/uiText";
 import { submitConsultToBackend } from "./services/consultService";
 import {
+  fetchUserPlanFromBackend,
   syncDailyCheckinToBackend,
   syncProgramStartToBackend,
+  syncUserPlanToBackend,
   syncUserProfileToBackend,
 } from "./services/trackingSyncService";
+import { trackAnalyticsEvent } from "./services/analyticsService";
 import {
   createProgramStartRecord,
   getLatestDailyTracking,
@@ -37,9 +42,235 @@ const NOTICES_DISMISSED_KEY = "dieta.dismissedNotices";
 const NOTICE_PREFERENCES_KEY = "dieta.noticePreferences";
 const CONSULT_HISTORY_KEY = "dieta.consultHistory";
 const PROGRAM_START_DATE_KEY = "dieta.programStartDate";
+const TRIAL_POPUP_LAST_SEEN_DAY_KEY = "dieta.trialPopupLastSeenDayByProgram";
 const STATS_DATA_AUTH_KEY = "dieta.statsDataAuthorized";
 const STATS_PROFILE_KEY = "dieta.statsProfile";
+const USER_PLAN_KEY = "dieta.userPlan";
+const USER_ID_KEY = "dieta.userId";
 const DAY_MS = 24 * 60 * 60 * 1000;
+const TRIAL_POPUP_START_DAY = 2;
+const TRIAL_POPUP_END_DAY = 7;
+const TRIAL_POPUP_SIMULATION_QUERY_KEY = "trialMock";
+const TRIAL_POPUP_SIMULATION_SECONDS_QUERY_KEY = "trialMockSeconds";
+const DEFAULT_TRIAL_POPUP_SIMULATION_SECONDS = 10;
+const TRIAL_DAY_ORDINALS_ES = {
+  2: "segundo",
+  3: "tercer",
+  4: "cuarto",
+  5: "quinto",
+  6: "sexto",
+  7: "septimo",
+};
+const PLAY_SUBSCRIPTIONS_URL = "https://play.google.com/store/account/subscriptions";
+
+const PREMIUM_INFO_PAGE_COPY = {
+  es: {
+    title: "Premium DietaApp",
+    intro: "Todo lo que incluye el plan Premium, explicado de forma clara.",
+    offerTitle: "Oferta de lanzamiento v1",
+    offerPrimaryCta: "Prueba Premium 7 dias gratis",
+    offerLegal: "Luego 4,99 EUR/mes. Cancela cuando quieras.",
+    offerChannel: "Alta y gestion de suscripcion solo por Google Play Billing.",
+    featuresTitle: "Que incluye Premium",
+    features: [
+      "Seguimiento diario completo y persistente.",
+      "Experiencia sin publicidad.",
+      "Avisos personalizados segun progreso.",
+      "Recomendaciones y recordatorios avanzados.",
+      "Panel privado con estadisticas de evolucion.",
+    ],
+    linksTitle: "Enlaces utiles",
+    links: [
+      {
+        label: "Gestionar suscripciones en Google Play",
+        href: PLAY_SUBSCRIPTIONS_URL,
+      },
+      {
+        label: "Ayuda oficial de pagos y suscripciones",
+        href: "https://support.google.com/googleplay/answer/2479637",
+      },
+      {
+        label: "Cancelar o pausar suscripcion",
+        href: "https://support.google.com/googleplay/answer/7018481",
+      },
+    ],
+    restoreCta: "Restaurar Premium",
+    restoringCta: "Restaurando...",
+    restoreSuccess: "Premium restaurado correctamente.",
+    restoreNoPremium: "No hay una suscripcion Premium activa para este usuario.",
+    restoreNoUser: "No hay usuario vinculado para restaurar.",
+    restoreError: "No se pudo restaurar Premium. Intentalo de nuevo.",
+    continueCta: "No, seguire con publicidad",
+  },
+  en: {
+    title: "DietaApp Premium",
+    intro: "Everything included in Premium, clearly explained.",
+    offerTitle: "v1 launch offer",
+    offerPrimaryCta: "Try Premium free for 7 days",
+    offerLegal: "Then EUR 4.99/month. Cancel anytime.",
+    offerChannel: "Subscription signup and management only via Google Play Billing.",
+    featuresTitle: "What Premium includes",
+    features: [
+      "Full persistent daily tracking.",
+      "Ad-free experience.",
+      "Personalized progress alerts.",
+      "Advanced reminders and recommendations.",
+      "Private progress stats dashboard.",
+    ],
+    linksTitle: "Useful links",
+    links: [
+      {
+        label: "Manage Google Play subscriptions",
+        href: PLAY_SUBSCRIPTIONS_URL,
+      },
+      {
+        label: "Official billing and subscription help",
+        href: "https://support.google.com/googleplay/answer/2479637",
+      },
+      {
+        label: "Cancel or pause a subscription",
+        href: "https://support.google.com/googleplay/answer/7018481",
+      },
+    ],
+    restoreCta: "Restore Premium",
+    restoringCta: "Restoring...",
+    restoreSuccess: "Premium restored successfully.",
+    restoreNoPremium: "No active Premium subscription was found for this user.",
+    restoreNoUser: "No linked user found to restore.",
+    restoreError: "Could not restore Premium. Please try again.",
+    continueCta: "No, continue with ads",
+  },
+  fr: {
+    title: "DietaApp Premium",
+    intro: "Contenu du plan Premium, explique clairement.",
+    offerTitle: "Offre de lancement v1",
+    offerPrimaryCta: "Essai Premium gratuit 7 jours",
+    offerLegal: "Puis 4,99 EUR/mois. Resiliable a tout moment.",
+    offerChannel: "Activation et gestion uniquement via Google Play Billing.",
+    featuresTitle: "Ce que Premium inclut",
+    features: [
+      "Suivi quotidien complet et persistant.",
+      "Experience sans publicite.",
+      "Alertes personnalisees selon progression.",
+      "Rappels et recommandations avances.",
+      "Tableau de bord prive de progression.",
+    ],
+    linksTitle: "Liens utiles",
+    links: [
+      {
+        label: "Gerer les abonnements Google Play",
+        href: PLAY_SUBSCRIPTIONS_URL,
+      },
+      {
+        label: "Aide officielle paiements et abonnements",
+        href: "https://support.google.com/googleplay/answer/2479637",
+      },
+      {
+        label: "Annuler ou suspendre un abonnement",
+        href: "https://support.google.com/googleplay/answer/7018481",
+      },
+    ],
+    restoreCta: "Restaurer Premium",
+    restoringCta: "Restauration...",
+    restoreSuccess: "Premium restaure avec succes.",
+    restoreNoPremium: "Aucun abonnement Premium actif pour cet utilisateur.",
+    restoreNoUser: "Aucun utilisateur lie pour restaurer.",
+    restoreError: "Impossible de restaurer Premium. Reessayez.",
+    continueCta: "Non, continuer avec publicite",
+  },
+  de: {
+    title: "DietaApp Premium",
+    intro: "Alles zum Premium-Plan, klar erklaert.",
+    offerTitle: "v1 Einfuhrungsangebot",
+    offerPrimaryCta: "Premium 7 Tage kostenlos testen",
+    offerLegal: "Danach 4,99 EUR/Monat. Jederzeit kundbar.",
+    offerChannel: "Abschluss und Verwaltung nur uber Google Play Billing.",
+    featuresTitle: "Was Premium umfasst",
+    features: [
+      "Vollstandiges persistentes Tages-Tracking.",
+      "Werbefreie Nutzung.",
+      "Personalisierte Fortschritts-Hinweise.",
+      "Erweiterte Erinnerungen und Empfehlungen.",
+      "Privates Fortschritts-Dashboard.",
+    ],
+    linksTitle: "Nutzliche Links",
+    links: [
+      {
+        label: "Google Play-Abos verwalten",
+        href: PLAY_SUBSCRIPTIONS_URL,
+      },
+      {
+        label: "Offizielle Hilfe zu Zahlungen und Abos",
+        href: "https://support.google.com/googleplay/answer/2479637",
+      },
+      {
+        label: "Abo pausieren oder kundigen",
+        href: "https://support.google.com/googleplay/answer/7018481",
+      },
+    ],
+    restoreCta: "Premium wiederherstellen",
+    restoringCta: "Wird wiederhergestellt...",
+    restoreSuccess: "Premium erfolgreich wiederhergestellt.",
+    restoreNoPremium: "Keine aktive Premium-Mitgliedschaft fur diesen Nutzer gefunden.",
+    restoreNoUser: "Kein verknupfter Nutzer zum Wiederherstellen gefunden.",
+    restoreError: "Premium konnte nicht wiederhergestellt werden. Bitte erneut versuchen.",
+    continueCta: "Nein, mit Werbung fortfahren",
+  },
+};
+
+const PREMIUM_SIGNUP_FLOW_COPY = {
+  es: {
+    title: "Registro nuevo usuario Premium",
+    step1: "Paso 1 de 2: completa tus datos basicos",
+    step2: "Paso 2 de 2: activa tu prueba en Google Play",
+    save: "Guardar datos",
+    continueToSubscription: "Continuar a suscripcion",
+  },
+  en: {
+    title: "New Premium user signup",
+    step1: "Step 1 of 2: complete your basic details",
+    step2: "Step 2 of 2: activate your trial in Google Play",
+    save: "Save details",
+    continueToSubscription: "Continue to subscription",
+  },
+  fr: {
+    title: "Inscription nouvel utilisateur Premium",
+    step1: "Etape 1 sur 2 : completez vos informations de base",
+    step2: "Etape 2 sur 2 : activez votre essai sur Google Play",
+    save: "Enregistrer les donnees",
+    continueToSubscription: "Continuer vers l'abonnement",
+  },
+  de: {
+    title: "Neue Premium-Nutzerregistrierung",
+    step1: "Schritt 1 von 2: Basisdaten ausfullen",
+    step2: "Schritt 2 von 2: Testversion bei Google Play aktivieren",
+    save: "Daten speichern",
+    continueToSubscription: "Zur Mitgliedschaft fortfahren",
+  },
+};
+
+const ADVICE_META_COPY = {
+  es: {
+    sourceLabel: "Fuente",
+    openSource: "Ver fuente",
+    reviewLabel: "Ultima revision",
+  },
+  en: {
+    sourceLabel: "Source",
+    openSource: "View source",
+    reviewLabel: "Last review",
+  },
+  fr: {
+    sourceLabel: "Source",
+    openSource: "Voir la source",
+    reviewLabel: "Derniere mise a jour",
+  },
+  de: {
+    sourceLabel: "Quelle",
+    openSource: "Quelle anzeigen",
+    reviewLabel: "Letzte Aktualisierung",
+  },
+};
 
 const DAILY_OPENING_MESSAGES_ES = [
   "Pequenos pasos, grandes resultados.",
@@ -118,6 +349,7 @@ const I18N = {
       day: "día",
       menuList: "Listado de menús",
       menuOfDay: "Menú de hoy",
+      menuOfProgramDay: "Menú del día {day}",
       viewAllMenus: "ver todos los menús",
       preview: "Vista previa",
       options: "Opciones",
@@ -176,6 +408,7 @@ const I18N = {
       day: "day",
       menuList: "Menu list",
       menuOfDay: "Today menu",
+      menuOfProgramDay: "Menu for day {day}",
       viewAllMenus: "view all menus",
       preview: "Preview",
       options: "Options",
@@ -234,6 +467,7 @@ const I18N = {
       day: "jour",
       menuList: "Liste des menus",
       menuOfDay: "Menu du jour",
+      menuOfProgramDay: "Menu du jour {day}",
       viewAllMenus: "voir tous les menus",
       preview: "Aperçu",
       options: "Options",
@@ -293,6 +527,7 @@ const I18N = {
       day: "Tag",
       menuList: "Menüliste",
       menuOfDay: "Tagesmenü",
+      menuOfProgramDay: "Menü für Tag {day}",
       viewAllMenus: "alle Menüs anzeigen",
       preview: "Vorschau",
       options: "Optionen",
@@ -463,6 +698,41 @@ const NOTICE_COPY = {
     typeInfo: "Info",
     typeAction: "Recommended action",
     typeFocus: "Tracking",
+    typeReminder: "Reminder",
+    typeMessage: "Message",
+    reminderMissingTitle: "Pending from yesterday",
+    reminderMissingBody:
+      "You did not log yesterday's milestones. Complete tracking to keep continuity.",
+    reminderReplyTitle: "Reply available",
+    reminderReplyBody: "You have a reply to one of your comments.",
+    messageTitle: "Opening message",
+    infoCaloriesTitle: "Previous day calories",
+    dailyMessages: [
+      "Small steps, big results.",
+      "Breathe and stay consistent today.",
+      "Your best progress is to keep going.",
+      "Prioritize water and real food.",
+      "Eating calmly also counts.",
+      "Today is for progress, not perfection.",
+      "Sleeping well is part of the plan.",
+      "A good day starts at shopping time.",
+      "Protein and vegetables first.",
+      "Avoid impulse snacking.",
+      "Walking today moves you forward.",
+      "Consistency beats speed.",
+      "If one meal fails, restart at the next one.",
+      "Consistency creates change.",
+    ],
+    dataConsentLead:
+      "If you have not authorized statistical data sharing yet, you can do it here.",
+    dataConsentLink: "Authorize now",
+    dataConsentTitle: "Statistical data consent",
+    dataConsentBody:
+      "Enter alias, country and age to create your anonymous statistical profile.",
+    dataConsentSave: "Save consent",
+    dataConsentDone: "Statistical data sharing authorized.",
+    dataConsentSaved: "Statistical data saved successfully.",
+    dataConsentFailed: "Could not send data. Please try again.",
     preferencesTitle: "Alert preferences",
     preferencesIntro: "Choose which message types are shown in the center.",
     prefInfo: "Show informational messages",
@@ -481,6 +751,8 @@ const NOTICE_COPY = {
     consultSentRemote: "Question sent to backend.",
     consultQueuedRemote: "No backend configured: saved locally.",
     consultRemoteError: "Could not send to backend. Stored locally.",
+    consultRoutingInfo:
+      "Questions are sent via POST to VITE_API_BASE_URL/consults when backend is configured. Otherwise they are stored locally.",
     pushTitle: "Notifications status",
     pushEnable: "Enable notification permission",
     pushReady: "Notifications available.",
@@ -491,7 +763,7 @@ const NOTICE_COPY = {
   fr: {
     title: "Alertes et messages",
     intro:
-      "Centre d alertes du programme. Vous y trouverez des rappels et messages utiles selon votre regime actuel.",
+      "Centre d alertes du programme. Vous y trouverez des rappels et des messages utiles selon votre regime actuel.",
     unreadLabel: "Alertes non lues",
     notificationsOff:
       "Les alertes sont desactivees. Activez-les pour recevoir de nouveaux rappels.",
@@ -536,6 +808,41 @@ const NOTICE_COPY = {
     typeInfo: "Information",
     typeAction: "Action recommandee",
     typeFocus: "Suivi",
+    typeReminder: "Rappel",
+    typeMessage: "Message",
+    reminderMissingTitle: "En attente depuis hier",
+    reminderMissingBody:
+      "Vous n avez pas enregistre les etapes d hier. Completez le suivi pour garder la continuite.",
+    reminderReplyTitle: "Reponse disponible",
+    reminderReplyBody: "Vous avez une reponse a l un de vos commentaires.",
+    messageTitle: "Message d ouverture",
+    infoCaloriesTitle: "Calories de la veille",
+    dailyMessages: [
+      "De petits pas donnent de grands resultats.",
+      "Respirez et restez regulier aujourd hui.",
+      "Votre meilleur progres est de continuer.",
+      "Priorisez l eau et les aliments reels.",
+      "Manger avec calme compte aussi.",
+      "Aujourd hui on avance, pas la perfection.",
+      "Bien dormir fait partie du plan.",
+      "Une bonne journee commence aux courses.",
+      "Proteines et legumes en premier.",
+      "Evitez le grignotage impulsif.",
+      "Marcher aujourd hui vous rapproche de l objectif.",
+      "La regularite bat la vitesse.",
+      "Si un repas deraille, reprenez au suivant.",
+      "La regularite cree le changement.",
+    ],
+    dataConsentLead:
+      "Si vous n avez pas encore autorise l envoi de donnees statistiques, vous pouvez le faire ici.",
+    dataConsentLink: "Autoriser maintenant",
+    dataConsentTitle: "Autorisation des donnees statistiques",
+    dataConsentBody:
+      "Indiquez alias, pays et age pour creer votre profil statistique anonyme.",
+    dataConsentSave: "Enregistrer l autorisation",
+    dataConsentDone: "Envoi des donnees statistiques autorise.",
+    dataConsentSaved: "Donnees statistiques enregistrees avec succes.",
+    dataConsentFailed: "Envoi impossible. Reessayez.",
     preferencesTitle: "Preferences d alertes",
     preferencesIntro: "Choisissez les types de messages a afficher dans le centre.",
     prefInfo: "Afficher les messages informatifs",
@@ -552,8 +859,10 @@ const NOTICE_COPY = {
     consultClear: "Effacer l historique",
     consultSavedLocal: "Question enregistree localement.",
     consultSentRemote: "Question envoyee au backend.",
-    consultQueuedRemote: "Backend non configure : enregistre localement.",
+    consultQueuedRemote: "Backend non configure : enregistrement local effectue.",
     consultRemoteError: "Envoi backend impossible. Sauvegarde locale conservee.",
+    consultRoutingInfo:
+      "Les questions sont envoyees via POST a VITE_API_BASE_URL/consults quand le backend est configure. Sinon, elles sont conservees localement.",
     pushTitle: "Etat des notifications",
     pushEnable: "Activer l autorisation de notification",
     pushReady: "Notifications disponibles.",
@@ -564,7 +873,7 @@ const NOTICE_COPY = {
   de: {
     title: "Hinweise und Nachrichten",
     intro:
-      "Hinweiszentrum des Programms. Hier sehen Sie Erinnerungen und nutzliche Nachrichten zu Ihrer aktuellen Diat.",
+      "Hinweiszentrum des Programms. Hier sehen Sie Erinnerungen und nutzliche Nachrichten passend zu Ihrer aktuellen Diat.",
     unreadLabel: "Ungelesene Hinweise",
     notificationsOff:
       "Hinweise sind deaktiviert. Aktivieren Sie sie, um wieder Erinnerungen zu erhalten.",
@@ -609,6 +918,41 @@ const NOTICE_COPY = {
     typeInfo: "Info",
     typeAction: "Empfohlene Aktion",
     typeFocus: "Verlauf",
+    typeReminder: "Erinnerung",
+    typeMessage: "Nachricht",
+    reminderMissingTitle: "Offen seit gestern",
+    reminderMissingBody:
+      "Die Meilensteine von gestern wurden nicht erfasst. Bitte vervollstandigen Sie das Tracking fur einen stabilen Verlauf.",
+    reminderReplyTitle: "Antwort verfugbar",
+    reminderReplyBody: "Sie haben eine Antwort auf einen Ihrer Kommentare.",
+    messageTitle: "Tagesauftakt",
+    infoCaloriesTitle: "Kalorien vom Vortag",
+    dailyMessages: [
+      "Kleine Schritte, grosse Ergebnisse.",
+      "Atmen Sie durch und bleiben Sie heute dran.",
+      "Ihr bester Fortschritt ist dranzubleiben.",
+      "Wasser und echte Lebensmittel zuerst.",
+      "Ruhig essen zahlt auch.",
+      "Heute zahlt Fortschritt, nicht Perfektion.",
+      "Guter Schlaf ist Teil des Plans.",
+      "Ein guter Tag beginnt beim Einkauf.",
+      "Proteine und Gemuse zuerst.",
+      "Vermeiden Sie impulsives Snacken.",
+      "Ein Spaziergang bringt Sie heute weiter.",
+      "Konstanz schlagt Tempo.",
+      "Wenn eine Mahlzeit ausfallt, bei der nachsten weitermachen.",
+      "Konstanz schafft Veranderung.",
+    ],
+    dataConsentLead:
+      "Wenn Sie die statistische Datenfreigabe noch nicht aktiviert haben, konnen Sie das hier tun.",
+    dataConsentLink: "Jetzt autorisieren",
+    dataConsentTitle: "Freigabe statistischer Daten",
+    dataConsentBody:
+      "Geben Sie Alias, Land und Alter ein, um ein anonymes Statistikprofil zu erstellen.",
+    dataConsentSave: "Freigabe speichern",
+    dataConsentDone: "Statistische Datenfreigabe aktiviert.",
+    dataConsentSaved: "Statistische Daten erfolgreich gespeichert.",
+    dataConsentFailed: "Senden nicht moglich. Bitte erneut versuchen.",
     preferencesTitle: "Hinweis-Einstellungen",
     preferencesIntro: "Wahlen Sie, welche Nachrichtentypen im Zentrum angezeigt werden.",
     prefInfo: "Informationshinweise anzeigen",
@@ -627,6 +971,8 @@ const NOTICE_COPY = {
     consultSentRemote: "Anfrage an Backend gesendet.",
     consultQueuedRemote: "Kein Backend konfiguriert: lokal gespeichert.",
     consultRemoteError: "Backend-Senden fehlgeschlagen. Lokal gespeichert.",
+    consultRoutingInfo:
+      "Anfragen werden per POST an VITE_API_BASE_URL/consults gesendet, wenn ein Backend konfiguriert ist. Sonst bleiben sie lokal gespeichert.",
     pushTitle: "Benachrichtigungsstatus",
     pushEnable: "Benachrichtigungsberechtigung aktivieren",
     pushReady: "Benachrichtigungen verfugbar.",
@@ -834,6 +1180,14 @@ function App() {
     () => getNoticeCopy(selectedLanguage),
     [selectedLanguage],
   );
+  const premiumInfoCopy = useMemo(
+    () => PREMIUM_INFO_PAGE_COPY[selectedLanguage] ?? PREMIUM_INFO_PAGE_COPY.es,
+    [selectedLanguage],
+  );
+  const premiumSignupFlowCopy = useMemo(
+    () => PREMIUM_SIGNUP_FLOW_COPY[selectedLanguage] ?? PREMIUM_SIGNUP_FLOW_COPY.es,
+    [selectedLanguage],
+  );
 
   const uiText = useMemo(() => getUiText(selectedLanguage), [selectedLanguage]);
   const coverArrowImage =
@@ -971,6 +1325,22 @@ function App() {
   );
 
   const [activeView, setActiveView] = useState("home");
+  const [userPlan, setUserPlan] = useState(() => {
+    try {
+      return localStorage.getItem(USER_PLAN_KEY) === "premium"
+        ? "premium"
+        : "free";
+    } catch {
+      return "free";
+    }
+  });
+  const [backendUserId, setBackendUserId] = useState(() => {
+    try {
+      return localStorage.getItem(USER_ID_KEY) || "";
+    } catch {
+      return "";
+    }
+  });
   const [showPortada, setShowPortada] = useState(true);
   const [dietNotice, setDietNotice] = useState("");
   const [selectedConsejoId, setSelectedConsejoId] = useState(1);
@@ -994,6 +1364,28 @@ function App() {
   const [programTrackingSnapshot, setProgramTrackingSnapshot] = useState(() =>
     getLatestProgramSnapshot(),
   );
+  const [trialPopupDay, setTrialPopupDay] = useState(null);
+  const [isTrialPopupSimulationEnabled, setIsTrialPopupSimulationEnabled] = useState(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const value = String(params.get(TRIAL_POPUP_SIMULATION_QUERY_KEY) || "").toLowerCase();
+      return ["1", "true", "yes", "on"].includes(value);
+    } catch {
+      return false;
+    }
+  });
+  const [trialPopupSimulationIntervalMs] = useState(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const rawSeconds = Number(params.get(TRIAL_POPUP_SIMULATION_SECONDS_QUERY_KEY));
+      const safeSeconds = Number.isFinite(rawSeconds) && rawSeconds > 0
+        ? rawSeconds
+        : DEFAULT_TRIAL_POPUP_SIMULATION_SECONDS;
+      return Math.round(safeSeconds * 1000);
+    } catch {
+      return DEFAULT_TRIAL_POPUP_SIMULATION_SECONDS * 1000;
+    }
+  });
   const [pendingMorningCheckin, setPendingMorningCheckin] = useState(() =>
     getPendingMorningCheckin(),
   );
@@ -1007,11 +1399,15 @@ function App() {
   const [morningNotes, setMorningNotes] = useState("");
   const [latestMorningSummary, setLatestMorningSummary] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [isRestoringPremium, setIsRestoringPremium] = useState(false);
+  const [premiumRestoreFeedback, setPremiumRestoreFeedback] = useState("");
   const [exploreInternalNumber, setExploreInternalNumber] = useState(
     () => automaticSelection?.internalNumber ?? 1,
   );
   const previewSectionRef = useRef(null);
   const menuListSectionRef = useRef(null);
+  const lastPlanHydratedUserIdRef = useRef("");
+  const lastPlanSyncedRef = useRef("");
 
   const homeSelection = automaticSelection ?? allMenus[0] ?? null;
 
@@ -1025,6 +1421,21 @@ function App() {
 
   const selectedSelection =
     activeView === "dietas" ? exploreSelection : homeSelection;
+  const effectiveUserId =
+    programTrackingSnapshot?.user?.id || backendUserId || "";
+  const isPremiumUser = userPlan === "premium";
+  const adviceMetaCopy = ADVICE_META_COPY[selectedLanguage] ?? ADVICE_META_COPY.es;
+  const visibleConsejosList = useMemo(
+    () =>
+      isPremiumUser
+        ? consejosList
+        : consejosList.filter((consejo) => consejo.level !== "premium"),
+    [consejosList, isPremiumUser],
+  );
+  const premiumConsejoCount = useMemo(
+    () => consejosList.filter((consejo) => consejo.level === "premium").length,
+    [consejosList],
+  );
 
   const programStartLabel = useMemo(() => {
     if (!programStartIso) return "";
@@ -1049,12 +1460,11 @@ function App() {
     const dayOffset = Math.floor((today.getTime() - startDate.getTime()) / DAY_MS);
 
     if (dayOffset < 0) {
-      const remainingDays = Math.abs(dayOffset);
-      return locale.words.programStartsIn.replace("{days}", String(remainingDays));
+      return "";
     }
 
     return `${locale.words.programDay}: ${dayOffset + 1}`;
-  }, [locale.words.programDay, locale.words.programStartsIn, programStartIso]);
+  }, [locale.words.programDay, programStartIso]);
 
   const currentWeek = useMemo(
     () =>
@@ -1135,6 +1545,20 @@ function App() {
     });
   };
 
+  const formatAdviceReviewDate = (reviewedAt) => {
+    if (!reviewedAt) return "";
+    const parsed = new Date(reviewedAt);
+    if (Number.isNaN(parsed.getTime())) return reviewedAt;
+    return parsed.toLocaleDateString(
+      selectedLanguage === "es" ? "es-ES" : selectedLanguage,
+      {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      },
+    );
+  };
+
   const buildMealData = (meal, title, totalCalories) => ({
     title,
     items: meal?.items ?? [],
@@ -1182,6 +1606,13 @@ function App() {
   );
 
   const selectedMenuLabel = getMenuLabel(selectedSelection, selectedLanguage);
+  const selectedConsejo = useMemo(
+    () =>
+      visibleConsejosList.find((consejo) => consejo.id === selectedConsejoId) ??
+      visibleConsejosList[0] ??
+      null,
+    [visibleConsejosList, selectedConsejoId],
+  );
 
   const notices = useMemo(() => {
     const templates = noticeCopy.noticeTemplates;
@@ -1192,10 +1623,10 @@ function App() {
       list.push({
         id: `reminder-missing-${pendingMorningCheckin.trackingDateIso}`,
         type: "reminder",
-        title: noticeCopy.reminderMissingTitle ?? "Recordatorio diario",
+        title: noticeCopy.reminderMissingTitle ?? "Daily reminder",
         body:
           noticeCopy.reminderMissingBody ??
-          "Ayer no registraste tus hitos. Completa el seguimiento para mantener tu progreso.",
+          "You did not log yesterday's milestones. Complete tracking to keep progress.",
       });
     }
 
@@ -1204,10 +1635,10 @@ function App() {
       list.push({
         id: `reminder-reply-${repliedConsult.id}`,
         type: "reminder",
-        title: noticeCopy.reminderReplyTitle ?? "Tienes una respuesta",
+        title: noticeCopy.reminderReplyTitle ?? "Reply available",
         body:
           noticeCopy.reminderReplyBody ??
-          "Hay una respuesta disponible a uno de tus comentarios en consulta rapida.",
+          "There is a reply available for one of your quick consult comments.",
       });
     }
 
@@ -1219,7 +1650,7 @@ function App() {
     list.push({
       id: `message-day-${messageIndexBase}`,
       type: "message",
-      title: noticeCopy.messageTitle ?? "Mensaje del dia",
+      title: noticeCopy.messageTitle ?? "Message of the day",
       body: openingMessage,
     });
 
@@ -1241,7 +1672,7 @@ function App() {
       list.push({
         id: `info-calories-${latestMorningSummary.id}`,
         type: "info",
-        title: noticeCopy.infoCaloriesTitle ?? "Resumen calorico",
+        title: noticeCopy.infoCaloriesTitle ?? "Calorie summary",
         body: `${uiText.morningCaloriesTotal}: ${latestMorningSummary.totalCalories} kcal. ${uiText.morningCaloriesSaved}: ${latestMorningSummary.caloriesSaved} kcal. ${uiText.morningCaloriesExtra}: ${latestMorningSummary.caloriesExtra} kcal.`,
       });
     }
@@ -1288,20 +1719,55 @@ function App() {
     [dismissedNoticeIds, notices, noticesEnabled],
   );
 
+  const unreadBadgeCount = useMemo(() => {
+    if (!isPremiumUser || !noticesEnabled) return 0;
+    return notices.filter(
+      (notice) =>
+        (notice.type === "reminder" || notice.type === "message") &&
+        !dismissedNoticeIds.includes(notice.id),
+    ).length;
+  }, [dismissedNoticeIds, isPremiumUser, notices, noticesEnabled]);
+
   const pushStatusLabel = useMemo(() => {
     if (pushStatus === "ready") return noticeCopy.pushReady;
     if (pushStatus === "denied") return noticeCopy.pushDenied;
     if (pushStatus === "unavailable") return noticeCopy.pushUnavailable;
     return noticeCopy.pushPrompt;
   }, [noticeCopy, pushStatus]);
-  const formattedDate = new Date().toLocaleDateString(
-    selectedLanguage === "es" ? "es-ES" : selectedLanguage,
-    {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    },
-  );
+  const formattedDate = useMemo(() => {
+    let dateToFormat = new Date();
+
+    if (programStartIso) {
+      const startDate = new Date(programStartIso);
+      if (!Number.isNaN(startDate.getTime())) {
+        const menuOffset = Math.max(
+          0,
+          (selectedSelection?.internalNumber ?? 1) - 1,
+        );
+        startDate.setHours(0, 0, 0, 0);
+        startDate.setDate(startDate.getDate() + menuOffset);
+        dateToFormat = startDate;
+      }
+    }
+
+    return dateToFormat.toLocaleDateString(
+      selectedLanguage === "es" ? "es-ES" : selectedLanguage,
+      {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      },
+    );
+  }, [programStartIso, selectedLanguage, selectedSelection?.internalNumber]);
+
+  const menuHeaderTitle = useMemo(() => {
+    const dayNumber = String(selectedSelection?.internalNumber ?? 1);
+    const template = locale.words.menuOfProgramDay || locale.words.menuOfDay;
+    if (template.includes("{day}")) {
+      return template.replace("{day}", dayNumber);
+    }
+    return `${template} ${dayNumber}`;
+  }, [locale.words.menuOfDay, locale.words.menuOfProgramDay, selectedSelection?.internalNumber]);
   const imcValue = useMemo(() => {
     const weight = Number(String(imcWeight).replace(",", "."));
     const heightCm = Number(String(imcHeight).replace(",", "."));
@@ -1389,6 +1855,140 @@ function App() {
     });
   };
 
+  const handleOpenPremiumInfo = useCallback(() => {
+    setIsImcOpen(false);
+    setActiveView("links");
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }, []);
+
+  const getLastSeenTrialPopupDay = useCallback((programId) => {
+    if (!programId) return 0;
+    try {
+      const raw = localStorage.getItem(TRIAL_POPUP_LAST_SEEN_DAY_KEY);
+      if (!raw) return 0;
+      const parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return 0;
+      const savedDay = Number(parsed[programId]);
+      return Number.isFinite(savedDay) ? savedDay : 0;
+    } catch {
+      return 0;
+    }
+  }, []);
+
+  const markTrialPopupSeen = useCallback((programId, dayIndex) => {
+    if (!programId) return;
+    if (!Number.isFinite(dayIndex) || dayIndex < TRIAL_POPUP_START_DAY) return;
+    try {
+      const raw = localStorage.getItem(TRIAL_POPUP_LAST_SEEN_DAY_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      const current = Number(parsed?.[programId]) || 0;
+      const next = Math.max(current, Math.floor(dayIndex));
+      localStorage.setItem(
+        TRIAL_POPUP_LAST_SEEN_DAY_KEY,
+        JSON.stringify({
+          ...(parsed && typeof parsed === "object" ? parsed : {}),
+          [programId]: next,
+        }),
+      );
+    } catch {
+      // ignore storage errors
+    }
+  }, []);
+
+  const handleCloseTrialPopup = useCallback(() => {
+    if (!isTrialPopupSimulationEnabled) {
+      markTrialPopupSeen(
+        programTrackingSnapshot?.program?.id || "",
+        trialPopupDay ?? 0,
+      );
+    }
+    setTrialPopupDay(null);
+  }, [
+    isTrialPopupSimulationEnabled,
+    markTrialPopupSeen,
+    programTrackingSnapshot?.program?.id,
+    trialPopupDay,
+  ]);
+
+  const getInternalMenuNumberForDay = useCallback((dayNumber) => {
+    const safeDay = Number(dayNumber);
+    if (!Number.isFinite(safeDay) || safeDay < 1) return 1;
+    const totalMenus = allMenus.length || 1;
+    return ((Math.floor(safeDay) - 1) % totalMenus) + 1;
+  }, [allMenus.length]);
+
+  const handleContinueFreeFromTrialPopup = useCallback(() => {
+    const dayNumber = trialPopupDay ?? programTrackingSnapshot?.dayIndex ?? 1;
+    const internalNumber = getInternalMenuNumberForDay(dayNumber);
+
+    if (!isTrialPopupSimulationEnabled) {
+      markTrialPopupSeen(
+        programTrackingSnapshot?.program?.id || "",
+        trialPopupDay ?? 0,
+      );
+    }
+
+    setTrialPopupDay(null);
+    setActiveView("dietas");
+    setExploreInternalNumber(internalNumber);
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }, [
+    getInternalMenuNumberForDay,
+    isTrialPopupSimulationEnabled,
+    markTrialPopupSeen,
+    programTrackingSnapshot?.dayIndex,
+    programTrackingSnapshot?.program?.id,
+    trialPopupDay,
+  ]);
+
+  const handleGoPremiumFromTrialPopup = useCallback(() => {
+    if (!isTrialPopupSimulationEnabled) {
+      markTrialPopupSeen(
+        programTrackingSnapshot?.program?.id || "",
+        trialPopupDay ?? 0,
+      );
+    }
+    setTrialPopupDay(null);
+    handleOpenPremiumInfo();
+  }, [
+    handleOpenPremiumInfo,
+    isTrialPopupSimulationEnabled,
+    markTrialPopupSeen,
+    programTrackingSnapshot?.program?.id,
+    trialPopupDay,
+  ]);
+
+  const handleStartTrialPopupSimulation = useCallback(() => {
+    setTrialPopupDay(null);
+    setIsTrialPopupSimulationEnabled(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isTrialPopupSimulationEnabled) return undefined;
+
+    let currentDay = TRIAL_POPUP_START_DAY;
+    setTrialPopupDay(currentDay);
+
+    const timerId = window.setInterval(() => {
+      currentDay += 1;
+      if (currentDay > TRIAL_POPUP_END_DAY) {
+        window.clearInterval(timerId);
+        setTrialPopupDay(null);
+        setIsTrialPopupSimulationEnabled(false);
+        return;
+      }
+      setTrialPopupDay(currentDay);
+    }, trialPopupSimulationIntervalMs);
+
+    return () => {
+      window.clearInterval(timerId);
+    };
+  }, [isTrialPopupSimulationEnabled, trialPopupSimulationIntervalMs]);
+
   const handleGoToLinks = () => {
     setActiveView("links");
     requestAnimationFrame(() => {
@@ -1470,6 +2070,47 @@ function App() {
     setIsDataConsentOpen(false);
   };
 
+  const handleContinueToPlaySubscription = () => {
+    window.open(PLAY_SUBSCRIPTIONS_URL, "_blank", "noopener,noreferrer");
+  };
+
+  const handleRestorePremiumPlan = useCallback(async () => {
+    if (!effectiveUserId) {
+      setPremiumRestoreFeedback(
+        premiumInfoCopy.restoreNoUser || "No linked user found to restore.",
+      );
+      return;
+    }
+
+    setIsRestoringPremium(true);
+    setPremiumRestoreFeedback("");
+    try {
+      const result = await fetchUserPlanFromBackend(effectiveUserId);
+      if (result.remote && result.plan === "premium") {
+        setUserPlan("premium");
+        setPremiumRestoreFeedback(
+          premiumInfoCopy.restoreSuccess || "Premium restored successfully.",
+        );
+      } else if (result.remote) {
+        setUserPlan("free");
+        setPremiumRestoreFeedback(
+          premiumInfoCopy.restoreNoPremium ||
+            "No active Premium subscription was found for this user.",
+        );
+      } else {
+        setPremiumRestoreFeedback(
+          premiumInfoCopy.restoreError || "Could not restore Premium. Please try again.",
+        );
+      }
+    } catch {
+      setPremiumRestoreFeedback(
+        premiumInfoCopy.restoreError || "Could not restore Premium. Please try again.",
+      );
+    } finally {
+      setIsRestoringPremium(false);
+    }
+  }, [effectiveUserId, premiumInfoCopy]);
+
   const handleChangeStatsProfileField = (field, value) => {
     setStatsProfile((prev) => ({
       ...prev,
@@ -1477,7 +2118,23 @@ function App() {
     }));
   };
 
-  const handleSubmitDataConsent = async () => {
+  const handleSetUserPlan = useCallback((nextPlan) => {
+    setUserPlan(nextPlan === "premium" ? "premium" : "free");
+  }, []);
+
+  useEffect(() => {
+    if (!premiumRestoreFeedback) return;
+
+    const feedbackTimeoutId = window.setTimeout(() => {
+      setPremiumRestoreFeedback("");
+    }, 4500);
+
+    return () => {
+      window.clearTimeout(feedbackTimeoutId);
+    };
+  }, [premiumRestoreFeedback]);
+
+  const handleSubmitDataConsent = useCallback(async () => {
     const normalizedAge = Number(String(statsProfile.age).replace(",", "."));
     const ageValue = Number.isFinite(normalizedAge) && normalizedAge > 0
       ? Math.round(normalizedAge)
@@ -1497,7 +2154,11 @@ function App() {
       trackedUser?.id ||
       (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
         ? crypto.randomUUID()
-        : `user_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`);
+        : "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {
+            const random = Math.floor(Math.random() * 16);
+            const value = char === "x" ? random : ((random & 0x3) | 0x8);
+            return value.toString(16);
+          }));
 
     const payload = {
       id: userId,
@@ -1518,19 +2179,41 @@ function App() {
     setIsSubmittingDataConsent(true);
     try {
       await syncUserProfileToBackend(payload);
+      setBackendUserId(userId);
       setStatsDataAuthorized(true);
+      handleSetUserPlan("premium");
       setConsultFeedback(
-        noticeCopy.dataConsentSaved ?? "Datos estadisticos guardados correctamente.",
+        noticeCopy.dataConsentSaved ?? "Statistical data saved successfully.",
       );
       setIsDataConsentOpen(false);
     } catch {
       setConsultFeedback(
-        noticeCopy.dataConsentFailed ?? "No se pudo enviar. Intentalo de nuevo.",
+        noticeCopy.dataConsentFailed ?? "Could not send data. Please try again.",
       );
+      void trackAnalyticsEvent("sync_error", {
+        source: "user_profile",
+        message: "data_consent_submit_failed",
+      });
     } finally {
       setIsSubmittingDataConsent(false);
     }
-  };
+  }, [
+    handleSetUserPlan,
+    imcHeight,
+    imcSex,
+    imcValue,
+    imcWeight,
+    noticeCopy.dataConsentFailed,
+    noticeCopy.dataConsentSaved,
+    noticesEnabled,
+    programTrackingSnapshot?.program,
+    programTrackingSnapshot?.user,
+    selectedDietCalories,
+    setBackendUserId,
+    statsProfile.age,
+    statsProfile.alias,
+    statsProfile.country,
+  ]);
 
   const handleClearConsultHistory = () => {
     setConsultHistory([]);
@@ -1549,6 +2232,10 @@ function App() {
   };
 
   const handleGoToMenuList = () => {
+    if (import.meta.env.DEV && !isTrialPopupSimulationEnabled) {
+      handleStartTrialPopupSimulation();
+    }
+
     requestAnimationFrame(() => {
       if (!menuListSectionRef.current) return;
       menuListSectionRef.current.scrollIntoView({
@@ -1575,7 +2262,7 @@ function App() {
     const consejoId = Number(event.target.value);
     setSelectedConsejoId(consejoId);
 
-    const selected = consejosList.find((consejo) => consejo.id === consejoId);
+    const selected = visibleConsejosList.find((consejo) => consejo.id === consejoId);
     if (!selected?.anchor) return;
 
     requestAnimationFrame(() => {
@@ -1634,42 +2321,71 @@ function App() {
       }
 
       setProgramStartIso(startDate.toISOString());
+      void trackAnalyticsEvent("imc_completed", {
+        language: selectedLanguage,
+        calories,
+        offsetDays: safeOffset,
+        imcValue: profile?.imc ?? imcValue ?? null,
+      });
+      void trackAnalyticsEvent("program_started", {
+        language: selectedLanguage,
+        calories,
+        startDateIso: startDate.toISOString(),
+        offsetDays: safeOffset,
+      });
       if (profile) {
-        const trackingRecord = createProgramStartRecord({
-          profile: {
-            alias: profile.alias,
-            country: profile.country,
-            age: profile.age,
-            gender: profile.gender,
-            heightCm: profile.heightCm,
-            weightKg: profile.weightKg,
-            imc: profile.imc,
-          },
-          dietLevel: calories,
-          startDateIso: startDate.toISOString(),
-          startDateTimeIso: startDate.toISOString(),
-          plannedDays: 56,
-        });
-        setProgramTrackingSnapshot({
-          user: trackingRecord.user,
-          program: trackingRecord.program,
-          dayIndex: 0,
-          daysRemaining: 56,
-        });
-        void syncProgramStartToBackend({
-          user: trackingRecord.user,
-          program: trackingRecord.program,
-        }).catch(() => {
-          // Keep working in local mode if sync fails.
-        });
-        setPendingMorningCheckin(getPendingMorningCheckin());
+        setStatsProfile((prev) => ({
+          ...prev,
+          alias: profile.alias || "",
+          country: profile.country || "",
+          age: profile.age == null ? "" : String(profile.age),
+        }));
       }
+
+      const trackingProfile = {
+        alias: profile?.alias || "",
+        country: profile?.country || "",
+        age: profile?.age ?? null,
+        gender: profile?.gender || imcSex || "unknown",
+        heightCm: profile?.heightCm ?? null,
+        weightKg: profile?.weightKg ?? null,
+        imc: profile?.imc ?? imcValue ?? null,
+      };
+
+      const trackingRecord = createProgramStartRecord({
+        profile: trackingProfile,
+        dietLevel: calories,
+        startDateIso: startDate.toISOString(),
+        startDateTimeIso: startDate.toISOString(),
+        plannedDays: 56,
+      });
+      setProgramTrackingSnapshot({
+        user: trackingRecord.user,
+        program: trackingRecord.program,
+        dayIndex: 0,
+        daysRemaining: 56,
+      });
+      setBackendUserId(trackingRecord.user.id);
+      void syncProgramStartToBackend({
+        user: trackingRecord.user,
+        program: trackingRecord.program,
+      }).catch((error) => {
+        // Keep working in local mode if sync fails, but log details for diagnosis.
+        // eslint-disable-next-line no-console
+        console.warn("Program start sync failed", error);
+        void trackAnalyticsEvent("sync_error", {
+          source: "program_start",
+          message: String(error?.message || error || "unknown"),
+        });
+        // Keep working in local mode if sync fails.
+      });
+      setPendingMorningCheckin(getPendingMorningCheckin());
       handleSelectDiet(calories);
       if (safeOffset > 0) {
         setDietNotice(`${uiText.imcStartSaved} (${formattedStartDate})`);
       }
     },
-    [handleSelectDiet, selectedLanguage, uiText.imcStartSaved],
+    [handleSelectDiet, imcSex, imcValue, selectedLanguage, uiText.imcStartSaved],
   );
 
   const handleMorningMilestoneChange = (mealKey, value) => {
@@ -1694,8 +2410,23 @@ function App() {
       notes: morningNotes.trim(),
       caloriesTarget: pendingMorningCheckin.caloriesTarget,
     });
-    void syncDailyCheckinToBackend(record).catch(() => {
+    void syncDailyCheckinToBackend(record).catch((error) => {
+      // Keep local tracking if backend is offline, but log details for diagnosis.
+      // eslint-disable-next-line no-console
+      console.warn("Daily check-in sync failed", error);
+      void trackAnalyticsEvent("sync_error", {
+        source: "daily_checkin",
+        message: String(error?.message || error || "unknown"),
+      });
       // Keep local tracking if backend is offline.
+    });
+
+    void trackAnalyticsEvent("day_checkin_saved", {
+      programId: record.programId,
+      dayNumber: record.dayNumber,
+      trackingDateIso: record.trackingDateIso,
+      caloriesSaved: record.caloriesSaved,
+      caloriesExtra: record.caloriesExtra,
     });
 
     setLatestMorningSummary(record);
@@ -1719,6 +2450,86 @@ function App() {
       // ignore storage errors
     }
   };
+
+  useEffect(() => {
+    const trackedUserId = programTrackingSnapshot?.user?.id;
+    if (!trackedUserId || trackedUserId === backendUserId) return;
+    setBackendUserId(trackedUserId);
+  }, [backendUserId, programTrackingSnapshot?.user?.id]);
+
+  useEffect(() => {
+    if (!backendUserId) return;
+    try {
+      localStorage.setItem(USER_ID_KEY, backendUserId);
+    } catch {
+      // ignore storage errors
+    }
+  }, [backendUserId]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(USER_PLAN_KEY, userPlan);
+    } catch {
+      // ignore storage errors
+    }
+  }, [userPlan]);
+
+  useEffect(() => {
+    if (!effectiveUserId) return;
+    if (lastPlanHydratedUserIdRef.current === effectiveUserId) return;
+
+    let active = true;
+    fetchUserPlanFromBackend(effectiveUserId)
+      .then((result) => {
+        if (!active) return;
+        if (result.remote && result.plan) {
+          setUserPlan(result.plan === "premium" ? "premium" : "free");
+        }
+        lastPlanHydratedUserIdRef.current = effectiveUserId;
+      })
+      .catch(() => {
+        if (!active) return;
+        lastPlanHydratedUserIdRef.current = effectiveUserId;
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [effectiveUserId]);
+
+  useEffect(() => {
+    if (!effectiveUserId) return;
+    if (lastPlanHydratedUserIdRef.current !== effectiveUserId) return;
+
+    const syncKey = `${effectiveUserId}:${userPlan}`;
+    if (lastPlanSyncedRef.current === syncKey) return;
+
+    syncUserPlanToBackend({ userId: effectiveUserId, plan: userPlan })
+      .then(() => {
+        lastPlanSyncedRef.current = syncKey;
+      })
+      .catch(() => {
+        // Keep local plan if backend update fails.
+      });
+  }, [effectiveUserId, userPlan]);
+
+  useEffect(() => {
+    if (!visibleConsejosList.length) return;
+    const selectedIsVisible = visibleConsejosList.some(
+      (consejo) => consejo.id === selectedConsejoId,
+    );
+    if (!selectedIsVisible) {
+      setSelectedConsejoId(visibleConsejosList[0].id);
+    }
+  }, [selectedConsejoId, visibleConsejosList]);
+
+  useEffect(() => {
+    void trackAnalyticsEvent("app_open", {
+      language: selectedLanguage,
+      isNative: Boolean(window?.Capacitor?.isNativePlatform?.()),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -1809,6 +2620,132 @@ function App() {
       setLatestMorningSummary(latest);
     }
   }, [programStartIso]);
+
+  useEffect(() => {
+    if (isTrialPopupSimulationEnabled) return;
+
+    if (isPremiumUser) {
+      setTrialPopupDay(null);
+      return;
+    }
+
+    if (isImcOpen || isDataConsentOpen || pendingMorningCheckin) {
+      return;
+    }
+
+    const programId = programTrackingSnapshot?.program?.id || "";
+    const dayIndex = programTrackingSnapshot?.dayIndex ?? 0;
+    if (!programId) return;
+    if (dayIndex < TRIAL_POPUP_START_DAY || dayIndex > TRIAL_POPUP_END_DAY) return;
+
+    const lastSeenDay = getLastSeenTrialPopupDay(programId);
+    if (dayIndex <= lastSeenDay) return;
+    setTrialPopupDay(dayIndex);
+  }, [
+    getLastSeenTrialPopupDay,
+    isDataConsentOpen,
+    isImcOpen,
+    isPremiumUser,
+    isTrialPopupSimulationEnabled,
+    pendingMorningCheckin,
+    programTrackingSnapshot?.dayIndex,
+    programTrackingSnapshot?.program?.id,
+  ]);
+
+  const trialPopupOrdinal = useMemo(() => {
+    if (!Number.isFinite(trialPopupDay)) return "";
+    if (selectedLanguage === "es") {
+      return TRIAL_DAY_ORDINALS_ES[trialPopupDay] ?? String(trialPopupDay);
+    }
+    return String(trialPopupDay);
+  }, [selectedLanguage, trialPopupDay]);
+
+  const trialPopupTitle = useMemo(() => {
+    const rawTitle = uiText.secondDayPopupTitle || "";
+    if (!rawTitle.includes("{ordinal}")) return rawTitle;
+    return rawTitle.replace("{ordinal}", trialPopupOrdinal || "");
+  }, [trialPopupOrdinal, uiText.secondDayPopupTitle]);
+
+  const trialPopupBody = useMemo(() => {
+    const base = uiText.secondDayPopupBody || "";
+    if (trialPopupDay !== TRIAL_POPUP_END_DAY) return base;
+    const finalLine = uiText.secondDayPopupFinalBody || "";
+    return finalLine ? `${base} ${finalLine}` : base;
+  }, [trialPopupDay, uiText.secondDayPopupBody, uiText.secondDayPopupFinalBody]);
+
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+
+    let isDisposed = false;
+    let listenerHandle = null;
+
+    const registerBackButton = async () => {
+      try {
+        const handle = await CapacitorApp.addListener("backButton", () => {
+          if (trialPopupDay != null) {
+            handleCloseTrialPopup();
+            return;
+          }
+
+          if (isDataConsentOpen) {
+            setIsDataConsentOpen(false);
+            return;
+          }
+
+          if (isImcOpen) {
+            handleCloseImc();
+            return;
+          }
+
+          if (pendingMorningCheckin) {
+            setPendingMorningCheckin(null);
+            return;
+          }
+
+          if (!showPortada) {
+            if (activeView !== "home") {
+              setActiveView("home");
+              requestAnimationFrame(() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              });
+              return;
+            }
+
+            setShowPortada(true);
+            return;
+          }
+
+          CapacitorApp.exitApp();
+        });
+
+        if (!isDisposed) {
+          listenerHandle = handle;
+        } else if (handle?.remove) {
+          await handle.remove();
+        }
+      } catch {
+        // If native back listener registration fails, keep default system behavior.
+      }
+    };
+
+    void registerBackButton();
+
+    return () => {
+      isDisposed = true;
+      if (listenerHandle?.remove) {
+        void listenerHandle.remove();
+      }
+    };
+  }, [
+    activeView,
+    handleCloseTrialPopup,
+    handleCloseImc,
+    isDataConsentOpen,
+    isImcOpen,
+    pendingMorningCheckin,
+    showPortada,
+    trialPopupDay,
+  ]);
 
   return (
     showPortada ? (
@@ -1928,9 +2865,9 @@ function App() {
             aria-label={uiText.goLinks}
           >
             <span className="opening-link-text">{uiText.navLinksLabel}</span>
-            {unreadNotices.length > 0 ? (
+            {unreadBadgeCount > 0 ? (
               <span className="opening-link-badge" aria-label={noticeCopy.unreadLabel}>
-                {unreadNotices.length}
+                {unreadBadgeCount}
               </span>
             ) : null}
           </button>
@@ -1945,6 +2882,18 @@ function App() {
             <button className="opening-imc-trigger" onClick={handleOpenImc}>
               {uiText.measureImc}
             </button>
+            {import.meta.env.DEV ? (
+              <button
+                className="menu-nav-button menu-nav-button-slim"
+                onClick={handleStartTrialPopupSimulation}
+                disabled={isTrialPopupSimulationEnabled}
+                type="button"
+              >
+                {isTrialPopupSimulationEnabled
+                  ? "Simulacro semana en curso"
+                  : "Iniciar simulacro semana"}
+              </button>
+            ) : null}
             <p className="opening-copy">{uiText.intro2}</p>
             <p className="opening-program-cta">{uiText.chooseProgram}</p>
             {programStartLabel ? (
@@ -1952,7 +2901,9 @@ function App() {
             ) : null}
             {programTrackingSnapshot?.program ? (
               <p className="program-day-note">
-                56 dias: {Math.min(56, Math.max(0, programTrackingSnapshot.dayIndex))} / 56
+                {uiText.programProgress56
+                  .replace("{current}", String(Math.min(56, Math.max(0, programTrackingSnapshot.dayIndex))))
+                  .replace("{total}", "56")}
               </p>
             ) : null}
             {latestMorningSummary ? (
@@ -2110,30 +3061,75 @@ function App() {
                 value={selectedConsejoId}
                 onChange={handleConsejoSelect}
               >
-                {consejosList.map((consejo) => (
+                {visibleConsejosList.map((consejo) => (
                   <option key={consejo.id} value={consejo.id}>
                     {consejo.title}
                   </option>
                 ))}
               </select>
+              {!isPremiumUser && premiumConsejoCount > 0 ? (
+                <>
+                  <p className="menu-note">
+                    {selectedLanguage === "es"
+                      ? `${premiumConsejoCount} consejos avanzados disponibles en Premium.`
+                      : selectedLanguage === "en"
+                        ? `${premiumConsejoCount} advanced tips are available in Premium.`
+                        : selectedLanguage === "fr"
+                          ? `${premiumConsejoCount} conseils avances sont disponibles en Premium.`
+                          : `${premiumConsejoCount} erweiterte Tipps sind in Premium verfugbar.`}
+                  </p>
+                  <button className="menu-nav-button" onClick={handleOpenPremiumInfo}>
+                    {selectedLanguage === "es"
+                      ? "Ver Premium"
+                      : selectedLanguage === "en"
+                        ? "See Premium"
+                        : selectedLanguage === "fr"
+                          ? "Voir Premium"
+                          : "Premium ansehen"}
+                  </button>
+                </>
+              ) : null}
             </div>
           </section>
 
           <section className="panel advice-list-panel">
-            {consejosList.map((consejo) => (
+            {selectedConsejo ? (
               <article
-                key={consejo.id}
-                id={consejo.anchor}
-                className={`advice-item ${
-                  consejo.id === selectedConsejoId ? "is-active" : ""
-                }`}
+                key={selectedConsejo.id}
+                id={selectedConsejo.anchor}
+                className="advice-item is-active"
               >
-                <h3>{consejo.title}</h3>
+                <h3>{selectedConsejo.title}</h3>
                 <div className="advice-text">
-                  {renderAdviceText(consejo.text)}
+                  {renderAdviceText(selectedConsejo.text)}
+                </div>
+                <div className="advice-meta">
+                  {selectedConsejo.source ? (
+                    <p>
+                      <strong>{adviceMetaCopy.sourceLabel}:</strong> {selectedConsejo.source}
+                    </p>
+                  ) : null}
+                  {selectedConsejo.sourceUrl ? (
+                    <p>
+                      <a
+                        className="advice-source-link"
+                        href={selectedConsejo.sourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {adviceMetaCopy.openSource}
+                      </a>
+                    </p>
+                  ) : null}
+                  {selectedConsejo.reviewedAt ? (
+                    <p>
+                      <strong>{adviceMetaCopy.reviewLabel}:</strong>{" "}
+                      {formatAdviceReviewDate(selectedConsejo.reviewedAt)}
+                    </p>
+                  ) : null}
                 </div>
               </article>
-            ))}
+            ) : null}
           </section>
         </>
       ) : activeView === "idiomas" ? (
@@ -2181,11 +3177,15 @@ function App() {
           </div>
         </section>
       ) : activeView === "links" ? (
+        isPremiumUser ? (
         <>
           <section className="panel">
             <div className="panel-header">
               <h2>{noticeCopy.title}</h2>
               <p className="menu-note">{noticeCopy.intro}</p>
+              {premiumRestoreFeedback ? (
+                <p className="menu-note">{premiumRestoreFeedback}</p>
+              ) : null}
 
               <label className="notice-toggle" htmlFor="notices-toggle">
                 <input
@@ -2194,7 +3194,7 @@ function App() {
                   checked={noticesEnabled}
                   onChange={handleToggleNotices}
                 />
-                <span>{noticeCopy.enableToggle ?? "Activar avisos y mensajes"}</span>
+                <span>{noticeCopy.enableToggle ?? "Enable alerts and messages"}</span>
               </label>
 
               <p className="menu-note">
@@ -2203,15 +3203,15 @@ function App() {
 
               <p className="menu-note notice-data-consent-text">
                 {statsDataAuthorized
-                  ? (noticeCopy.dataConsentDone ?? "Envio de datos estadisticos autorizado.")
-                  : (noticeCopy.dataConsentLead ?? "Si no has autorizado el envio de datos estadisticos, aqui puedes hacerlo.")}
+                  ? (noticeCopy.dataConsentDone ?? "Statistical data sharing authorized.")
+                  : (noticeCopy.dataConsentLead ?? "If data sharing is not authorized yet, you can do it here.")}
                 {!statsDataAuthorized ? (
                   <button
                     type="button"
                     className="notice-link-button"
                     onClick={handleOpenDataConsent}
                   >
-                    {noticeCopy.dataConsentLink ?? "Autorizar ahora"}
+                    {noticeCopy.dataConsentLink ?? "Authorize now"}
                   </button>
                 ) : null}
               </p>
@@ -2282,7 +3282,7 @@ function App() {
               <h2>{noticeCopy.consultTitle}</h2>
               <p className="menu-note">{noticeCopy.consultIntro}</p>
               <p className="menu-note">
-                {noticeCopy.consultRoutingInfo ?? "Las consultas se envian por POST a VITE_API_BASE_URL/consults cuando hay backend configurado. Si no, se guardan en local."}
+                {noticeCopy.consultRoutingInfo ?? "Questions are sent by POST to VITE_API_BASE_URL/consults when backend is configured. Otherwise they are stored locally."}
               </p>
             </div>
 
@@ -2345,6 +3345,70 @@ function App() {
             </div>
           </section>
         </>
+        ) : (
+          <section className="panel premium-info-panel">
+            <div className="panel-header">
+              <h2>{premiumInfoCopy.title}</h2>
+              <p className="menu-note">{premiumInfoCopy.intro}</p>
+            </div>
+
+            <article className="premium-info-card premium-offer-card">
+              <h3>{premiumInfoCopy.offerTitle}</h3>
+              <button
+                className="menu-nav-button premium-link-btn"
+                type="button"
+                onClick={handleOpenDataConsent}
+              >
+                {premiumInfoCopy.offerPrimaryCta}
+              </button>
+              <button
+                className="menu-nav-button premium-link-btn"
+                type="button"
+                onClick={handleRestorePremiumPlan}
+                disabled={isRestoringPremium}
+              >
+                {isRestoringPremium
+                  ? premiumInfoCopy.restoringCta
+                  : premiumInfoCopy.restoreCta}
+              </button>
+              {premiumRestoreFeedback ? (
+                <p className="menu-note">{premiumRestoreFeedback}</p>
+              ) : null}
+              <p className="premium-offer-legal">{premiumInfoCopy.offerLegal}</p>
+              <p className="premium-offer-channel">{premiumInfoCopy.offerChannel}</p>
+            </article>
+
+            <article className="premium-info-card">
+              <h3>{premiumInfoCopy.featuresTitle}</h3>
+              <ul className="premium-feature-list">
+                {premiumInfoCopy.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+            </article>
+
+            <article className="premium-info-card">
+              <h3>{premiumInfoCopy.linksTitle}</h3>
+              <div className="premium-link-list">
+                {premiumInfoCopy.links.map((linkItem) => (
+                  <a
+                    key={linkItem.href}
+                    className="menu-nav-button premium-link-btn"
+                    href={linkItem.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {linkItem.label}
+                  </a>
+                ))}
+              </div>
+            </article>
+
+            <button className="menu-nav-button" onClick={handleBackToHome}>
+              {premiumInfoCopy.continueCta}
+            </button>
+          </section>
+        )
       ) : activeView === "dietas" ? (
         <>
           <section className="panel">
@@ -2400,7 +3464,7 @@ function App() {
                 {locale.words.viewAllMenus}
               </button>
               <h2>
-                {locale.words.menuOfDay} · {formattedDate}
+                {menuHeaderTitle} · {formattedDate}
               </h2>
               {programDayLabel ? (
                 <p className="program-day-note">{programDayLabel}</p>
@@ -2482,6 +3546,33 @@ function App() {
         </button>
       )}
 
+      {trialPopupDay != null ? (
+        <div
+          className="imc-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={trialPopupTitle}
+          onClick={handleCloseTrialPopup}
+        >
+          <section
+            className="imc-modal second-day-modal"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h3>{trialPopupTitle}</h3>
+            <p className="imc-flow-message">{trialPopupBody}</p>
+            <button className="menu-nav-button" onClick={handleContinueFreeFromTrialPopup}>
+              {uiText.secondDayPopupContinueFree}
+            </button>
+            <button
+              className="menu-nav-button menu-nav-button-slim"
+              onClick={handleGoPremiumFromTrialPopup}
+            >
+              {uiText.secondDayPopupGoPremium}
+            </button>
+          </section>
+        </div>
+      ) : null}
+
       {pendingMorningCheckin ? (
         <div className="imc-overlay" role="dialog" aria-modal="true" aria-label={uiText.morningCheckTitle}>
           <section className="imc-modal morning-check-modal" onClick={(event) => event.stopPropagation()}>
@@ -2544,9 +3635,10 @@ function App() {
       ) : null}
 
       {isDataConsentOpen ? (
-        <div className="imc-overlay" role="dialog" aria-modal="true" aria-label={noticeCopy.dataConsentTitle ?? "Autorizacion de datos"}>
-          <section className="imc-modal" onClick={(event) => event.stopPropagation()}>
-            <h3>{noticeCopy.dataConsentTitle ?? "Autorizacion de datos estadisticos"}</h3>
+        <div className="imc-overlay data-consent-overlay" role="dialog" aria-modal="true" aria-label={premiumSignupFlowCopy.title}>
+          <section className="imc-modal data-consent-modal-fullscreen" onClick={(event) => event.stopPropagation()}>
+            <h3>{premiumSignupFlowCopy.title}</h3>
+            <p className="data-consent-step-label">{premiumSignupFlowCopy.step1}</p>
             <p className="imc-flow-message">
               {noticeCopy.dataConsentBody ?? "Introduce alias, pais y edad para enviar datos estadisticos anonimos."}
             </p>
@@ -2587,18 +3679,24 @@ function App() {
               />
             </label>
 
-            <button
-              className="menu-nav-button"
-              onClick={handleSubmitDataConsent}
-              disabled={isSubmittingDataConsent}
-            >
-              {isSubmittingDataConsent
-                ? `${noticeCopy.dataConsentSave ?? "Guardar"}...`
-                : (noticeCopy.dataConsentSave ?? "Guardar")}
-            </button>
-            <button className="menu-nav-button" onClick={handleCloseDataConsent}>
-              {uiText.close}
-            </button>
+            <div className="data-consent-actions">
+              <button
+                className="menu-nav-button"
+                onClick={handleSubmitDataConsent}
+                disabled={isSubmittingDataConsent}
+              >
+                {isSubmittingDataConsent
+                  ? `${premiumSignupFlowCopy.save}...`
+                  : premiumSignupFlowCopy.save}
+              </button>
+              <p className="data-consent-step-label">{premiumSignupFlowCopy.step2}</p>
+              <button className="menu-nav-button" type="button" onClick={handleContinueToPlaySubscription}>
+                {premiumSignupFlowCopy.continueToSubscription}
+              </button>
+              <button className="menu-nav-button" onClick={handleCloseDataConsent}>
+                {uiText.close}
+              </button>
+            </div>
           </section>
         </div>
       ) : null}
@@ -2607,6 +3705,8 @@ function App() {
         isOpen={isImcOpen}
         initialFlowStep={imcInitialFlowStep}
         directRecommendation={imcDirectCalories}
+        isPremiumUser={isPremiumUser}
+        onRequestPremiumInfo={handleOpenPremiumInfo}
         uiText={uiText}
         imcSex={imcSex}
         onSexChange={setImcSex}
@@ -2619,10 +3719,6 @@ function App() {
         imcRecommendation={imcRecommendation}
         onClose={handleCloseImc}
         onConfirmStart={handleConfirmImcStart}
-        onGoRecommended={(calories) => {
-          if (calories == null) return;
-          handleSelectDiet(calories);
-        }}
       />
     </div>
     )
